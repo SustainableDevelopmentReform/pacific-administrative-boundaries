@@ -1,0 +1,60 @@
+{
+  "steps": [
+    {
+      "label": "process-eez",
+      "command": "pab process EEZ --overwrite",
+      "inputs": {
+        "register": "config/sources/EEZ.yml",
+        "selection": "config/eez_polygons.csv",
+        "raw_manifests": [
+          "data/raw/EEZ/marineregions-eez-v12/manifest.json",
+          "data/raw/EEZ/spc-gem-pacific-eez-200nm/manifest.json"
+        ],
+        "layers": [
+          "marineregions-eez-v12:extracted/eez.shp",
+          "spc-gem-pacific-eez-200nm:as_eez_pol",
+          "spc-gem-pacific-eez-200nm:ck_eez_pol",
+          "spc-gem-pacific-eez-200nm:fj_eez_pol",
+          "spc-gem-pacific-eez-200nm:fm_eez_pol",
+          "spc-gem-pacific-eez-200nm:gu_eez_pol",
+          "spc-gem-pacific-eez-200nm:ki_eez_pol",
+          "spc-gem-pacific-eez-200nm:matthew_hunter_pol_sept25",
+          "spc-gem-pacific-eez-200nm:mh_eez_pol",
+          "spc-gem-pacific-eez-200nm:mp_eez_pol",
+          "spc-gem-pacific-eez-200nm:nc_eez_pol",
+          "spc-gem-pacific-eez-200nm:nr_eez_pol",
+          "spc-gem-pacific-eez-200nm:nu_eez_pol",
+          "spc-gem-pacific-eez-200nm:pf_eez_pol",
+          "spc-gem-pacific-eez-200nm:pg_eez_pol",
+          "spc-gem-pacific-eez-200nm:pn_eez_pol",
+          "spc-gem-pacific-eez-200nm:pw_eez_pol",
+          "spc-gem-pacific-eez-200nm:sb_eez_pol",
+          "spc-gem-pacific-eez-200nm:tk_eez_pol",
+          "spc-gem-pacific-eez-200nm:to_eez_pol",
+          "spc-gem-pacific-eez-200nm:tv_eez_pol",
+          "spc-gem-pacific-eez-200nm:vu_eez_pol",
+          "spc-gem-pacific-eez-200nm:wf_eez_pol",
+          "spc-gem-pacific-eez-200nm:ws_eez_pol"
+        ]
+      },
+      "outputs": {
+        "eez": "data/processed/EEZ/pacific_eez.parquet",
+        "rows": 27
+      },
+      "completed_at": "2026-11-20T00:38:18Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

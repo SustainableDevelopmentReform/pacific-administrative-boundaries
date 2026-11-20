@@ -1,0 +1,284 @@
+iso3: EEZ
+country_name: Exclusive Economic Zones (22 PICTs)
+# Polygon-level assignment of SPC Pacific Maritime Boundaries polygons to PICTs: config/eez_polygons.csv
+# (Marine Regions v12 assignment kept in config/eez_polygons_marineregions_v12.csv)
+sources:
+  - source_id: spc-gem-pacific-eez-200nm
+    title: "Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)"
+    publisher: "Pacific Community (SPC), Geoscience, Energy and Maritime Division"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:as_eez_pol,geonode:au_eez_pol,geonode:ck_eez_pol,geonode:fm_eez_pol,geonode:fj_eez_pol,geonode:pf_eez_pol,geonode:gu_eez_pol,geonode:ki_eez_pol,geonode:mh_eez_pol,geonode:matthew_hunter_pol_sept25,geonode:nr_eez_pol,geonode:nc_eez_pol,geonode:nz_eez_pol,geonode:nu_eez_pol,geonode:mp_eez_pol,geonode:pw_eez_pol,geonode:pg_eez_pol,geonode:pn_eez_pol,geonode:ws_eez_pol,geonode:sb_eez_pol,geonode:tk_eez_pol,geonode:to_eez_pol,geonode:tv_eez_pol,geonode:us_territories_pol_sep25,geonode:vu_eez_pol,geonode:wf_eez_pol&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8
+    retrieval_method: api
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      redistribution_ok: true
+      agreement: "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+      notes: >-
+        Pacific Data Hub licence_id cc-nc-sa-4.0 (Creative Commons Attribution-NonCommercial-
+        ShareAlike 4.0); GeoNode licence cc_by-nc-sa_4.0. CSDR uses and redistributes the derived
+        EEZ geometry under the CSDR-SPC data use agreement (decision D-019). EEZ-derived geometry
+        is SPC data used under that agreement: downstream users are bound by CC BY-NC-SA 4.0
+        (attribution to SPC, non-commercial use only, share-alike) unless they hold their own
+        agreement with SPC.
+    publication_date: 2025-09-17   # newest layer publication date (Matthew & Hunter, US territories); CKAN metadata_modified 2026-11-02, GeoNode layers last_updated 2025-10-14 / 2026-11-01
+    version: "1"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - level_code: eez
+        level_type: eez
+        level_name_local: Exclusive Economic Zone (200 NM)
+        # One shapefile per country/group under extracted/; every row of config/eez_polygons.csv
+        # names its layer (bare name, resolved as extracted/<layer>.shp) and MRGID. All 26 layers
+        # match this pattern. pab/eez.py selects features by MRGID within a layer.
+        layer: "extracted/*_pol*.shp"
+        layers_pict:
+          - as_eez_pol        # ASM
+          - ck_eez_pol        # COK
+          - fj_eez_pol        # FJI
+          - fm_eez_pol        # FSM
+          - gu_eez_pol        # GUM
+          - ki_eez_pol        # KIR (3 features: Gilbert 8488, Line 8441, Phoenix 8450)
+          - mh_eez_pol        # MHL
+          - mp_eez_pol        # MNP
+          - nc_eez_pol        # NCL
+          - nr_eez_pol        # NRU
+          - nu_eez_pol        # NIU
+          - pf_eez_pol        # PYF
+          - pg_eez_pol        # PNG
+          - pn_eez_pol        # PCN
+          - pw_eez_pol        # PLW
+          - sb_eez_pol        # SLB
+          - tk_eez_pol        # TKL
+          - to_eez_pol        # TON
+          - tv_eez_pol        # TUV
+          - vu_eez_pol        # VUT
+          - wf_eez_pol        # WLF
+          - ws_eez_pol        # WSM
+        layers_shared:
+          - matthew_hunter_pol_sept25   # NCL;VUT overlapping claim (MRGID 48948)
+          - us_territories_pol_sep25    # feature MRGID 8319 = Wake (MHL;USA flagged claim); others are US neighbours
+        layers_context: [au_eez_pol, nz_eez_pol]
+        encoding: ISO-8859-1
+        name_field: geoname
+        code_field: mrgid
+        code_scheme: mrgid
+        parent_field: null
+        nests: true
+        notes: >-
+          Fields (lower case): fid, mrgid, geoname, mrgid_ter1, pol_type, mrgid_sov1, territory1,
+          iso_ter1, sovereign1, *2, *3, x_1, y_1, mrgid_eez, area_km2, iso_sov1-3, un_sov1-3,
+          un_ter1-3, source (legal instrument URL), nation, layer, path. Known attribute faults
+          (do not trust the attributes; use config/eez_polygons.csv): area_km2 is in m2 for GUM,
+          MHL, MNP and 0 for Wake, and differs from the computed area elsewhere (PNG attribute
+          1.56M vs 2.86M computed); iso_ter1 'FIJ' (Fiji) and 'Palau'; iso_sov1-3 empty everywhere;
+          pol_type '200 NM' for FSM and PNG; MHL mrgid_eez 8319 and Wake mrgid_eez 8318 swapped;
+          au_eez_pol features 0 (Torres Strait area) and 3 (mainland) share MRGID 8323;
+          nz_eez_pol MRGID 2227 is the MR sovereign id.
+    status: selected
+    raw_path: data/raw/EEZ/spc-gem-pacific-eez-200nm/
+    notes: >-
+      Selected EEZ base layer from 2026-11-20 (user decision D-019). SPC/FFA Pacific Maritime
+      Boundaries polygons: 26 layers, 36 features, all valid and non-empty: 22 PICT layers (KIR = 1
+      layer with 3 features, Gilbert split at the antimeridian into 2 parts), Matthew & Hunter
+      overlapping claim, US remote islands (Howland & Baker, Jarvis, Palmyra, Wake), Australia (6
+      features) and New Zealand. Each feature cites the instrument it is built from ('source':
+      DOALOS deposits, e.g. COK 2021 outer-limit regulations, KIR 2014, PYF/WLF MZN.149, NIU MZN.102;
+      FJI and Matthew & Hunter cite the Marine Regions methodology; Wake cites NOAA). Construction:
+      polygons are filled outer-limit polygons WITHOUT land holes (land is included in every PICT
+      polygon: PNG 463k km2, SLB 27k, FJI 19k, NCL 19k, VUT 12k, PYF 3k, WSM 3k, others <1k), unlike
+      MR v12 which cuts land out. No Torres Strait joint-regime polygon: the zone sits in an
+      'Australian EEZ' feature (au_eez_pol #0), outside the PNG polygon. Wake is coded as a plain US
+      200NM zone. Boundary differences vs MR v12 beyond land: FJI/WLF (12k km2 of MR-FJI in SPC WLF),
+      NIU/TON (3.2k km2 of MR-TON in SPC NIU). Antimeridian: FJI, KIR-Gilbert, TUV, WLF, NZ split at
+      +/-180. Axis order: the CKAN resource URLs use WFS 2.0.0, which returns lat/lon; the archive
+      was requested with WFS 1.0.0 (generic /geoserver/geonode/wfs endpoint, same 26 typeNames),
+      which returns lon/lat; keep version=1.0.0 for re-downloads. Currency verified 2026-11-20
+      against the live CKAN record (metadata_modified 2026-11-02, 26 layers) by re-requesting the
+      same WFS zip: geometry and attributes identical (only the DBF header date byte differs); see
+      manifest.json 'verification'. Related layers not in this dataset: fj/ki/tv/wf/nz_eez_pol_3832
+      (unsplit EPSG:3832 copies), us_territories_eez_pol (2026-06, all US EEZs), asia_pacific_eez_pol
+      and global_eez_200nm (remote layer groups). Polygon selection and assignment:
+      config/eez_polygons.csv (MR v12 equivalent kept in config/eez_polygons_marineregions_v12.csv).
+
+  - source_id: marineregions-eez-v12
+    title: "Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12"
+    publisher: "Flanders Marine Institute (VLIZ), Marine Regions"
+    publisher_type: academic
+    landing_url: https://www.marineregions.org/downloads.php
+    download_urls:
+      - https://geo.vliz.be/geoserver/MarineRegions/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=MarineRegions:eez&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: >-
+        Cite: Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime
+        Boundaries and Exclusive Economic Zones (200NM), version 12. Available online at
+        https://www.marineregions.org/. https://doi.org/10.14284/632. The download form adds a
+        request (not a licence term) that users "not make our products available for download
+        elsewhere and always refer to marineregions.org"; derived GeoParquet is allowed under
+        CC BY 4.0 but cite and link back. Marine Regions disclaimer: boundaries are not legally
+        authoritative.
+    publication_date: 2023-10-25
+    version: "v12"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - level_code: eez
+        level_type: eez
+        level_name_local: Exclusive Economic Zone (200 NM)
+        layer: extracted/eez.shp
+        encoding: ISO-8859-1
+        name_field: geoname
+        code_field: mrgid
+        code_scheme: mrgid
+        parent_field: null
+        nests: true
+        notes: >-
+          Used by two rows of config/eez_polygons.csv (D-025): MRGID 21798 Torres Strait joint
+          regime (PNG) and MRGID 8319 Wake/Enenkio overlapping claim (MHL;USA), both with
+          source_id marineregions-eez-v12 and layer extracted/eez.shp. Lower-case MR schema
+          (mrgid, geoname, pol_type, territory1, iso_ter1, sovereign1, iso_sov1, mrgid_eez, area_km2).
+    status: alternative
+    raw_path: data/raw/EEZ/marineregions-eez-v12/
+    notes: >-
+      ALTERNATIVE since 2026-11-20 (D-019: SPC Pacific Maritime Boundaries selected). Kept for
+      comparison/QA and as the CC BY 4.0 fallback; MR v12 polygon assignment preserved in
+      config/eez_polygons_marineregions_v12.csv. Latest World EEZ release as of 2026-11-20 (downloads.php lists v12 2023-10-25 as latest;
+      no v13). 285 polygons worldwide; 27 are assigned to the 22 PICTs (24 x 200NM incl. 3 Kiribati
+      parts, plus 3 shared: Matthew & Hunter overlapping claim, Wake/Enenkio overlapping claim,
+      Torres Strait joint regime) and 8 non-PICT neighbours are listed for context (see
+      config/eez_polygons.csv). Fields are lowercase in the WFS shapefile (mrgid, geoname, pol_type,
+      sovereign1-3, territory1-3, iso_sov1-3, iso_ter1-3, mrgid_eez, area_km2). Polygons crossing
+      the antimeridian (FJI, KIR Gilbert, TUV) are already split at +/-180. The official zip
+      (World_EEZ_v12_20231025.zip / _gpkg.zip) sits behind a form requiring personal details
+      (name, organisation, e-mail, country, category, purpose) with no stable URL, so the VLIZ
+      GeoServer WFS layer MarineRegions:eez (title "Exclusive Economic Zones (200 NM) (v12, world,
+      2023)") was used; manual equivalent: downloads.php > Maritime Boundaries (latest version) >
+      World EEZ v12 > Shapefile or GeoPackage > complete form > Download.
+
+  - source_id: marineregions-eez-boundaries-v12
+    title: "Maritime Boundaries v12 (EEZ boundary lines)"
+    publisher: "Flanders Marine Institute (VLIZ), Marine Regions"
+    publisher_type: academic
+    landing_url: https://www.marineregions.org/downloads.php
+    download_urls:
+      - https://geo.vliz.be/geoserver/MarineRegions/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=MarineRegions:eez_boundaries&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: "Same citation/DOI as marineregions-eez-v12."
+    publication_date: 2023-10-25
+    version: "v12"
+    format: shapefile
+    crs: EPSG:4326
+    levels: []   # line layer: attributes (line_type Treaty / Median line / 200 NM / Unilateral claim, source URLs, doc_date) for annotating EEZ rows; not a polygon level
+    status: reference
+    raw_path: data/raw/EEZ/marineregions-eez-boundaries-v12/
+    notes: >-
+      2349 lines worldwide; 495 touch PICT polygons (319 straight baselines, 44 treaty, 39 200 NM,
+      37 connection lines, 30 archipelagic baselines, 18 median lines, 4 unilateral claim, 4
+      unsettled). Useful for flagging which PICT boundary segments are treaty-settled vs median
+      lines. Layer: extracted/eez_boundaries.shp.
+
+  - source_id: spc-ffa-maritime-boundary-treaties
+    title: "Pacific maritime boundary treaty lines (per-country and per-pair datasets)"
+    publisher: "Pacific Islands Forum Fisheries Agency (FFA) / SPC GEM, on Pacific Data Hub"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/fj-to-1816   # example; full list via https://pacificdata.org/data/api/3/action/package_search?q=maritime+boundary+treaty
+    download_urls: []
+    retrieval_method: manual
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      redistribution_ok: false
+      notes: "Per Pacific Data Hub metadata (cc-nc-sa-4.0)."
+    publication_date: 2026-11-02
+    version: null
+    format: shapefile
+    crs: EPSG:4326
+    levels: []
+    status: reference
+    raw_path: null
+    notes: >-
+      Not downloaded (lines, not polygons; ~40 separate datasets). Examples: fiji-vanuatu-1798,
+      fj-to-1816, ki-nr-treatyline-1833, tv-ki-treatyline-1834, cook-islands-niue-1823,
+      nc-vu-1794 (provisional), overlap-mh-fr-treatyline-1782, pw-ph-1795, pw-ind-1796,
+      samoa-tokelau-1797, corrected-samoa-american-samoa-1820, gu-cnmi-1789, plus FFA
+      '<country>-maritime-boundary-treaties' packages. Useful if a treaty-by-treaty QA of MR
+      boundaries is wanted.
+
+  - source_id: un-doalos-maritime-zones
+    title: "UN DOALOS Maritime Space: deposits of charts/lists of coordinates (M.Z.N. notifications)"
+    publisher: "United Nations Division for Ocean Affairs and the Law of the Sea"
+    publisher_type: other
+    landing_url: https://www.un.org/depts/los/LEGISLATIONANDTREATIES/depositpublicity.htm
+    download_urls: []
+    retrieval_method: manual
+    license:
+      name: unspecified
+      url: null
+      redistribution_ok: false
+      notes: "Legal texts/coordinate lists (PDF), not GIS. Site returns HTTP 403 to non-browser clients."
+    publication_date: null
+    version: null
+    format: pdf
+    crs: null
+    levels: []
+    status: reference
+    raw_path: null
+    notes: >-
+      Authoritative legal basis (deposited outer limits and treaties) for most PICTs; already
+      digitised by SPC (see spc-gem-pacific-eez-200nm 'source' field) and, for treaties, by
+      Marine Regions (eez_boundaries url1-3). State pages e.g.
+      https://www.un.org/depts/los/LEGISLATIONANDTREATIES/STATEFILES/TON.htm. Not assembled here.
+
+decisions:
+  - level_code: eez
+    chosen: spc-gem-pacific-eez-200nm
+    alternatives: [marineregions-eez-v12]
+    reason: >-
+      User decision 2026-11-20 (D-019): SPC Pacific Maritime Boundaries polygons are the EEZ base
+      (Pacific regional authority, built from national DOALOS deposits, more recent than MR v12),
+      used under the CSDR-SPC data use agreement; downstream users are bound by CC BY-NC-SA 4.0
+      unless they hold their own agreement. Supersedes the earlier escalated choice of
+      marineregions-eez-v12. Marine Regions v12 (CC BY 4.0) is the alternative.
+    escalated: false
+  - level_code: eez
+    chosen: spc-gem-pacific-eez-200nm
+    alternatives: []
+    reason: >-
+      D-024: SPC polygons include land (no land holes; PNG 463k km2 of land, SLB/FJI/NCL/VUT
+      12-27k km2). Ruling: land stays in the SPC polygons; no removal.
+    escalated: false
+  - level_code: eez
+    chosen: marineregions-eez-v12
+    alternatives: [spc-gem-pacific-eez-200nm]
+    reason: >-
+      D-025 Torres Strait: SPC has no joint-regime polygon (the zone sits in au_eez_pol feature 0,
+      which shares MRGID 8323 with the Australian mainland). Marine Regions 21798 is used as a
+      shared PNG row (POL_TYPE Joint regime); au_eez_pol feature 0 stays neighbour.
+    escalated: false
+  - level_code: eez
+    chosen: marineregions-eez-v12
+    alternatives: [spc-gem-pacific-eez-200nm]
+    reason: >-
+      D-025 Wake/Enenkio: SPC codes Wake as a plain US 200NM zone (kept with its published coding,
+      relevance neighbour). Marine Regions 8319 (Overlapping claim) is used as the shared MHL;USA
+      row per E-010.
+    escalated: false
+  - level_code: eez
+    chosen: spc-gem-pacific-eez-200nm
+    alternatives: []
+    reason: >-
+      D-025 FJI/WLF (11,957 km2 of MR-FJI in SPC WLF) and NIU/TON (3,241 km2 of MR-TON in SPC NIU)
+      line differences vs MR v12: accepted as published by SPC; noted on the affected rows; no
+      geometry change.
+    escalated: false

@@ -1,0 +1,269 @@
+{
+  "source_id": "cok-spc-pcrafi-2010-exposure-boundaries",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-19T22:05:45Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://geonode.pacificdata.org/catalogue/#/dataset/497",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=json",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=json",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=json",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=json",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=json"
+  ],
+  "license": {
+    "name": "unspecified (GeoNode: 'Not Specified: The original author did not specify a license')",
+    "url": "https://geonode.pacificdata.org/catalogue/#/dataset/497"
+  },
+  "files": [
+    {
+      "path": "ck_group.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 645655,
+      "sha256": "2835a352846a394a49da202c9fb400f212d9ac04c8664d0a63d6c460548d9114",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:42Z"
+    },
+    {
+      "path": "ck_group.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=json",
+      "bytes": 1606737,
+      "sha256": "409226ab0f193dae212aeaadf60946f6454be0af05bc54cd251751cf71d1b933",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:43Z"
+    },
+    {
+      "path": "ck_island.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 647515,
+      "sha256": "99416623b2ba99ee8990cc2171eb56ba9767bb2972f7cad4bd5ed8e56e31854f",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:43Z"
+    },
+    {
+      "path": "ck_island.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=json",
+      "bytes": 1610501,
+      "sha256": "c8a61696e9365ffac80bbf25b45133e8783df5107d34cbdb5b1276e7786dd5e5",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:43Z"
+    },
+    {
+      "path": "ck_electoral_boundary.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 659251,
+      "sha256": "a2d9fdcdbfefb492219d282480c5112de118298dad59512d51f41cca78522b2d",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:44Z"
+    },
+    {
+      "path": "ck_electoral_boundary.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=json",
+      "bytes": 1651176,
+      "sha256": "710f9d663c97d44032cd48441dcd4856a4fe56e69cbacd8e33298be7a8037aad",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:44Z"
+    },
+    {
+      "path": "ck_census_district.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 361055,
+      "sha256": "4e59432ae7a827213bb9b033a4e3c8aa84b7099ad89d7328daf59dd42d884acb",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:44Z"
+    },
+    {
+      "path": "ck_census_district.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=json",
+      "bytes": 911895,
+      "sha256": "609932836958a2426c12d9da000f2f6cac89e3d399b61a2fa0821e48684a5ee9",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:45Z"
+    },
+    {
+      "path": "ck_enumeration_area.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 463877,
+      "sha256": "d7ea5872fef5438f01a7b44fe986586a5d728f393b86151a735f2082b53a6803",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:45Z"
+    },
+    {
+      "path": "ck_enumeration_area.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=json",
+      "bytes": 1267182,
+      "sha256": "de32353ddfb39a13ecdc4141ddae54d7f2eb934b5b4a7bc95dfacfcddb64b554",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:45Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "ck_group/ck_group.prj",
+      "from": "ck_group.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_group/ck_group.shx",
+      "from": "ck_group.zip",
+      "bytes": 124,
+      "sha256": "f20b5666acade8e1b7dff51a052dbe217cba0d1a9c6631a97788ffad2db60b44"
+    },
+    {
+      "path": "ck_group/ck_group.cst",
+      "from": "ck_group.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_group/ck_group.dbf",
+      "from": "ck_group.zip",
+      "bytes": 1793,
+      "sha256": "673e711e6fa11b5fa391a496d9c3a9536f8465e3f6d994866e308b879f0eed8e"
+    },
+    {
+      "path": "ck_group/ck_group.shp",
+      "from": "ck_group.zip",
+      "bytes": 899616,
+      "sha256": "5f7fbf5b3ff331122475efc84d3a95a0cdfdfb759cf410bb1bd252f58aa034dd"
+    },
+    {
+      "path": "ck_island/ck_island.shx",
+      "from": "ck_island.zip",
+      "bytes": 220,
+      "sha256": "b97943bcc9ec15313b62bf6e94342d7777d8f352ede0e2307f3f5e6e9255b92c"
+    },
+    {
+      "path": "ck_island/ck_island.dbf",
+      "from": "ck_island.zip",
+      "bytes": 11922,
+      "sha256": "a42068f2a36879746ed10595ccad804cc91a01263b7b57bcd24f18d0d50930bc"
+    },
+    {
+      "path": "ck_island/ck_island.shp",
+      "from": "ck_island.zip",
+      "bytes": 900272,
+      "sha256": "5d8f811bdd37a7a695b98ad69d424f5de59894b3d4f5486ac2a0e1c29100f79c"
+    },
+    {
+      "path": "ck_island/ck_island.prj",
+      "from": "ck_island.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_island/ck_island.cst",
+      "from": "ck_island.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_electoral_boundary/ck_electoral_boundary.shx",
+      "from": "ck_electoral_boundary.zip",
+      "bytes": 292,
+      "sha256": "1d9606eee2d3a80ce692a96e3969abef237cfd40448982f6018fb228f0e5e2f6"
+    },
+    {
+      "path": "ck_electoral_boundary/ck_electoral_boundary.shp",
+      "from": "ck_electoral_boundary.zip",
+      "bytes": 922484,
+      "sha256": "294fc88787ab713fb6622bbb979043aa3af59ddf4041ac02f3586e7c64d23711"
+    },
+    {
+      "path": "ck_electoral_boundary/ck_electoral_boundary.prj",
+      "from": "ck_electoral_boundary.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_electoral_boundary/ck_electoral_boundary.dbf",
+      "from": "ck_electoral_boundary.zip",
+      "bytes": 15281,
+      "sha256": "d2475f1d2dc16c84cdd3b8101a8e0381af360cfe1e75db514694592d7e398889"
+    },
+    {
+      "path": "ck_electoral_boundary/ck_electoral_boundary.cst",
+      "from": "ck_electoral_boundary.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_census_district/ck_census_district.dbf",
+      "from": "ck_census_district.zip",
+      "bytes": 46857,
+      "sha256": "7d706e0445ca37881de3cf2eb865aca2ed58e072b9042ff42c600385bb3e018c"
+    },
+    {
+      "path": "ck_census_district/ck_census_district.prj",
+      "from": "ck_census_district.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_census_district/ck_census_district.cst",
+      "from": "ck_census_district.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_census_district/ck_census_district.shp",
+      "from": "ck_census_district.zip",
+      "bytes": 501528,
+      "sha256": "2404cb56ac19c3927708dd28db58f59a67c4bf178d1205b9daec67783f8c5461"
+    },
+    {
+      "path": "ck_census_district/ck_census_district.shx",
+      "from": "ck_census_district.zip",
+      "bytes": 452,
+      "sha256": "3f712f5c43a774842ab997663f87016384958fa4021f2431bdfc4466905c2ff7"
+    },
+    {
+      "path": "ck_enumeration_area/ck_enumeration_area.cst",
+      "from": "ck_enumeration_area.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_enumeration_area/ck_enumeration_area.prj",
+      "from": "ck_enumeration_area.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_enumeration_area/ck_enumeration_area.dbf",
+      "from": "ck_enumeration_area.zip",
+      "bytes": 269002,
+      "sha256": "cd91d4c54bd0023da1b94f4c49f1a974ade6a60f0f61fc91922ab5e42b1ba7a7"
+    },
+    {
+      "path": "ck_enumeration_area/ck_enumeration_area.shp",
+      "from": "ck_enumeration_area.zip",
+      "bytes": 669360,
+      "sha256": "95bd88b5cb75a42caf53a6c96a130e0ff33abccbe66c61ab8727f89b9a7d4fe0"
+    },
+    {
+      "path": "ck_enumeration_area/ck_enumeration_area.shx",
+      "from": "ck_enumeration_area.zip",
+      "bytes": 2076,
+      "sha256": "8125668953b9632a93e21a623c2af914422e3017c9204f770bb6dc831d20227a"
+    }
+  ],
+  "notes": "PCRAFI 2010 population exposure geographies (SPC GEM GeoNode). Primary source: PopGIS / Cook Islands Statistics Office. Group(3), Island(15), Electoral Boundary(24), Census District(44), Enumeration Area(247). Abstract warns of misalignment inherited from PopGIS."
+}

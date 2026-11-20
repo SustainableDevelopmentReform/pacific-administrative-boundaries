@@ -1,0 +1,248 @@
+iso3: TON
+country_name: Tonga
+# Hierarchy (verified in ton_phc_2021_4326.gpkg):
+#   admin1 Division (5) > admin2 District (23) > admin3 Village (167) > admin4 Census block (389) > admin5 Census unit (843)
+#   other: Parliamentary constituency (17 People's Representative constituencies; nest within divisions, not within districts)
+# Tonga has no elected local government; town/district officers are appointed per village/district.
+sources:
+  - source_id: ton-tsd-phc2021-admin-boundaries
+    title: "2021 Tonga PHC administrative boundaries (divisions, districts, villages, constituencies, blocks, census units)"
+    publisher: "SPC Statistics for Development Division (SDD) for Tonga Statistics Department"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2021_tonga_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/9f308944-01c1-4b36-bd18-00b05966b03b/resource/2b872e2c-efd1-4c2c-903e-83ecda5b45a3/download/ton_phc_2021_4326.gpkg
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence field 'Creative Commons Attribution'. Official national census geography hosted by SPC (tier 1)."
+    publication_date: 2025-03-06
+    version: "2021 PHC"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: region
+        level_name_local: Division
+        layer: ton_phc_2021_4326.gpkg::TON_DV_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: dv_name
+        code_field: dvid
+        code_scheme: tsd-census
+        parent_field: null
+        nests: true
+        notes: "Layer carries leftover child attributes (vid, dsid, ...) from a dissolve; use dvid/dv_name only."
+      - level_code: admin2
+        level_type: district
+        level_name_local: District
+        layer: ton_phc_2021_4326.gpkg::TON_DID_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: ds_name
+        code_field: dsid
+        code_scheme: tsd-census
+        parent_field: dvid
+        nests: true
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: ton_phc_2021_4326.gpkg::TON_VID_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: v_name
+        code_field: vid
+        code_scheme: tsd-census
+        parent_field: dsid
+        nests: true
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Census block
+        layer: ton_phc_2021_4326.gpkg::TON_BLK_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: blk_2021
+        code_field: blk_2021
+        code_scheme: tsd-census
+        parent_field: vid
+        nests: true
+      - level_code: admin5
+        level_type: statistical
+        level_name_local: Census unit
+        layer: ton_phc_2021_4326.gpkg::TON_CU_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: cu_2021
+        code_field: cu_2021
+        code_scheme: tsd-census
+        parent_field: blk_2021
+        nests: true
+      - level_code: other
+        level_type: electoral
+        level_name_local: Constituency (People's Representative)
+        layer_key: constituency
+        code_scheme: tsd-census
+        layer: ton_phc_2021_4326.gpkg::TON_CON_PHC2021_4326   # [processing] gpkg::layer form
+        name_field: con_name
+        code_field: con_id
+        parent_field: dvid
+        nests: false
+        notes: "17 constituencies; built from census blocks (con_id on blocks). Nest within divisions but cross districts."
+    status: selected
+    raw_path: data/raw/TON/ton-tsd-phc2021-admin-boundaries/
+    notes: "Most recent official census geography (PHC 2021). Supersedes 2016/2011 PHC sets and the HDX COD-AB."
+  - source_id: ton-tsd-phc2016-admin-boundaries
+    title: "2016 Tonga PHC administrative boundaries"
+    publisher: "SPC SDD for Tonga Statistics Department"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2016_ton_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/279a3bd9-220c-4682-ac22-00104f25ef4c/resource/70851348-62da-4fef-9f82-96026cc09043/download/2016_phc_ton_blkid_4326.geojson
+      - https://pacificdata.org/data/dataset/279a3bd9-220c-4682-ac22-00104f25ef4c/resource/4d1f14d4-f4d3-4c42-88d6-579c6de48b50/download/2016_phc_ton_vid_4326.geojson
+      - https://pacificdata.org/data/dataset/279a3bd9-220c-4682-ac22-00104f25ef4c/resource/a825b058-0932-48ac-a3e2-9ec316e89372/download/2016_phc_ton_did_4326.geojson
+      - https://pacificdata.org/data/dataset/279a3bd9-220c-4682-ac22-00104f25ef4c/resource/04ef72c7-ee03-4009-86cf-01a80f800e4c/download/2016_phc_ton_dvid_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: ""}
+    publication_date: 2020-06-29
+    version: "2016 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: region, level_name_local: Division, layer: 2016_phc_ton_dvid_4326.geojson, name_field: dv_name, code_field: dvid, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: 2016_phc_ton_did_4326.geojson, name_field: libgeo, code_field: did, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Village, layer: 2016_phc_ton_vid_4326.geojson, name_field: libgeo, code_field: vid, parent_field: null, nests: true}
+      - {level_code: admin4, level_type: statistical, level_name_local: Census block, layer: 2016_phc_ton_blkid_4326.geojson, name_field: blk_name, code_field: blkid, parent_field: vid, nests: true}
+    status: alternative
+    raw_path: data/raw/TON/ton-tsd-phc2016-admin-boundaries/
+    notes: "Superseded by 2021 PHC set; kept for comparison (166 villages, 640 blocks). PDH dataset 'tonga_villages_population_2016census' is the same village layer with population attached (not downloaded, duplicate)."
+  - source_id: ton-tsd-phc2011-admin-boundaries
+    title: "2011 Tonga PHC administrative boundaries"
+    publisher: "SPC SDD for Tonga Statistics Department"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_ton_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/3657e812-4e39-4402-a8bf-8b5375b029f7/download/2011_phc_ton_blkid_4326.geojson
+      - https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/09aee2d2-4d11-4c04-915e-ad0a66d52650/download/2011_phc_ton_vid_4326.geojson
+      - https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/f3c07cb2-6879-4f6f-a4d4-5244556b094a/download/2011_phc_ton_dsid_4326.geojson
+      - https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/5e35f5e3-0f9d-4abf-87e8-4751c569dc41/download/2011_phc_ton_dvid_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: ""}
+    publication_date: 2020-06-29
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: region, level_name_local: Division, layer: 2011_phc_ton_dvid_4326.geojson, name_field: dv_name, code_field: dvid, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: 2011_phc_ton_dsid_4326.geojson, name_field: ds_name, code_field: dsid, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Village, layer: 2011_phc_ton_vid_4326.geojson, name_field: v_name, code_field: vid, parent_field: null, nests: true}
+      - {level_code: admin4, level_type: statistical, level_name_local: Census block, layer: 2011_phc_ton_blkid_4326.geojson, name_field: blk_name, code_field: blkid, parent_field: vid, nests: true}
+    status: rejected
+    raw_path: data/raw/TON/ton-tsd-phc2011-admin-boundaries/
+    notes: "Superseded (2011 census geography; 162 villages, 484 blocks). Kept for history only."
+  - source_id: ton-hdx-cod-ab
+    title: "Tonga - Subnational Administrative Boundaries (COD-AB)"
+    publisher: "OCHA Regional Office for the Pacific (source: SPC SDD and Tonga Department of Lands)"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-ton
+    download_urls:
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/62e0ff40-1bcc-46b7-818e-f0de7cfe1564/download/ton_admbnda_adm1_2022_v2.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/a9c920a0-464e-4602-a481-07df4e86294d/download/ton_admbnda_adm0_2022_v2.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d3e75d1d-7515-4180-bcb3-de9471487e7a/download/ton_polbnda.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d966049c-d54d-473d-ae9e-1996b5872797/download/ton_polbnda_adm0_country.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/4f5001bf-118e-462c-b948-eda8a1b9781a/download/ton_polbnda_adm1_division.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/01691a6d-a80a-44bc-8348-f62103abac84/download/ton_polbnda_adm2_district.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/0642e284-9b71-428e-abba-6d4dc5949d02/download/ton_polbnda_adm3_village.zip
+      - https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/bb61c322-4ae7-478e-a69c-1d5d721faf22/download/ton_admin_boundary_taxonomy_metadata.xlsx
+    retrieval_method: http
+    license:
+      name: CC-BY-IGO-3.0
+      url: https://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: "HDX licence 'Creative Commons Attribution for Intergovernmental Organisations'."
+    publication_date: 2022-01-26
+    version: "adm0/adm1 2022 v2; polbnda adm0-3 2018-02"
+    format: shapefile
+    crs: "World_Mercator_150 (custom Mercator, central meridian 150E; no EPSG code)"
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Kingdom, layer: ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.shp, name_field: ADM0_EN, code_field: ADM0_PCODE, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: region, level_name_local: Division, layer: ton_polbnda_adm1_division/ton_polbnda_adm1_division.shp, name_field: ADM1_NAME, code_field: ADM1_PCODE, parent_field: PCODE_ADM0, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: ton_polbnda_adm2_district/ton_polbnda_adm2_district.shp, name_field: ADM2_NAME, code_field: ADM2_PCODE, parent_field: ADM1_PCODE, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Village, layer: ton_polbnda_adm3_village/ton_polbnda_adm3_village.shp, name_field: ADM3_NAME, code_field: ADM3_PCODE, parent_field: ADM2_PCODE, nests: true}
+    status: alternative
+    raw_path: data/raw/TON/ton-hdx-cod-ab/
+    notes: "Derived from SPC SDD census geography (2016-era, 166 villages) plus Dept of Lands. 2022 v2 adm1 has 6 features incl. an 'unknown' TO0 polygon and a name with embedded CR/LF. Useful for P-codes (TDOS_* fields map to census ids). ton_polbnda.zip contains an Access .mdb with the same layers."
+  - source_id: ton-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen TON ADM0-ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/api/current/gbOpen/TON/ALL/
+    download_urls:
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TON/ADM0/geoBoundaries-TON-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TON/ADM1/geoBoundaries-TON-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TON/ADM2/geoBoundaries-TON-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0/ADM1 ODbL-1.0 (OSM); ADM2 CC-BY-4.0 (PDH)"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM0/ADM1 from OpenStreetMap/Wambacher 2017 (share-alike); ADM2 from Pacific Data Hub 2020."
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Kingdom, layer: geoBoundaries-TON-ADM0-all/geoBoundaries-TON-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: region, level_name_local: Division, layer: geoBoundaries-TON-ADM1-all/geoBoundaries-TON-ADM1.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: geoBoundaries-TON-ADM2-all/geoBoundaries-TON-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: rejected
+    raw_path: data/raw/TON/ton-geoboundaries-gbopen/
+    notes: "ADM2 is derived from the PDH census districts (double count); ADM0/1 OSM-derived. Official 2021 set preferred."
+  - source_id: ton-gadm41
+    title: "GADM 4.1 Tonga"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TON.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "license_restricted = true"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Kingdom, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: region, level_name_local: Division, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/TON/ton-gadm41/
+    notes: "Reference only. ADM2 has 11 features, 4 named 'n.a.' - incomplete."
+  - source_id: ton-spc-gem-pcrafi-village-aal
+    title: "PCRAFI Annual Average Loss for Tonga (village level)"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/to-village-aal-151
+    download_urls: []
+    retrieval_method: http
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/", redistribution_ok: false, notes: "non-commercial"}
+    publication_date: null
+    version: null
+    format: shapefile
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Not downloaded: risk-model attributes on census village polygons (derived), NC licence."
+decisions:
+  - level_code: admin1
+    chosen: ton-tsd-phc2021-admin-boundaries
+    alternatives: [ton-tsd-phc2016-admin-boundaries, ton-hdx-cod-ab, ton-geoboundaries-gbopen, ton-gadm41]
+    reason: "Official (tier 1) and most recent (2021 PHC, published 2025)."
+    escalated: false
+  - level_code: admin2
+    chosen: ton-tsd-phc2021-admin-boundaries
+    alternatives: [ton-tsd-phc2016-admin-boundaries, ton-hdx-cod-ab, ton-geoboundaries-gbopen, ton-gadm41]
+    reason: "Official (tier 1) and most recent."
+    escalated: false
+  - level_code: admin3
+    chosen: ton-tsd-phc2021-admin-boundaries
+    alternatives: [ton-tsd-phc2016-admin-boundaries, ton-hdx-cod-ab]
+    reason: "Official (tier 1) and most recent (167 villages)."
+    escalated: false
+  - level_code: admin4
+    chosen: ton-tsd-phc2021-admin-boundaries
+    alternatives: [ton-tsd-phc2016-admin-boundaries]
+    reason: "Only current census blocks."
+    escalated: false

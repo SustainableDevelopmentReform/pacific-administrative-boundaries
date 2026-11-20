@@ -1,0 +1,162 @@
+iso3: WLF
+country_name: Wallis and Futuna
+# Hierarchy (verified against downloaded data):
+#   admin1 Circonscription (3: Uvea, Alo, Sigave; INSEE COG 98613/98611/98612; = the three customary kingdoms)
+#   admin2 District (5: Hahake, Hihifo, Mua on Uvea; Alo and Sigave on Futuna coincide with their circonscription)
+#   admin3 Village (34 polygons in the 2013 census layer; INSEE publishes ~36 village populations)
+# There are no communes in WLF. IGN ADMIN EXPRESS does not cover WLF (metropole + DROM only).
+sources:
+  - source_id: wlf-stsee-phc2013-admin-boundaries
+    title: "2013 Wallis and Futuna PHC administrative boundaries (villages, districts)"
+    publisher: "SPC Statistics for Development Division (SDD) for Service territorial de la statistique et des etudes economiques (STSEE) / INSEE census"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2013_wallisfutuna_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/ac8a29eb-7725-45e8-a166-cd38c3e87c4f/download/2013_phc_wlf_vid_4326.geojson
+      - https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/5ecf2c68-36df-47eb-93ee-ff14abde0b20/download/2013_phc_wlf_did_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence field 'Creative Commons Attribution'. Attribute SPC SDD / STSEE."
+    publication_date: 2020-06-29   # PDH dataset created; data represent the 2013 census geography
+    version: "2013 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: Circonscription (royaume / kingdom)
+        layer: 2013_phc_wlf_did_4326.geojson
+        name_field: {field: did, map: {1: Alo, 2: Sigave, 5: Uvea, 6: Uvea, 7: Uvea}}
+        code_field: {field: did, map: {1: '98611', 2: '98612', 5: '98613', 6: '98613', 7: '98613'}}
+        code_scheme: insee
+        parent_field: null
+        dissolve: true
+        nests: true
+        notes: "[processing] dissolve made machine-readable (D-010). Not shipped. Derive by dissolving districts: Uvea = Hahake (5) + Hihifo (6) + Mua (7); Alo (1) and Sigave (2) are both district and circonscription. Assign INSEE codes 98613 Uvea, 98611 Alo, 98612 Sigave (code_scheme insee)."
+      - level_code: admin2
+        level_type: district
+        level_name_local: District
+        layer: 2013_phc_wlf_did_4326.geojson
+        name_field: dname
+        code_field: did
+        code_scheme: stsee-census
+        parent_field: {field: did, map: {1: '98611', 2: '98612', 5: '98613', 6: '98613', 7: '98613'}}
+        nests: true
+        notes: "[processing] parent circonscription by did->INSEE lookup. 5 features. Parent circonscription must be assigned by lookup (see admin1)."
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: 2013_phc_wlf_vid_4326.geojson
+        name_field: vname
+        code_field: vid
+        code_scheme: stsee-census
+        parent_field: {field: vid, floordiv: 10}   # [processing] tens digit = district did
+        nests: true
+        notes: "34 features; no parent field. vid tens digit encodes district (1x Alo, 2x Sigave, 5x Hahake, 6x Hihifo, 7x Mua) - verify spatially."
+    status: selected
+    raw_path: data/raw/WLF/wlf-stsee-phc2013-admin-boundaries/
+    notes: "Only official-derived sub-national boundaries found for WLF. Built for the WF PopGIS (wf.popgis.spc.int). Village geometry from 2013; INSEE 2018/2023 census results are published for the same circonscriptions/villages without new geometry."
+  - source_id: wlf-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen WLF (ADM0 only)"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/api/current/gbOpen/WLF/ALL/
+    download_urls:
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WLF/ADM0/geoBoundaries-WLF-ADM0-all.zip
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: "ADM0 derived from Sentinel-2 10 m land cover 2021 (raster2polygon)."
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory
+        layer: geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.geojson
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: true
+    status: alternative
+    raw_path: data/raw/WLF/wlf-geoboundaries-gbopen/
+    notes: "Raster-derived coastline; prefer admin0 dissolved from the selected admin1. Kept for comparison."
+  - source_id: wlf-gadm41
+    title: "GADM 4.1 Wallis and Futuna"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WLF.gpkg
+    retrieval_method: http
+    license:
+      name: "GADM licence (non-commercial; no redistribution)"
+      url: https://gadm.org/license.html
+      redistribution_ok: false
+      notes: "license_restricted = true"
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Circonscription, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/WLF/wlf-gadm41/
+    notes: "Reference only (licence). 3 circonscriptions, 5 districts; no villages."
+  - source_id: wlf-ign-admin-express
+    title: "IGN ADMIN EXPRESS / ADMIN EXPRESS COG"
+    publisher: "IGN"
+    publisher_type: national
+    landing_url: https://www.data.gouv.fr/datasets/admin-express/
+    download_urls: []
+    retrieval_method: http
+    license: {name: "Licence Ouverte 2.0", url: "https://www.etalab.gouv.fr/licence-ouverte-open-licence", redistribution_ok: true, notes: ""}
+    publication_date: null
+    version: null
+    format: other
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Not downloaded: product description states coverage is metropolitan France and the departements d'outre-mer only; WLF (a COM) is not included."
+  - source_id: wlf-osm-admin
+    title: "OpenStreetMap administrative boundary relations (WF)"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/
+    download_urls: []
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "share-alike"}
+    publication_date: null
+    version: null
+    format: other
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Not downloaded: official-derived CC-BY census geography covers all levels; OSM only a fallback."
+decisions:
+  - level_code: admin1
+    chosen: wlf-stsee-phc2013-admin-boundaries
+    alternatives: [wlf-gadm41]
+    reason: "Only open source; circonscriptions derived by dissolving census districts. GADM is reference only."
+    escalated: false
+  - level_code: admin2
+    chosen: wlf-stsee-phc2013-admin-boundaries
+    alternatives: [wlf-gadm41]
+    reason: "Official census geography, CC-BY."
+    escalated: false
+  - level_code: admin3
+    chosen: wlf-stsee-phc2013-admin-boundaries
+    alternatives: []
+    reason: "Only village-level source."
+    escalated: false

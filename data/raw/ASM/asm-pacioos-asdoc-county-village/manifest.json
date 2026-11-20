@@ -1,0 +1,179 @@
+{
+  "source_id": "asm-pacioos-asdoc-county-village",
+  "iso3": "ASM",
+  "retrieved_at": "2026-11-19T22:05:41Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://pacioos.hawaii.edu/metadata/as_dw_manall_vilbndrs.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_tutaun_cntybndrs",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_cntybndrs",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_vilbndrs",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_swa_vilbndrs"
+  ],
+  "license": {
+    "name": "unspecified (PacIOOS use limitation: 'The data may be used and redistributed for free but is not intended for legal use')",
+    "url": "https://pacioos.hawaii.edu/metadata/as_dw_manall_vilbndrs.html"
+  },
+  "files": [
+    {
+      "path": "as_dw_tutaun_cntybndrs.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_tutaun_cntybndrs",
+      "bytes": 240971,
+      "sha256": "1ceaeab93ae69b7706f4dd9436b663ff60acbea4b9d985c34309ebc9d6a063c0",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:35Z"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_cntybndrs",
+      "bytes": 107938,
+      "sha256": "73fb741117abd5e0e6535b7ce33880bfc68991a345c2a14812f112f2c95707ee",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:37Z"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_vilbndrs",
+      "bytes": 109563,
+      "sha256": "5c8b8a3fd8904c5674a2a4ab309d64f326db30084de0b815b5c142f1472bbd54",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:40Z"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_swa_vilbndrs",
+      "bytes": 8745,
+      "sha256": "1c635b54128d5dd80b70a33e56581de7becdfefa13ffda5027570366346b4404",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:41Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.shx",
+      "from": "as_dw_tutaun_cntybndrs.zip",
+      "bytes": 180,
+      "sha256": "adcfd74d2f82676e52e936928cf2db4f9c5cb1d5864f3c4265a1468b8d101372"
+    },
+    {
+      "path": "as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.prj",
+      "from": "as_dw_tutaun_cntybndrs.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.dbf",
+      "from": "as_dw_tutaun_cntybndrs.zip",
+      "bytes": 6033,
+      "sha256": "ddfdffe406ec41764fb0d0642166b306148aeddf766bb4ddc687d4fdc6b3279d"
+    },
+    {
+      "path": "as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.shp",
+      "from": "as_dw_tutaun_cntybndrs.zip",
+      "bytes": 330824,
+      "sha256": "f5705013a7d09e4dd9d57b871c29c3d4596b56161eba1bc6bc65eef9cea9a3ad"
+    },
+    {
+      "path": "as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.cst",
+      "from": "as_dw_tutaun_cntybndrs.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.prj",
+      "from": "as_dw_manall_cntybndrs.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.shx",
+      "from": "as_dw_manall_cntybndrs.zip",
+      "bytes": 140,
+      "sha256": "007364e1ac918c77774ed25647f985e60d2384ada6fa40b4ee4f6c0bbdd93fb6"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.dbf",
+      "from": "as_dw_manall_cntybndrs.zip",
+      "bytes": 2008,
+      "sha256": "260cd2cc42343e174d2a405af18c91cfa5e55067002700e555b58512475f2f8e"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.cst",
+      "from": "as_dw_manall_cntybndrs.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.shp",
+      "from": "as_dw_manall_cntybndrs.zip",
+      "bytes": 148872,
+      "sha256": "bd6c7081090612972d1e053bd9f464f0a0b30cafbaa7fcfb797a333fade376ca"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.prj",
+      "from": "as_dw_manall_vilbndrs.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.shx",
+      "from": "as_dw_manall_vilbndrs.zip",
+      "bytes": 164,
+      "sha256": "0ceaf4de483c3605d1fc1434e6f63171f277e304731978c215b1c753573eae15"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.dbf",
+      "from": "as_dw_manall_vilbndrs.zip",
+      "bytes": 3097,
+      "sha256": "3fb1e744958ac97c6b41f1c17373832c95beb776ce6748925c29eb5dfa058359"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.shp",
+      "from": "as_dw_manall_vilbndrs.zip",
+      "bytes": 150688,
+      "sha256": "fb3e351c713d336c4ffd44458d52bfdf92b8164ad443d9df93c2cd05fd1fd173"
+    },
+    {
+      "path": "as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.cst",
+      "from": "as_dw_manall_vilbndrs.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.cst",
+      "from": "as_dw_swa_vilbndrs.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.shp",
+      "from": "as_dw_swa_vilbndrs.zip",
+      "bytes": 14344,
+      "sha256": "f1229e01afed2256306d05554bad387c492c5bb17d9327de485ee6f5598df310"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.prj",
+      "from": "as_dw_swa_vilbndrs.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.shx",
+      "from": "as_dw_swa_vilbndrs.zip",
+      "bytes": 116,
+      "sha256": "88ceabc7dbb831d426d1e40eb1b5e19ffa1799f9c2282f0d515dfa3f2f8dd11b"
+    },
+    {
+      "path": "as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.dbf",
+      "from": "as_dw_swa_vilbndrs.zip",
+      "bytes": 919,
+      "sha256": "28528b38f594272014f079cedebb877940327ed52426591e46696423da4946dd"
+    }
+  ],
+  "notes": "D.J. Wright (OSU) 2016 compilations distributed by PacIOOS GeoServer; originally American Samoa Dept of Commerce / 1981 Coastal Zone Management Atlas. Counties: Tutuila+Aunu'u and Manu'a; villages: Manu'a and Swains only (no Tutuila village polygons)."
+}

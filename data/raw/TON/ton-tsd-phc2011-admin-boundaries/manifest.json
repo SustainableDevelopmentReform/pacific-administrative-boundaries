@@ -1,0 +1,77 @@
+{
+  "source_id": "ton-tsd-phc2011-admin-boundaries",
+  "iso3": "TON",
+  "retrieved_at": "2026-11-19T22:02:14Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2011_ton_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/3657e812-4e39-4402-a8bf-8b5375b029f7/download/2011_phc_ton_blkid_4326.geojson",
+    "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/09aee2d2-4d11-4c04-915e-ad0a66d52650/download/2011_phc_ton_vid_4326.geojson",
+    "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/f3c07cb2-6879-4f6f-a4d4-5244556b094a/download/2011_phc_ton_dsid_4326.geojson",
+    "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/5e35f5e3-0f9d-4abf-87e8-4751c569dc41/download/2011_phc_ton_dvid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2011_phc_ton_blkid_4326.geojson",
+      "bytes": 533286,
+      "sha256": "c810c4fe3abcf36b69a6ecbb9e0be69ef0d04c558de351a92f1f9165109b6344"
+    },
+    {
+      "path": "2011_phc_ton_vid_4326.geojson",
+      "bytes": 498326,
+      "sha256": "55de10ef274af572b174a8465a5e14c6900d6db673855e050265348f3c6e1be4"
+    },
+    {
+      "path": "2011_phc_ton_dsid_4326.geojson",
+      "bytes": 380438,
+      "sha256": "2cdc87719014279e97c1c309ad40b7ddcd0d0a79ba54d64e3efc2dc9f23d173d"
+    },
+    {
+      "path": "2011_phc_ton_dvid_4326.geojson",
+      "bytes": 358827,
+      "sha256": "50d223b9f96303a9d8e4cebb0af1dcd3cfeb0681088ea045d4128800f6829919"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2011_phc_ton_blkid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/3657e812-4e39-4402-a8bf-8b5375b029f7/download/2011_phc_ton_blkid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/3657e812-4e39-4402-a8bf-8b5375b029f7/download/2011_phc_ton_blkid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:14Z"
+    },
+    {
+      "path": "2011_phc_ton_vid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/09aee2d2-4d11-4c04-915e-ad0a66d52650/download/2011_phc_ton_vid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/09aee2d2-4d11-4c04-915e-ad0a66d52650/download/2011_phc_ton_vid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:14Z"
+    },
+    {
+      "path": "2011_phc_ton_dsid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/f3c07cb2-6879-4f6f-a4d4-5244556b094a/download/2011_phc_ton_dsid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/f3c07cb2-6879-4f6f-a4d4-5244556b094a/download/2011_phc_ton_dsid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:15Z"
+    },
+    {
+      "path": "2011_phc_ton_dvid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/5e35f5e3-0f9d-4abf-87e8-4751c569dc41/download/2011_phc_ton_dvid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/43b4eb64-ccb6-49fc-bea0-d898d966df7c/resource/5e35f5e3-0f9d-4abf-87e8-4751c569dc41/download/2011_phc_ton_dvid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:15Z"
+    }
+  ],
+  "notes": ""
+}

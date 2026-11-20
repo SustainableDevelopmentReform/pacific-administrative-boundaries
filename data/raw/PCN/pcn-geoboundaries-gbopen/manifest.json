@@ -1,0 +1,135 @@
+{
+  "source_id": "pcn-geoboundaries-gbopen",
+  "iso3": "PCN",
+  "retrieved_at": "2026-11-19T22:05:19Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/PCN/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PCN/ADM0/geoBoundaries-PCN-ADM0-all.zip"
+  ],
+  "license": {
+    "name": "CC-BY-4.0 (geoBoundaries gbOpen; per-layer boundaryLicense in geoboundaries_api_meta.json)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "path": "geoboundaries_api_meta.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/PCN/ALL/",
+      "bytes": 1790,
+      "sha256": "1d590b6d4aa5568d55d28a588e0f61d09ec0f67099d101e92b914fa39812d89b",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:18Z"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PCN/ADM0/geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 58568,
+      "sha256": "797e20bbdabaf7a2cc7b1f7b67b766fe5f7c3c829a87dd26744aa401cdcbe0e1",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:19Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0-metaData.json",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 909,
+      "sha256": "12c83b3073f97be7fd06fc7b313e20be548685d207563046cc532f03e93a15e7"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0-metaData.txt",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 1073,
+      "sha256": "45bfaa3e4dea61b774aedccf5fb50a4d7e6f35903a5022121cc50466edbd0edd"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.shp",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 8812,
+      "sha256": "6f2a1cfda2e491ae4baf4d869cbf4e11943651d61f7105e24302b8fc49658b40"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.shx",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "8732d2a72d33bf3961958e5100f4e67de538b65a6ca70b1d8348b1ed25fb84da"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.dbf",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 243,
+      "sha256": "7ae1fb00b5c9e772600e70b995b694d17fa542e06d9b4fefa9a3398946fc17bc"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.prj",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.topojson",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 5186,
+      "sha256": "4ff94d2920abfb693f0b6278899b48cd25efe73492982f0f1b5922d477ae70d3"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.geojson",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 25663,
+      "sha256": "c2f6455f23ed54d1a33f6a0baa153a89469b32adde5943a60eda81909d8866e5"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.shp",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 540,
+      "sha256": "bcca28de3a76b7b380180da19ec583bf4b62e0ec137bda34399293ca4a97678c"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.shx",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "37ee211c42d81290e3a419dd4c52f6d68be5e11dc339144bc3ee3f073062ad79"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.dbf",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 243,
+      "sha256": "7ae1fb00b5c9e772600e70b995b694d17fa542e06d9b4fefa9a3398946fc17bc"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.prj",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.topojson",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 606,
+      "sha256": "4a287142a4a91bbfa59ad160518f0f20581d82fba0263f387d8df4ebe2141898"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0_simplified.geojson",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 1486,
+      "sha256": "5383ac6e207eb99c044dcb7c9f1179b944701056cd3115d30ccb1a2da4d41c32"
+    },
+    {
+      "path": "geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-PCN-ADM0-all.zip",
+      "bytes": 39514,
+      "sha256": "cec81948e7b7680ca4c9003f6e862ec83df82e515191b879e0f220fb684dc7c2"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen current release (commit 9469f09) levels ['ADM0']; metadata from API saved as geoboundaries_api_meta.json"
+}

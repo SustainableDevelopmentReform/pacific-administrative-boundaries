@@ -1,0 +1,74 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/WSM.yml",
+        "sources_used": [
+          "wsm-sbs-phc2011-admin-boundaries",
+          "wsm-geoboundaries-gbopen"
+        ],
+        "raw_manifests": [
+          "data/raw/WSM/wsm-sbs-phc2011-admin-boundaries/manifest.json",
+          "data/raw/WSM/wsm-geoboundaries-gbopen/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/WSM/wsm_admin.parquet",
+        "rows": 1266,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 4,
+          "admin2": 43,
+          "admin3": 330,
+          "admin4": 876,
+          "eez": 1,
+          "other": 11
+        }
+      },
+      "completed_at": "2026-11-20T00:42:44Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/WSM/wsm_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/WSM/wsm_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:19Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

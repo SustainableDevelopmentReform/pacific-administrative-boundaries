@@ -1,0 +1,71 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/SLB.yml",
+        "sources_used": [
+          "slb-sdd-phc2009-boundaries"
+        ],
+        "raw_manifests": [
+          "data/raw/SLB/slb-sdd-phc2009-boundaries/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/SLB/slb_admin.parquet",
+        "rows": 1589,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 10,
+          "admin2": 50,
+          "admin3": 183,
+          "admin4": 1344,
+          "eez": 1
+        }
+      },
+      "completed_at": "2026-11-20T00:42:34Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/SLB/slb_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/SLB/slb_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:17Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

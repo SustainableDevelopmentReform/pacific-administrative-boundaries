@@ -1,0 +1,148 @@
+{
+  "source_id": "wlf-geoboundaries-gbopen",
+  "iso3": "WLF",
+  "retrieved_at": "2026-11-19T22:02:28Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/api/current/gbOpen/WLF/ALL/",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/WLF/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WLF/ADM0/geoBoundaries-WLF-ADM0-all.zip"
+  ],
+  "license": {
+    "name": "per-level (see notes)",
+    "url": "https://www.geoboundaries.org/",
+    "per_level": {
+      "ADM0": "CC-BY-4.0"
+    }
+  },
+  "files": [
+    {
+      "path": "gbOpen_WLF_ALL_meta.json",
+      "bytes": 1940,
+      "sha256": "d3c5c93fe5d8a0abc49a5e557d0e261af827a54cb978f328f96cd512844f5b92"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 117270,
+      "sha256": "e0893eec0050a5026712b00a4b33e7aff8c20271f858c1e70af13706d9c737af"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 36027,
+      "sha256": "5a08662453a625d5ec849fbe3f67a75884bfa22e800f6ed9d384dcfa053e4c2d"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0-metaData.json",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 1022,
+      "sha256": "774aa03e90a44b2a8d75bf71ecd482fb7b09c95f0e7fa98cc22107de55e0ed2e"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0-metaData.txt",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 1180,
+      "sha256": "5d5804228b208ba6e414f98ed4e2542b16e2a1122192c238d0034e192efd6589"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.dbf",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 244,
+      "sha256": "a5d96a1c9bc8b2cb9eb3bdd742a127a0200454b97d7049fa68262224bb97fce4"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.geojson",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 115066,
+      "sha256": "015702f68d17a38520a586dc10db1e8775c05fd30065594666dd2e8cca8127c5"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.prj",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.shp",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 39456,
+      "sha256": "e3a77e3d1d44967a0c3724dc36d7a5564547870b479e86cee5ee6b45e33baba1"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.shx",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "31d0ed4465f18eec1941947b3181aea0f76069a1ade5bee300e8a5192b2d67e4"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0.topojson",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 22761,
+      "sha256": "b7a382198a925e8c570d3823ac6e903fa08219c990732fd720759323fd0feb25"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.dbf",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 244,
+      "sha256": "a5d96a1c9bc8b2cb9eb3bdd742a127a0200454b97d7049fa68262224bb97fce4"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.geojson",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 10480,
+      "sha256": "d3e0cb36062dd25501097cead563a027c98dde1c9f030321a1c84dc6041afbec"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.prj",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.shp",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 3636,
+      "sha256": "aa8703804a732a1bd4c19d39f26ca705b605a1e03b476c1d14a3f503e97ced16"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.shx",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "5d31dbc94abf5929f31664b888d8967214c836b1d11931fe5a3e28e57aebd556"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all/geoBoundaries-WLF-ADM0_simplified.topojson",
+      "from": "geoBoundaries-WLF-ADM0-all.zip",
+      "bytes": 2506,
+      "sha256": "6023f737aee5c35db3d8056530ddb096c54e41931bbf6e9c5c35f1b7974bd633"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "gbOpen_WLF_ALL_meta.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/WLF/ALL/",
+      "effective_url": "https://www.geoboundaries.org/api/current/gbOpen/WLF/ALL/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:28Z"
+    },
+    {
+      "path": "geoBoundaries-WLF-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WLF/ADM0/geoBoundaries-WLF-ADM0-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/WLF/ADM0/geoBoundaries-WLF-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:02:29Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen release 9469f09 (build Dec 12, 2023). Licence differs by level: ADM0: CC-BY-4.0. See gbOpen_*_meta.json for upstream source per level."
+}

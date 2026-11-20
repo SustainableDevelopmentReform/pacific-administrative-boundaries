@@ -1,0 +1,27 @@
+{
+  "source_id": "mhl-spc-gem-atoll-aal",
+  "iso3": "MHL",
+  "retrieved_at": "2026-11-19T21:56:35Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://pacificdata.org/data/dataset/mh-atoll-aal-142",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/mh_atoll_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:mh_atoll_aal&outputFormat=json&content-disposition=attachment"
+  ],
+  "license": {
+    "name": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+  },
+  "files": [
+    {
+      "path": "mh_atoll_aal.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/mh_atoll_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:mh_atoll_aal&outputFormat=json&content-disposition=attachment",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 984532,
+      "sha256": "feaacc58f927703f4b2935394d51388009f308b7e928766fb0d614fd8c9f3516"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Geoscience, Energy and Maritime Division (GEM). metadata_created 2025-10-14, modified 2026-07-06."
+}

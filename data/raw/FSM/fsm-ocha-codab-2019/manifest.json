@@ -1,0 +1,265 @@
+{
+  "source_id": "fsm-ocha-codab-2019",
+  "iso3": "FSM",
+  "retrieved_at": "2026-11-19T21:56:03Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-fsm",
+  "download_urls": [
+    "https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/cb470018-7524-4487-9596-3807a83ac9cb/download/fsm_adm_gazeteer.xls",
+    "https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/7348d022-6726-438c-9b1c-0b5524b7dbfd/download/fsm_admbnda_shp.zip"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "fsm_adm_gazeteer.xls",
+      "url": "https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/cb470018-7524-4487-9596-3807a83ac9cb/download/fsm_adm_gazeteer.xls",
+      "http_status": 200,
+      "content_type": "application/vnd.ms-excel",
+      "bytes": 44544,
+      "sha256": "fe007ed4f547008a7e2565459fe34ac277687f24fa8aa7c483155ca4cb06b741"
+    },
+    {
+      "path": "fsm_admbnda_shp.zip",
+      "url": "https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/7348d022-6726-438c-9b1c-0b5524b7dbfd/download/fsm_admbnda_shp.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1748776,
+      "sha256": "26337588762daa60f04c0a92c2f79b6e0a6b8b66095ddbcb343c5ed2a8ef95b8"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "fsm_adm_gazeteer/[Content_Types].xml",
+      "from": "fsm_adm_gazeteer.xls",
+      "bytes": 540,
+      "sha256": "6c98d4f2b62b4db730884f9bd6d27e5360693eaad02d9cdbaa0e71c4c747450b"
+    },
+    {
+      "path": "fsm_adm_gazeteer/_rels/.rels",
+      "from": "fsm_adm_gazeteer.xls",
+      "bytes": 310,
+      "sha256": "d2d8276ca63e307268dbf1bef2fbf45ba4c65c27494555a7742761c22984f1af"
+    },
+    {
+      "path": "fsm_adm_gazeteer/theme/theme/themeManager.xml",
+      "from": "fsm_adm_gazeteer.xls",
+      "bytes": 138,
+      "sha256": "09ddbe6d159c1fae7299f5d4e1281dad6068331d9f651f45a51265277b80f0ed"
+    },
+    {
+      "path": "fsm_adm_gazeteer/theme/theme/theme1.xml",
+      "from": "fsm_adm_gazeteer.xls",
+      "bytes": 8390,
+      "sha256": "b16106f4229f6ece6d74426b3e73ff6a677df2908d2a06f76ef0329fa27c0282"
+    },
+    {
+      "path": "fsm_adm_gazeteer/theme/theme/_rels/themeManager.xml.rels",
+      "from": "fsm_adm_gazeteer.xls",
+      "bytes": 283,
+      "sha256": "2983db3781942d11b9497551888ee8774f861ff9cbc5c64ddb79eaa0698f87bd"
+    },
+    {
+      "path": "fsm_admbnda_shp/FSM COD-AB 2019_06_17.pdf",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 97063,
+      "sha256": "74df115bb6a096be390f9b69f0db7d7350251c6b802feab776429e7f9ad9c8b0"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.cpg",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.dbf",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 805,
+      "sha256": "879d70b787207e1a91550e3314f1500ae173975410e5400986f06f7b87785f19"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.prj",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.sbn",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 132,
+      "sha256": "0aba9c33b25671ff7b2a3ec35127b4789134e62d36dd3be4b47414a57609fa6a"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.sbx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 116,
+      "sha256": "90c928d13d9d10eb24fc0927b6979a7e3dc780cfd185b659f4767010e1706865"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.shp",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 1489880,
+      "sha256": "85cf1207bc898f4871af8228b0f8736b4676eae833ff739baf6063d4fff1a167"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.shp.xml",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 8103,
+      "sha256": "1d92567177af7ab7718ed9021c508b3547990b04884e9a4f6653b702294b2449"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0.shx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 108,
+      "sha256": "ebc86c7ba1e29c12c6b05cb009c762fc62b68ce15b749e95c703abb1ea54c8f9"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.CPG",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.dbf",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 131,
+      "sha256": "da02505d06c404a42d2229756e4ec4a9497a6f391577b9895d0b39b6d6669db3"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.prj",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.sbn",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 132,
+      "sha256": "14a41e8e6e03d95e7c116f432d330dfd6758c1b0dc591767acfcb38b70fb7d0a"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.sbx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 116,
+      "sha256": "cbfdf725ef36f028c3acc1befa19c099556eb971445eabe84d16df97d074a737"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.shp",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 10236,
+      "sha256": "a0522d4abde85c15ca75da755f4a32ff027ce599bf06a7a7bb985b88752c96d5"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.shp.xml",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 6079,
+      "sha256": "8dae6c8733746dedf8e95731c7b607e36ba69ef44a0d6ec17361d3dcbee17b90"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm0_EEZ.shx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 108,
+      "sha256": "4efc00b9b0f2a8f70ee2c6453b5d2c7421bb22001bca15e442aec4a8166a249f"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.cpg",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.dbf",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 730,
+      "sha256": "4bdf2a374b38d153b63c8a08eb72361840b2a8138c327a0ee987021a1a32b7c2"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.prj",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.sbn",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 188,
+      "sha256": "fac91eb133bd7656530539dd98de2768be8293c87f580d395586df60b3c6079f"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.sbx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 132,
+      "sha256": "af4b41ed36ce1a0695c3ea9c659261e23350b9185a34264300b774419c297d34"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.shp",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 1490132,
+      "sha256": "85478a0c52504242153e76826987838f04829949d8b62c3425ca014dafec1d1e"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.shp.xml",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 9182,
+      "sha256": "23bd4d2c7b7ac063b0502dc793c82e2c7dd3ece4f273513f17fd578d66cf8043"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm1.shx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 132,
+      "sha256": "bd19e7cb552160fa4af1860a00a228cd81b04644840fbde62d36e9510dfa799c"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.CPG",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.dbf",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 8079,
+      "sha256": "443f8b8464e408c4cece363b882e6030b4821c1fd87175dd6a1679b58dc3b02a"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.prj",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.sbn",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 884,
+      "sha256": "1aee5d512b4c5e7f29717c1527193b696ff66fc5e07705b3150c332a1ab5614f"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.sbx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 180,
+      "sha256": "80af8b01cc54840108de71d7a1f8736c58afaa7a190b5d63b70d46a40c83d1c5"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.shp",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 1587852,
+      "sha256": "c0d2afb1bc51d358d8c4889b69e4e765e083df048edd942510afe3f26df06355"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.shp.xml",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 763,
+      "sha256": "16380ee4b94c3bcea27c93b77af4a4fcc7d0381c3177c6ff2d4fc64282f84320"
+    },
+    {
+      "path": "fsm_admbnda_shp/fsm_admbnda_adm2.shx",
+      "from": "fsm_admbnda_shp.zip",
+      "bytes": 700,
+      "sha256": "8189adf43937b57ad3dfc037874ef5d4fae9b34f7946721b8e1912dca3523bc8"
+    }
+  ],
+  "notes": "HDX COD-AB. Source per HDX: Federated States of Micronesia Division of Statistics,  2010 Census of Population and Housing and Secretariat of the Pacific Community, Statistics for Development Division. Last modified 2019-06-17T09:01:57.832628."
+}

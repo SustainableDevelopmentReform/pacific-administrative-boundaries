@@ -1,0 +1,35 @@
+{
+  "source_id": "pyf-gadm41",
+  "iso3": "PYF",
+  "retrieved_at": "2026-11-19T21:57:51Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PYF.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html",
+    "restricted": true
+  },
+  "files": [
+    {
+      "path": "gadm41_PYF.gpkg",
+      "bytes": 3842048,
+      "sha256": "2c414bcfa4176317741216e7b1eead0ebc3180d14db49f25402bb8d65ebd9244"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_PYF.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PYF.gpkg",
+      "effective_url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PYF.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T21:57:51Z"
+    }
+  ],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution or commercial use not allowed without permission."
+}

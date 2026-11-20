@@ -1,0 +1,38 @@
+{
+  "source_id": "niu-spc-sdd-coastal-2019-villages",
+  "iso3": "NIU",
+  "retrieved_at": "2026-11-19T22:05:50Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/coastal-population-dataset-niu",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/73583905-d7a8-4ff4-824c-c03c12d49751/download/ni_village_2011pop.geojson",
+    "https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/24272e93-4142-4ed7-85d9-dab98145ef0b/download/readme.txt"
+  ],
+  "license": {
+    "name": "CC-BY (Creative Commons Attribution, version unstated on PDH)",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "ni_village_2011pop.geojson",
+      "url": "https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/73583905-d7a8-4ff4-824c-c03c12d49751/download/ni_village_2011pop.geojson",
+      "bytes": 111237,
+      "sha256": "12d5da1601ca7db094153c0502d22954880e98f71de9c3ce327bceede9acee2f",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:49Z"
+    },
+    {
+      "path": "readme.txt",
+      "url": "https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/24272e93-4142-4ed7-85d9-dab98145ef0b/download/readme.txt",
+      "bytes": 897,
+      "sha256": "b728423e56243e8b9d73a84fac1953af951515559bd621d58e3b94dd7ddaa050",
+      "http_status": 200,
+      "content_type": "text/plain",
+      "retrieved_at": "2026-11-19T22:05:50Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "SPC SDD 2019 'Coastal proximity of populations' input layer (Niue villages with 2011 population). Derived from SPC SDD 2011 PHC village boundaries."
+}

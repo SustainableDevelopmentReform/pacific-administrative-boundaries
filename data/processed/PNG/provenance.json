@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/PNG.yml",
+        "sources_used": [
+          "png-ocha-cod-ab-2019",
+          "png-nso-regions-2015"
+        ],
+        "raw_manifests": [
+          "data/raw/PNG/png-ocha-cod-ab-2019/manifest.json",
+          "data/raw/PNG/png-nso-regions-2015/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/PNG/png_admin.parquet",
+        "rows": 442,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 4,
+          "admin2": 22,
+          "admin3": 87,
+          "admin4": 326,
+          "eez": 2
+        }
+      },
+      "completed_at": "2026-11-20T00:40:33Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/PNG/png_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/PNG/png_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:11Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

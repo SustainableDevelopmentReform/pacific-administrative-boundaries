@@ -1,0 +1,57 @@
+{
+  "steps": [
+    {
+      "label": "combine",
+      "command": "pab combine",
+      "inputs": {
+        "country_tables": [
+          "data/processed/ASM/asm_admin.parquet",
+          "data/processed/COK/cok_admin.parquet",
+          "data/processed/FJI/fji_admin.parquet",
+          "data/processed/FSM/fsm_admin.parquet",
+          "data/processed/GUM/gum_admin.parquet",
+          "data/processed/KIR/kir_admin.parquet",
+          "data/processed/MHL/mhl_admin.parquet",
+          "data/processed/MNP/mnp_admin.parquet",
+          "data/processed/NCL/ncl_admin.parquet",
+          "data/processed/NIU/niu_admin.parquet",
+          "data/processed/NRU/nru_admin.parquet",
+          "data/processed/PCN/pcn_admin.parquet",
+          "data/processed/PLW/plw_admin.parquet",
+          "data/processed/PNG/png_admin.parquet",
+          "data/processed/PYF/pyf_admin.parquet",
+          "data/processed/SLB/slb_admin.parquet",
+          "data/processed/TKL/tkl_admin.parquet",
+          "data/processed/TON/ton_admin.parquet",
+          "data/processed/TUV/tuv_admin.parquet",
+          "data/processed/VUT/vut_admin.parquet",
+          "data/processed/WLF/wlf_admin.parquet",
+          "data/processed/WSM/wsm_admin.parquet"
+        ],
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "long": "data/combined/pacific_admin.parquet",
+        "long_rows": 14231,
+        "restricted_rows_excluded": 0,
+        "finest": "data/combined/pacific_admin_finest.parquet",
+        "finest_rows": 8199,
+        "eez_land_marine_km2": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "completed_at": "2026-11-20T00:53:09Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

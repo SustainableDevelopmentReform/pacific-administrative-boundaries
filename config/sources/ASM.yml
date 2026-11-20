@@ -1,0 +1,280 @@
+iso3: ASM
+country_name: American Samoa
+# Proposed hierarchy (all from US Census TIGER/Line 2026, public domain):
+#   admin0 = union of TIGER COUNTY (STATEFP=60)
+#   admin1 = TIGER COUNTY (5): Eastern, Western, Manu'a Districts + Swains Island + Rose Island (unorganized atolls)
+#   admin2 = TIGER COUSUB (16): 14 counties + Swains Island + Rose Island as county-equivalents
+#   admin3 = TIGER PLACE (77 villages)
+#   other  = TIGER TRACT (18) / BG (43) / TABBLOCK20 (565) statistical units (nest in admin1 but not in admin2/admin3)
+# TIGER polygons include water (AWATER); processing should clip to land or use ALAND-consistent geometry.
+sources:
+  - source_id: asm-census-tiger-2026
+    title: "TIGER/Line Shapefiles 2026, American Samoa (COUNTY, COUSUB, PLACE, TRACT, BG, TABBLOCK20)"
+    publisher: "US Census Bureau, Geography Division"
+    publisher_type: national
+    landing_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+    download_urls:
+      - https://www2.census.gov/geo/tiger/TIGER2026/COUNTY/tl_2026_us_county.zip
+      - https://www2.census.gov/geo/tiger/TIGER2026/COUSUB/tl_2026_60_cousub.zip
+      - https://www2.census.gov/geo/tiger/TIGER2026/PLACE/tl_2026_60_place.zip
+      - https://www2.census.gov/geo/tiger/TIGER2026/TRACT/tl_2026_60_tract.zip
+      - https://www2.census.gov/geo/tiger/TIGER2026/BG/tl_2026_60_bg.zip
+      - https://www2.census.gov/geo/tiger/TIGER2026/TABBLOCK20/tl_2026_60_tabblock20.zip
+    retrieval_method: http
+    license:
+      name: Public domain (US Government work, 17 U.S.C. 105)
+      url: https://www.census.gov/about/policies/open-gov/open-data.html
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2026-09-27   # ISO metadata dateStamp of the 2026 PLACE file
+    version: "TIGER2026"
+    format: shapefile
+    crs: EPSG:4269
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory
+        layer: tl_2026_us_county/tl_2026_us_county.shp
+        filter: {STATEFP: '60'}
+        name_field: null
+        code_field: STATEFP
+        parent_field: null
+        nests: true
+        use: false
+        notes: "[processing] admin0 is dissolved from the land-clipped admin1 counties (same result, no water)." 
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: District
+        layer: tl_2026_us_county/tl_2026_us_county.shp
+        filter: {STATEFP: '60'}
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: STATEFP
+        nests: true
+      - level_code: admin2
+        level_type: district
+        level_name_local: County
+        layer: tl_2026_60_cousub/tl_2026_60_cousub.shp
+        name_field: NAME
+        code_field: GEOID
+        parent_field: {template: "{STATEFP}{COUNTYFP}"}   # [processing] COUNTY GEOID = STATEFP+COUNTYFP
+        nests: true
+        notes: "[processing] layer filter/parent template made machine-readable; parent = STATEFP+COUNTYFP (county GEOID)." 
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: tl_2026_60_place/tl_2026_60_place.shp
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null      # no COUSUB code in PLACE; assign parent spatially (2 of 77 villages straddle a county line)
+        nests: true
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census Tract
+        layer: tl_2026_60_tract/tl_2026_60_tract.shp
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: COUNTYFP
+        nests: false
+      - level_code: other
+        level_type: statistical
+        level_name_local: Block Group
+        layer: tl_2026_60_bg/tl_2026_60_bg.shp
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: TRACTCE
+        nests: false
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census Block (2020)
+        layer: tl_2026_60_tabblock20/tl_2026_60_tabblock20.shp
+        name_field: NAME20
+        code_field: GEOID20
+        parent_field: TRACTCE20
+        nests: false
+    status: selected
+    raw_path: data/raw/ASM/asm-census-tiger-2026/
+    land_mask:   # [processing] TIGER polygons extend to the 3-nm limit; clip every level to land = 2020 blocks with ALAND20 > 0
+      layer: tl_2026_60_tabblock20/tl_2026_60_tabblock20.shp
+      filter: {ALAND20: {gt: 0}}
+    notes: >-
+      Sovereign-state official source (tier 4) but the only official digital source; no ASG-published
+      boundary download found. COUNTY zip is nationwide (keep intact, filter STATEFP='60').
+      Villages (PLACE, LSAD 47, CLASSFP C1) tile ~all land (sum ALAND 197.68 vs county 197.76 km2).
+      No Fono (legislature) district layer exists in TIGER for FIPS 60 (no SLDL/SLDU); CD120 is at-large
+      (= territory) and was not downloaded. GADM lists a separate 'Fofo' county that TIGER does not; check.
+
+  - source_id: asm-pacioos-asdoc-county-village
+    title: "County and Village Boundaries - Tutuila and Manu'a, American Samoa (PacIOOS)"
+    publisher: "PacIOOS (D.J. Wright, Oregon State Univ.), from American Samoa Dept of Commerce"
+    publisher_type: academic
+    landing_url: https://pacioos.hawaii.edu/metadata/as_dw_manall_vilbndrs.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_tutaun_cntybndrs
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_cntybndrs
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_manall_vilbndrs
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=PACIOOS:as_dw_swa_vilbndrs
+    retrieval_method: api
+    license:
+      name: unspecified
+      url: https://pacioos.hawaii.edu/metadata/as_dw_manall_vilbndrs.html
+      redistribution_ok: true
+      notes: "Use limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+    publication_date: 2016-01-25
+    version: null
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - level_code: admin2
+        level_type: district
+        level_name_local: County
+        layer: as_dw_tutaun_cntybndrs/as_dw_tutaun_cntybndrsPolygon.shp + as_dw_manall_cntybndrs/as_dw_manall_cntybndrsPolygon.shp
+        name_field: COUNTY
+        code_field: null
+        parent_field: DISTRICT
+        nests: true
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: as_dw_manall_vilbndrs/as_dw_manall_vilbndrsPolygon.shp + as_dw_swa_vilbndrs/as_dw_swa_vilbndrs.shp
+        name_field: VILLAGE
+        code_field: null
+        parent_field: null
+        nests: true
+    status: alternative
+    raw_path: data/raw/ASM/asm-pacioos-asdoc-county-village/
+    notes: >-
+      Derived from 2003 ASDOC GIS files based on the 1981 Coastal Zone Management Atlas. Partial: no
+      Tutuila village polygons; Vaifanua split East/West; Manu'a village polygons reuse county AREA values
+      (possible attribute misalignment). Older and less complete than TIGER.
+
+  - source_id: asm-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen American Samoa ADM0, ADM3"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/ASM/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ASM/ADM0/geoBoundaries-ASM-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ASM/ADM3/geoBoundaries-ASM-ADM3-all.zip
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0 (ADM0); Public Domain (ADM3, US Census)
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2023-12-12   # buildDate; data year 2021
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory
+        layer: geoBoundaries-ASM-ADM0-all/geoBoundaries-ASM-ADM0.geojson
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: true
+      - level_code: admin2
+        level_type: district
+        level_name_local: County
+        layer: geoBoundaries-ASM-ADM3-all/geoBoundaries-ASM-ADM3.geojson
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: true
+    status: alternative
+    raw_path: data/raw/ASM/asm-geoboundaries-gbopen/
+    notes: "ADM0 from Sentinel-2 land cover (2021). ADM3 = US Census cartographic-boundary county subdivisions (derived from TIGER; do not double count)."
+
+  - source_id: asm-spc-sdd-coastal-2019-counties
+    title: "Coastal proximity of populations - American Samoa counties (SPC SDD 2019)"
+    publisher: "Pacific Community (SPC) Statistics for Development Division"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/coastal-population-dataset-asm
+    download_urls:
+      - https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/808e22e1-9ec4-4179-a3f3-83dabf1abef7/download/as_counties_4326.geojson
+      - https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/f16c8731-3300-4770-9fcc-64a64cb1f5e3/download/readme.txt
+    retrieval_method: http
+    license:
+      name: CC-BY (version unstated)
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2019-10-17
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin2
+        level_type: district
+        level_name_local: County
+        layer: as_counties_4326.geojson
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null
+        nests: true
+    status: alternative
+    raw_path: data/raw/ASM/asm-spc-sdd-coastal-2019-counties/
+    notes: "Derived from US Census cartographic boundary county subdivisions (AFFGEOID field) with 2010 population. Duplicate of TIGER."
+
+  - source_id: asm-gadm-41
+    title: "GADM 4.1 American Samoa"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_ASM.gpkg
+    retrieval_method: http
+    license:
+      name: GADM licence (non-commercial; redistribution not allowed)
+      url: https://gadm.org/license.html
+      redistribution_ok: false
+      notes: "Reference only; license_restricted = true."
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: District, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: district, level_name_local: County, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Village, layer: ADM_ADM_3, name_field: NAME_3, code_field: GID_3, parent_field: GID_2, nests: true}
+    status: reference
+    raw_path: data/raw/ASM/asm-gadm-41/
+    notes: "4 districts (Swains+Rose as 'Unorganized'), 16 counties incl. Fofo, 74 villages."
+
+  - source_id: asm-osm-admin-relations
+    title: "OpenStreetMap administrative relations, American Samoa"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/
+    download_urls: []
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: https://www.openstreetmap.org/copyright, redistribution_ok: true, notes: "share-alike"}
+    publication_date: null
+    version: null
+    format: other
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Overpass (2026-11-20) found only the territory relation (admin_level 4); no district/county/village relations. Not downloaded."
+
+decisions:
+  - level_code: admin1
+    chosen: asm-census-tiger-2026
+    alternatives: [asm-gadm-41]
+    reason: "Only open digital source of the 3 districts + 2 atolls; GADM is reference only."
+    escalated: false
+  - level_code: admin2
+    chosen: asm-census-tiger-2026
+    alternatives: [asm-geoboundaries-gbopen, asm-spc-sdd-coastal-2019-counties, asm-pacioos-asdoc-county-village, asm-gadm-41]
+    reason: "TIGER 2026 is the most recent official source; geoBoundaries ADM3 and SPC 2019 counties are derived from Census; PacIOOS/ASDOC is 1981-based and partial."
+    escalated: false
+  - level_code: admin3
+    chosen: asm-census-tiger-2026
+    alternatives: [asm-pacioos-asdoc-county-village, asm-gadm-41]
+    reason: "TIGER PLACE villages cover all land (77 villages); PacIOOS covers Manu'a and Swains only."
+    escalated: false

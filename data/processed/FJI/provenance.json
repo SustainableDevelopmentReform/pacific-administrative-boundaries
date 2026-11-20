@@ -1,0 +1,71 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/FJI.yml",
+        "sources_used": [
+          "fji-sdd-phc2017-boundaries"
+        ],
+        "raw_manifests": [
+          "data/raw/FJI/fji-sdd-phc2017-boundaries/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/FJI/fji_admin.parquet",
+        "rows": 2087,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 4,
+          "admin2": 15,
+          "admin3": 86,
+          "admin4": 1980,
+          "eez": 1
+        }
+      },
+      "completed_at": "2026-11-20T00:38:55Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/FJI/fji_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/FJI/fji_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:04Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

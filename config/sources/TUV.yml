@@ -1,0 +1,160 @@
+iso3: TUV
+country_name: Tuvalu
+# Hierarchy (verified in 2017 PHC layers):
+#   admin1 Island (9; each with a Kaupule / Falekaupule; Niulakita administered with Niutao but mapped separately)
+#   admin2 Village (34) > admin3 Enumeration area (70)
+# Electoral: 8 two-member constituencies (one per island; Niulakita votes with Niutao) - no GIS layer published;
+# derivable by dissolving islands.
+sources:
+  - source_id: tuv-csd-phc2017-admin-boundaries
+    title: "2017 Tuvalu (mini-)census administrative boundaries (islands, villages, EAs)"
+    publisher: "SPC Statistics for Development Division (SDD) for Tuvalu Central Statistics Division"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2017_tuv_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/e5fbdd9a-01a9-4fd9-bd82-9bd3bfd90d6a/download/2017_phc_tuv_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/9eefabe8-d129-44ee-a3a4-7f93a24b2349/download/2017_phc_tuv_vid_4326.geojson
+      - https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/d6ed90e1-abaf-48d4-b28a-8d6836a36155/download/2017_phc_tuv_iid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence field 'Creative Commons Attribution'."
+    publication_date: 2020-07-10
+    version: "2017 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: island
+        level_name_local: Island (Kaupule)
+        layer: 2017_phc_tuv_iid_4326.geojson
+        name_field: i_name
+        code_field: iid
+        code_scheme: csd-census
+        parent_field: null
+        nests: true
+      - level_code: admin2
+        level_type: ward_village
+        level_name_local: Village
+        layer: 2017_phc_tuv_vid_4326.geojson
+        name_field: libgeo
+        code_field: vid
+        code_scheme: csd-census
+        parent_field: {field: vid, floordiv: 100}   # [processing] vid = iid*100 + n
+        nests: true
+        notes: "No parent field; vid = iid*100 + n (e.g. 101-107 Nanumea). EA layer also carries vid/iid."
+      - level_code: admin3
+        level_type: statistical
+        level_name_local: Enumeration area
+        layer: 2017_phc_tuv_eaid_4326.geojson
+        name_field: eaname
+        code_field: eaid
+        code_scheme: csd-census
+        parent_field: vid
+        nests: true
+    status: selected
+    raw_path: data/raw/TUV/tuv-csd-phc2017-admin-boundaries/
+    notes: "Most recent published census geography. The 2022 PHC was conducted but no boundary release was found on PDH/SBS (searched 2026-11-20)."
+  - source_id: tuv-csd-phc2012-admin-boundaries
+    title: "2012 Tuvalu PHC administrative boundaries"
+    publisher: "SPC SDD for Tuvalu Central Statistics Division"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2012_tuv_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/cb543601-798e-4bc7-8613-806948f86704/download/2012_phc_tuv_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/e697e3b6-db2c-43c6-8522-3d5391a552fe/download/2012_phc_tuv_vid_4326.geojson
+      - https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/6b4a9510-112b-4f53-9ece-6e0566a74904/download/2012_phc_tuv_iid_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: ""}
+    publication_date: 2020-07-10
+    version: "2012 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: island, level_name_local: Island, layer: 2012_phc_tuv_iid_4326.geojson, name_field: i_name, code_field: iid, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: ward_village, level_name_local: Village, layer: 2012_phc_tuv_vid_4326.geojson, name_field: vname, code_field: vid, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: statistical, level_name_local: Enumeration area, layer: 2012_phc_tuv_eaid_4326.geojson, name_field: eaname, code_field: eaid, parent_field: vid, nests: true}
+    status: alternative
+    raw_path: data/raw/TUV/tuv-csd-phc2012-admin-boundaries/
+    notes: "Superseded by 2017 (33 villages, 69 EAs). Island layer identical in size to 2017."
+  - source_id: tuv-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen TUV ADM0-ADM3"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/api/current/gbOpen/TUV/ALL/
+    download_urls:
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM0/geoBoundaries-TUV-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM1/geoBoundaries-TUV-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM2/geoBoundaries-TUV-ADM2-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM3/geoBoundaries-TUV-ADM3-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0/ADM1 ODbL-1.0 (OSM); ADM2 CC-BY-4.0 (PDH 2017); ADM3 'Other - Direct Permission' (POPGIS 2014)"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: false
+      notes: "ADM3 licence is not an open licence (direct permission to geoBoundaries); treat ADM3 as not redistributable."
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Tuvalu, layer: geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: island, level_name_local: Island, layer: geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: ward_village, level_name_local: Village, layer: geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: statistical, level_name_local: Enumeration area, layer: geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: rejected
+    raw_path: data/raw/TUV/tuv-geoboundaries-gbopen/
+    notes: "ADM1 OSM (8 islands; Niulakita missing/merged); ADM2 derived from PDH 2017 (double count); ADM3 = 2012-era POPGIS EAs (69) under non-open permission."
+  - source_id: tuv-gadm41
+    title: "GADM 4.1 Tuvalu"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TUV.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "license_restricted = true"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Tuvalu, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: island, level_name_local: Island, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/TUV/tuv-gadm41/
+    notes: "Reference only."
+  - source_id: tuv-spc-gem-pcrafi-island-aal
+    title: "PCRAFI Annual Average Loss for Tuvalu (island level)"
+    publisher: "SPC GEM"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/tv-island-aal-70
+    download_urls: []
+    retrieval_method: http
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/", redistribution_ok: false, notes: ""}
+    publication_date: null
+    version: null
+    format: shapefile
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Not downloaded: derived risk-model layer on island polygons, NC licence."
+decisions:
+  - level_code: admin1
+    chosen: tuv-csd-phc2017-admin-boundaries
+    alternatives: [tuv-csd-phc2012-admin-boundaries, tuv-geoboundaries-gbopen, tuv-gadm41]
+    reason: "Official census geography (tier 1), most recent published; covers all 9 islands."
+    escalated: false
+  - level_code: admin2
+    chosen: tuv-csd-phc2017-admin-boundaries
+    alternatives: [tuv-csd-phc2012-admin-boundaries, tuv-geoboundaries-gbopen]
+    reason: "Official, most recent; geoBoundaries ADM2 is a copy of it."
+    escalated: false
+  - level_code: admin3
+    chosen: tuv-csd-phc2017-admin-boundaries
+    alternatives: [tuv-csd-phc2012-admin-boundaries, tuv-geoboundaries-gbopen]
+    reason: "Official, most recent, CC-BY (geoBoundaries ADM3 is older and not openly licensed)."
+    escalated: false

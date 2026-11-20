@@ -1,0 +1,69 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/GUM.yml",
+        "sources_used": [
+          "gum-uscensus-tiger2025"
+        ],
+        "raw_manifests": [
+          "data/raw/GUM/gum-uscensus-tiger2025/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/GUM/gum_admin.parquet",
+        "rows": 2097,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 19,
+          "eez": 1,
+          "other": 2076
+        }
+      },
+      "completed_at": "2026-11-20T00:39:02Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/GUM/gum_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/GUM/gum_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:05Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

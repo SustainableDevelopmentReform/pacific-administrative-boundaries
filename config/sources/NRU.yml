@@ -1,0 +1,129 @@
+iso3: NRU
+country_name: Nauru
+# Stack: District (14) > 2011 census EA (47, coastal belt only). 8 electoral constituencies are
+# defined in the Electoral Act as groups of districts; no published polygons (derivable by dissolve).
+sources:
+  - source_id: nru-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen NRU ADM0-ADM1"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#NRU
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/NRU/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NRU/ADM0/geoBoundaries-NRU-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NRU/ADM1/geoBoundaries-NRU-ADM1-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM1: Public Domain; ADM0: ODbL-1.0"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM1 source 'geoBoundaries, FreeMapViewer', licence 'Public Domain'. ADM0 source 'OpenStreetMap, Wambacher', ODbL 1.0 (share-alike)."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Nauru, layer: geoBoundaries-NRU-ADM0-all/geoBoundaries-NRU-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true, use: false, notes: "ODbL; prefer dissolving ADM1 (public domain) for admin0. [processing] use: false -> dissolved from ADM1."}
+      - level_code: admin1
+        level_type: district
+        level_name_local: District
+        layer: geoBoundaries-NRU-ADM1-all/geoBoundaries-NRU-ADM1.geojson
+        name_field: shapeName
+        code_field: shapeISO
+        code_scheme: iso3166-2
+        license: {name: Public Domain, url: "https://www.geoboundaries.org/"}   # [processing] D-016: ADM1 licence per geoBoundaries metadata
+        parent_field: null
+        nests: true
+    status: selected
+    raw_path: data/raw/NRU/nru-geoboundaries-gbopen/
+    notes: "14 districts covering the whole island (21.5 km2) with ISO 3166-2 codes (NR-01..NR-14). Near-identical to SPC GEM nr_district (symmetric difference 1.1 km2)."
+
+  - source_id: nru-spc-sdd-phc2011
+    title: "2011 Nauru Population and Housing Census administrative boundaries (District, Enumeration Area)"
+    publisher: "SPC Statistics for Development Division (SDD) for Nauru Bureau of Statistics"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_nru_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/757997e7-df31-49ee-83f2-1010420a0adf/download/2011_phc_nru_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/4b86c617-cbdc-4b34-a47b-ad80ef3b8a52/download/2011_phc_nru_did_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: "PDH page states 'Creative Commons Attribution'."}
+    publication_date: 2020-06-29
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: other
+        level_type: district
+        level_name_local: Census district (2011)
+        use: false   # [processing] alternative to the selected geoBoundaries ADM1 (decision admin1); not processed
+        layer: 2011_phc_nru_did_4326.geojson
+        name_field: d_name
+        code_field: did
+        parent_field: null
+        nests: false
+        notes: "15 units = 14 districts + 'LOCATION' (NPC settlement treated as a census district). Covers only 7.7 km2 (settled coastal belt and Buada), not the mined interior (Topside)."
+      - level_code: other
+        level_type: statistical
+        level_name_local: Enumeration Area (2011 census)
+        layer_key: ea-2011
+        code_scheme: sdd-census
+        layer: 2011_phc_nru_eaid_4326.geojson
+        name_field: ea_name
+        code_field: eaid
+        parent_field: did
+        nests: false
+        notes: "47 EAs, same 7.7 km2 extent; nests within SDD census districts, not guaranteed within geoBoundaries districts."
+    status: selected
+    raw_path: data/raw/NRU/nru-spc-sdd-phc2011/
+    notes: "Official census geography (selected for the statistical EA layer). Its district layer is an alternative to geoBoundaries ADM1 (partial coverage + extra 'Location' unit). 2019 mini-census / 2021 census boundaries not published."
+
+  - source_id: nru-spc-gem-district
+    title: "Naoero district"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/nr-district-199
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/nr_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:nr_district&outputFormat=json&content-disposition=attachment
+    retrieval_method: api
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: "Non-commercial, share-alike."}
+    publication_date: 2026-08-17
+    version: "PCRAFI exposure layer"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: district, level_name_local: District, layer: nr_district.geojson, name_field: district, code_field: did, parent_field: iid, nests: true}
+    status: alternative
+    raw_path: data/raw/NRU/nru-spc-gem-district/
+    notes: "14 districts, full island, essentially the same geometry as geoBoundaries ADM1. NC-SA licence prevents use in the open product; kept as a cross-check. Its did numbering differs from SDD did (e.g. GEM ANABAR=1, SDD YAREN=01)."
+
+  - source_id: nru-gadm-41
+    title: "GADM 4.1 Nauru"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NRU.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Nauru, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: district, level_name_local: District, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/NRU/nru-gadm-41/
+    notes: "14 districts."
+
+decisions:
+  - level_code: admin1
+    chosen: nru-geoboundaries-gbopen
+    alternatives: [nru-spc-sdd-phc2011, nru-spc-gem-district, nru-gadm-41]
+    reason: "Tier-1 SDD 2011 district layer covers only the settled 7.7 of 21.5 km2 and adds a 15th 'Location' unit; geoBoundaries (public domain, 2023) covers all 14 legal districts and matches SPC GEM geometry. Picked the most recent complete layer; officialness vs completeness is a judgement call."
+    escalated: true
+  - level_code: other
+    chosen: nru-spc-sdd-phc2011
+    alternatives: []
+    reason: "Only open EA layer (2011 census)."
+    escalated: false

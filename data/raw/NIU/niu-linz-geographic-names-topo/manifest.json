@@ -1,0 +1,69 @@
+{
+  "source_id": "niu-linz-geographic-names-topo",
+  "iso3": "NIU",
+  "retrieved_at": "2026-11-20T00:20:15Z",
+  "retrieved_by": "retrieval agent (nz_realm_update) via python urllib",
+  "retrieval_method": "api",
+  "landing_url": "https://data.linz.govt.nz/layer/52176-niue-geographic-names-topo-150k/",
+  "download_urls": [
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52176&outputFormat=json&count=1000&startIndex=0"
+  ],
+  "auth": "LINZ Data Service API key sent as HTTP header 'Authorization: key <LINZ_API_KEY>' (key in repo .env, never recorded). The documented path form https://data.linz.govt.nz/services;key=<LINZ_API_KEY>;/wfs?... returned HTTP 400 'Feature type unknown' for GetFeature with this key on 2026-11-20, so the header form was used against the same WFS endpoint.",
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0 (Toitu Te Whenua Land Information New Zealand)"
+  },
+  "layers": [
+    {
+      "layer_id": 52176,
+      "title": "Niue Geographic Names (Topo, 1:50k)",
+      "landing_url": "https://data.linz.govt.nz/layer/52176-niue-geographic-names-topo-150k/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-01T21:37:41.363242Z",
+      "published_at": "2022-06-28T21:39:02.885028Z",
+      "version_id": 336683,
+      "crs": "EPSG:32702",
+      "feature_count": 190,
+      "geometry_type": "point",
+      "fields": [
+        "GEOMETRY",
+        "size",
+        "name_ascii",
+        "macronated",
+        "name",
+        "desc_code"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "layer-52176.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52176&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 48307,
+      "sha256": "ec6016f1e8917230b657882eccb72027b1bcf0ce2452a6d6424d83ab34404b08",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 190,
+      "retrieved_at": "2026-11-20T00:20:15Z"
+    },
+    {
+      "path": "layer-52176.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52176/",
+      "auth": "none",
+      "bytes": 8169,
+      "sha256": "acdebad10dd4417d05d091f2143a4f0a1ceee689bc3c8b2e52106a4edb898cc7",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:15Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "WFS 2.0.0 GetFeature, outputFormat=json, count=1000/startIndex=0 (single page; returned feature counts equal LDS feature_count for every layer). GeoJSON is in the layer's native UTM CRS (crs member urn:ogc:def:crs:EPSG::327xx); reproject on read. Downloaded to scratchpad, verified (HTTP 200, JSON parse, feature count), then copied and sha256 re-checked. LDS metadata JSON (no key) saved alongside."
+}

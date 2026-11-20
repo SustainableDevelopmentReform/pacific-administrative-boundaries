@@ -1,0 +1,34 @@
+{
+  "source_id": "ncl-gadm-4-1",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T21:55:35Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NCL.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial; redistribution prohibited)",
+    "url": "https://gadm.org/license.html"
+  },
+  "files": [
+    {
+      "path": "gadm41_NCL.gpkg",
+      "bytes": 2596864,
+      "sha256": "efa70cd080c6ce8673ab45904841d3e5ff9c6e4c1381d94c256cfabbb4a4b388"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_NCL.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NCL.gpkg",
+      "url_effective": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NCL.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T21:55:35Z"
+    }
+  ],
+  "notes": "GADM 4.1 (2022). Reference only: licence permits academic/non-commercial use and forbids redistribution or commercial use without permission. license_restricted=true."
+}

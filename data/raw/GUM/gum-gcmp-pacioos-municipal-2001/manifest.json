@@ -1,0 +1,77 @@
+{
+  "source_id": "gum-gcmp-pacioos-municipal-2001",
+  "iso3": "GUM",
+  "retrieved_at": "2026-11-19T21:58:03Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html"
+  ],
+  "license": {
+    "name": "PacIOOS data use (free use and redistribution, not for legal use)",
+    "url": "https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html",
+    "notes": "Use Limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+  },
+  "files": [
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 561467,
+      "sha256": "d1e0e8096da2055474805fdcea17c0957ee0c9ec84ca0c654f618b07c8fc9d86"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 245275,
+      "sha256": "5af56d5f182fc29a6de7a4a310c71474c28c6330ad8a42e3d5470c0a8f60c75f"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46519,
+      "sha256": "627013dbd9d03cf742491cbbc9bf8363b2f97cfb2dd47909b145a88d8158b4e4"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp/gu_db_all_mncpal_bndrys_2001Polygon.cst",
+      "from": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp/gu_db_all_mncpal_bndrys_2001Polygon.shx",
+      "from": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "bytes": 252,
+      "sha256": "8478b51a99009810ee27d946aa5befba95b1bb1f87b2d7cca32de822a3788213"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp/gu_db_all_mncpal_bndrys_2001Polygon.shp",
+      "from": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "bytes": 334604,
+      "sha256": "38aa0e70c1efe719df1811f6f846aa4b1e000b07c48412ef306159f31845b7ec"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp/gu_db_all_mncpal_bndrys_2001Polygon.prj",
+      "from": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "gu_db_all_mncpal_bndrys_2001_shp/gu_db_all_mncpal_bndrys_2001Polygon.dbf",
+      "from": "gu_db_all_mncpal_bndrys_2001_shp.zip",
+      "bytes": 4910,
+      "sha256": "b178ffd10565462be1a50544daa4b4fb056fafd6d47302c787788e0dd1ae8d79"
+    }
+  ],
+  "notes": "PacIOOS GeoServer WFS 1.0.0. Original data provider: Guam Coastal Management Program (GCMP), Bureau of Statistics and Plans, Government of Guam. PacIOOS service date 2016-01-25. GeoJSON output is EPSG:4326; SHAPE-ZIP is native CRS."
+}

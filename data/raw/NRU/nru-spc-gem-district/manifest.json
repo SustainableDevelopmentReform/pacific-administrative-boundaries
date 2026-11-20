@@ -1,0 +1,27 @@
+{
+  "source_id": "nru-spc-gem-district",
+  "iso3": "NRU",
+  "retrieved_at": "2026-11-19T21:56:35Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://pacificdata.org/data/dataset/nr-district-199",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/nr_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:nr_district&outputFormat=json&content-disposition=attachment"
+  ],
+  "license": {
+    "name": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+  },
+  "files": [
+    {
+      "path": "nr_district.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/nr_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:nr_district&outputFormat=json&content-disposition=attachment",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 578494,
+      "sha256": "e810cc6681ad14fca9f246d5effedd1661d42735dc370949a7770e4941d68daf"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Geoscience, Energy and Maritime Division (GEM). metadata_created 2026-08-17, modified 2026-08-17."
+}

@@ -1,0 +1,135 @@
+{
+  "source_id": "ncl-gnc-limites-terrestres-2024",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T22:06:12Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://georep-dtsi-sgt.opendata.arcgis.com/maps/dtsi-sgt::limites-administratives-terrestres-1/about",
+  "download_urls": [
+    "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=1",
+    "https://www.arcgis.com/sharing/rest/content/items/e1d853903cc64d40af7fbb5ee57e3029?f=json",
+    "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=0"
+  ],
+  "license": {
+    "name": "Licence Ouverte v2.0 (Etalab)",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  },
+  "files": [
+    {
+      "path": "limites_terrestres_layer1_provinces.zip",
+      "bytes": 11336351,
+      "sha256": "c1fb7806abeb56978f0306b1ae44ffde13c050d1076e9b783f59b9d904649b23"
+    },
+    {
+      "path": "arcgis_item_metadata.json",
+      "bytes": 3697,
+      "sha256": "6c85d25c8227c421211f956749fca40765b9ded9368d3ccd82f650eed29f6db0"
+    },
+    {
+      "path": "limites_terrestres_layer0_communes.zip",
+      "bytes": 12841949,
+      "sha256": "c5e6e6927a5bd5d76c408bdd4cd400e71f008ecd82729a16edf8fedacad87da8"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.dbf",
+      "bytes": 1301,
+      "sha256": "b437b3f80839e2b5614874b8047a375c1df0f03f86e2c9effee7154a4e348966",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.prj",
+      "bytes": 544,
+      "sha256": "7c74282e7705b3292b6bc5c41d96b9c3ba0dc3997ea77fa96502345708a6a06b",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.shp",
+      "bytes": 39309944,
+      "sha256": "a4cf6d2a9b28de936054071dfdc7c4d830956b4ab1e0e40abaec7b8805f91161",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.shp.xml",
+      "bytes": 486,
+      "sha256": "669b9505ba8171d8034c4522fd07f5af93e365045346da1c5003a2553880692b",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer1_provinces/Provinces.shx",
+      "bytes": 124,
+      "sha256": "b683c87e1dfca8e47213a9e837bfbd856af78166cf360c74927deeac28fec7d2",
+      "from_archive": "limites_terrestres_layer1_provinces.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.dbf",
+      "bytes": 33227,
+      "sha256": "cebc1c77c9ac6f22ace5507d1cd6ab93a2d7800a6f2a7aed5c980bab46a38e38",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.prj",
+      "bytes": 544,
+      "sha256": "7c74282e7705b3292b6bc5c41d96b9c3ba0dc3997ea77fa96502345708a6a06b",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.shp",
+      "bytes": 43722348,
+      "sha256": "e8deab686aceb00c0451708875c986d37c0a2745180db903074437614385ca93",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.shp.xml",
+      "bytes": 495,
+      "sha256": "d5a39976b2916e40d94a208231921ff8ab1baa8362e1ac6b5ff405d7e67b504f",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    },
+    {
+      "path": "extracted/limites_terrestres_layer0_communes/Communes.shx",
+      "bytes": 364,
+      "sha256": "a7f9318d6a4dfd197f7b0df14703a851007595192cd07e8548e6cb198606b85f",
+      "from_archive": "limites_terrestres_layer0_communes.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "limites_terrestres_layer1_provinces.zip",
+      "url": "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=1",
+      "url_effective": "https://stg-arcgisazurecdataprod1.az.arcgis.com/exportfiles-4754-13973/limites_terrestres_-3720807191669448720.zip",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "retrieved_at": "2026-11-19T22:05:36Z"
+    },
+    {
+      "path": "arcgis_item_metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/e1d853903cc64d40af7fbb5ee57e3029?f=json",
+      "url_effective": "https://www.arcgis.com/sharing/rest/content/items/e1d853903cc64d40af7fbb5ee57e3029?f=json",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:37Z"
+    },
+    {
+      "path": "limites_terrestres_layer0_communes.zip",
+      "url": "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=0",
+      "url_effective": "https://stg-arcgisazurecdataprod1.az.arcgis.com/exportfiles-4754-13973/limites_terrestres_-1132603597891774671.zip",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "retrieved_at": "2026-11-19T22:06:12Z"
+    }
+  ],
+  "notes": "Georep 'Limites administratives terrestres' FeatureService (Gouvernement de la Nouvelle-Caledonie / DINUM SGT), layers 0 Communes, 1 Provinces; EPSG:3163 (RGNC91-93 Lambert NC). Data update 28/10/2024 per data.gouv.nc genealogy. Licence on ArcGIS item: Licence Ouverte. Downloaded via ArcGIS Hub download API."
+}

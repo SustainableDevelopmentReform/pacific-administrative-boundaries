@@ -1,0 +1,148 @@
+{
+  "source_id": "pyf-geoboundaries-gbopen",
+  "iso3": "PYF",
+  "retrieved_at": "2026-11-19T21:57:53Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/api/current/gbOpen/PYF/ALL/",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/PYF/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PYF/ADM0/geoBoundaries-PYF-ADM0-all.zip"
+  ],
+  "license": {
+    "name": "per-level (see notes)",
+    "url": "https://www.geoboundaries.org/",
+    "per_level": {
+      "ADM0": "CC-BY-4.0"
+    }
+  },
+  "files": [
+    {
+      "path": "gbOpen_PYF_ALL_meta.json",
+      "bytes": 1932,
+      "sha256": "96e698442b811ec2e2dd1d2970861f6b190844d9f2d75c230ae4861019403e9a"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 6334986,
+      "sha256": "fa19fcaf95159590d2b9d8f07d81cbad759cb35155c9ca3898e2710ec0c1c094"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 35560,
+      "sha256": "b652e8cffd06df3ff54fa5db68c9dfef3ed600764c2d33b16a9712b4ea4bba63"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0-metaData.json",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 1027,
+      "sha256": "0cf2cea1cb5431ad74d950533945855713e35e9ade20b31903c2619b4995cd44"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0-metaData.txt",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 1179,
+      "sha256": "b36cb5a4a4f605faf27b433b28688000e25247af1308f2414178f9a6e8a7ce08"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.dbf",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 243,
+      "sha256": "5d9c35dcc7d0fdb09aa5341b16c130808ed5271c25adf1840949563816588296"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.geojson",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 9805277,
+      "sha256": "fa5ca0f40b281e9aba3848f3fe7459d751e3e35e0f8dd53a0435bb46ad320bc3"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.prj",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.shp",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 3365756,
+      "sha256": "b5f998fb7112a07db74715aef8c84d35671f802e9f68f1db2c769dc90dfc1e8c"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.shx",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "fb844d0156b7e9799b82e34b08186cb0e99ab22f97f8fb01bde2bf98d25a445d"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.topojson",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 1962578,
+      "sha256": "2c4e83de38c3a051ec79fb98b39cb2b17aac61fd1e45826dcdbbad49c560e55f"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.dbf",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 243,
+      "sha256": "5d9c35dcc7d0fdb09aa5341b16c130808ed5271c25adf1840949563816588296"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.geojson",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 731841,
+      "sha256": "81ffceb465e90179bf9fe601f6d144095b4e4068b3bf375bc0a13b3cebea767e"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.prj",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.shp",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 252700,
+      "sha256": "0f92ab467bcc95721bfc1e9fee500962a3b28f042f078b4c61a6629c26e490a1"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.shx",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "fc11fc5b2a376dfbd3592968286ac0da575ee8520b2c1fba20a9a387a69c04d0"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0_simplified.topojson",
+      "from": "geoBoundaries-PYF-ADM0-all.zip",
+      "bytes": 164931,
+      "sha256": "57bb2b83d1ca95c00c72bdc4f713a429b0f6a377f379f12dbba4e2a81eb3d1f4"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "gbOpen_PYF_ALL_meta.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/PYF/ALL/",
+      "effective_url": "https://www.geoboundaries.org/api/current/gbOpen/PYF/ALL/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T21:57:53Z"
+    },
+    {
+      "path": "geoBoundaries-PYF-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PYF/ADM0/geoBoundaries-PYF-ADM0-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/PYF/ADM0/geoBoundaries-PYF-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:54Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen release 9469f09 (build Dec 12, 2023). Licence differs by level: ADM0: CC-BY-4.0. See gbOpen_*_meta.json for upstream source per level."
+}

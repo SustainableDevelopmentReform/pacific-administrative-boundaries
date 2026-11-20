@@ -1,0 +1,339 @@
+{
+  "source_id": "cok-osm-admin-relations",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-19T22:09:57Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.openstreetmap.org/relation/7887110",
+  "download_urls": [
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=7887110&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/7887110.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=7887109&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/7887109.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830339&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830339.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830338&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830338.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830336&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830336.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830335&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830335.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830334&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830334.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830332&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830332.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830331&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830331.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830330&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830330.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830329&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830329.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830341&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830341.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=14367542&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/14367542.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=14367543&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/14367543.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830340&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830340.json",
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=3830337&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/3830337.json"
+  ],
+  "license": {
+    "name": "ODbL-1.0",
+    "url": "https://www.openstreetmap.org/copyright",
+    "notes": "Share-alike; attribution '(c) OpenStreetMap contributors'"
+  },
+  "files": [
+    {
+      "path": "r7887110.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=7887110&params=0",
+      "bytes": 14094,
+      "sha256": "15cf19a372f0e9592d9650e05f4804a76c6cf83872b3189ef42d9043b61b7643",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:20Z"
+    },
+    {
+      "path": "r7887110_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/7887110.json",
+      "bytes": 2093,
+      "sha256": "d64079075b5e7a17b30f9c23eb6167d1d90282b446057c1042fc85597b74efbe",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:21Z"
+    },
+    {
+      "path": "r7887109.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=7887109&params=0",
+      "bytes": 13224,
+      "sha256": "c6dd59b26b01d9f404a5acc5f00028e55722a5f35ed30d77dad1e8087a023033",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:22Z"
+    },
+    {
+      "path": "r7887109_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/7887109.json",
+      "bytes": 1081,
+      "sha256": "18d9204d11468d90cfa6bb2ea83a7a8d8691549f76d0534a4bba89f53bb7395f",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:23Z"
+    },
+    {
+      "path": "r3830339.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830339&params=0",
+      "bytes": 9771,
+      "sha256": "3e67138e277adb9d8c38b826298490064bdd7b927ba1c83b3a7e08e7ff392734",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:25Z"
+    },
+    {
+      "path": "r3830339_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830339.json",
+      "bytes": 653,
+      "sha256": "73f10c655a35836a36ae1703f3f1435fc89e4b666edea597dd27d4c3b6e9dbb2",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:26Z"
+    },
+    {
+      "path": "r3830338.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830338&params=0",
+      "bytes": 39563,
+      "sha256": "a514e4f1937be3e058289bae551e003b7ccbc57b490ca9819c2e38b72b1d77f4",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:27Z"
+    },
+    {
+      "path": "r3830338_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830338.json",
+      "bytes": 743,
+      "sha256": "49a65362685726191bb631398b1106899a280a1015026a1010b2a58ec000eae5",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:29Z"
+    },
+    {
+      "path": "r3830336.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830336&params=0",
+      "bytes": 15283,
+      "sha256": "457c0aa020211a7d378a55ac5ae6fda49cfb0f87c586608871dd1befe465b127",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:30Z"
+    },
+    {
+      "path": "r3830336_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830336.json",
+      "bytes": 593,
+      "sha256": "a581b4d7fe971cbb34258058acb24c65297e706669bbc023a05b629d573101a5",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:31Z"
+    },
+    {
+      "path": "r3830335.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830335&params=0",
+      "bytes": 13420,
+      "sha256": "9fbbbef79f32e41d4b9187b086cb7dd8ae0956c3c44409d7f942b0c933edc799",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:32Z"
+    },
+    {
+      "path": "r3830335_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830335.json",
+      "bytes": 603,
+      "sha256": "df04eaf2689f25b02713d88ef69530d3a60758e99dd8ceaee33001e616899b66",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:33Z"
+    },
+    {
+      "path": "r3830334.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830334&params=0",
+      "bytes": 12357,
+      "sha256": "e40069e47fa78aa4d8c66c491276bb95bce1bee8755df894582950f855006246",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:34Z"
+    },
+    {
+      "path": "r3830334_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830334.json",
+      "bytes": 733,
+      "sha256": "7e6a65fbc7a050cbe9cf01a0ab12093eda6171bdfa8f30269bd42838523ddaac",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:36Z"
+    },
+    {
+      "path": "r3830332.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830332&params=0",
+      "bytes": 11423,
+      "sha256": "9f6f759b6d8599765c8bcafaad706825bb4b59766c103d3aaa0f4c69b853e39f",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:37Z"
+    },
+    {
+      "path": "r3830332_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830332.json",
+      "bytes": 640,
+      "sha256": "5ecf43619cc21a7b39282b2f39e92f22d8aa2182bed69e22b00b98d6bbc82820",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:38Z"
+    },
+    {
+      "path": "r3830331.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830331&params=0",
+      "bytes": 15637,
+      "sha256": "1158e9670b50f14bf4c3c3d2ba6ba6b2ccd0f8610bbe29b833737005f669484f",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:39Z"
+    },
+    {
+      "path": "r3830331_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830331.json",
+      "bytes": 716,
+      "sha256": "b192dd6056c7037035e8a6415fa3528fe22c0f3658e125a96cdcbc65a699fade",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:40Z"
+    },
+    {
+      "path": "r3830330.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830330&params=0",
+      "bytes": 15483,
+      "sha256": "6bc27c5dfdea8f3d3c7c124021a01e7662abe023fc67cdfdc25ecf6c87321c79",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:41Z"
+    },
+    {
+      "path": "r3830330_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830330.json",
+      "bytes": 633,
+      "sha256": "85ae38d9aa13bdb61c7d3a872b866495224a06837c543d163349f370010eb349",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:42Z"
+    },
+    {
+      "path": "r3830329.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830329&params=0",
+      "bytes": 25099,
+      "sha256": "5c6fe7c0e7e74cbf2751250d27c0d285c5c08d3ad087e19368a0042c64d7ec84",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:44Z"
+    },
+    {
+      "path": "r3830329_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830329.json",
+      "bytes": 772,
+      "sha256": "f5eb0d743adf2dd29fc9e3fe1df597953cb8b94fb7ae2866d27d2c4ee39b500a",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:45Z"
+    },
+    {
+      "path": "r3830341.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830341&params=0",
+      "bytes": 6550,
+      "sha256": "61a24b2a2c691475d1000e99808068cce60e421e811e4ebbf4cace32543e0e07",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:46Z"
+    },
+    {
+      "path": "r3830341_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830341.json",
+      "bytes": 791,
+      "sha256": "e06fee1235a36bd14ba2bc4532946b0a5a49500fa696fe231998c8295901210a",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:47Z"
+    },
+    {
+      "path": "r14367542.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=14367542&params=0",
+      "bytes": 3682,
+      "sha256": "e2c67496e9402bf22e678ac03ad48bdacd3d112df9901fe7953000c5e420c63f",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:49Z"
+    },
+    {
+      "path": "r14367542_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/14367542.json",
+      "bytes": 642,
+      "sha256": "29a79cd07c7bf5ad4d00d72d7ba8c050e4084de86dff599508dd8b10b7bdfce4",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:50Z"
+    },
+    {
+      "path": "r14367543.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=14367543&params=0",
+      "bytes": 3312,
+      "sha256": "9c0398a57249743b966b9bdafbebc533d9e6ce7bde7b88fc3785b0535e713efc",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:51Z"
+    },
+    {
+      "path": "r14367543_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/14367543.json",
+      "bytes": 692,
+      "sha256": "993edfcbbd97dcc46a6921e0b216106df6988e1df1546646f968f575d7f4c331",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:52Z"
+    },
+    {
+      "path": "r3830340.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830340&params=0",
+      "bytes": 4090,
+      "sha256": "7707852c4f9a0a6fb59f7f4c83be9565df7d10a598eb810c34138e5ac86e81bf",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:54Z"
+    },
+    {
+      "path": "r3830340_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830340.json",
+      "bytes": 688,
+      "sha256": "bf3888c1eee6b358d6b44905fab3f662d0bf84de015928ab1a798567e761f412",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:55Z"
+    },
+    {
+      "path": "r3830337.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=3830337&params=0",
+      "bytes": 5097,
+      "sha256": "10fbd7150da522b36e6029f31bf2d43a137515763e014127255f8d9a4e5c6e80",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:56Z"
+    },
+    {
+      "path": "r3830337_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/3830337.json",
+      "bytes": 640,
+      "sha256": "1f8ae744015ff44b296eb0501b62819a0d0ade5be6a2279367379973aee3f18b",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:09:57Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "OSM boundary=administrative relations. Geometry: polygons.openstreetmap.fr get_geojson (params=0, unsimplified) per relation (rNNN.geojson, no tags); tags/members from OSM API v0.6 (rNNN_tags.json). Relation IDs enumerated via OSM API subarea members / Nominatim (Overpass unreachable at retrieval time). Snapshot as of retrieval date."
+}

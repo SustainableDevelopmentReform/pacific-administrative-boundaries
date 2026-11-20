@@ -1,0 +1,77 @@
+{
+  "source_id": "fsm-pacioos-states-created",
+  "iso3": "FSM",
+  "retrieved_at": "2026-11-19T21:58:11Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html"
+  ],
+  "license": {
+    "name": "PacIOOS data use (free use and redistribution, not for legal use)",
+    "url": "https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html",
+    "notes": "Use Limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+  },
+  "files": [
+    {
+      "path": "fm_pac_statebdry_created.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 789,
+      "sha256": "e7fa94c11a251a4fc7682873d4e092e59cc9fad127c2c04f23730d8aff5617f4"
+    },
+    {
+      "path": "fm_pac_statebdry_created_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1222,
+      "sha256": "5641f6a884655b8466f67c0fc10ed7e0520f72cbe51c733282c1c5a644e14afa"
+    },
+    {
+      "path": "fm_pac_statebdry_created_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46050,
+      "sha256": "99e7139e75000bcd2636a7479429c996e2653a2c5becd9bb01618de81f26b21a"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "fm_pac_statebdry_created_shp/fm_pac_statebdry_created.cst",
+      "from": "fm_pac_statebdry_created_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "fm_pac_statebdry_created_shp/fm_pac_statebdry_created.shx",
+      "from": "fm_pac_statebdry_created_shp.zip",
+      "bytes": 124,
+      "sha256": "59ecaf0274a1d92521cdc95a8ebc6eee182965fe067d3b9b235cb17a4a27fe13"
+    },
+    {
+      "path": "fm_pac_statebdry_created_shp/fm_pac_statebdry_created.dbf",
+      "from": "fm_pac_statebdry_created_shp.zip",
+      "bytes": 830,
+      "sha256": "52552deca794e80cf2217b062b4eda11277591e8ddb7e51d74801d534d060fe6"
+    },
+    {
+      "path": "fm_pac_statebdry_created_shp/fm_pac_statebdry_created.prj",
+      "from": "fm_pac_statebdry_created_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "fm_pac_statebdry_created_shp/fm_pac_statebdry_created.shp",
+      "from": "fm_pac_statebdry_created_shp.zip",
+      "bytes": 380,
+      "sha256": "c6a4103de560a5705dd861125a7fe43c7bb7ce900015d653aa5ba1ccfe61d579"
+    }
+  ],
+  "notes": "PacIOOS GeoServer WFS 1.0.0. Original data provider: PacIOOS (digitised from a Wikipedia/CIA map image). PacIOOS service date 2016-01-25. GeoJSON output is EPSG:4326; SHAPE-ZIP is native CRS."
+}

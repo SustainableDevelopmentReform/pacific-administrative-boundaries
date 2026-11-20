@@ -1,0 +1,29 @@
+{
+  "source_id": "pcn-gadm-41",
+  "iso3": "PCN",
+  "retrieved_at": "2026-11-19T22:05:20Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PCN.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (free for academic/non-commercial use; redistribution and commercial use not allowed)",
+    "url": "https://gadm.org/license.html",
+    "redistribution_ok": false
+  },
+  "files": [
+    {
+      "path": "gadm41_PCN.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PCN.gpkg",
+      "bytes": 114688,
+      "sha256": "8e431bb0f1586d11cc5a20f9ff8dab9127ec4380d840124e32cdff5e5f82a984",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:05:20Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "GADM 4.1 country GeoPackage; REFERENCE ONLY (licence prohibits redistribution)."
+}

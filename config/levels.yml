@@ -1,0 +1,25 @@
+# Harmonised level vocabulary. `level_type` is the cross-country comparison key.
+level_types:
+  eez:
+    description: Exclusive Economic Zone (200 nm), including joint regimes and overlapping claims as flagged polygons.
+  country:
+    description: National or territorial land boundary (admin0).
+  region:
+    description: Grouping of first-order units with no separate government of its own (e.g. PNG Regions, Tonga Divisions, Samoa Regions).
+  state_province:
+    description: First-order subnational government or administration (State, Province, Division, Island Council for single-island jurisdictions).
+  district:
+    description: Second-order administrative subdivision below a province/state (District, Tikina, Subdivision administrative, Circonscription).
+  local_government:
+    description: Unit with a local council/government (LLG, Area Council, Commune, Municipality, Kaupule, Town/City council).
+  ward_village:
+    description: Finest community-level unit (Ward, Village, Nu'u, Koro, Commune associee, Census Village).
+  island:
+    description: Island or atoll used as an administrative unit (e.g. Cook Islands, Tuvalu, Tokelau, Marshall Islands atoll local governments).
+  statistical:
+    description: Statistical reporting unit (enumeration area, census unit, census block). Only included where openly published.
+  electoral:
+    description: Electoral constituency / district. Non-nesting unless it coincides with an administrative level.
+  customary:
+    description: Customary / traditional authority area (e.g. New Caledonia aires coutumieres, Fiji Yasana/Vanua where published). Usually non-nesting.
+level_codes: [eez, admin0, admin1, admin2, admin3, admin4, admin5, other]

@@ -1,0 +1,85 @@
+{
+  "source_id": "ncl-gnc-aires-coutumieres-2020",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T22:05:17Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://georep-dtsi-sgt.opendata.arcgis.com/datasets/b1f9a2ae61154945a470bbf803b59942/about",
+  "download_urls": [
+    "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/b1f9a2ae61154945a470bbf803b59942/shapefile?layers=0",
+    "https://www.arcgis.com/sharing/rest/content/items/b1f9a2ae61154945a470bbf803b59942?f=json"
+  ],
+  "license": {
+    "name": "Licence Ouverte v2.0 (Etalab)",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  },
+  "files": [
+    {
+      "path": "aires_coutumieres_layer0.zip",
+      "bytes": 10849521,
+      "sha256": "ed43d260bb70e4942a043c0b286d8b35d85c27639c0a5a0650e8e01efb6aaeb9"
+    },
+    {
+      "path": "arcgis_item_metadata.json",
+      "bytes": 2916,
+      "sha256": "fa297dd19e5ca6c81237343e7254687e83e4ee1ed5b4bfe82a1403ccbcc3d672"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    },
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.dbf",
+      "bytes": 2106,
+      "sha256": "8b3e54cba9a743ff14a504b310d368d3219d5bf806ccb1985bcacb269f82fee4",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    },
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.prj",
+      "bytes": 544,
+      "sha256": "7c74282e7705b3292b6bc5c41d96b9c3ba0dc3997ea77fa96502345708a6a06b",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    },
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.shp",
+      "bytes": 36417208,
+      "sha256": "79cf7b625f0bbd676c816f8d93f6f69b0430b83994f133d57a3e42f5a4d8937b",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    },
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.shp.xml",
+      "bytes": 1444,
+      "sha256": "0ed8151cccc649b6e4b20b73dced6f52ae0f2b0bb6417b2027e473620847ca8c",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    },
+    {
+      "path": "extracted/aires_coutumieres_layer0/aires_coutumi\u00e8res.shx",
+      "bytes": 164,
+      "sha256": "364b5d0d56d46a595c02ea25611078928e19d6e63d4c0634e7dc61c1829cbbd1",
+      "from_archive": "aires_coutumieres_layer0.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "aires_coutumieres_layer0.zip",
+      "url": "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/b1f9a2ae61154945a470bbf803b59942/shapefile?layers=0",
+      "url_effective": "https://stg-arcgisazurecdataprod1.az.arcgis.com/exportfiles-4754-5229/aires_coutumieres_-4266690560697241928.zip",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "retrieved_at": "2026-11-19T22:05:17Z"
+    },
+    {
+      "path": "arcgis_item_metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/b1f9a2ae61154945a470bbf803b59942?f=json",
+      "url_effective": "https://www.arcgis.com/sharing/rest/content/items/b1f9a2ae61154945a470bbf803b59942?f=json",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:17Z"
+    }
+  ],
+  "notes": "Georep 'Aires coutumieres' (Gouvernement de la Nouvelle-Caledonie / DINUM SGT). Licence on ArcGIS item: Licence Ouverte. Publisher states: 'Cette donnee n'est pas officialisee. C'est une donnee de travail utilisee par les Officiers Publics Coutumiers'. Data update 29/01/2020 (derived from communal limits). Downloaded via ArcGIS Hub download API (shapefile export of FeatureServer layer 0)."
+}

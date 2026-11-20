@@ -1,0 +1,35 @@
+{
+  "source_id": "ton-gadm41",
+  "iso3": "TON",
+  "retrieved_at": "2026-11-19T22:05:44Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TON.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html",
+    "restricted": true
+  },
+  "files": [
+    {
+      "path": "gadm41_TON.gpkg",
+      "bytes": 835584,
+      "sha256": "99f518c8cf890ef160643d9486e26bfde30791613247ad686e3e126f7eb8bb9e"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_TON.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TON.gpkg",
+      "effective_url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TON.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:05:44Z"
+    }
+  ],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution or commercial use not allowed without permission."
+}

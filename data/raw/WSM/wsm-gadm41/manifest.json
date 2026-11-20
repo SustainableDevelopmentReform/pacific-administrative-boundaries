@@ -1,0 +1,35 @@
+{
+  "source_id": "wsm-gadm41",
+  "iso3": "WSM",
+  "retrieved_at": "2026-11-19T22:06:19Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WSM.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html",
+    "restricted": true
+  },
+  "files": [
+    {
+      "path": "gadm41_WSM.gpkg",
+      "bytes": 643072,
+      "sha256": "e432621695579fadfe85d8f7ecf65ee5a5642a86ff7a7da7297412aad40d72bf"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_WSM.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WSM.gpkg",
+      "effective_url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WSM.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:06:19Z"
+    }
+  ],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution or commercial use not allowed without permission."
+}

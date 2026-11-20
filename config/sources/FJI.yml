@@ -1,0 +1,185 @@
+# Source register for Fiji. Written by the retrieval stage (Melanesia agent), 2026-11-20.
+# Paths in `layer` are relative to `raw_path`.
+iso3: FJI
+country_name: Fiji
+sources:
+  - source_id: fji-sdd-phc2017-boundaries
+    title: "2017 Fiji Population and Housing Census admin boundaries (Province, Tikina, Enumeration Areas)"
+    publisher: "SPC Statistics for Development Division (SDD) for Fiji Bureau of Statistics (Pacific Data Hub)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2017_fji_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/f45cd559-7350-4362-91ad-0c922853fb5c/resource/0d2bdd5b-9c28-47fd-9dd8-2917daeb276d/download/2017_phc_fji_pid_4326.geojson
+      - https://pacificdata.org/data/dataset/f45cd559-7350-4362-91ad-0c922853fb5c/resource/aaddfae8-7d6d-482c-9c9b-dc2daf3ad250/download/2017_phc_fji_tid_4326.geojson
+      - https://pacificdata.org/data/dataset/f45cd559-7350-4362-91ad-0c922853fb5c/resource/6a8622f8-3d7c-4af2-9548-7c4278e49114/download/2017_phc_fji_eaid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH lists licence_id 'cc-by' (Creative Commons Attribution, version not stated; treated as CC BY 4.0). PDH disclaimer: 'Upper level administrative units may slightly differ from the official boundaries. The boundaries, codes and names shown in the datasets do not imply official endorsement or acceptance by SPC.'"
+    publication_date: 2020-06-26
+    version: "2017 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: region   # [processing] D-018: commissioner-administered grouping of provinces
+        level_name_local: Division
+        layer: 2017_phc_fji_tid_4326.geojson
+        name_field: Division
+        code_field: {field: Division, case: lower}
+        code_scheme: name-slug
+        parent_field: null
+        dissolve: true
+        nests: true
+        notes: "[processing] dissolve on Division made machine-readable. No Division polygon layer: dissolve the tikina layer on `Division` (Central, Eastern, Northern, Western); geometry_method dissolved_from_children. Rotuma tikina are attributed to Eastern."
+      - level_code: admin2
+        level_type: state_province
+        level_name_local: Province (Yasana)
+        layer: 2017_phc_fji_pid_4326.geojson
+        name_field: Province
+        code_field: pid
+        code_scheme: sdd-census
+        parent_field: null
+        nests: true
+        notes: "15 units = 14 provinces + Rotuma (dependency). Parent division via tikina layer (Province->Division)."
+      - level_code: admin3
+        level_type: district
+        level_name_local: Tikina
+        layer: 2017_phc_fji_tid_4326.geojson
+        name_field: Tikina
+        code_field: tid17
+        code_scheme: sdd-census
+        parent_field: pid
+        nests: true
+        notes: "86 tikina (consolidated 'new' tikina used by FBoS)."
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Enumeration Area
+        layer: 2017_phc_fji_eaid_4326.geojson
+        name_field: label
+        code_field: ea2017
+        code_scheme: sdd-census
+        parent_field: Tik_No
+        nests: true
+        notes: "1,982 EAs. Field `Ward` carries urban ward / peri-urban / Rural labels (e.g. 'Tamavua Ward'); could be used to approximate municipal wards but is not an official council boundary."
+    status: selected
+    raw_path: data/raw/FJI/fji-sdd-phc2017-boundaries/
+    derived_from: []
+    notes: "Tier 1 (national statistics office census geography hosted on PDH, open licence) and the most recently published. Geometry differs from the COD-AB (tikina area total ~2.6% different, vertex density ~half), see decisions (escalated)."
+
+  - source_id: fji-ocha-cod-ab-2017
+    title: "Fiji - Subnational Administrative Boundaries (COD-AB) adm0-3"
+    publisher: "OCHA (HDX); source POPGIS, Fiji Islands Bureau of Statistics, PCRAFI; vetted by ITOS"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-fji
+    download_urls:
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/c3dc129d-6434-48c8-bb2b-d14b1c05e9b5/download/fji_polbnda_adm.gdb.zip
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/90d68ce7-aa45-470a-b0b0-a7bd1c4a5d24/download/fji_polbnda_adm0_country.zip
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/fe4e5724-3133-4d2f-9a49-4d67beebf63e/download/fji_polbnda_adm1_district.zip
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/8ec2ca4b-973b-409c-8c2f-53e26b816852/download/fji_polbnda_adm2_province.zip
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/d949f7a8-7ac3-41eb-8aec-0e29af5042f6/download/fji_polbnda_adm3_tikina.zip
+      - https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/898dd96d-9eae-4532-bd17-d4f795a371b2/download/fji_adm_gz.xlsx
+    retrieval_method: http
+    license:
+      name: CC-BY-3.0-IGO
+      url: http://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2018-01-15
+    version: "established 2017; reviewed 2024-10"
+    format: shapefile
+    crs: "World_Mercator_150 (ESRI custom Mercator, central meridian 150; shapefiles); gdb has no CRS defined"
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.shp, name_field: ADM0_NAME, code_field: ADM0_PCODE, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Division, layer: extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.shp, name_field: ADM1_NAME, code_field: ADM1_PCODE, parent_field: ADM0_PCODE, nests: true}
+      - {level_code: admin2, level_type: state_province, level_name_local: Province, layer: extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.shp, name_field: ADM2_NAME, code_field: ADM2_PCODE, parent_field: ADM1_PCODE, nests: true}
+      - {level_code: admin3, level_type: district, level_name_local: Tikina, layer: extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.shp, name_field: ADM3_NAME, code_field: ADM3_PCODE, parent_field: ADM2_PCODE, nests: true}
+    status: alternative
+    raw_path: data/raw/FJI/fji-ocha-cod-ab-2017/
+    derived_from: []
+    notes: "Tier 2, endorsed COD; same FBoS 2017 lineage as SDD but different geometry. Carries P-codes and FBoS IDs. Use the shapefiles (projected; reproject) - gdb lacks a CRS. Strong candidate if the orchestrator prefers the endorsed COD for admin1-3."
+
+  - source_id: fji-sdd-phc2007-boundaries
+    title: "2007 Fiji Population and Housing Census admin boundaries (Province, Tikina, Enumeration Areas)"
+    publisher: "SPC SDD for Fiji Bureau of Statistics (Pacific Data Hub)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2007_fji_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/5880cadb-2287-4eac-9f3d-8b321730e6cd/download/2007_phc_fji_pid_32760.geojson
+      - https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/010783ac-a0a9-41b5-90e6-9f07c8935b7d/download/2007_phc_fji_tid_32760.geojson
+      - https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/17f6df1c-e90b-476f-a335-46ec6dd96d39/download/2007_phc_fji_eaid_32760.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: http://www.opendefinition.org/licenses/cc-by, redistribution_ok: true, notes: "PDH 'cc-by'"}
+    publication_date: 2020-06-26
+    version: "2007 PHC"
+    format: geojson
+    crs: EPSG:32760
+    levels:
+      - {level_code: admin2, level_type: state_province, level_name_local: Province, layer: 2007_phc_fji_pid_32760.geojson, name_field: pi_name, code_field: pid, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: district, level_name_local: Tikina, layer: 2007_phc_fji_tid_32760.geojson, name_field: ti_name, code_field: tid, parent_field: null, nests: true}
+      - {level_code: admin4, level_type: statistical, level_name_local: Enumeration Area (2007), layer: 2007_phc_fji_eaid_32760.geojson, name_field: eaname, code_field: eaid, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/FJI/fji-sdd-phc2007-boundaries/
+    derived_from: []
+    notes: "Superseded by the 2017 census geography (1,602 EAs vs 1,982). Keep for historical EA linkage."
+
+  - {source_id: fji-geoboundaries-adm0, title: "geoBoundaries gbOpen FJI ADM0", publisher: "geoBoundaries (William & Mary geoLab); source OpenStreetMap (Wambacher)", publisher_type: osm, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM0/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM0/geoBoundaries-FJI-ADM0-all.zip"], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "Share-alike (ODbL) - flag."}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/geoBoundaries-FJI-ADM0-all/geoBoundaries-FJI-ADM0.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: alternative, raw_path: data/raw/FJI/fji-geoboundaries-adm0/, derived_from: [], notes: "OSM coastline-based; admin0 is instead derived from the selected admin1/admin2 union."}
+  - {source_id: fji-geoboundaries-adm1, title: "geoBoundaries gbOpen FJI ADM1 (Divisions)", publisher: "geoBoundaries; source Wikimedia Commons", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM1/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM1/geoBoundaries-FJI-ADM1-all.zip"], retrieval_method: api, license: {name: CC-BY-2.5, url: "https://creativecommons.org/licenses/by/2.5/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2006)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin1, level_type: state_province, level_name_local: Division, layer: extracted/geoBoundaries-FJI-ADM1-all/geoBoundaries-FJI-ADM1.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/FJI/fji-geoboundaries-adm1/, derived_from: [], notes: "Wikimedia-derived 2006 geometry; inferior to official sources."}
+  - {source_id: fji-geoboundaries-adm2, title: "geoBoundaries gbOpen FJI ADM2 (Provinces)", publisher: "geoBoundaries; source pacificdata.org (SDD 2007 PHC)", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM2/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM2/geoBoundaries-FJI-ADM2-all.zip"], retrieval_method: api, license: {name: CC-BY-4.0, url: "https://creativecommons.org/licenses/by/4.0/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin2, level_type: state_province, level_name_local: Province, layer: extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/FJI/fji-geoboundaries-adm2/, derived_from: [fji-sdd-phc2007-boundaries], notes: "Repackaged 2007 SDD provinces; do not double count."}
+  - {source_id: fji-geoboundaries-adm3, title: "geoBoundaries gbOpen FJI ADM3 (Tikina)", publisher: "geoBoundaries; source SOPAC, Fiji Islands Bureau of Statistics, PacGeo", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM3/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM3/geoBoundaries-FJI-ADM3-all.zip"], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "Share-alike (ODbL) as declared by geoBoundaries."}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2017)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin3, level_type: district, level_name_local: Tikina, layer: extracted/geoBoundaries-FJI-ADM3-all/geoBoundaries-FJI-ADM3.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/FJI/fji-geoboundaries-adm3/, derived_from: [fji-ocha-cod-ab-2017], notes: "Repackaged FBoS/PacGeo tikina (86); same lineage as COD-AB."}
+  - {source_id: fji-geoboundaries-adm4, title: "geoBoundaries gbOpen FJI ADM4 (Enumeration Areas 2007)", publisher: "geoBoundaries; source Pacific Data Hub", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM4/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM4/geoBoundaries-FJI-ADM4-all.zip"], retrieval_method: api, license: {name: CC-BY-4.0, url: "https://creativecommons.org/licenses/by/4.0/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2007)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin4, level_type: statistical, level_name_local: Enumeration Area (2007), layer: extracted/geoBoundaries-FJI-ADM4-all/geoBoundaries-FJI-ADM4.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/FJI/fji-geoboundaries-adm4/, derived_from: [fji-sdd-phc2007-boundaries], notes: "1,597 of the 1,602 2007 EAs; superseded by 2017 EAs."}
+
+  - source_id: fji-gadm-4-1
+    title: "GADM 4.1 Fiji"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_FJI.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Non-commercial use only; redistribution prohibited. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Division, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true, notes: "5 units (Rotuma as its own unit)."}
+      - {level_code: admin2, level_type: state_province, level_name_local: Province, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/FJI/fji-gadm-4-1/
+    derived_from: []
+    notes: "Reference only."
+
+  # Candidates searched but not available / not downloaded
+  - {source_id: fji-municipal-councils, title: "Fiji municipal council (city/town) boundaries", publisher: "Ministry of Local Government, Fiji", publisher_type: national, landing_url: null, download_urls: [], retrieval_method: manual, license: {name: unspecified, url: null, redistribution_ok: false, notes: ""}, publication_date: null, version: null, format: other, crs: null, levels: [{level_code: other, level_type: local_government, level_name_local: "City/Town Council", layer: null, name_field: null, code_field: null, parent_field: null, nests: false}], status: rejected, raw_path: null, derived_from: [], notes: "No public polygon layer found (searched PDH, PDH GeoNode WFS - only 'fiji_towns' points, HDX, web). 2017 EA attribute `Ward` allows an unofficial approximation of urban wards/peri-urban areas."}
+  - {source_id: fji-pdh-pcrafi-tikina, title: "PCRAFI exposure layers at tikina level (fj_tikina_bld_rc, fj-tikina-aal)", publisher: "SPC GEM (PDH GeoNode)", publisher_type: regional_body, landing_url: "https://pacificdata.org/data/dataset/fj-tikina-aal-tc-eq-486", download_urls: [], retrieval_method: api, license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/", redistribution_ok: false, notes: ""}, publication_date: null, version: null, format: other, crs: null, levels: [], status: rejected, raw_path: null, derived_from: [], notes: "Thematic derivatives of SOPAC/FBoS tikina; NC licence; not downloaded."}
+  - {source_id: fji-osm-admin, title: "OpenStreetMap administrative relations (Fiji)", publisher: "OpenStreetMap contributors", publisher_type: osm, landing_url: "https://www.openstreetmap.org", download_urls: [], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "share-alike"}, publication_date: null, version: null, format: other, crs: null, levels: [], status: rejected, raw_path: null, derived_from: [], notes: "Overpass endpoints unreachable at retrieval time (connection refused / 502); official sources cover all levels so not pursued. OSM ADM0 present via fji-geoboundaries-adm0."}
+
+decisions:
+  - level_code: admin0
+    chosen: fji-sdd-phc2017-boundaries
+    alternatives: [fji-ocha-cod-ab-2017, fji-geoboundaries-adm0, fji-gadm-4-1]
+    reason: "Derive from the union of the SDD 2017 provinces (consistent with admin1-4). Note Fiji straddles the antimeridian."
+    escalated: false
+  - level_code: admin1
+    chosen: fji-sdd-phc2017-boundaries
+    alternatives: [fji-ocha-cod-ab-2017, fji-gadm-4-1, fji-geoboundaries-adm1]
+    reason: "Divisions dissolved from SDD 2017 tikina (tier 1, consistent with admin2-4). COD-AB has a ready Division layer with P-codes but different geometry."
+    escalated: true
+  - level_code: admin2
+    chosen: fji-sdd-phc2017-boundaries
+    alternatives: [fji-ocha-cod-ab-2017, fji-sdd-phc2007-boundaries, fji-geoboundaries-adm2, fji-gadm-4-1]
+    reason: "SDD 2017 (FBoS census geography, tier 1, published 2020) vs COD-AB (tier 2 but OCHA/ITOS-endorsed, same FBoS 2017 lineage, published 2018). SDD carries a disclaimer that upper-level units may differ from official boundaries; geometries differ materially (~2.6% total area). Picked most recent / higher tier; escalated because officialness is ambiguous."
+    escalated: true
+  - level_code: admin3
+    chosen: fji-sdd-phc2017-boundaries
+    alternatives: [fji-ocha-cod-ab-2017, fji-sdd-phc2007-boundaries, fji-geoboundaries-adm3]
+    reason: "As admin2 (same pair of sources, 86 tikina each)."
+    escalated: true
+  - level_code: admin4
+    chosen: fji-sdd-phc2017-boundaries
+    alternatives: [fji-sdd-phc2007-boundaries, fji-geoboundaries-adm4]
+    reason: "Only 2017 EA source; 2007 EAs superseded."
+    escalated: false

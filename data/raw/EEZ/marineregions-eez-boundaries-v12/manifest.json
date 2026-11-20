@@ -1,0 +1,50 @@
+{
+  "source_id": "marineregions-eez-boundaries-v12",
+  "iso3": "EEZ",
+  "retrieved_at": "2026-11-19T22:13:28Z",
+  "retrieved_by": "pab cache",
+  "retrieval_method": "api",
+  "landing_url": "https://www.marineregions.org/downloads.php",
+  "download_urls": [
+    "https://geo.vliz.be/geoserver/MarineRegions/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=MarineRegions:eez_boundaries&outputFormat=SHAPE-ZIP"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "notes": "Marine Regions Maritime Boundaries v12 (line features: treaty, median line, 200 NM, unilateral claim etc.), WFS layer 'Maritime Boundaries (v12, world, 2023)', 2349 features. Same citation/DOI as marineregions-eez-v12 (https://doi.org/10.14284/632). Retrieved via VLIZ GeoServer WFS 1.0.0 SHAPE-ZIP instead of the form-gated zip.",
+  "files": [
+    {
+      "path": "MarineRegions_eez_boundaries_v12_wfs.zip",
+      "bytes": 11121256,
+      "sha256": "60ba3a60822bb73a8608a298df6e4849436787788f2052dddc981ac066b6c111"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/eez_boundaries.cst",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "extracted/eez_boundaries.dbf",
+      "bytes": 10265995,
+      "sha256": "f24900bf44147564d40d03dd77c2e014445d9ba1334e0462d1468f933686d841"
+    },
+    {
+      "path": "extracted/eez_boundaries.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/eez_boundaries.shp",
+      "bytes": 14230036,
+      "sha256": "2ce919d8ddfe4764058dee7755de5550e2e0ce10cfcc43209fffe7c0aefca14d"
+    },
+    {
+      "path": "extracted/eez_boundaries.shx",
+      "bytes": 18892,
+      "sha256": "5e4c3941117e8a759abd72ec2b11f437c7043cc34b4a4172e8b271a286730626"
+    }
+  ]
+}

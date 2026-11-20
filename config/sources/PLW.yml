@@ -1,0 +1,199 @@
+iso3: PLW
+country_name: Palau
+# Stack: State (16) > Hamlet (77) > 2015 census Enumeration Area (141).
+# Census 'group of states' (7) is a statistical grouping, kept as non-nesting 'other'.
+# House of Delegates constituencies = the 16 states; Senate is elected at large (no layer needed).
+sources:
+  - source_id: plw-spc-sdd-phc2015
+    title: "2015 Palau Population and Housing Census administrative boundaries (Group of States, State, Hamlet, Enumeration Area)"
+    publisher: "SPC Statistics for Development Division (SDD) for Palau Office of Planning and Statistics"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2015_plw_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/92304f02-a4fe-4750-98b7-3a0a216b0d32/download/2015_phc_plw_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/fe6dd29b-6ec5-4a06-9aac-e8d84d895b21/download/2015_phc_plw_hid_4326.geojson
+      - https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/de0f3f73-1170-4634-8d34-d4b107ff3a18/download/2015_phc_plw_sid_4326.geojson
+      - https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/f99b62ee-368f-4aa5-b4d9-d84fc6285623/download/2015_phc_plw_gsid_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: "PDH page states 'Creative Commons Attribution'."}
+    publication_date: 2020-06-29   # PDH record created; data = 2015 census frame
+    version: "2015 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Republic of Palau, layer: 2015_phc_plw_sid_4326.geojson, name_field: null, code_field: null, parent_field: null, nests: true, use: false, notes: "Dissolve states. [processing] use: false -> dissolved by the pipeline."}
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: State
+        layer: 2015_phc_plw_sid_4326.geojson
+        name_field: sname
+        code_field: sid
+        code_scheme: sdd-census
+        parent_field: null
+        name_map: {6: Koror, 9: Ngarchelong}   # [processing] E-003 name corrections
+        nests: true
+        notes: "DATA ERRORS to fix in processing: sid 6 named 'Koro' (= Koror); sid 9 named 'Ngaraard' (duplicate of sid 8; sid 9 = Ngarchelong per PALARIS/GADM)."
+      - level_code: admin2
+        level_type: ward_village
+        level_name_local: Hamlet
+        layer: 2015_phc_plw_hid_4326.geojson
+        name_field: hname
+        code_field: hid
+        code_scheme: sdd-census
+        parent_field: {field: hid, floordiv: 100}   # hid = sid * 100 + n (e.g. 101 -> state 1)
+        nests: true
+      - level_code: admin3
+        level_type: statistical
+        level_name_local: Enumeration Area (2015 census)
+        layer: 2015_phc_plw_eaid_4326.geojson
+        name_field: eaname
+        code_field: eaid
+        code_scheme: sdd-census
+        parent_field: {field: eaid, floordiv: 100}   # eaid = hid * 100 + n (e.g. 140101 -> hamlet 1401)
+        nests: true
+      - level_code: other
+        level_type: region
+        level_name_local: Group of states (census)
+        layer: 2015_phc_plw_gsid_4326.geojson
+        name_field: gsname
+        code_field: gsid
+        code_scheme: sdd-census
+        layer_key: state-group
+        parent_field: null
+        nests: false
+        notes: "7 groups; gsid not unique (4 used for both Hatohobei and West Babeldaob)."
+    status: selected
+    raw_path: data/raw/PLW/plw-spc-sdd-phc2015/
+    notes: "Official census geography; all four layers share the same 455.7 km2 extent and nest exactly. geoBoundaries PLW ADM2 is a copy of the hamlet layer."
+
+  - source_id: plw-palaris-political-2016
+    title: "Political Boundaries - Palau (PALARIS, served by PacIOOS)"
+    publisher: "Palau Automated Land and Resources Information System (PALARIS), distributed by PacIOOS"
+    publisher_type: national
+    landing_url: https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: "PacIOOS data use (free use and redistribution, not for legal use)"
+      url: https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html
+      redistribution_ok: true
+      notes: "'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.' data.gov lists the same PALARIS record as public domain."
+    publication_date: 2016-01-25   # PacIOOS service date; PALARIS data date not stated
+    version: ""
+    format: geojson
+    crs: "EPSG:32653 (all_political_bndry, _line, ngar GeoJSON as served); EPSG:4326 (hato, sons)"
+    levels:
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: State
+        layer: pw_plrs_all_political_bndry.geojson
+        name_field: state
+        code_field: null
+        parent_field: null
+        nests: true
+        notes: "750 island-part polygons with a state attribute (dissolve on 'state' -> 16). 460.3 km2."
+      - level_code: other
+        level_type: island
+        level_name_local: Island (Sonsorol / Hatohobei Southwest Islands)
+        layer: pw_plrs_sons_bndry.geojson
+        name_field: is_name
+        code_field: null
+        parent_field: state
+        nests: false
+        notes: "Plus pw_plrs_hato_bndry.geojson (Tobi, Helen Reef). Ngaremeduu boundary (pw_plrs_ngar_bndry) is a conservation-area line, not administrative."
+    status: alternative
+    raw_path: data/raw/PLW/plw-palaris-political-2016/
+    notes: "National lands GIS office (tier 1). No codes; does not carry hamlets. GeoJSON from WFS 1.0.0 retains native UTM 53N for some layers (CRS stated in file)."
+
+  - source_id: plw-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen PLW ADM0-ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#PLW
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/PLW/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PLW/ADM0/geoBoundaries-PLW-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PLW/ADM1/geoBoundaries-PLW-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PLW/ADM2/geoBoundaries-PLW-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0/ADM1: ODbL-1.0; ADM2: CC-BY-4.0"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM0/ADM1 from 'OpenStreetMap, Wambacher' (ODbL, share-alike); ADM2 'Hamlets' from 'Pacific Data Hub, SPC SDD' (CC BY 4.0)."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Palau, layer: geoBoundaries-PLW-ADM0-all/geoBoundaries-PLW-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: State, layer: geoBoundaries-PLW-ADM1-all/geoBoundaries-PLW-ADM1.geojson, name_field: shapeName, code_field: shapeISO, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: ward_village, level_name_local: Hamlet, layer: geoBoundaries-PLW-ADM2-all/geoBoundaries-PLW-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/PLW/plw-geoboundaries-gbopen/
+    notes: "ADM1 is OSM (1,161 km2 incl. reefs/lagoon) and carries ISO 3166-2 codes (PW-002 ...); ADM2 DERIVED from plw-spc-sdd-phc2015."
+
+  - source_id: plw-spc-gem-state-aal
+    title: "Annual Average Loss for Palau (state)"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/pw-state-aal-168
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/pw_state_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:pw_state_aal&outputFormat=json&content-disposition=attachment
+    retrieval_method: api
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: "Non-commercial, share-alike."}
+    publication_date: 2025-10-14
+    version: "PCRAFI AAL layer"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: state_province, level_name_local: State, layer: pw_state_aal.geojson, name_field: state, code_field: sid, parent_field: null, nests: true}
+    status: rejected
+    raw_path: data/raw/PLW/plw-spc-gem-state-aal/
+    notes: "Same total area as PALARIS (460.3 km2), i.e. apparently PALARIS-derived; NC-SA licence."
+
+  - source_id: plw-gadm-41
+    title: "GADM 4.1 Palau"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PLW.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Palau, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: State, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/PLW/plw-gadm-41/
+    notes: ""
+
+decisions:
+  - level_code: admin1
+    chosen: plw-spc-sdd-phc2015
+    alternatives: [plw-palaris-political-2016, plw-geoboundaries-gbopen, plw-spc-gem-state-aal, plw-gadm-41]
+    reason: "Two tier-1 sources: SDD 2015 census states (statistics office; codes; nest exactly with hamlets/EAs) vs PALARIS (lands GIS office; no codes; served 2016 but data date unknown, so recency cannot be established). Chose SDD for nesting consistency; geometry differs slightly (455.7 vs 460.3 km2). SDD has two state-name errors to fix."
+    escalated: true
+  - level_code: admin2
+    chosen: plw-spc-sdd-phc2015
+    alternatives: [plw-geoboundaries-gbopen]
+    reason: "Only official hamlet layer; geoBoundaries ADM2 is a copy."
+    escalated: false
+  - level_code: admin3
+    chosen: plw-spc-sdd-phc2015
+    alternatives: []
+    reason: "Only EA layer (2015). 2020/2025 census EAs not published."
+    escalated: false

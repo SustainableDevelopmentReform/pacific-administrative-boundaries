@@ -1,0 +1,91 @@
+{
+  "source_id": "png-nso-regions-2015",
+  "iso3": "PNG",
+  "retrieved_at": "2026-11-19T21:57:27Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/papua-new-guinea-regions",
+  "download_urls": [
+    "https://data.humdata.org/dataset/e43b17b8-d127-4be0-8d92-dc3d2dcb39ff/resource/70d094d9-5b61-4c97-b651-9e42ce328b6e/download/png_polbnda_regions_2015_nso.zip",
+    "https://data.humdata.org/api/3/action/package_show?id=papua-new-guinea-regions"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "png_polbnda_regions_2015_nso.zip",
+      "bytes": 2102535,
+      "sha256": "a4133e3e5ec05af714db644090e49938ef793f771d0ddb340fb7aa29c42367b9"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "bytes": 5107,
+      "sha256": "484f55eb31cad3c1403b2504d2270c78ac8a0da5faae9eecfb2c1013605b097c"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.dbf",
+      "bytes": 554,
+      "sha256": "fc5d279ec7aa68384815e9f5c0fe8f8dea1ba694f066c4088fa4090deccf4bf8",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.sbn",
+      "bytes": 180,
+      "sha256": "511435f33c64f74539b0991f1d09ffe881d1ed658c71e48795022d87945d8c59",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.sbx",
+      "bytes": 124,
+      "sha256": "434bf833365f9bc0e4b8133387db9b8fa728067995a6dddc55b405427e8f5c13",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.shp",
+      "bytes": 5070508,
+      "sha256": "34eec012995df3ef61ec231e558c48f3cc753f445f03569f19c33b76f24ab226",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.shp.xml",
+      "bytes": 11628,
+      "sha256": "2f3748b7ba94b878c4a08094c5e54e13d4dc6c567a30048b584d2babc2d067e0",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    },
+    {
+      "path": "extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.shx",
+      "bytes": 132,
+      "sha256": "ece1948a93180d49f71f49e0ba34d773898ae4ce71c4037803e5a9e9e6c2c01f",
+      "from_archive": "png_polbnda_regions_2015_nso.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "png_polbnda_regions_2015_nso.zip",
+      "url": "https://data.humdata.org/dataset/e43b17b8-d127-4be0-8d92-dc3d2dcb39ff/resource/70d094d9-5b61-4c97-b651-9e42ce328b6e/download/png_polbnda_regions_2015_nso.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/70d094d9-5b61-4c97-b651-9e42ce328b6e/png_polbnda_regions_2015_nso.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:26Z"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=papua-new-guinea-regions",
+      "url_effective": "https://data.humdata.org/api/3/action/package_show?id=papua-new-guinea-regions",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T21:57:27Z"
+    }
+  ],
+  "notes": "PNG Regions (4), PNG NSO via OCHA ROAP on HDX, 2015. HDX notes: 'Regions are not an official administrative division'."
+}

@@ -1,0 +1,222 @@
+iso3: MHL
+country_name: Marshall Islands
+# Stack: Atoll / island local government (25 in COD-AB incl. Kili/Jabat/Mejit islands) >
+# 2021 census Enumeration Area (152). Ratak/Ralik chains are not published as polygons (derivable
+# by grouping atolls). Village polygons exist only for 8 atolls (USAID via PacIOOS).
+# Nitijela electoral districts (24) coincide with atolls/islands; no separate layer.
+sources:
+  - source_id: mhl-ocha-codab-2021
+    title: "Marshall Islands - Subnational Administrative Boundaries (COD-AB), 2021 census geography"
+    publisher: "OCHA Regional Office for Asia and the Pacific (HDX)"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-mhl
+    download_urls:
+      - https://data.humdata.org/dataset/c215706c-9c22-43ca-8d36-9de4726eb9e0/resource/383a9368-998f-4657-a380-6323bb827296/download/mhl_admbnda_wgs84_ab_shp.zip
+      - https://data.humdata.org/dataset/c215706c-9c22-43ca-8d36-9de4726eb9e0/resource/43245500-83c5-41a3-b1a6-713e532067a8/download/mhl_admbnda_wgs84_ab_gdb.gdb.zip
+      - https://data.humdata.org/dataset/c215706c-9c22-43ca-8d36-9de4726eb9e0/resource/f7db4038-975c-4a18-a3aa-0ae5aa6fa6e7/download/mhl_admgz.xls
+    retrieval_method: http
+    license:
+      name: CC-BY-3.0-IGO
+      url: http://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2024-11-19   # HDX resources updated; dataset date 2021-01-01
+    version: "2021 (reviewed Oct 2024)"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Republic of the Marshall Islands
+        layer: mhl_admbnda_wgs84_ab_shp/mhl_admbnda_wgs84_adm0.shp
+        name_field: ADM0_EN
+        code_field: ADM0_PCODE
+        parent_field: null
+        nests: true
+      - level_code: admin1
+        level_type: island
+        level_name_local: Atoll / Island (local government)
+        layer: mhl_admbnda_wgs84_ab_shp/mhl_admbnda_wgs84_adm1.shp
+        name_field: ADM1_EN
+        code_field: ADM1_PCODE
+        parent_field: ADM0_PCODE
+        nests: true
+      - level_code: admin2
+        level_type: statistical
+        level_name_local: Enumeration Area (2021 census)
+        layer: mhl_admbnda_wgs84_ab_shp/mhl_admbnda_wgs84_adm2.shp
+        name_field: ADM2_EN
+        code_field: ADM2_PCODE
+        parent_field: ADM1_PCODE
+        nests: true
+        notes: "HDX caveat: polygon MH0609 (present in COD-PS) is missing."
+    status: selected
+    raw_path: data/raw/MHL/mhl-ocha-codab-2021/
+    notes: "HDX: 'Sourced from SPC SDD' (2021 census GIS, EPPSO). Land polygons, 106 km2, all layers same extent. FileGDB copy in mhl_admbnda_wgs84_ab_gdb.gdb (nested .gdb; layers mhl_admbnda_adm0, mhl_admbnda_adm1_atolls, mhl_admbnda_adm2_EA). HDX warns its geoservices are mis-scaled; the files are fine."
+
+  - source_id: mhl-spc-sdd-phc2011
+    title: "2011 Marshall Islands Population and Housing Census administrative boundaries (Atoll, Enumeration Area)"
+    publisher: "SPC Statistics for Development Division (SDD) for EPPSO"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_mhl_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/b2ed115f-aa79-4998-b257-04e98d928926/resource/07964d1a-f723-42e2-90f0-d2d9778570ee/download/2011_phc_mhl_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/b2ed115f-aa79-4998-b257-04e98d928926/resource/bc331807-7178-48af-96db-98cbda6ea8fd/download/2011_phc_mhl_aid_buff_4326.geojson
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: "PDH page states 'Creative Commons Attribution'."}
+    publication_date: 2020-06-29
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin2, level_type: statistical, level_name_local: Enumeration Area (2011 census), layer: 2011_phc_mhl_eaid_4326.geojson, name_field: eaname, code_field: eaid, parent_field: null, nests: true}
+      - {level_code: other, level_type: island, level_name_local: Atoll (11 km display buffer), layer: 2011_phc_mhl_aid_buff_4326.geojson, name_field: aname, code_field: aid, parent_field: null, nests: false, notes: "Buffered display polygons (28,680 km2); do not use geometry."}
+    status: alternative
+    raw_path: data/raw/MHL/mhl-spc-sdd-phc2011/
+    notes: "Superseded by the 2021 census geography in COD-AB. 153 EAs."
+
+  - source_id: mhl-spc-sdd-atollpop2011
+    title: "RMI Atoll Population 2011 Census"
+    publisher: "SPC Statistics for Development Division (SDD) for EPPSO"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/rmi_atoll_population_2011census
+    download_urls:
+      - https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/00a4d983-0feb-4925-b296-a4d62f32f907/download/rmi_atol_pop_2011.geojson
+      - https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/cc0763ac-6f4a-4837-9100-50da3f1d0bc3/download/rmi_atol_pop_2011.kml
+      - https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/6661ae45-39b9-4e61-a35d-5adb8a13e0a4/download/rmi_atol_pop_2011.zip
+    retrieval_method: http
+    license: {name: CC-BY-4.0, url: "http://www.opendefinition.org/licenses/cc-by", redistribution_ok: true, notes: "PDH page states 'Creative Commons Attribution'. Page notes coastline accuracy is not EPPSO's responsibility."}
+    publication_date: 2019-05-03
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: island, level_name_local: Atoll / Island, layer: rmi_atol_pop_2011.geojson, name_field: aname, code_field: aid, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/MHL/mhl-spc-sdd-atollpop2011/
+    notes: "25 atoll land polygons (106.5 km2) with 2011 population. Older than the 2021 COD-AB atolls."
+
+  - source_id: mhl-usaid-pacioos-lga-2017
+    title: "Marshall Islands Local Government Areas, Village Boundaries and Atolls (USAID, served by PacIOOS)"
+    publisher: "PacIOOS (data provider: U.S. Agency for International Development)"
+    publisher_type: other
+    landing_url: https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=SHAPE-ZIP
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: "PacIOOS data use (free use and redistribution, not for legal use)"
+      url: https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html
+      redistribution_ok: true
+      notes: "'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+    publication_date: 2017-04-19   # PacIOOS service date; underlying data older (atolls carry 1999 census attributes)
+    version: ""
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: other
+        level_type: ward_village
+        level_name_local: Village
+        layer: mh_mgd_all_villages.geojson
+        layer_key: village-usaid
+        name_field: BryanName
+        code_field: {template: "{Atoll}-{LandID}{VillageID}"}   # [processing] composite code
+        code_scheme: usaid-composite
+        parent_field: Atoll
+        nests: false
+        notes: "49 village polygons on 8 atolls only (Majuro, Arno, Maloelap, Mejit, ...), 29.6 km2. Partial coverage."
+      - level_code: other
+        level_type: local_government
+        level_name_local: Local Government Area (incl. lagoon/marine)
+        layer: mh_mgd_all_local_gov_areas.geojson
+        name_field: Atoll
+        code_field: null
+        parent_field: null
+        nests: false
+        use: false   # [processing] marine jurisdiction extents, not land units; decision for `other` names villages only
+        notes: "30 polygons / 26 names covering 48,240 km2 (marine jurisdiction areas around atolls), not land units."
+    status: alternative
+    raw_path: data/raw/MHL/mhl-usaid-pacioos-lga-2017/
+    notes: "Only open source for MHL village polygons (partial). Atolls layer (33 polygons incl. lagoons, 1999 census attributes) kept for reference. Each layer has a _metadata.html and both GeoJSON (EPSG:4326) and SHAPE-ZIP copies."
+
+  - source_id: mhl-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen MHL ADM0-ADM1"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#MHL
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/MHL/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MHL/ADM0/geoBoundaries-MHL-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MHL/ADM1/geoBoundaries-MHL-ADM1-all.zip
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "Sourced from 'OpenStreetMap, Wambacher' under ODbL 1.0 (share-alike)."}
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Marshall Islands, layer: geoBoundaries-MHL-ADM0-all/geoBoundaries-MHL-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: island, level_name_local: Atoll / Island, layer: geoBoundaries-MHL-ADM1-all/geoBoundaries-MHL-ADM1.geojson, name_field: shapeName, code_field: shapeISO, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/MHL/mhl-geoboundaries-gbopen/
+    notes: "OSM-derived; 24 units incl. lagoons (6,522 km2). Carries ISO 3166-2 codes."
+
+  - source_id: mhl-spc-gem-atoll-aal
+    title: "Annual Average Loss for Marshall Islands (atoll)"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/mh-atoll-aal-142
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/mh_atoll_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:mh_atoll_aal&outputFormat=json&content-disposition=attachment
+    retrieval_method: api
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: "Non-commercial, share-alike."}
+    publication_date: 2025-10-14
+    version: "PCRAFI AAL layer"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: island, level_name_local: Atoll, layer: mh_atoll_aal.geojson, name_field: atoll, code_field: aid, parent_field: null, nests: true}
+    status: rejected
+    raw_path: data/raw/MHL/mhl-spc-gem-atoll-aal/
+    notes: "Hazard-loss product, 26 atolls (169 km2), NC-SA licence."
+
+  - source_id: mhl-gadm-41
+    title: "GADM 4.1 Marshall Islands"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_MHL.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Marshall Islands, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: island, level_name_local: Atoll / Island, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/MHL/mhl-gadm-41/
+    notes: "23 admin1 units."
+
+decisions:
+  - level_code: admin1
+    chosen: mhl-ocha-codab-2021
+    alternatives: [mhl-spc-sdd-atollpop2011, mhl-geoboundaries-gbopen, mhl-usaid-pacioos-lga-2017, mhl-spc-gem-atoll-aal, mhl-gadm-41]
+    reason: "COD-AB carries the 2021 census geography from SPC SDD/EPPSO (most recent official). SDD 2011 atolls are older; SDD 2011 atoll buffer layer is display-only."
+    escalated: false
+  - level_code: admin2
+    chosen: mhl-ocha-codab-2021
+    alternatives: [mhl-spc-sdd-phc2011]
+    reason: "2021 census EAs (most recent) vs 2011 EAs; both from SDD/EPPSO."
+    escalated: false
+  - level_code: other
+    chosen: mhl-usaid-pacioos-lga-2017
+    alternatives: []
+    reason: "Only village polygons available (8 atolls, partial); non-nesting."
+    escalated: false

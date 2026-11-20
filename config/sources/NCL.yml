@@ -1,0 +1,158 @@
+# Source register for New Caledonia. Written by the retrieval stage (Melanesia agent), 2026-11-20.
+# Hierarchy: Province (3) > Commune (33, INSEE code_com 988xx) > [Noumea only: quartiers (37)].
+# Poya commune straddles Province Nord (~559 km2) and Province Sud (~281 km2): split it by province during processing
+# (GADM does the same, hence its 35 ADM2 units). Aires coutumieres (8) are customary and non-nesting.
+# IGN ADMIN EXPRESS covers metropolitan France + DROM only, not New Caledonia (checked data.gouv.fr description).
+iso3: NCL
+country_name: New Caledonia
+sources:
+  - source_id: ncl-gnc-limites-terrestres-2024
+    title: "Limites administratives terrestres (communes, provinces)"
+    publisher: "Gouvernement de la Nouvelle-Caledonie (DINUM - Service de la Geomatique et Teledetection; formerly DITTT), Georep"
+    publisher_type: national
+    landing_url: "https://georep-dtsi-sgt.opendata.arcgis.com/maps/dtsi-sgt::limites-administratives-terrestres-1/about"
+    download_urls:
+      - "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=0"
+      - "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/e1d853903cc64d40af7fbb5ee57e3029/shapefile?layers=1"
+    retrieval_method: api
+    license:
+      name: "Licence Ouverte v2.0 (Etalab)"
+      url: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+      redistribution_ok: true
+      notes: "ArcGIS item licenseInfo: 'Licence Ouverte'. Attribution: 'Gouvernement de la Nouvelle-Caledonie'. Service: https://services1.arcgis.com/TZcrgU6CIbqWt9Qv/arcgis/rest/services/limites_terrestres/FeatureServer"
+    publication_date: 2024-10-28
+    version: "update 2024-10-28 (item modified 2026-07-17)"
+    format: shapefile
+    crs: EPSG:3163
+    levels:
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: extracted/limites_terrestres_layer1_provinces/Provinces.shp, name_field: {field: nom_fichie, map: {PROVINCE_NORD: Province Nord, PROVINCE_SUD: Province Sud, PROVINCE_DES_ILES: Province des Îles Loyauté}}, code_field: {field: nom_fichie, map: {PROVINCE_NORD: nord, PROVINCE_SUD: sud, PROVINCE_DES_ILES: iles}}, code_scheme: name-slug, parent_field: null, nests: true, notes: "[processing] codes nord/sud/iles, official names. No code; use nom_fichie (PROVINCE_NORD, PROVINCE_SUD, PROVINCE_DES_ILES) or generate."}
+      - {level_code: admin2, level_type: local_government, level_name_local: Commune, layer: extracted/limites_terrestres_layer0_communes/Communes.shp, name_field: nom_minus, code_field: code_com, code_scheme: insee, parent_field: null, nests: true, split_by_parent: true, notes: "[processing] split_by_parent splits Poya by province (D-014); names from nom_minus.code_com = INSEE COG code (98801-98833); code_post also present. Parent province by spatial overlay; Poya must be split between Nord and Sud."}
+    status: selected
+    raw_path: data/raw/NCL/ncl-gnc-limites-terrestres-2024/
+    derived_from: []
+    notes: "Same producer and resolution as BDADMIN-NC (vertex totals within 0.2%) but newer (Oct 2024 update; 7 communes changed by 0.01-0.9 km2 vs the 2022 gdb)."
+
+  - source_id: ncl-gnc-bdadmin-2022
+    title: "BDADMIN-NC au format Geodatabase"
+    publisher: "Gouvernement de la Nouvelle-Caledonie / DITTT (Georep)"
+    publisher_type: national
+    landing_url: "https://georep-dtsi-sgt.opendata.arcgis.com/documents/bc8f0eec7d614853b0e9d1a9bd9649ef/about"
+    download_urls:
+      - https://sig-public.gouv.nc/plateforme_telechargement/BDADMINNC.zip
+    retrieval_method: http
+    license:
+      name: "Licence Ouverte v2.0 (Etalab)"
+      url: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+      redistribution_ok: true
+      notes: "Licence Ouverte v2.0 per data.gouv.nc (bdadmin-nc-au-format-geodatabase) and ArcGIS item. Archive also contains DITTT_CGU_juillet2017.pdf (older general conditions of use) and a README (lisez-moi)."
+    publication_date: 2022-03-02
+    version: "2022-03-02 (file Last-Modified 2022-05-23)"
+    format: other  # Esri FileGDB
+    crs: EPSG:3163
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: "Nouvelle-Caledonie", layer: "extracted/BDADMINNC/BDADMIN-NC.gdb::NOUVELLE_CALEDONIE", name_field: null, code_field: null, parent_field: null, nests: true, notes: "1,893 land polygons, no attributes."}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: "extracted/BDADMINNC/BDADMIN-NC.gdb::PROVINCES", name_field: nom, code_field: null, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Commune, layer: "extracted/BDADMINNC/BDADMIN-NC.gdb::COMMUNES", name_field: nom, code_field: code_com, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/NCL/ncl-gnc-bdadmin-2022/
+    derived_from: []
+    notes: "Previous release of the same official data. Also contains CLIP_COMMUNE_MARITIME / CLIP_PROVINCE_MARITIME (maritime limits of communes/provinces; relevant to the EEZ stage) and per-commune ADM_CLIP_* layers."
+
+  - source_id: ncl-gnc-aires-coutumieres-2020
+    title: "Aires coutumieres"
+    publisher: "Gouvernement de la Nouvelle-Caledonie (DINUM SGT), Georep"
+    publisher_type: national
+    landing_url: "https://georep-dtsi-sgt.opendata.arcgis.com/datasets/b1f9a2ae61154945a470bbf803b59942/about"
+    download_urls:
+      - "https://georep-dtsi-sgt.opendata.arcgis.com/api/download/v1/items/b1f9a2ae61154945a470bbf803b59942/shapefile?layers=0"
+    retrieval_method: api
+    license:
+      name: "Licence Ouverte v2.0 (Etalab)"
+      url: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+      redistribution_ok: true
+      notes: "ArcGIS item licenseInfo 'Licence Ouverte'. data.gouv.nc entry (aires-coutumieres) shows no licence field."
+    publication_date: 2020-01-29
+    version: "2020-01-29"
+    format: shapefile
+    crs: EPSG:3163
+    levels:
+      - {level_code: other, level_type: customary, level_name_local: "Aire coutumiere", layer: "extracted/aires_coutumieres_layer0/aires_coutumières.shp", layer_key: aire-coutumiere, name_field: nom_aire, code_field: null, parent_field: null, nests: false, notes: "8 areas (Hoot ma Whaap, Paici-Camuki, Ajie-Aro, Xaracuu, Djubea-Kapone, Nengone, Drehu, Iaai). Filename contains a non-ASCII character."}
+    status: selected
+    raw_path: data/raw/NCL/ncl-gnc-aires-coutumieres-2020/
+    derived_from: [ncl-gnc-bdadmin-2022]
+    notes: "Publisher caveat: 'Cette donnee n'est pas officialisee. C'est une donnee de travail utilisee par les Officiers Publics Coutumiers.' Built from communal limits (2020 update)."
+
+  - source_id: ncl-noumea-quartiers
+    title: "Quartiers de la ville de Noumea"
+    publisher: "Ville de Noumea"
+    publisher_type: national
+    landing_url: "https://data.noumea.nc/datasets/33f91ef1da014808b5375c0be0b92141_0/about"
+    download_urls:
+      - "https://data.noumea.nc/api/download/v1/items/33f91ef1da014808b5375c0be0b92141/shapefile?layers=0"
+    retrieval_method: api
+    license: {name: "Licence Ouverte v2.0 (Etalab)", url: https://www.etalab.gouv.fr/licence-ouverte-open-licence, redistribution_ok: true, notes: "Licence per data.gouv.nc entry quartiers-noumea."}
+    publication_date: 2025-06-13
+    version: "last edit 2025-06-13"
+    format: shapefile
+    crs: EPSG:3857
+    levels:
+      - {level_code: admin3, level_type: ward_village, level_name_local: "Quartier (Noumea)", layer: extracted/quartiers_noumea_layer0/Quartiers.shp, filter: {q_admin: oui}, name_field: nom_minusc, code_field: numero, code_scheme: ville-noumea, parent_field: null, nests: true, notes: "[processing] filter q_admin=oui; names from nom_minusc.64 features: filter q_admin == 'oui' for the 37 official administrative quartiers (others are islets/non-administrative parts). Covers commune 98818 only (partial coverage); population fields pop_rp1989..pop_rp2019 included."}
+    status: selected
+    raw_path: data/raw/NCL/ncl-noumea-quartiers/
+    derived_from: []
+    notes: "Official municipal subdivision (deliberations 82/124, 83/16, 96/89). Partial-coverage level; orchestrator may prefer to keep it as `other`."
+
+  - {source_id: ncl-geoboundaries-adm0, title: "geoBoundaries gbOpen NCL ADM0", publisher: "geoBoundaries; derived from Sentinel-2 10m land cover 2021 (IMB)", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/NCL/ADM0/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NCL/ADM0/geoBoundaries-NCL-ADM0-all.zip"], retrieval_method: api, license: {name: CC-BY-4.0, url: "https://creativecommons.org/licenses/by/4.0/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin0, level_type: country, level_name_local: Territory, layer: extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: alternative, raw_path: data/raw/NCL/ncl-geoboundaries-adm0/, derived_from: [], notes: "Raster-to-polygon land mask; only level geoBoundaries has for NCL."}
+
+  - source_id: ncl-gadm-4-1
+    title: "GADM 4.1 New Caledonia"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NCL.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Non-commercial; redistribution prohibited. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Commune, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true, notes: "35 units (Poya split)."}
+    status: reference
+    raw_path: data/raw/NCL/ncl-gadm-4-1/
+    derived_from: []
+    notes: "Reference only."
+
+  # Candidates searched but not used / not downloaded
+  - {source_id: ncl-datagouvnc-communes-simplifiees, title: "Communes de la Nouvelle-Caledonie (limites communales terrestres simplifiees)", publisher: "Gouvernement de la Nouvelle-Caledonie (data.gouv.nc)", publisher_type: national, landing_url: "https://data.gouv.nc/explore/dataset/communes-nc-limites-terrestres-simplifiees/", download_urls: [], retrieval_method: api, license: {name: "Licence Ouverte v2.0 (Etalab)", url: "https://www.etalab.gouv.fr/licence-ouverte-open-licence", redistribution_ok: true, notes: ""}, publication_date: 2024-12-06, version: null, format: geojson, crs: EPSG:4326, levels: [], status: rejected, raw_path: null, derived_from: [ncl-gnc-bdadmin-2022], notes: "Simplified derivative of BDADMIN-NC; not downloaded. Same for Georep 'Limites administratives simplifiees' service."}
+  - {source_id: ncl-ign-admin-express, title: "IGN ADMIN EXPRESS COG", publisher: "IGN", publisher_type: national, landing_url: "https://www.data.gouv.fr/datasets/admin-express-admin-express-cog-admin-express-cog-carto-admin-express-cog-carto-pe-admin-express-cog-carto-plus-pe/", download_urls: [], retrieval_method: http, license: {name: "Licence Ouverte v2.0 (Etalab)", url: "https://www.etalab.gouv.fr/licence-ouverte-open-licence", redistribution_ok: true, notes: ""}, publication_date: null, version: null, format: other, crs: null, levels: [], status: rejected, raw_path: null, derived_from: [], notes: "Coverage is metropolitan France and the DROM only; New Caledonia not included. Not downloaded."}
+  - {source_id: ncl-gnc-tribus, title: "Tribus de Nouvelle-Caledonie", publisher: "Gouvernement de la Nouvelle-Caledonie (Georep)", publisher_type: national, landing_url: "https://services1.arcgis.com/TZcrgU6CIbqWt9Qv/arcgis/rest/services/tribus_nc/FeatureServer", download_urls: [], retrieval_method: api, license: {name: "Licence Ouverte v2.0 (Etalab)", url: "https://www.etalab.gouv.fr/licence-ouverte-open-licence", redistribution_ok: true, notes: ""}, publication_date: null, version: null, format: other, crs: EPSG:3163, levels: [], status: rejected, raw_path: null, derived_from: [], notes: "Point layer (tribe locations), no polygons; districts coutumiers not published as polygons."}
+
+decisions:
+  - level_code: admin0
+    chosen: ncl-gnc-limites-terrestres-2024
+    alternatives: [ncl-gnc-bdadmin-2022, ncl-geoboundaries-adm0, ncl-gadm-4-1]
+    reason: "Derive from the union of the 2024 provinces."
+    escalated: false
+  - level_code: admin1
+    chosen: ncl-gnc-limites-terrestres-2024
+    alternatives: [ncl-gnc-bdadmin-2022, ncl-gadm-4-1]
+    reason: "Official territorial source, most recent release (2024-10-28) of BDADMIN-NC limits."
+    escalated: false
+  - level_code: admin2
+    chosen: ncl-gnc-limites-terrestres-2024
+    alternatives: [ncl-gnc-bdadmin-2022, ncl-gadm-4-1, ncl-datagouvnc-communes-simplifiees]
+    reason: "As admin1; INSEE codes present."
+    escalated: false
+  - level_code: admin3
+    chosen: ncl-noumea-quartiers
+    alternatives: []
+    reason: "Only sub-communal official units published (Noumea only)."
+    escalated: false
+  - level_code: other
+    chosen: ncl-gnc-aires-coutumieres-2020
+    alternatives: []
+    reason: "Only customary-area layer (publisher flags it as non-official working data)."
+    escalated: false

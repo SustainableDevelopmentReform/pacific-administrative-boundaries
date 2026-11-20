@@ -1,0 +1,227 @@
+{
+  "source_id": "png-nso-census2011-boundaries",
+  "iso3": "PNG",
+  "retrieved_at": "2026-11-19T22:11:36Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://png-data.sprep.org/dataset/png-administrative-boundaries",
+  "download_urls": [
+    "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/NSO_PNG%2520Boundaries.zip",
+    "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_prov_boundaries_2011census_region.json",
+    "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_dist_boundaries_2011census_region.json",
+    "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_llg_boundaries_2011census_region.json",
+    "https://pacificdata.org/data/api/3/action/package_show?id=png-administrative-boundaries1c6e95df-c69f-419b-afec-0bc482d14f5e",
+    "https://pacific-data.sprep.org/system/files/Public%20Data%20License%20Agreement%20%28Creative%20Commons%29.pdf",
+    "https://pacific-data.sprep.org/system/files/Summary%20Table%20of%20License%20Types.pdf"
+  ],
+  "license": {
+    "name": "SPREP Public License (= CC-BY-NC-SA-4.0)",
+    "url": "https://pacific-data.sprep.org/dataset/data-portal-license-agreements"
+  },
+  "files": [
+    {
+      "path": "NSO_PNG_Boundaries.zip",
+      "bytes": 3581033,
+      "sha256": "7d0a57d3df883e43e2f4a4a6dfcaaec01ad36cede1212a591b049841eec498ec"
+    },
+    {
+      "path": "png_prov_boundaries_2011census_region.json",
+      "bytes": 9031167,
+      "sha256": "d7821e8f4b239d0ef58cd6fb334d961e6058e08026e751319ca5d58901445b6f"
+    },
+    {
+      "path": "png_dist_boundaries_2011census_region.json",
+      "bytes": 10097475,
+      "sha256": "12d7e323eec9f55209bf86570ca24a90bff99e49c19d6a761c79c92705dd02bb"
+    },
+    {
+      "path": "png_llg_boundaries_2011census_region.json",
+      "bytes": 12480826,
+      "sha256": "3f195db00704efc571528559a0e3085ceee94287eaf05ae8dfd19687ec6670e9"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "bytes": 6858,
+      "sha256": "0a02c204d2189605b3f97b94d708e784d7eca43102f5cfd55312f57c0c7d3263"
+    },
+    {
+      "path": "SPREP_Public_Data_License_Agreement_CC.pdf",
+      "bytes": 176207,
+      "sha256": "1ab7e90df5ad6ef50b6342bea04650a1e0772f837f2161b9020dfe8cacbeaec3"
+    },
+    {
+      "path": "SPREP_Summary_Table_of_License_Types.pdf",
+      "bytes": 88746,
+      "sha256": "ac3408df5fbe05c5afbfefe5048fa43fb4fec2b5ea1c5995df83c63ce1b417d2"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.dbf",
+      "bytes": 4883,
+      "sha256": "289823be72c3a2bdd6df2d0d402bece8b878949d65230dd056c1c9c8625aa6c0",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.sbn",
+      "bytes": 1004,
+      "sha256": "437276cbe6a98b4c4633292ff5225d135614b2c5fc08d85716190962c731dfa0",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.sbx",
+      "bytes": 188,
+      "sha256": "a76882df4e1f0031d16d24e3ebe56a96040b3e0ebc279216be3d0d3e17e66aa2",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.shp",
+      "bytes": 1625120,
+      "sha256": "9158512d0bb5e4c6a952cfca135b6a348b34195ecd95c8e4bd59b347cf019986",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.shx",
+      "bytes": 796,
+      "sha256": "839ebdc6aa031ccfe7bd0010d30933bd5ab83f90e129b5ac8be24eea245bc12c",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.dbf",
+      "bytes": 13790,
+      "sha256": "e5bb5c0d1e6ceb08487ae376f8144422a9cb56ecd2c415d1f2d0759f57d0cf56",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.sbn",
+      "bytes": 3460,
+      "sha256": "e3e4c236ffe1733af4327d0bf94748a9c586e2ba37fdbb4577375da209c74b4c",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.sbx",
+      "bytes": 364,
+      "sha256": "b28cb8c6f3e783f18504efb0d2650e27c0e4a9af05220ff24b0a3020c1c86401",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.shp",
+      "bytes": 2037404,
+      "sha256": "6c295be022f146d610c678b7b146ae5c0a570ec4050a330ed130a47655b04855",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.shx",
+      "bytes": 2708,
+      "sha256": "b62319bf5eeea934f948318336d2166fc0a2a119f0189f5ddf1dc77fa7de6224",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.dbf",
+      "bytes": 1044,
+      "sha256": "fe55b355ce564f71d4e0d0c961ed2d4681fc8a0c93667d4bf8f0c066a57226b4",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.sbn",
+      "bytes": 332,
+      "sha256": "9f50f0224529dd689ab5c549e792f1c3653466a93c1b0b00fa52c44641066bb4",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.sbx",
+      "bytes": 132,
+      "sha256": "75bafdeb61c2d27327ae6d13b9f99284b442e887cf51020be2547585b93678af",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.shp",
+      "bytes": 1441960,
+      "sha256": "eb035b8f57ea9dcc6b67ac316b5fe564791a4c5b273b83f75e853047e410d8bb",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    },
+    {
+      "path": "extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.shx",
+      "bytes": 276,
+      "sha256": "baa3368c278cd5bad1629928271e1c466b2da1522088189629ea1c863c28f663",
+      "from_archive": "NSO_PNG_Boundaries.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "NSO_PNG_Boundaries.zip",
+      "url": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/NSO_PNG%2520Boundaries.zip",
+      "url_effective": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/NSO_PNG%2520Boundaries.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:00:53Z"
+    },
+    {
+      "path": "png_prov_boundaries_2011census_region.json",
+      "url": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_prov_boundaries_2011census_region.json",
+      "url_effective": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_prov_boundaries_2011census_region.json",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:54Z"
+    },
+    {
+      "path": "png_dist_boundaries_2011census_region.json",
+      "url": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_dist_boundaries_2011census_region.json",
+      "url_effective": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_dist_boundaries_2011census_region.json",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:54Z"
+    },
+    {
+      "path": "png_llg_boundaries_2011census_region.json",
+      "url": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_llg_boundaries_2011census_region.json",
+      "url_effective": "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_llg_boundaries_2011census_region.json",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:55Z"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "url": "https://pacificdata.org/data/api/3/action/package_show?id=png-administrative-boundaries1c6e95df-c69f-419b-afec-0bc482d14f5e",
+      "url_effective": "https://pacificdata.org/data/api/3/action/package_show?id=png-administrative-boundaries1c6e95df-c69f-419b-afec-0bc482d14f5e",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:00:55Z"
+    },
+    {
+      "path": "SPREP_Public_Data_License_Agreement_CC.pdf",
+      "url": "https://pacific-data.sprep.org/system/files/Public%20Data%20License%20Agreement%20%28Creative%20Commons%29.pdf",
+      "url_effective": "https://pacific-data.sprep.org/system/files/Public%20Data%20License%20Agreement%20%28Creative%20Commons%29.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "retrieved_at": "2026-11-19T22:11:36Z"
+    },
+    {
+      "path": "SPREP_Summary_Table_of_License_Types.pdf",
+      "url": "https://pacific-data.sprep.org/system/files/Summary%20Table%20of%20License%20Types.pdf",
+      "url_effective": "https://pacific-data.sprep.org/system/files/Summary%20Table%20of%20License%20Types.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "retrieved_at": "2026-11-19T22:11:36Z"
+    }
+  ],
+  "notes": "PNG Data Portal (SPREP Inform) 'PNG Administrative Boundaries': 2011 census province (22) / district (87) / LLG (326) boundaries; 'National Statistics Office (NSO) are the Custodians of the Dataset'. Mirrored on PDH as png-administrative-boundaries1c6e95df-c69f-419b-afec-0bc482d14f5e. Licence 'SPREP Public License' = Public Data License Agreement (Creative Commons) whose text is CC BY-NC-SA 4.0 (copy of licence PDF and SPREP summary table saved here): non-commercial + share-alike, so NOT freely redistributable."
+}

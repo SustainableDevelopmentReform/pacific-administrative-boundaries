@@ -1,0 +1,199 @@
+iso3: GUM
+country_name: Guam
+# Stack: Territory (TIGER county 66010 = whole island) > Village / municipality (19, each with an
+# elected mayor). Statistical: 2020 census tracts (57), block groups (219), blocks (1,816), CDPs (57).
+# Legislature and US House delegate are elected at large (no electoral subdivision layer).
+sources:
+  - source_id: gum-uscensus-tiger2025
+    title: "US Census Bureau TIGER/Line Shapefiles 2025 - Guam (state FIPS 66)"
+    publisher: "U.S. Census Bureau"
+    publisher_type: national
+    landing_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html
+    download_urls:
+      - https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/COUSUB/tl_2025_66_cousub.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_66_place.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_66_tract.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_66_bg.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/TABBLOCK20/tl_2025_66_tabblock20.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/PUMA20/tl_2025_66_puma20.zip
+    retrieval_method: http
+    license:
+      name: Public domain (US Government work)
+      url: https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html
+      redistribution_ok: true
+      notes: "TIGER/Line files are not copyrighted; 'TIGER/Line' is a registered trademark of the Census Bureau."
+    publication_date: 2025-09-22   # HTTP Last-Modified of the 2025 files; boundaries as of 2025-01-01
+    version: "TIGER/Line 2025"
+    format: shapefile
+    crs: EPSG:4269
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory of Guam
+        layer: tl_2025_us_state/tl_2025_us_state.shp
+        filter: {STATEFP: '66'}
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null
+        nests: true
+        use: false   # [processing] admin0 = union of land-clipped municipalities
+        notes: "Includes territorial waters (AWATER). Clip to land or use union of cousub with ALAND>0. COUNTY 66010 'Guam' is the same area and not a separate level."
+      - level_code: admin1
+        level_type: local_government
+        level_name_local: Village (municipality)
+        layer: tl_2025_66_cousub/tl_2025_66_cousub.shp
+        exclude: {COUSUBFP: '00000'}
+        name_field: NAME
+        code_field: GEOID
+        parent_field: STATEFP
+        nests: true
+        notes: "19 municipalities with Chamorro official spellings (e.g. 'Hågat', 'Sånta Rita-Sumai'). Drop COUSUBFP 00000 'County subdivision not defined' (water only)."
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census Designated Place
+        layer: tl_2025_66_place/tl_2025_66_place.shp
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null
+        nests: false
+        notes: "57 CDPs covering 238 of 544 km2 land; statistical settlement areas, not legal units."
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census tract
+        layer: tl_2025_66_tract/tl_2025_66_tract.shp
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: COUNTYFP
+        nests: false
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census block group
+        layer: tl_2025_66_bg/tl_2025_66_bg.shp
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: TRACTCE
+        nests: false
+      - level_code: other
+        level_type: statistical
+        level_name_local: Census block (2020)
+        layer: tl_2025_66_tabblock20/tl_2025_66_tabblock20.shp
+        name_field: NAME20
+        code_field: GEOID20
+        parent_field: TRACTCE20
+        nests: false
+        notes: "2020 blocks nest within 2020 municipalities; may not nest exactly within 2025 cousubs - processing stage to test before using as a nesting level."
+    status: selected
+    raw_path: data/raw/GUM/gum-uscensus-tiger2025/
+    land_mask:   # [processing] clip all TIGER levels to land = 2020 blocks with ALAND20 > 0
+      layer: tl_2025_66_tabblock20/tl_2025_66_tabblock20.shp
+      filter: {ALAND20: {gt: 0}}
+    notes: "National STATE/COUNTY zips are US-wide; filter STATEFP='66'. PUMA20 (1 unit = whole island) kept but not used. CD119 (at-large delegate district) not downloaded."
+
+  - source_id: gum-gcmp-pacioos-municipal-2001
+    title: "Municipal Boundaries - Guam (Guam Coastal Management Program, served by PacIOOS)"
+    publisher: "Guam Coastal Management Program, Bureau of Statistics and Plans (GovGuam); distributed by PacIOOS"
+    publisher_type: national
+    landing_url: https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_db_all_mncpal_bndrys_2001&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: "PacIOOS data use (free use and redistribution, not for legal use)"
+      url: https://www.pacioos.hawaii.edu/metadata/gu_db_all_mncpal_bndrys_2001.html
+      redistribution_ok: true
+      notes: "'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.' An older NPS-hosted metadata record for the BSP layer states access requires 'Permission of Bureau of Statistics and Plans' and that municipal boundary accuracy work 'has not been completed'."
+    publication_date: 2001-01-01   # layer name says 2001; PacIOOS service 2016-01-25
+    version: "2001"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: local_government
+        level_name_local: Municipality
+        layer: gu_db_all_mncpal_bndrys_2001.geojson
+        name_field: MUNICIPALI
+        code_field: null
+        parent_field: null
+        nests: true
+    status: alternative
+    raw_path: data/raw/GUM/gum-gcmp-pacioos-municipal-2001/
+    notes: "19 municipalities, 543.9 km2 (land). Territorial agency (tier 1) but 24 years old, no codes, accuracy caveat."
+
+  - source_id: gum-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen GUM ADM0, ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#GUM
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/GUM/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GUM/ADM0/geoBoundaries-GUM-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GUM/ADM2/geoBoundaries-GUM-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0: CC-BY-4.0; ADM2: Public Domain"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM0 from 'Sentinel-2 10-Meter Land Use/LandCover' (CC BY 4.0); ADM2 'Village' from 'United States Census Bureau, MAF/TIGER' (public domain)."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Guam, layer: geoBoundaries-GUM-ADM0-all/geoBoundaries-GUM-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: local_government, level_name_local: Village, layer: geoBoundaries-GUM-ADM2-all/geoBoundaries-GUM-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/GUM/gum-geoboundaries-gbopen/
+    notes: "ADM2 DERIVED from an older TIGER vintage (labelled ADM2 by geoBoundaries; it is admin1 here). ADM0 is a Sentinel-2 land mask (useful land outline)."
+
+  - source_id: gum-weri-pacioos-southern-villages
+    title: "Villages - Southern Guam (WERI, served by PacIOOS)"
+    publisher: "Water and Environmental Research Institute of the Western Pacific (University of Guam); PacIOOS"
+    publisher_type: academic
+    landing_url: https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license: {name: "PacIOOS data use (free use and redistribution, not for legal use)", url: "https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html", redistribution_ok: true, notes: ""}
+    publication_date: 2016-01-25
+    version: ""
+    format: geojson
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: data/raw/GUM/gum-weri-pacioos-southern-villages/
+    notes: "7 village points in southern Guam only; not polygons."
+
+  - source_id: gum-gadm-41
+    title: "GADM 4.1 Guam"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_GUM.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Guam, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: local_government, level_name_local: Municipality, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/GUM/gum-gadm-41/
+    notes: ""
+
+decisions:
+  - level_code: admin1
+    chosen: gum-uscensus-tiger2025
+    alternatives: [gum-gcmp-pacioos-municipal-2001, gum-geoboundaries-gbopen, gum-gadm-41]
+    reason: "Strict tier order would favour the GovGuam (GCMP/BSP) 2001 layer (tier 1) over TIGER (tier 4), but it is 24 years old, carries an accuracy caveat and has no codes, whereas TIGER 2025 municipal boundaries are updated with GovGuam through Census partnership programs (Guam partnership shapefiles exist), are current (as of 2025-01-01), coded (FIPS) and consistent with the census statistical geography. Chose TIGER; escalated because it departs from the strict tier order."
+    escalated: true
+  - level_code: admin0
+    chosen: gum-uscensus-tiger2025
+    alternatives: [gum-geoboundaries-gbopen, gum-gadm-41]
+    reason: "Official; derive land outline as union of 19 cousubs (STATE polygon includes water)."
+    escalated: false

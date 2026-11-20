@@ -1,0 +1,153 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite it as below, and also cite the original
+  sources of the boundaries you use (listed in docs/sources.md and in each STAC
+  item's sci:citation).
+type: dataset
+title: "Pacific administrative boundaries: harmonised jurisdictional boundaries for 22 Pacific Island countries and territories, from EEZ to the finest public level"
+version: 0.1.0
+date-released: 2026-11-20
+authors:
+  - family-names: Lyons
+    given-names: Mitchell
+license: Apache-2.0
+abstract: >-
+  Harmonised EEZ, national, subnational and census boundaries for the 22 Pacific
+  Island countries and territories, delivered as GeoParquet with STAC metadata:
+  per-country long tables, a Pacific-wide long table, and a planar finest
+  partition of every EEZ. Each row records its source, licence, publication and
+  retrieval dates and processing steps. The licence above applies to the code;
+  the data keep the licences of their sources (EEZ rows: SPC, CC BY-NC-SA 4.0).
+keywords:
+  - Pacific
+  - administrative boundaries
+  - exclusive economic zone
+  - census geography
+  - GeoParquet
+  - STAC
+references:
+  - type: dataset
+    title: "Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)"
+    authors:
+      - name: "Pacific Community (SPC), Geoscience, Energy and Maritime Division"
+    year: 2025
+    version: "1"
+    url: "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743"
+    license: CC-BY-NC-SA-4.0
+    notes: "Used and redistributed under a CSDR-SPC data use agreement; downstream users are bound by CC BY-NC-SA 4.0."
+  - type: dataset
+    title: "PCRAFI 2010 population exposure geographies, Cook Islands (electoral boundaries)"
+    authors:
+      - name: "Pacific Community (SPC), Geoscience, Energy and Maritime Division (PCRAFI)"
+    year: 2020
+    url: "https://geonode.pacificdata.org/catalogue/#/dataset/497"
+    license: CC-BY-NC-SA-4.0
+    notes: "Used and redistributed under a CSDR-SPC data use agreement."
+  - type: database
+    title: "Cook Islands, Niue and Tokelau Island Polygons (Topo50 series, 1:25k and 1:50k)"
+    authors:
+      - name: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    year: 2022
+    url: "https://data.linz.govt.nz/"
+    license: CC-BY-4.0
+    notes: "Sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0. Layers 52251, 52293, 52203, 52222 (Cook Islands), 52181 (Niue), 52149 (Tokelau)."
+  - type: dataset
+    title: "Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12"
+    authors:
+      - name: "Flanders Marine Institute (VLIZ)"
+    year: 2023
+    version: "12"
+    doi: 10.14284/632
+    url: "https://www.marineregions.org/"
+    license: CC-BY-4.0
+    notes: "Source of the Torres Strait joint regime and Wake Island / Enenkio overlapping claim rows; alternative EEZ layer."
+  - type: article
+    title: "geoBoundaries: A global database of political administrative boundaries"
+    authors:
+      - family-names: Runfola
+        given-names: Daniel
+      - family-names: Anderson
+        given-names: Austin
+      - family-names: Baier
+        given-names: Heather
+      - family-names: Crittenden
+        given-names: Matt
+      - family-names: Dowker
+        given-names: Elizabeth
+      - family-names: Fuhrig
+        given-names: Sydney
+      - family-names: Goodman
+        given-names: Seth
+      - family-names: Grimsley
+        given-names: Grace
+      - family-names: Layko
+        given-names: Rachel
+      - family-names: Melville
+        given-names: Graham
+      - family-names: Mulder
+        given-names: Maddy
+      - family-names: Oberman
+        given-names: Rachel
+      - family-names: Panganiban
+        given-names: Joshua
+      - family-names: Peck
+        given-names: Andrew
+      - family-names: Seitz
+        given-names: Leigh
+      - family-names: Shea
+        given-names: Sylvia
+      - family-names: Slevin
+        given-names: Hannah
+      - family-names: Youngerman
+        given-names: Rebecca
+      - family-names: Hobbs
+        given-names: Lauren
+    journal: "PLoS ONE"
+    year: 2020
+    volume: 15
+    issue: 4
+    start: e0231866
+    doi: 10.1371/journal.pone.0231866
+  - type: database
+    title: "Population and Housing Census administrative boundaries (FJI 2017, FSM 2010, COK 2011, KIR 2018, NIU 2011, NRU 2011, PLW 2015, SLB 2009, TON 2021, TUV 2017, VUT 2016, WLF 2013, WSM 2011)"
+    authors:
+      - name: "Pacific Community (SPC) Statistics for Development Division, for the national statistics offices"
+    url: "https://pacificdata.org/"
+    notes: "Pacific Data Hub; licence stated as CC-BY (recorded as CC-BY-4.0)."
+  - type: database
+    title: "Subnational Administrative Boundaries (COD-AB): Kiribati, Marshall Islands, Papua New Guinea"
+    authors:
+      - name: "UN OCHA, via the Humanitarian Data Exchange"
+    url: "https://data.humdata.org/"
+    license: CC-BY-3.0-IGO
+  - type: database
+    title: "TIGER/Line Shapefiles 2025 and 2026 (American Samoa, Guam, Northern Mariana Islands)"
+    authors:
+      - name: "U.S. Census Bureau"
+    url: "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+  - type: database
+    title: "Limites administratives terrestres; Aires coutumieres"
+    authors:
+      - name: "Gouvernement de la Nouvelle-Caledonie (Georep)"
+    year: 2024
+    url: "https://georep-dtsi-sgt.opendata.arcgis.com/"
+  - type: database
+    title: "Geographie administrative de la Polynesie francaise"
+    authors:
+      - name: "Direction des affaires foncieres de la Polynesie francaise (Section Cadastre-Topographie)"
+    year: 2022
+    url: "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise"
+    license: CC-BY-4.0
+  - type: database
+    title: "Limites geographiques administratives (Quartiers 2000)"
+    authors:
+      - name: "Institut de la statistique de la Polynesie francaise (ISPF)"
+    year: 2022
+    url: "https://www.data.gouv.fr/datasets/limites-geographiques-administratives"
+    license: ODbL-1.0
+  - type: database
+    title: "Natural Earth 1:10m Admin 0 - Countries, version 5.1.1"
+    authors:
+      - name: "Natural Earth"
+    version: "5.1.1"
+    url: "https://www.naturalearthdata.com/"

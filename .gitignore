@@ -1,0 +1,26 @@
+# private orchestration material (never published)
+_private/
+reports/
+
+# large data: raw and processed are published via S3, not git
+# (directory contents are ignored with /** so the JSON re-includes below take effect)
+data/raw/**
+data/processed/**
+data/combined/**
+!data/raw/**/
+!data/processed/**/
+!data/combined/**/
+!data/raw/**/manifest.json
+!data/processed/**/*.json
+!data/combined/**/*.json
+
+# python / env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.venv/
+.DS_Store
+
+# local working notes (not published)
+prompts.md

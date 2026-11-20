@@ -1,0 +1,191 @@
+{
+  "source_id": "mhl-usaid-pacioos-lga-2017",
+  "iso3": "MHL",
+  "retrieved_at": "2026-11-19T21:57:54Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_villages.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_atolls.html"
+  ],
+  "license": {
+    "name": "PacIOOS data use (free use and redistribution, not for legal use)",
+    "url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+    "notes": "Use Limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+  },
+  "files": [
+    {
+      "path": "mh_mgd_all_local_gov_areas.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 278256,
+      "sha256": "7ace8500f52201c780f63ea359d48bff58593360b307083782ce0efcbe6a6581"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_local_gov_areas&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 138100,
+      "sha256": "a9a76cd825757ad49b4dfa17b93fd4966d483e4454c5e067c3e9e4d15574e9b4"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 45376,
+      "sha256": "05254d61e98e53f7ffcf7e96be0047bd20e7e10b858f288d01486fe674bed8db"
+    },
+    {
+      "path": "mh_mgd_all_villages.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1093703,
+      "sha256": "582ce5f5cb056d3ad7d18e5324a96f7eb1fefb4b7437d1f07aa37fd30a089131"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_villages&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 428779,
+      "sha256": "aa27f2e6cf13b8b36ca842ade3b3848347a5f5b4d73bf93aceb78de71d3e7ff5"
+    },
+    {
+      "path": "mh_mgd_all_villages_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_villages.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46258,
+      "sha256": "27322ad9d547837e7ff1d3f8fb0f0688e9000f3be1185357cc0b91237696f02b"
+    },
+    {
+      "path": "mh_mgd_all_atolls.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 2585964,
+      "sha256": "4a4d8249bee0012505b6e46985d89d294278592833051f98f3a148cefa65182f"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:mh_mgd_all_atolls&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1205158,
+      "sha256": "696eee62d88fc44d558542b19913f6da148fb7d76e8d2a3b766e7e602fbd9132"
+    },
+    {
+      "path": "mh_mgd_all_atolls_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_atolls.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 47714,
+      "sha256": "1ca0d9a99c7dc14ae6708a6381f18aec1e9de42fe07d39bddb3212e116fa15e2"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp/mh_mgd_all_local_gov_areas.cst",
+      "from": "mh_mgd_all_local_gov_areas_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp/mh_mgd_all_local_gov_areas.shp",
+      "from": "mh_mgd_all_local_gov_areas_shp.zip",
+      "bytes": 168964,
+      "sha256": "eb392590365ee5b7ad5530b791082723855224f806c6a7b3bc1fe8ef36a3a880"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp/mh_mgd_all_local_gov_areas.prj",
+      "from": "mh_mgd_all_local_gov_areas_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp/mh_mgd_all_local_gov_areas.shx",
+      "from": "mh_mgd_all_local_gov_areas_shp.zip",
+      "bytes": 340,
+      "sha256": "bd4f627f33b0f2c63e2da46a1daf8c948e6139be41b1221aafb8df20fb8f92a7"
+    },
+    {
+      "path": "mh_mgd_all_local_gov_areas_shp/mh_mgd_all_local_gov_areas.dbf",
+      "from": "mh_mgd_all_local_gov_areas_shp.zip",
+      "bytes": 8017,
+      "sha256": "f325d000396acd276790dd6a6043eaaf01adf151091f90bf31251b26e44cfe8c"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp/mh_mgd_all_villages.prj",
+      "from": "mh_mgd_all_villages_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp/mh_mgd_all_villages.shp",
+      "from": "mh_mgd_all_villages_shp.zip",
+      "bytes": 674716,
+      "sha256": "d49745ad7310ed0330e35ebb5df7670f259aed78cde94e660aa1cb475d8acf02"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp/mh_mgd_all_villages.dbf",
+      "from": "mh_mgd_all_villages_shp.zip",
+      "bytes": 39638,
+      "sha256": "e79bab44f6c6bf6d729bab37387ed98447722cc8e882853f52dc934df152e6e8"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp/mh_mgd_all_villages.shx",
+      "from": "mh_mgd_all_villages_shp.zip",
+      "bytes": 492,
+      "sha256": "9400e2cdb8a6223ab1b775c88ccfe0638e56652bd453655fa86dd1c5ef1b8a6d"
+    },
+    {
+      "path": "mh_mgd_all_villages_shp/mh_mgd_all_villages.cst",
+      "from": "mh_mgd_all_villages_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp/mh_mgd_all_atolls.prj",
+      "from": "mh_mgd_all_atolls_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp/mh_mgd_all_atolls.cst",
+      "from": "mh_mgd_all_atolls_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp/mh_mgd_all_atolls.shx",
+      "from": "mh_mgd_all_atolls_shp.zip",
+      "bytes": 364,
+      "sha256": "ed904c5e1a7685551115e24aede0f0780ada963aa8f9e17a343210cb6a9e5d9e"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp/mh_mgd_all_atolls.shp",
+      "from": "mh_mgd_all_atolls_shp.zip",
+      "bytes": 1581232,
+      "sha256": "b0ca8f09ed77736639ff7fb23c79d9d6e623ab2df08ce07be910ac04f5d7ca27"
+    },
+    {
+      "path": "mh_mgd_all_atolls_shp/mh_mgd_all_atolls.dbf",
+      "from": "mh_mgd_all_atolls_shp.zip",
+      "bytes": 28403,
+      "sha256": "355955e053f9c1be2b7aa2277132117205aaa0151b2c27472c1573a6c0b9f8e2"
+    }
+  ],
+  "notes": "PacIOOS GeoServer WFS 1.0.0. Original data provider: U.S. Agency for International Development (USAID) (Marshall Islands Marine Geospatial dataset 'mgd'). PacIOOS service date 2017-04-19. GeoJSON output is EPSG:4326; SHAPE-ZIP is native CRS."
+}

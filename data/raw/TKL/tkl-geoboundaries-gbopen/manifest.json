@@ -1,0 +1,135 @@
+{
+  "source_id": "tkl-geoboundaries-gbopen",
+  "iso3": "TKL",
+  "retrieved_at": "2026-11-19T22:05:16Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/TKL/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TKL/ADM0/geoBoundaries-TKL-ADM0-all.zip"
+  ],
+  "license": {
+    "name": "CC-BY-4.0 (geoBoundaries gbOpen; per-layer boundaryLicense in geoboundaries_api_meta.json)",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "path": "geoboundaries_api_meta.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/TKL/ALL/",
+      "bytes": 1861,
+      "sha256": "405f22a8b942764a4b4088c7ded2862b983643c5025edfb67701389fa12f2424",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:16Z"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TKL/ADM0/geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 251354,
+      "sha256": "0c6a51f5245e61584f21cfa04d029e9b852de2d945117888c70910bf73b52884",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:16Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0-metaData.json",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 964,
+      "sha256": "1ea8b60466997cfd9295e7b0710c4ee8bc6f5a4bfb6ddae47dc0c0446c610978"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0-metaData.txt",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 1119,
+      "sha256": "13ccead4dccd3e50f41ce521b59a994f7b08cb9c4a4538337550f216433fdac5"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.shp",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 200080,
+      "sha256": "6f370eb23345abb07a2f31d4ad26c593ca14dd13e99fcc79ef372465fb5c99be"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.shx",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "b8ec499a41318235eac3218dcba24476889cdd0515e35e72b2117140a4ec82e2"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.dbf",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 233,
+      "sha256": "f44e2321cf1eb14f3ba7fb41ab38aa6ca90ce2823c3472a2a9a06f1ab9f484c9"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.prj",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.topojson",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 106577,
+      "sha256": "57deeb978fd2baba2d5bbcb94a7c5fac93758e5310a22ed10cabbcf26dfa209b"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.geojson",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 571560,
+      "sha256": "257b31214c1d66307a829de7441b4a91f4276fa5b2b8d3cf61f05d460d096486"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.shp",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 5856,
+      "sha256": "ad994ce9faa8e4dd2e37b2b367e594f98891242b9bbf1f640d3c929c12188638"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.shx",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "d8585e78fe314f3ef38b20277e6a7fea3d37e626c3007fd97ba2eebe3745d4c2"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.dbf",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 233,
+      "sha256": "f44e2321cf1eb14f3ba7fb41ab38aa6ca90ce2823c3472a2a9a06f1ab9f484c9"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.prj",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.topojson",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 4130,
+      "sha256": "a9a05a38d12b0e1c90e6bbda1ff1efbe0dd180a101d404380495eb56ab9f3727"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0_simplified.geojson",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 16466,
+      "sha256": "083ac66e8036a336421eeccfa55ba090e22e6128cf93145f1228ac521f2b1e75"
+    },
+    {
+      "path": "geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-TKL-ADM0-all.zip",
+      "bytes": 33202,
+      "sha256": "29f867c65f478e93bacaf0aa503d29f26785ad205ed5b40e6712146c274c0f24"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen current release (commit 9469f09) levels ['ADM0']; metadata from API saved as geoboundaries_api_meta.json"
+}

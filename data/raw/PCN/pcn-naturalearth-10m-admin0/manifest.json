@@ -1,0 +1,71 @@
+{
+  "source_id": "pcn-naturalearth-10m-admin0",
+  "iso3": "PCN",
+  "retrieved_at": "2026-11-19T22:05:48Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
+  "download_urls": [
+    "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip"
+  ],
+  "license": {
+    "name": "Public domain (Natural Earth)",
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "files": [
+    {
+      "path": "ne_10m_admin_0_countries.zip",
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip",
+      "bytes": 4930492,
+      "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:48Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.README.html",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 39383,
+      "sha256": "01e711029395bc94936ec82cabf06856f04f7d0e74747351799283c081c6631c"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.VERSION.txt",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 7,
+      "sha256": "548358969090d629b41888f5fe664ac31b7203dfd849f7c1ef820ac055b62191"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.cpg",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.dbf",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 878482,
+      "sha256": "c5dbd3dd5fd7e2ef49051fc88562c03819e8ea63a382642df6eadd1243bf4b49"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.prj",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 8806224,
+      "sha256": "7ce119ef6342e43cff7c0c3004e0911ab7ec1988a14734372031d2012180e7bc"
+    },
+    {
+      "path": "ne_10m_admin_0_countries/ne_10m_admin_0_countries.shx",
+      "from": "ne_10m_admin_0_countries.zip",
+      "bytes": 2164,
+      "sha256": "ca19ec112d054c77bc8f7ac00e3b110d5dff32cc9bcf4cd1b8b66bdd0f611d32"
+    }
+  ],
+  "notes": "Global Natural Earth 1:10m admin-0 countries (filter ADM0_A3='PCN'); last-resort admin0."
+}

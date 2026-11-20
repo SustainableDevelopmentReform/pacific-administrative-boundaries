@@ -1,0 +1,74 @@
+{
+  "steps": [
+    {
+      "label": "process",
+      "command": "pab process --all --overwrite",
+      "inputs": {
+        "register": "config/sources/PYF.yml",
+        "sources_used": [
+          "pyf-ispf-limites-administratives-2022",
+          "pyf-daf-geographie-administrative-2022"
+        ],
+        "raw_manifests": [
+          "data/raw/PYF/pyf-ispf-limites-administratives-2022/manifest.json",
+          "data/raw/PYF/pyf-daf-geographie-administrative-2022/manifest.json"
+        ]
+      },
+      "outputs": {
+        "admin": "data/processed/PYF/pyf_admin.parquet",
+        "rows": 469,
+        "restricted_file": null,
+        "restricted_rows": 0,
+        "levels": {
+          "admin0": 1,
+          "admin1": 5,
+          "admin2": 48,
+          "admin3": 116,
+          "admin4": 170,
+          "eez": 1,
+          "other": 128
+        }
+      },
+      "completed_at": "2026-11-20T00:42:16Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    },
+    {
+      "label": "assign-eez",
+      "command": "pab assign-eez --all",
+      "inputs": {
+        "admin": "data/processed/PYF/pyf_admin.parquet",
+        "eez": "data/processed/EEZ/pacific_eez.parquet"
+      },
+      "outputs": {
+        "admin": "data/processed/PYF/pyf_admin.parquet",
+        "land_rows_without_eez": 0
+      },
+      "completed_at": "2026-11-20T00:43:16Z",
+      "software": {
+        "pab": "0.1.0",
+        "python": "3.12.2",
+        "geopandas": "1.2.0",
+        "shapely": "2.2.0",
+        "pyogrio": "0.13.0",
+        "gdal": "3.12.4",
+        "pyproj": "3.8.0",
+        "proj": "9.8.1",
+        "pyarrow": "26.0.1",
+        "pystac": "1.16.1"
+      },
+      "git_commit": null
+    }
+  ]
+}

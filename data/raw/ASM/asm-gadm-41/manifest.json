@@ -1,0 +1,29 @@
+{
+  "source_id": "asm-gadm-41",
+  "iso3": "ASM",
+  "retrieved_at": "2026-11-19T22:05:10Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_ASM.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (free for academic/non-commercial use; redistribution and commercial use not allowed)",
+    "url": "https://gadm.org/license.html",
+    "redistribution_ok": false
+  },
+  "files": [
+    {
+      "path": "gadm41_ASM.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_ASM.gpkg",
+      "bytes": 221184,
+      "sha256": "504e212f27d7def68ee880598187edc6a06b3cbfe118881df60979be03133466",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:05:10Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "GADM 4.1 country GeoPackage; REFERENCE ONLY (licence prohibits redistribution)."
+}

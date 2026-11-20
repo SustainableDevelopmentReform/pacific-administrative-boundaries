@@ -1,0 +1,145 @@
+{
+  "source_id": "ncl-geoboundaries-adm0",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T21:55:16Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NCL/ADM0/geoBoundaries-NCL-ADM0-all.zip",
+    "https://www.geoboundaries.org/api/current/gbOpen/NCL/ADM0/"
+  ],
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": ""
+  },
+  "files": [
+    {
+      "path": "geoBoundaries-NCL-ADM0-all.zip",
+      "bytes": 4505634,
+      "sha256": "a6f17684706aac0583138e453b8b2a18490c8046e15e4ce296da2421fdb7163f"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "bytes": 1918,
+      "sha256": "d682d964ab19418df3be9497e600faee53b065dda88a48ae036957fadd9ea29a"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0-PREVIEW.png",
+      "bytes": 40075,
+      "sha256": "8d2e861b26a6a8eb90bc82e0d87ca932da0703ecc9ce29c218741736668cdef7",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0-metaData.json",
+      "bytes": 1018,
+      "sha256": "ecf0d27f293f2781324eaa95fdeeec1d612253bc6b94846a413ce8bc8813c667",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0-metaData.txt",
+      "bytes": 1176,
+      "sha256": "2b0ad9ec8fc2b6cc8d6db91dbd6e6fd48a3a1c2368fc7e7cd7548edd58148d96",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.dbf",
+      "bytes": 241,
+      "sha256": "82b3bbff442572de5fa47450fab9a0cbe5a08a9a086b48a1281b8ebb9a83ba71",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.geojson",
+      "bytes": 6650746,
+      "sha256": "fe84a4f9846296fff7bc2270f976b6e7f39e6dcc51cd266f7b183b72ba3d55d0",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.shp",
+      "bytes": 2333020,
+      "sha256": "911afbb5f39f0fcdb388e3ea3668b4ba870c6c1d7109eddd26f6e69a71d214df",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.shx",
+      "bytes": 108,
+      "sha256": "107cc5c0fdbbb5fc1d7082f72d57216ade3e519e6fa9f3008fa7d99f87aaf464",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0.topojson",
+      "bytes": 1360428,
+      "sha256": "b09a086f20621176ecd87c1fa50e3a0f23470fdfee025ff838400dff32795c4f",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.dbf",
+      "bytes": 241,
+      "sha256": "82b3bbff442572de5fa47450fab9a0cbe5a08a9a086b48a1281b8ebb9a83ba71",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.geojson",
+      "bytes": 534738,
+      "sha256": "f951a3adb9285fda24861d5ab21f60a47dee65d3ddf6a8bd49f63b664707065f",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.shp",
+      "bytes": 188996,
+      "sha256": "c4c588d1437f61b71d5d4564fa9d0e66de01c804640c1d60323a71ab6b111ebf",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.shx",
+      "bytes": 108,
+      "sha256": "001a297b069dced6bed5f068ea0b051f93dac03a3e9feecbcd495747ab93ebca",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-NCL-ADM0-all/geoBoundaries-NCL-ADM0_simplified.topojson",
+      "bytes": 117580,
+      "sha256": "32dd096e499af06332e9f61acc267f6e07fa4d7647c2154f1dd0a9c6deec4201",
+      "from_archive": "geoBoundaries-NCL-ADM0-all.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "geoBoundaries-NCL-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NCL/ADM0/geoBoundaries-NCL-ADM0-all.zip",
+      "url_effective": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/NCL/ADM0/geoBoundaries-NCL-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:55:15Z"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/NCL/ADM0/",
+      "url_effective": "https://www.geoboundaries.org/api/current/gbOpen/NCL/ADM0/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T21:55:16Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen ADM0 (New Caledonia); boundarySource: raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB; sourceURL: env1.arcgis.com/arcgis/rest/services/Sentinel2_10m_LandCover/ImageServer; year represented 2021; buildDate Dec 12, 2023; units 1; API https://www.geoboundaries.org/api/current/gbOpen/NCL/ADM0/"
+}

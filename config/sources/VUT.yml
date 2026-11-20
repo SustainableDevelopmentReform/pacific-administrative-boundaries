@@ -1,0 +1,116 @@
+# Source register for Vanuatu. Written by the retrieval stage (Melanesia agent), 2026-11-20.
+# Hierarchy: Province (6) > Area Council (66, incl. the two municipalities Port Vila and Luganville) > EA (929, 2016).
+# Islands (91) are a parallel census geography (an area council can span several islands and vice versa): non-nesting.
+iso3: VUT
+country_name: Vanuatu
+sources:
+  - source_id: vut-sdd-phc2016-boundaries
+    title: "2016 Vanuatu Population and Housing (Mini-)Census admin boundaries (Province, Island, Area Council, EA)"
+    publisher: "SPC Statistics for Development Division (SDD) for Vanuatu Bureau of Statistics (Pacific Data Hub)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2016_vut_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/3d490d87-99c0-47fd-98bd-211adaf44f71/download/2016_phc_vut_pid_4326.geojson
+      - https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/66ae054b-9b67-4876-b59c-0b078c31e800/download/2016_phc_vut_iid_4326.geojson
+      - https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/c551af2a-3a0f-4d9c-a466-a30efa2c356f/download/2016_phc_vut_acid_4326.geojson
+      - https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/edc67007-1a16-483b-8d6d-aaf713621c24/download/2016_phc_vut_eaid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence 'cc-by' (version unstated). Disclaimer: upper-level units may slightly differ from official boundaries; no endorsement by SPC."
+    publication_date: 2020-06-10
+    version: "2016 PHC (mini-census)"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: 2016_phc_vut_pid_4326.geojson, name_field: {field: pname, case: title}, code_field: pid, code_scheme: sdd-census, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: "Area Council / Municipality", layer: 2016_phc_vut_acid_4326.geojson, name_field: acname, code_field: acid, code_scheme: sdd-census, parent_field: {field: acid, slice: [0, 1]}, nests: true, notes: "[processing] parent = first digit of acid. No parent field: province = first digit of acid (e.g. 513 Port Vila -> 5 SHEFA). Port Vila (513) and Luganville (208) are municipal councils."}
+      - {level_code: admin3, level_type: statistical, level_name_local: Enumeration Area, layer: 2016_phc_vut_eaid_4326.geojson, name_field: eaname, code_field: ea2016, code_scheme: sdd-census, parent_field: {field: ea2016, slice: [0, 3]}, nests: true, notes: "[processing] parent = first 3 digits. Parent area council = first 3 digits of ea2016. eaname duplicates the code."}
+      - {level_code: other, level_type: island, level_name_local: Island, layer: 2016_phc_vut_iid_4326.geojson, name_field: {field: iname, case: title}, code_field: iid, code_scheme: sdd-census, parent_field: null, nests: false}
+    status: selected
+    raw_path: data/raw/VUT/vut-sdd-phc2016-boundaries/
+    derived_from: []
+    notes: "Tier 1 national census geography, newest public set (2016). COD-AB is an older PopGIS2 (2009-census-era) geometry from the same SPC SDD lineage."
+
+  - source_id: vut-ocha-cod-ab-2018
+    title: "Vanuatu - Subnational Administrative Boundaries (COD-AB) adm0-2, v01"
+    publisher: "OCHA (HDX); source PopGIS2, SPC SDD; contributed by OCHA Office of the Pacific Islands"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-vut
+    download_urls:
+      - https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/e8bcde8f-93ae-4f6a-9990-b00bad8bbfc9/download/vut_admin_boundaries.gdb.zip
+      - https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/7606ac81-d36f-48f4-bdad-dadf34ebe26a/download/vut_admin_boundaries.shp.zip
+      - https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/16084a42-cd25-4a3c-90dd-122c089930c8/download/vut_admin_boundaries.xlsx
+    retrieval_method: http
+    license: {name: CC-BY-3.0-IGO, url: http://creativecommons.org/licenses/by/3.0/igo/legalcode, redistribution_ok: true, notes: ""}
+    publication_date: 2018-08-24
+    version: "v01 (boundaries 2017-10-31; reviewed 2024-10-31; files regenerated 2026-01-26)"
+    format: other  # Esri FileGDB (shapefile copy also present)
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb::vut_admin0", name_field: adm0_name, code_field: adm0_pcode, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb::vut_admin1", name_field: adm1_name, code_field: adm1_pcode, parent_field: adm0_pcode, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Area Council, layer: "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb::vut_admin2", name_field: adm2_name, code_field: adm2_pcode, parent_field: adm1_pcode, nests: true}
+    status: alternative
+    raw_path: data/raw/VUT/vut-ocha-cod-ab-2018/
+    derived_from: []
+    notes: "Same 66 area-council names as SDD 2016 (join by name for P-codes); geometry differs (older PopGIS2 base, area total +10 km2)."
+
+  - {source_id: vut-geoboundaries-adm0, title: "geoBoundaries gbOpen VUT ADM0", publisher: "geoBoundaries; source OpenStreetMap (Wambacher)", publisher_type: osm, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM0/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM0/geoBoundaries-VUT-ADM0-all.zip"], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "share-alike"}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: alternative, raw_path: data/raw/VUT/vut-geoboundaries-adm0/, derived_from: [], notes: "OSM-based."}
+  - {source_id: vut-geoboundaries-adm1, title: "geoBoundaries gbOpen VUT ADM1 (Provinces)", publisher: "geoBoundaries; source OpenStreetMap (Wambacher)", publisher_type: osm, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM1/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM1/geoBoundaries-VUT-ADM1-all.zip"], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "share-alike"}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin1, level_type: state_province, level_name_local: Province, layer: extracted/geoBoundaries-VUT-ADM1-all/geoBoundaries-VUT-ADM1.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/VUT/vut-geoboundaries-adm1/, derived_from: [], notes: "OSM-derived; official sources available."}
+  - {source_id: vut-geoboundaries-adm2, title: "geoBoundaries gbOpen VUT ADM2 (Area councils)", publisher: "geoBoundaries; source SPC SDD, OCHA ROP", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM2/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM2/geoBoundaries-VUT-ADM2-all.zip"], retrieval_method: api, license: {name: CC-BY-3.0-IGO, url: "http://creativecommons.org/licenses/by/3.0/igo/legalcode", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin2, level_type: local_government, level_name_local: Area Council, layer: extracted/geoBoundaries-VUT-ADM2-all/geoBoundaries-VUT-ADM2.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/VUT/vut-geoboundaries-adm2/, derived_from: [vut-ocha-cod-ab-2018], notes: "Repackaged COD-AB (65 units)."}
+  - {source_id: vut-geoboundaries-adm3, title: "geoBoundaries gbOpen VUT ADM3", publisher: "geoBoundaries; source POPGIS", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM3/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM3/geoBoundaries-VUT-ADM3-all.zip"], retrieval_method: api, license: {name: "Other - Direct Permission", url: null, redistribution_ok: false, notes: "geoBoundaries obtained direct permission from POPGIS; terms not published."}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2014)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin3, level_type: statistical, level_name_local: "Enumeration Area (2009-era)", layer: extracted/geoBoundaries-VUT-ADM3-all/geoBoundaries-VUT-ADM3.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/VUT/vut-geoboundaries-adm3/, derived_from: [], notes: "621 numerically named units (older PopGIS EA set, same outline as COD-AB); superseded by 2016 EAs; restrictive licence."}
+
+  - source_id: vut-gadm-4-1
+    title: "GADM 4.1 Vanuatu"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_VUT.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Non-commercial; redistribution prohibited. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Area Council, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true, notes: "63 units."}
+    status: reference
+    raw_path: data/raw/VUT/vut-gadm-4-1/
+    derived_from: []
+    notes: "Reference only."
+
+  # Candidates searched but not available / not downloaded
+  - {source_id: vut-pdh-pcrafi-2010, title: "PCRAFI 'Population by Province/Island/Area Council/EA in 2010' (vu_* layers)", publisher: "SPC GEM (PDH GeoNode); primary source PopGIS, VNSO", publisher_type: regional_body, landing_url: "https://pacificdata.org/data/dataset/vu-enumeration-area-403", download_urls: [], retrieval_method: api, license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: ""}, publication_date: 2025-11-04, version: "PCRAFI 2010 exposure", format: other, crs: null, levels: [], status: rejected, raw_path: null, derived_from: [], notes: "2010 thematic derivatives of older PopGIS geometry; NC licence; not downloaded."}
+  - {source_id: vut-phc2020-eas, title: "2020 Vanuatu census enumeration areas", publisher: "Vanuatu Bureau of Statistics", publisher_type: national, landing_url: null, download_urls: [], retrieval_method: manual, license: {name: unspecified, url: null, redistribution_ok: false, notes: ""}, publication_date: null, version: "2020 NPHC", format: other, crs: null, levels: [{level_code: admin3, level_type: statistical, level_name_local: Enumeration Area, layer: null, name_field: null, code_field: null, parent_field: null, nests: true}], status: rejected, raw_path: null, derived_from: [], notes: "Not published on PDH/HDX as of 2026-11-20."}
+
+decisions:
+  - level_code: admin0
+    chosen: vut-sdd-phc2016-boundaries
+    alternatives: [vut-ocha-cod-ab-2018, vut-geoboundaries-adm0, vut-gadm-4-1]
+    reason: "Derive from union of SDD 2016 provinces."
+    escalated: false
+  - level_code: admin1
+    chosen: vut-sdd-phc2016-boundaries
+    alternatives: [vut-ocha-cod-ab-2018, vut-geoboundaries-adm1, vut-gadm-4-1]
+    reason: "Tier 1 and newer census geography from the same SPC SDD lineage as the COD-AB."
+    escalated: false
+  - level_code: admin2
+    chosen: vut-sdd-phc2016-boundaries
+    alternatives: [vut-ocha-cod-ab-2018, vut-geoboundaries-adm2, vut-gadm-4-1]
+    reason: "As admin1; identical list of 66 area councils."
+    escalated: false
+  - level_code: admin3
+    chosen: vut-sdd-phc2016-boundaries
+    alternatives: [vut-geoboundaries-adm3]
+    reason: "Only open EA layer (2016)."
+    escalated: false
+  - level_code: other
+    chosen: vut-sdd-phc2016-boundaries
+    alternatives: []
+    reason: "Island layer (91) only available from SDD 2016."
+    escalated: false

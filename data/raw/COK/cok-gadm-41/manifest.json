@@ -1,0 +1,29 @@
+{
+  "source_id": "cok-gadm-41",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-19T22:05:13Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_COK.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (free for academic/non-commercial use; redistribution and commercial use not allowed)",
+    "url": "https://gadm.org/license.html",
+    "redistribution_ok": false
+  },
+  "files": [
+    {
+      "path": "gadm41_COK.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_COK.gpkg",
+      "bytes": 385024,
+      "sha256": "85eaa2094338670c3317ac603c0ca4cbebc81739f65104a22669c85c733a512f",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:05:13Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "GADM 4.1 country GeoPackage; REFERENCE ONLY (licence prohibits redistribution)."
+}

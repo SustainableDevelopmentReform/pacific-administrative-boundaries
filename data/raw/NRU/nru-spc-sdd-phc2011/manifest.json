@@ -1,0 +1,37 @@
+{
+  "source_id": "nru-spc-sdd-phc2011",
+  "iso3": "NRU",
+  "retrieved_at": "2026-11-19T21:56:32Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2011_nru_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/757997e7-df31-49ee-83f2-1010420a0adf/download/2011_phc_nru_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/4b86c617-cbdc-4b34-a47b-ad80ef3b8a52/download/2011_phc_nru_did_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH page states 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2011_phc_nru_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/757997e7-df31-49ee-83f2-1010420a0adf/download/2011_phc_nru_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 409085,
+      "sha256": "1046ceda8ac58208a133441cc6065eab7a252acd042fa9d32f2a26eb3fe05156"
+    },
+    {
+      "path": "2011_phc_nru_did_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/cbdfa893-5c44-440e-a4bb-415ba7781732/resource/4b86c617-cbdc-4b34-a47b-ad80ef3b8a52/download/2011_phc_nru_did_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 392717,
+      "sha256": "d450575ab242e9e74418fb4d9d763e143ebc42875c34d278d6fc879de184457b"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Statistics for Development Division (SDD). metadata_created 2020-06-29, modified 2022-05-08."
+}

@@ -1,0 +1,581 @@
+{
+  "source_id": "png-ocha-cod-ab-2019",
+  "iso3": "PNG",
+  "retrieved_at": "2026-11-19T21:57:22Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-png",
+  "download_urls": [
+    "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/156e393b-1a62-46dd-a7af-e915c750a967/download/png_admin_boundaries.gdb.zip",
+    "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/c0386530-3455-45b4-b413-f41ccbdd2215/download/png_admin_boundaries.shp.zip",
+    "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/afa0ebcd-1861-4eac-9cd8-af06f942633a/download/png_admin_boundaries.xlsx",
+    "https://data.humdata.org/api/3/action/package_show?id=cod-ab-png"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "png_admin_boundaries.gdb.zip",
+      "bytes": 3093049,
+      "sha256": "487df3aeb5de1f17d7e070d57bdff033051ca8ab8b8feabcd4ad5681353c275d"
+    },
+    {
+      "path": "png_admin_boundaries.shp.zip",
+      "bytes": 6260866,
+      "sha256": "e8d7d529bcd5bbd11b499204480d01a9c225e50ea48768d9b55a379033ee8ce8"
+    },
+    {
+      "path": "png_admin_boundaries.xlsx",
+      "bytes": 107520,
+      "sha256": "49c30e1e8b8a9e783bf8fe07004b979bf1a08728b439d124a22e66e4e5327fce"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "bytes": 35462,
+      "sha256": "a4d2fb049c19f3630920398b6ab86ecd7d574a0069bb8f2f5a810c639739eb0f"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000001.gdbtable",
+      "bytes": 444,
+      "sha256": "bf42ff5651e2889b50121299393cac92d2d0406c5d195c074724aa31cb5f7ed0",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000001.gdbtablx",
+      "bytes": 4128,
+      "sha256": "ebe6c47a1b8441dffa8c7d696d61ffef4c52a30dd9427abd6d19cdb4fc1f3dd8",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000002.gdbtable",
+      "bytes": 2074,
+      "sha256": "dbf568dc0024e9bdc9b6ba514821e36eab2498795afca518dcaabf811c6dc64c",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000002.gdbtablx",
+      "bytes": 4128,
+      "sha256": "827e2e08889272db954d2a812b070906fcd73522f83466e3a6f0789f04dddf6f",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000003.gdbtable",
+      "bytes": 777,
+      "sha256": "16b8e280070b66214369c8191fab3431cd07c906bb9089329722084ec97b31f6",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000003.gdbtablx",
+      "bytes": 4128,
+      "sha256": "cb62714709fa03c10c46ab7bd3d247eb3095b987870ce24e51b0b718579a8eb8",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000004.gdbtable",
+      "bytes": 55185,
+      "sha256": "bf5b518594a25f3ff1e65b19b1c79d1ff2c2026e53f8b66486decc0910b99ef6",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000004.gdbtablx",
+      "bytes": 4128,
+      "sha256": "491be24e867719f049ef9f6bcab58096c45babe32775474d0d4cbb85750007ac",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000005.gdbtable",
+      "bytes": 1724,
+      "sha256": "03990617974784dd54627e182ee9d71cdd16c847e8f3e33c3d96e5295cb1dfa5",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000005.gdbtablx",
+      "bytes": 4128,
+      "sha256": "bfad1e2de42b11f7ca5de34379d0b251c068ed7c2b8adc88bb460933cf2b7380",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000006.gdbtable",
+      "bytes": 647,
+      "sha256": "853b36967257afbe5fb645fd53ffad0903a0616e3fec74f1857d3acf4d438937",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000006.gdbtablx",
+      "bytes": 4128,
+      "sha256": "611d7e8b7f56eda0b107bb2fb0d28b0a2d21e38a75aafdeff48827945a7673ac",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000007.gdbtable",
+      "bytes": 2282,
+      "sha256": "bc3d56d338af1f4aa08f783e9229cbd3f1bf33bcb289bfe7377ba24aa4273f4b",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000007.gdbtablx",
+      "bytes": 4128,
+      "sha256": "e4d2aabc7628a63cbf5fc6f8bb17614e1ba4f2434a68b23fbc0714b285db6f53",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000009.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000009.gdbtable",
+      "bytes": 523684,
+      "sha256": "d9b626c96b9315de8536c4596d3973e1797920a82260f774def799c54980deec",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000009.gdbtablx",
+      "bytes": 5152,
+      "sha256": "8c607b9e98d5c6da687a8e6e37cbf58f814ecd5b786e720b754820a8667a1786",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a00000009.spx",
+      "bytes": 4118,
+      "sha256": "7bba939521c03d3e87e871ed7bd90848822f37e4ecc4d738fa9089d67ad51ac0",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000a.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000a.gdbtable",
+      "bytes": 646909,
+      "sha256": "5ff16a0e4bf4a80e141bcf6780e87cd73b468600e56dc232a81b4dee180ef79f",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "5d78576360bbf59c5836c9dd0c9ae3264cfcf2e0156fa8e6ea156edc3a9802c6",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000a.spx",
+      "bytes": 4118,
+      "sha256": "28070f10a7fb45b0127300fed5ba4a237d10b8baddfca276c875703200ff9142",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000b.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000b.gdbtable",
+      "bytes": 742807,
+      "sha256": "f7103d91ef20326154e4a20657815d3615e54fc8f215e96a44102bcc0d657b72",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "047b6390306be905b9166cd72a05a50e57d8f64d266599838a870e8aee5bdcd3",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000b.spx",
+      "bytes": 4118,
+      "sha256": "81221f4a022f4e60067781d7197f0b7f930a6b206c71c46222ff1098578aeba6",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000c.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000c.gdbtable",
+      "bytes": 963365,
+      "sha256": "66a3b9259f6d320920feff557a0cb2eae9f86d6e5c2c4c0d4e2774c4f8899d08",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "80be9ec5dd8f4c0f213796d6b1f4f1bcf107bf179f06441a4b6ea1c562626ed5",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000c.spx",
+      "bytes": 12310,
+      "sha256": "75a03eb0115a00f4055bcf0ad827e126af18b99a53206e272776fb57a98d3bbb",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000d.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000d.gdbtable",
+      "bytes": 839845,
+      "sha256": "a662c37cef8173ff0c04bbb36d24034f0e7983b8ea25f46294d3e384abd64463",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000d.gdbtablx",
+      "bytes": 15392,
+      "sha256": "e9768c2c21ea9bbcc0f117c19bd8036d788c80fd97600ed64c509c1b24ddccdd",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000d.spx",
+      "bytes": 40982,
+      "sha256": "4c4e0e1466f78d6394bfcb4fb0a4d1c8cfa2366c071946f23031706f2c294fb3",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000e.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000e.gdbtable",
+      "bytes": 74134,
+      "sha256": "de488a99dafb5fe0275ad49781603ec0ffd50bd086194449f037880fc1131381",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000e.gdbtablx",
+      "bytes": 5152,
+      "sha256": "260d79cfed8d15c759fca8eeefe0069e8bb317303dce6f94569fe2e0ae46fdfa",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/a0000000e.spx",
+      "bytes": 12310,
+      "sha256": "9a8434a2759268b57e63be236c67957d91107df6efd2df03619e7656f2c4ee78",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/gdb",
+      "bytes": 8,
+      "sha256": "9575375fd7c43cd160884c4c81473b90690c71c5fe988392c647f90ae135e5da",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb/timestamps",
+      "bytes": 400,
+      "sha256": "c323c96b39b5155a4788a606c6fc05571befd551e693af4ec6b7f369cc42a834",
+      "from_archive": "png_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin0.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin0.dbf",
+      "bytes": 1739,
+      "sha256": "97cd47b2757ae1a02ad5240e7d7bc74c5a97ddc19041b6aa5c4b343cc96b0de6",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin0.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin0.shp",
+      "bytes": 1168172,
+      "sha256": "79ea0944560421e1787a077b6715481d2a14f82df50e8677cbc5bccb354dc211",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin0.shx",
+      "bytes": 108,
+      "sha256": "1f1371a6c430fb14d8ce59f1839b12b3650b11391f81c5486ab13b85813ee060",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin1.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin1.dbf",
+      "bytes": 30824,
+      "sha256": "626f531c16c8e9bfbdfe42d1ad8fb7dfcafd844224e6b432244f950947ef07e2",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin1.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin1.shp",
+      "bytes": 1442308,
+      "sha256": "b0f0ad3bcb7625d96d30dda7eb6a128eded027620dc127493807d1d58372ef25",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin1.shx",
+      "bytes": 276,
+      "sha256": "2bcf57ceae23dc6e040a18f390424cb3960f88b3ef577e186912f9dc256a4053",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin2.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin2.dbf",
+      "bytes": 154769,
+      "sha256": "d269d577774855ad773050ec980b9207a26e310b3468ef497388468a0509cb84",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin2.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin2.shp",
+      "bytes": 1626452,
+      "sha256": "fbfb8b055632b109680950dfef038e9da540ba8ad69803f78d62636c0b797969",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin2.shx",
+      "bytes": 796,
+      "sha256": "dd37ece91338a414db399abea0b58608b250375e53bbc1bea5ad41a4a8dfbc30",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin3.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin3.dbf",
+      "bytes": 708120,
+      "sha256": "e79cd33177c0ad66e085fb40a1057375ea050f52e544589ce481ce4aaa4d66a0",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin3.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin3.shp",
+      "bytes": 2035408,
+      "sha256": "8aabf6c9ffdec30ceaa2b09b4e685d856b8c42f36909aeb296c63df786d06546",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_admin3.shx",
+      "bytes": 2708,
+      "sha256": "639501fdc4f712b8ef9dd7936bd64c121b7f9ad4a2215c3f8d19d40c5324860f",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminlines.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminlines.dbf",
+      "bytes": 933420,
+      "sha256": "c3be67139871a481028cda91cb5aeedd02ba64e18aa15c7a964b667619373b1e",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminlines.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminlines.shp",
+      "bytes": 1748892,
+      "sha256": "81f96f248f7133b9dab3e12bd99d0af878860ebb56231c203dde7c87dfcd0458",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminlines.shx",
+      "bytes": 21676,
+      "sha256": "f1c282d0c4bbcf2d8b48e7ecd0ddc9a6b733fb7f173b79baffecab65ac47f780",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminpoints.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminpoints.dbf",
+      "bytes": 1219466,
+      "sha256": "12a2c7d6389b08b5d9937aad083fae0d761d617de98b42f1738df1f31169cabc",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminpoints.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminpoints.shp",
+      "bytes": 12308,
+      "sha256": "5bdad56ded89dda236446516026595f5b7d4bbfbd3fbb775a6b0737af9dbe986",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries.shp/png_adminpoints.shx",
+      "bytes": 3588,
+      "sha256": "4681786b256df8bc01f1323be95ab7ab6567bb752fdd612a0c9ffeb9295f3700",
+      "from_archive": "png_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/[Content_Types].xml",
+      "bytes": 1805,
+      "sha256": "7906261ccea290ea5cdc217848f3c345536dadc4a57db22c7209c99e5f39a59d",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/_rels/.rels",
+      "bytes": 575,
+      "sha256": "752ff1c8e2120cfda3bd9ab898ce7ea87d3e96499ba9420eb9a7f51a58bd7e17",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/docProps/app.xml",
+      "bytes": 253,
+      "sha256": "4ab7494b917d8f720e750c78fb8a8db5ba327d156a41f8875b5fa80c3102fb14",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/docProps/core.xml",
+      "bytes": 378,
+      "sha256": "6b744a0a38a358d696ce0f9c90e465849497ad4f1b7ab84bf71e8da8b8ab0ca4",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/_rels/workbook.xml.rels",
+      "bytes": 1263,
+      "sha256": "26b7514097965e40ced1d6075610dc095e63905ea60a522944ce841aa62abae4",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/sharedStrings.xml",
+      "bytes": 29112,
+      "sha256": "027d8d31649cafccab4256d55a206f55f7f06aad19a5b603f3d54aaee6c51b0a",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/styles.xml",
+      "bytes": 1209,
+      "sha256": "840f32880b2458001b269871fbecdd274bb049db8350169cbc7c1b659e5a4705",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/workbook.xml",
+      "bytes": 745,
+      "sha256": "5bab887cdb79d50e3a67c58e8b3a89e3b74a5ff18dd3ad8245d641873c492573",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet1.xml",
+      "bytes": 1896,
+      "sha256": "f41080e574b955e72ed525e028025cbe62d05fbd51224ea4be92c69d9d66d79f",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet2.xml",
+      "bytes": 10411,
+      "sha256": "81bcc45e47f52776a762f68cbcb3d1e3f04f6b69a93bba49c8de774c7fbb45fa",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet3.xml",
+      "bytes": 42558,
+      "sha256": "51905784e984e7f90e51b8284c2c5e95276a364aa46a4b6ee887d54e259b7b89",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet4.xml",
+      "bytes": 181030,
+      "sha256": "99ade5ffc96bd2901497414df57ff3cef53f95f4e1c3cebf9daec43d0cbaf0e7",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet5.xml",
+      "bytes": 329988,
+      "sha256": "eeab875ecd9381807ecd01711218c51666a20d5e8acff324e8d806670b1f90f5",
+      "from_archive": "png_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/png_admin_boundaries/xl/worksheets/sheet6.xml",
+      "bytes": 229694,
+      "sha256": "21566a2ff5160d7a78c4ba1005d954a72586d59890496d6963e4a4dfa6daf7a9",
+      "from_archive": "png_admin_boundaries.xlsx"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "png_admin_boundaries.gdb.zip",
+      "url": "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/156e393b-1a62-46dd-a7af-e915c750a967/download/png_admin_boundaries.gdb.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/156e393b-1a62-46dd-a7af-e915c750a967/png_admin_boundaries.gdb.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:12Z"
+    },
+    {
+      "path": "png_admin_boundaries.shp.zip",
+      "url": "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/c0386530-3455-45b4-b413-f41ccbdd2215/download/png_admin_boundaries.shp.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/c0386530-3455-45b4-b413-f41ccbdd2215/png_admin_boundaries.shp.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:18Z"
+    },
+    {
+      "path": "png_admin_boundaries.xlsx",
+      "url": "https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/afa0ebcd-1861-4eac-9cd8-af06f942633a/download/png_admin_boundaries.xlsx",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/afa0ebcd-1861-4eac-9cd8-af06f942633a/png_admin_boundaries.xlsx",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "retrieved_at": "2026-11-19T21:57:21Z"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-png",
+      "url_effective": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-png",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T21:57:22Z"
+    }
+  ],
+  "notes": "HDX COD-AB PNG adm0-3 v01: 22 provinces, 87 districts, 326 LLGs; boundaries created by source 2019-05-10; reviewed 2025-10-30; resources regenerated 2026-01-26. Source: PNG National Statistics Office; contributed by OCHA ROAP."
+}

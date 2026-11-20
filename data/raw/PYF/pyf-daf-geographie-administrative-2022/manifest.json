@@ -1,0 +1,208 @@
+{
+  "source_id": "pyf-daf-geographie-administrative-2022",
+  "iso3": "PYF",
+  "retrieved_at": "2026-11-19T21:56:28Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise",
+  "download_urls": [
+    "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205331/loc-commune-associee.zip",
+    "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205413/loc-groupe-ile.zip",
+    "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205614/loc-ile.zip"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise",
+    "notes": "data.gouv.fr licence field 'cc-by'"
+  },
+  "files": [
+    {
+      "path": "loc-commune-associee.zip",
+      "bytes": 15310967,
+      "sha256": "29230c18487385f84ca480e9b2c921ea389f848663a4a9574e77b9cbbf40db7b"
+    },
+    {
+      "path": "loc-groupe-ile.zip",
+      "bytes": 1168408,
+      "sha256": "3f71d87855a6d46885396b6802ccfa19f559ca4b9876f6480cd122fcba42d6fb"
+    },
+    {
+      "path": "loc-ile.zip",
+      "bytes": 14253080,
+      "sha256": "5018fa62ff269ae5b93502218213ce57baa36f31fcbf9d12b47bd36e12a6e29b"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "loc-commune-associee/loc_commune_associee.cpg",
+      "from": "loc-commune-associee.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.dbf",
+      "from": "loc-commune-associee.zip",
+      "bytes": 329740,
+      "sha256": "dbccdaad140950bed368b4d6a9e184e2fee0aac461c0c6f7838e6cb9407a11a1"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.prj",
+      "from": "loc-commune-associee.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.sbn",
+      "from": "loc-commune-associee.zip",
+      "bytes": 1884,
+      "sha256": "a93974b12f3c29150dfc0cd4cd2f0b9194a4905a35aa606bcd50d4e8a1aa2fcb"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.sbx",
+      "from": "loc-commune-associee.zip",
+      "bytes": 236,
+      "sha256": "dea53486097e2a88bf9770f2a8922d95c4f97d37bfbe114a12912a2069f7b9a0"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.shp",
+      "from": "loc-commune-associee.zip",
+      "bytes": 22316516,
+      "sha256": "799a5ccdb1050d4ba5484756e5be655771d7218534e02320200c0cb810d2785b"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.shp.xml",
+      "from": "loc-commune-associee.zip",
+      "bytes": 34751,
+      "sha256": "6538c818cdb698a1627c17d8bbf6f2f1db21454f2f4fda209343859fff5792ba"
+    },
+    {
+      "path": "loc-commune-associee/loc_commune_associee.shx",
+      "from": "loc-commune-associee.zip",
+      "bytes": 1532,
+      "sha256": "b48f21b450f11496446fc9ba39764522353c3ca32a4e53e42e82e0bf8b7abee0"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.cpg",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.dbf",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 67860,
+      "sha256": "cb025c59803c9c0a1ede745f7dfc2e9728723027277678c51261238f50584c34"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.prj",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.sbn",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 764,
+      "sha256": "8a40ab051bc11f89c40ca9e8518105b291285d1fed93a9530b3fc77a1b1440ab"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.sbx",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 188,
+      "sha256": "da3847d973c3548f844867b1925c373fd370426a0d7b1728f8a8f815268fb39a"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.shp",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 1517000,
+      "sha256": "94499635cbfefc49f6dc95aaa42af686b0f3b27f3e76aeb68e37e21a0fbd3efc"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.shp.xml",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 29606,
+      "sha256": "8b4a4cd6b445a24db2b6594fc5a5fe3f068695e2f1741b4bdb9a829e8e7792e2"
+    },
+    {
+      "path": "loc-groupe-ile/loc_groupe_ile.shx",
+      "from": "loc-groupe-ile.zip",
+      "bytes": 572,
+      "sha256": "94581f08665b0bf56f7f8f606222a9b7113588c32b02cf521d21e7ff5bf70c8e"
+    },
+    {
+      "path": "loc-ile/loc_ile.cpg",
+      "from": "loc-ile.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "loc-ile/loc_ile.dbf",
+      "from": "loc-ile.zip",
+      "bytes": 239010,
+      "sha256": "053995434e308bcb965fd913f96f03ddd2ad36fb353536a61ebc59ae7e36da73"
+    },
+    {
+      "path": "loc-ile/loc_ile.prj",
+      "from": "loc-ile.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "loc-ile/loc_ile.sbn",
+      "from": "loc-ile.zip",
+      "bytes": 1484,
+      "sha256": "8138edc7383b7c400b5db4728c6f70f9954cd59f408ffde4e22cd71ff4091dfa"
+    },
+    {
+      "path": "loc-ile/loc_ile.sbx",
+      "from": "loc-ile.zip",
+      "bytes": 244,
+      "sha256": "82f065318956fa6603ddeb13d078f4cb85b79cb855ea326122da1d93a3fb9aa4"
+    },
+    {
+      "path": "loc-ile/loc_ile.shp",
+      "from": "loc-ile.zip",
+      "bytes": 20779852,
+      "sha256": "0a3da3713b5cace0392b37eebbae717e464d93ede40faa7ac3205e8a831b0cc8"
+    },
+    {
+      "path": "loc-ile/loc_ile.shp.xml",
+      "from": "loc-ile.zip",
+      "bytes": 47779,
+      "sha256": "ac2831bb88300b29619e9cbfd8500751b756fcdc87900eaef1c0f4ffe1c7cbf3"
+    },
+    {
+      "path": "loc-ile/loc_ile.shx",
+      "from": "loc-ile.zip",
+      "bytes": 1124,
+      "sha256": "714667ad0b588dee7f25d54374df20a0eb38f1f8cdc641e8c1c9aef29a7ef232"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "loc-commune-associee.zip",
+      "url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205331/loc-commune-associee.zip",
+      "effective_url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205331/loc-commune-associee.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:56:28Z"
+    },
+    {
+      "path": "loc-groupe-ile.zip",
+      "url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205413/loc-groupe-ile.zip",
+      "effective_url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205413/loc-groupe-ile.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:41Z"
+    },
+    {
+      "path": "loc-ile.zip",
+      "url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205614/loc-ile.zip",
+      "effective_url": "https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205614/loc-ile.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:45Z"
+    }
+  ],
+  "notes": "Publisher: Section Cadastre-Topographie de la Polynesie francaise (Direction des affaires foncieres). Published on data.gouv.fr 2022-02-28."
+}

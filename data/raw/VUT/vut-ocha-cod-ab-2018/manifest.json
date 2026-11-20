@@ -1,0 +1,521 @@
+{
+  "source_id": "vut-ocha-cod-ab-2018",
+  "iso3": "VUT",
+  "retrieved_at": "2026-11-19T21:58:06Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-vut",
+  "download_urls": [
+    "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/e8bcde8f-93ae-4f6a-9990-b00bad8bbfc9/download/vut_admin_boundaries.gdb.zip",
+    "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/7606ac81-d36f-48f4-bdad-dadf34ebe26a/download/vut_admin_boundaries.shp.zip",
+    "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/16084a42-cd25-4a3c-90dd-122c089930c8/download/vut_admin_boundaries.xlsx",
+    "https://data.humdata.org/api/3/action/package_show?id=cod-ab-vut"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "vut_admin_boundaries.gdb.zip",
+      "bytes": 1551669,
+      "sha256": "4624e27b4145dc90172d9ba4252430ecb900c8959126d25cb718087f1e56f3f1"
+    },
+    {
+      "path": "vut_admin_boundaries.shp.zip",
+      "bytes": 3269413,
+      "sha256": "b602b71502142d2a8028c86b2958b74a077e82d6aed3133e4d0c83c775b72f23"
+    },
+    {
+      "path": "vut_admin_boundaries.xlsx",
+      "bytes": 18755,
+      "sha256": "5d285e186d8cb9657e1c5b6a734238c2f85df59da9d622f83500233dd6236f27"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "bytes": 29653,
+      "sha256": "49931bed2302229c4d922fa42e9a6486ce170888d67deed3097dbcc721ac0335"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000001.gdbtable",
+      "bytes": 425,
+      "sha256": "02500b841cf8298428a4bf084290bdbe83935103afc8fef72605740ef5d32b49",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000001.gdbtablx",
+      "bytes": 4128,
+      "sha256": "bcc25a015863a500bdcd6596067fc7108fe09f611c06485e6cfe5e630fb8f108",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000002.gdbtable",
+      "bytes": 2074,
+      "sha256": "dbf568dc0024e9bdc9b6ba514821e36eab2498795afca518dcaabf811c6dc64c",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000002.gdbtablx",
+      "bytes": 4128,
+      "sha256": "827e2e08889272db954d2a812b070906fcd73522f83466e3a6f0789f04dddf6f",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000003.gdbtable",
+      "bytes": 777,
+      "sha256": "16b8e280070b66214369c8191fab3431cd07c906bb9089329722084ec97b31f6",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000003.gdbtablx",
+      "bytes": 4128,
+      "sha256": "cb62714709fa03c10c46ab7bd3d247eb3095b987870ce24e51b0b718579a8eb8",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000004.gdbtable",
+      "bytes": 44283,
+      "sha256": "035462c1afe222d43d9e48faa59f6f1e7870c6a081ac471d769b323085061bb5",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000004.gdbtablx",
+      "bytes": 4128,
+      "sha256": "42d057a5299f49c90b306383676945b13500dea59dcac055f0737892bfa02dfd",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000005.gdbtable",
+      "bytes": 1724,
+      "sha256": "03990617974784dd54627e182ee9d71cdd16c847e8f3e33c3d96e5295cb1dfa5",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000005.gdbtablx",
+      "bytes": 4128,
+      "sha256": "bfad1e2de42b11f7ca5de34379d0b251c068ed7c2b8adc88bb460933cf2b7380",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000006.gdbtable",
+      "bytes": 574,
+      "sha256": "813b030bcf6216007f4de5bfb8e23b7b2f4fa81e149411331a048d60b44f5531",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000006.gdbtablx",
+      "bytes": 4128,
+      "sha256": "f1b5194facd68788dbf309362d33e72140a597ba17ce04c45c36cf94fe7cb888",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000007.gdbtable",
+      "bytes": 2282,
+      "sha256": "bc3d56d338af1f4aa08f783e9229cbd3f1bf33bcb289bfe7377ba24aa4273f4b",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000007.gdbtablx",
+      "bytes": 4128,
+      "sha256": "e4d2aabc7628a63cbf5fc6f8bb17614e1ba4f2434a68b23fbc0714b285db6f53",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000009.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000009.gdbtable",
+      "bytes": 354212,
+      "sha256": "1379c24cc30f6ef7c954ed602e931e1c70164da7cb2275022d29f79dad6ffff8",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000009.gdbtablx",
+      "bytes": 5152,
+      "sha256": "8c607b9e98d5c6da687a8e6e37cbf58f814ecd5b786e720b754820a8667a1786",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a00000009.spx",
+      "bytes": 4118,
+      "sha256": "f6d41b59767e0a569bfad218c0c885062219b04156489b45cee3d9523a1b93cc",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000a.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000a.gdbtable",
+      "bytes": 354782,
+      "sha256": "f9a9aa36d88c6f6268b8357900c230bb3c20e643de092bb5b0b175b610af9385",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "27f84f4f5685a0151e513e5e47c703c697eb9a800238bfc35636a41a4c0b9e99",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000a.spx",
+      "bytes": 4118,
+      "sha256": "3a23fe9e363b935a6d9834ff3c81e0ef53065507749db983845db671838753f4",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000b.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000b.gdbtable",
+      "bytes": 511877,
+      "sha256": "374e36c5e6e55e3848949efe32a2810b3ecdfd7d9f5337acfe915696bfd973e6",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "bab9634beae429042eb077a3bbaabdfcefa8f81234fd291f1cab41e15456ae24",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000b.spx",
+      "bytes": 4118,
+      "sha256": "897711591b2947537c2090669300b6a0319e93b34631744d27a3d67be319e546",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000c.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000c.gdbtable",
+      "bytes": 439866,
+      "sha256": "033f83aa4a183b14f956449f30d25b690c7e9b1e139950dbae2fd13f590688e2",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "1d2fb12cf704fa0e271e6ff487f84275ed5b907724fb5d3e4738522a4e2f4c7b",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000c.spx",
+      "bytes": 4118,
+      "sha256": "503074af4c5bcd3271a60f3a6b0054785fbf733322b07382c2f99f90d2cc1ad0",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000d.gdbindexes",
+      "bytes": 122,
+      "sha256": "6d3063da859badbb0b12c776e603f6db9039a525bc67294593f46267472ad1f9",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000d.gdbtable",
+      "bytes": 9348,
+      "sha256": "032c3d244aa2520db80f3e45e77b1443707faecc1a5ca21b0d187ab63db1fa3c",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000d.gdbtablx",
+      "bytes": 5152,
+      "sha256": "baa6dcf3292f143fb4eb6ed5995c0852dfbb53779b2276c4ebc238f4a3b03f75",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/a0000000d.spx",
+      "bytes": 4118,
+      "sha256": "58c43790bd18f7ebd7777b38036ac16613cb80ae401ade4785bf89553a4863b5",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/gdb",
+      "bytes": 8,
+      "sha256": "9575375fd7c43cd160884c4c81473b90690c71c5fe988392c647f90ae135e5da",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.gdb/vut_admin_boundaries.gdb/timestamps",
+      "bytes": 400,
+      "sha256": "c323c96b39b5155a4788a606c6fc05571befd551e693af4ec6b7f369cc42a834",
+      "from_archive": "vut_admin_boundaries.gdb.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin0.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin0.dbf",
+      "bytes": 1739,
+      "sha256": "3795d65de8e8c469a5089b03d60a846868b6f18d1656666b3f3900df8161b288",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin0.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin0.shp",
+      "bytes": 937896,
+      "sha256": "4c146f8ae3883339c39ece9fbfcaa20621a8471bf94503fea42086b52a4d1a84",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin0.shx",
+      "bytes": 108,
+      "sha256": "932dc6a578f450d398db89f32b16e26752c0d23948aa89147eb6f33b7bf3c19d",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin1.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin1.dbf",
+      "bytes": 8920,
+      "sha256": "28808ae803684a8984ce7fd98cef9ee7767c73f427171568be53abc74f40fbaf",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin1.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin1.shp",
+      "bytes": 938156,
+      "sha256": "063679b7e206de6e571cc668751496fdd2b5776ecd44da39d919bd8a40d6c37a",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin1.shx",
+      "bytes": 148,
+      "sha256": "571ecf80560fae0220048d80fc2ad50ae131a4678f4547f14a51a8d6ba41660f",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin2.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin2.dbf",
+      "bytes": 117620,
+      "sha256": "a08abb534312dedc84997a781052e4542f068d59e6b90a386c13adb323b84fe6",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin2.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin2.shp",
+      "bytes": 1330404,
+      "sha256": "466a2ef580cf5c42bdc574088e730c0f4a3ebfb8a53d3791533e659e82f58f1e",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_admin2.shx",
+      "bytes": 628,
+      "sha256": "bccdc016a38d9e3cfe3c113a4de14b3219e91a93755c3361070df0e5617a1328",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminlines.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminlines.dbf",
+      "bytes": 79838,
+      "sha256": "dfb428d4f22ea971cdf2f0ed21911b10c9d50a94e63ee6695b8acc9d6ca0a8f9",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminlines.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminlines.shp",
+      "bytes": 1146228,
+      "sha256": "5314bd5d450d3e679bb9e0dd94fc3dfb2b7032e36509fef9860a1a5ea2b0035f",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminlines.shx",
+      "bytes": 1940,
+      "sha256": "0e3ae7d7457fe33ee781c8006c4f70752cd8378959409b98af2654a3ddef0462",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminpoints.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminpoints.dbf",
+      "bytes": 205244,
+      "sha256": "95cde08d86a45a57bad9a2a5440ae4347606b8ceeda743df61ac45d1c8e05111",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminpoints.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminpoints.shp",
+      "bytes": 2144,
+      "sha256": "ea0a343da5f72cab796fb2bf8dbb4c3cdf2a87741e1998ff1cd050390a77655c",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries.shp/vut_adminpoints.shx",
+      "bytes": 684,
+      "sha256": "22d85fda3c07f31f43ce4641eadb590ce66cbf6c147dedbb685e02b446381473",
+      "from_archive": "vut_admin_boundaries.shp.zip"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/[Content_Types].xml",
+      "bytes": 1668,
+      "sha256": "43abc5abd27d4a0d1d09034f41d8367f1d48199aa97730606eb8aaff1dadba98",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/_rels/.rels",
+      "bytes": 575,
+      "sha256": "752ff1c8e2120cfda3bd9ab898ce7ea87d3e96499ba9420eb9a7f51a58bd7e17",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/docProps/app.xml",
+      "bytes": 253,
+      "sha256": "4ab7494b917d8f720e750c78fb8a8db5ba327d156a41f8875b5fa80c3102fb14",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/docProps/core.xml",
+      "bytes": 378,
+      "sha256": "6b744a0a38a358d696ce0f9c90e465849497ad4f1b7ab84bf71e8da8b8ab0ca4",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/_rels/workbook.xml.rels",
+      "bytes": 1121,
+      "sha256": "f21ef20bdd3e8053db00c6efa33f03218f5b223913fc9627915479c59a9cd7ad",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/sharedStrings.xml",
+      "bytes": 5585,
+      "sha256": "db889a8c975d64dbaf8406b42bf6a7658fdf8c237eac0194728bb5d4ae388b75",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/styles.xml",
+      "bytes": 1209,
+      "sha256": "840f32880b2458001b269871fbecdd274bb049db8350169cbc7c1b659e5a4705",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/workbook.xml",
+      "bytes": 678,
+      "sha256": "0f0f7bcd2922ee443a6cc1a7f538fadd2847f1ce950bae17b964ff5666172448",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/worksheets/sheet1.xml",
+      "bytes": 1895,
+      "sha256": "d6279478f2ba44bed2db8ca451ffc810f2c6cf5acd6b494bd2109a558cb327c1",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/worksheets/sheet2.xml",
+      "bytes": 4040,
+      "sha256": "64e5c1a110022a1a0a5412924ed8388b2ab81fd3aa9fa70a46f1256178e5cb60",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/worksheets/sheet3.xml",
+      "bytes": 32671,
+      "sha256": "36ed544cf71b3c5b793484aeff5d1caf87caaca7320e30ef411eb5d3cdd0d5ca",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/worksheets/sheet4.xml",
+      "bytes": 27860,
+      "sha256": "f52f528a1980505ca221870942ffda6f60182588831ce3d3f7b2052c3c354302",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    },
+    {
+      "path": "extracted/vut_admin_boundaries/xl/worksheets/sheet5.xml",
+      "bytes": 35994,
+      "sha256": "bca57e56f34b8088345971f5e6fc0dc111e4836bdb93248f49efd0650167724d",
+      "from_archive": "vut_admin_boundaries.xlsx"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "vut_admin_boundaries.gdb.zip",
+      "url": "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/e8bcde8f-93ae-4f6a-9990-b00bad8bbfc9/download/vut_admin_boundaries.gdb.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/e8bcde8f-93ae-4f6a-9990-b00bad8bbfc9/vut_admin_boundaries.gdb.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:58Z"
+    },
+    {
+      "path": "vut_admin_boundaries.shp.zip",
+      "url": "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/7606ac81-d36f-48f4-bdad-dadf34ebe26a/download/vut_admin_boundaries.shp.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/7606ac81-d36f-48f4-bdad-dadf34ebe26a/vut_admin_boundaries.shp.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:58:02Z"
+    },
+    {
+      "path": "vut_admin_boundaries.xlsx",
+      "url": "https://data.humdata.org/dataset/67887590-51b0-4d98-bc12-666ebedf7704/resource/16084a42-cd25-4a3c-90dd-122c089930c8/download/vut_admin_boundaries.xlsx",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/16084a42-cd25-4a3c-90dd-122c089930c8/vut_admin_boundaries.xlsx",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "retrieved_at": "2026-11-19T21:58:04Z"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-vut",
+      "url_effective": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-vut",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T21:58:06Z"
+    }
+  ],
+  "notes": "HDX COD-AB Vanuatu adm0-2 v01: 6 provinces, 66 area councils; boundaries created 2017-10-31; valid 2018-08-24; reviewed 2024-10-31; resources regenerated 2026-01-26. Source: PopGIS2, SPC SDD (Vanuatu NSO census)."
+}

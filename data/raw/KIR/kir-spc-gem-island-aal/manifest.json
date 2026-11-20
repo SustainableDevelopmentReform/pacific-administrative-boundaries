@@ -1,0 +1,27 @@
+{
+  "source_id": "kir-spc-gem-island-aal",
+  "iso3": "KIR",
+  "retrieved_at": "2026-11-19T21:56:34Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://pacificdata.org/data/dataset/ki-island-aal-tc-eq-1751",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/ki_island_aal_tc_eq/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ki_island_aal_tc_eq&outputFormat=json&content-disposition=attachment"
+  ],
+  "license": {
+    "name": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+  },
+  "files": [
+    {
+      "path": "ki_island_aal_tc_eq.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ki_island_aal_tc_eq/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ki_island_aal_tc_eq&outputFormat=json&content-disposition=attachment",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 3499150,
+      "sha256": "9b8f3e64364151b71f5a0d8023c0325c25a17fc53c8af8eed2ec922d87424d71"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Geoscience, Energy and Maritime Division (GEM). metadata_created 2025-10-14, modified 2026-07-06."
+}

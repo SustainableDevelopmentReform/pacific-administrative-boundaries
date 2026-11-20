@@ -1,0 +1,347 @@
+{
+  "source_id": "slb-ocha-cod-ab-2018",
+  "iso3": "SLB",
+  "retrieved_at": "2026-11-19T21:57:54Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-slb",
+  "download_urls": [
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/4a8fb938-32f0-4b2c-8eed-2741762978e3/download/slb_polbnda.zip",
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/3d31ed08-f138-4a2e-9c64-6dfb12849676/download/slb_admbnda_adm0.zip",
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/7df578eb-5cb7-42c1-adad-1d882c0a3322/download/slb_admbnda_adm1.zip",
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b08401a2-25a4-4894-b677-1d8986a1b401/download/slb_admbnda_adm2.zip",
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/5b69c85c-392f-42da-81dc-ebb0a5659fa2/download/slb_admbnda_adm3.zip",
+    "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b2e7845e-8322-4500-9ae3-09953bf4c76c/download/slb_adm.xls",
+    "https://data.humdata.org/api/3/action/package_show?id=cod-ab-slb"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "slb_polbnda.zip",
+      "bytes": 9237341,
+      "sha256": "c0c70acffb06cd14351e65d3105493baae6dcafa083d71d78425cd84650520d3"
+    },
+    {
+      "path": "slb_admbnda_adm0.zip",
+      "bytes": 2229842,
+      "sha256": "52deee9897cf3b7cc6cce7a2ab934f4401f825a1ccfe82645ff6ca746fa437c1"
+    },
+    {
+      "path": "slb_admbnda_adm1.zip",
+      "bytes": 2235894,
+      "sha256": "7c9021d2c201ac2aa58cfe2e7de202a63dee2c700d36847001ac28f094811505"
+    },
+    {
+      "path": "slb_admbnda_adm2.zip",
+      "bytes": 2290406,
+      "sha256": "dd57913765816d86ed880d64269ec1804cd72c06593bff0b4aa0e7ad44572180"
+    },
+    {
+      "path": "slb_admbnda_adm3.zip",
+      "bytes": 2364550,
+      "sha256": "f85ac4946d5b52593d3f87009b32e2e32e495a3cbe14d1d3c1173f901f64e855"
+    },
+    {
+      "path": "slb_adm.xls",
+      "bytes": 80384,
+      "sha256": "0808f42337ae6cbff9ada4baecf6c6b18cac58fa57f680e82d6f329f976f2824"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "bytes": 20679,
+      "sha256": "9d28254f107f4621f481ee153fd4fcd8b35d1eaad66707ca19ada613f4449964"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/slb_polbnda/slb_polbnda.mdb",
+      "bytes": 27873280,
+      "sha256": "457ade0fbe4c30fe1e1b009221ed0302d4c2534d485f97c0604ecb3c8c999108",
+      "from_archive": "slb_polbnda.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.dbf",
+      "bytes": 175,
+      "sha256": "56b08a6b60267737658bf5e1f6bbe6daeb835e8c0a5c28db6b7b4f0072d0c286",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.sbn",
+      "bytes": 132,
+      "sha256": "ac4e6e73d4e387c881c55afb9c989f336816cc80b67be6926dc927498b7b9e85",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.sbx",
+      "bytes": 116,
+      "sha256": "a4dc4232ff432315c805926ba1ff51fceaa13ae46dac903cf80c19e456cb2ef8",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.shp",
+      "bytes": 6437904,
+      "sha256": "10288400a77ae49274ff3d960d36cd8b5b2b97e615693440285ffbe5b5032c4e",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.shp.xml",
+      "bytes": 6844,
+      "sha256": "1bb0ba608230eefe5e8d236a23e1b81c55c22875166f8adce325b40d2fab5576",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm0/slb_admbnda_adm0.shx",
+      "bytes": 108,
+      "sha256": "95468c8a73200dc8eae99fd9d84c5ffa3ed4e87ed7bfdcd09496aa469a2ac8c7",
+      "from_archive": "slb_admbnda_adm0.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.dbf",
+      "bytes": 1036,
+      "sha256": "4e74c0fed3ebd8133d45a5cab2e60448dc6cf82b9b40f170708875fc654ea9fe",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.sbn",
+      "bytes": 236,
+      "sha256": "abe8bdf29404e911fb8260b533df3767e89488e664a88513654f1387088e0251",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.sbx",
+      "bytes": 132,
+      "sha256": "e24e94244830d96304ebdb1109dfaf42801368306f486ffaca5f37a2364e5e11",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.shp",
+      "bytes": 6446696,
+      "sha256": "9328416ee8ef99bbc527b578cdce9e97dc104b071483beca4c1c2fe03b420f4b",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.shp.xml",
+      "bytes": 7569,
+      "sha256": "03385298d56da410366253fe21f0eb5961aa17fefa9279d38fbfa23847842433",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm1/slb_admbnda_adm1.shx",
+      "bytes": 180,
+      "sha256": "e30c106f2e0ecb34a02f59395ea384e9171f2fa6ffb2933ade6f58aa50f597db",
+      "from_archive": "slb_admbnda_adm1.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.dbf",
+      "bytes": 7872,
+      "sha256": "f86fb3ee5dd06ccac011efbab2bd04e60fd8b273c923f754fb33db748516e57e",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.sbn",
+      "bytes": 604,
+      "sha256": "abac0ea581e0996dd4be7852dea1fbfbbd14b5f4a84af10239cb0da452e1898e",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.sbx",
+      "bytes": 148,
+      "sha256": "e00225b12ff1a6d84bd9c761740e721d80c6a03d79b64cb0ad685e09da0d0d8c",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.shp",
+      "bytes": 6549264,
+      "sha256": "0148a8fa62df806f50c999518b255b9eb4d9942361a4975f632fcb528fe3b7c8",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.shp.xml",
+      "bytes": 8319,
+      "sha256": "22c9729861de9705e75aa1e8fb7dc29e1b83ab5d249cb730489af6ff4fbe6b8e",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm2/slb_admbnda_adm2.shx",
+      "bytes": 500,
+      "sha256": "32891ea53f95fef57dee651823a3c51d1fbce8aab91c190baba81e5193cb253a",
+      "from_archive": "slb_admbnda_adm2.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.dbf",
+      "bytes": 42691,
+      "sha256": "7ecd65291e86b26bfc1bbd06640dfe50967e6a19872f980bba6fe7f3d28ae928",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.sbn",
+      "bytes": 1924,
+      "sha256": "7371ac4a2a01aaea90470fab92d6040955d6f6ef8c1fe774adc65c1553ce23c4",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.sbx",
+      "bytes": 228,
+      "sha256": "66cc98d37076dc7d1d9b561a4ba1e7653bf473d886386a98fe8e4be470df4f7f",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.shp",
+      "bytes": 6714064,
+      "sha256": "5e1ee36d26630a296168a3b8427e9b080ef4444d6b0b883c6c525cb8cf6d63ec",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.shp.xml",
+      "bytes": 8973,
+      "sha256": "d0ffb785516ab6d8ca68aabab95a0521e14ec63346880ca042142e8b04eefc77",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_admbnda_adm3/slb_admbnda_adm3.shx",
+      "bytes": 1564,
+      "sha256": "07a0fe6f571da7a2d4d46d2ffbb2ca8679cbf2f2387f1548cc9a3e1eeca93086",
+      "from_archive": "slb_admbnda_adm3.zip"
+    },
+    {
+      "path": "extracted/slb_adm/[Content_Types].xml",
+      "bytes": 540,
+      "sha256": "6c98d4f2b62b4db730884f9bd6d27e5360693eaad02d9cdbaa0e71c4c747450b",
+      "from_archive": "slb_adm.xls"
+    },
+    {
+      "path": "extracted/slb_adm/_rels/.rels",
+      "bytes": 310,
+      "sha256": "d2d8276ca63e307268dbf1bef2fbf45ba4c65c27494555a7742761c22984f1af",
+      "from_archive": "slb_adm.xls"
+    },
+    {
+      "path": "extracted/slb_adm/theme/theme/_rels/themeManager.xml.rels",
+      "bytes": 283,
+      "sha256": "2983db3781942d11b9497551888ee8774f861ff9cbc5c64ddb79eaa0698f87bd",
+      "from_archive": "slb_adm.xls"
+    },
+    {
+      "path": "extracted/slb_adm/theme/theme/theme1.xml",
+      "bytes": 8390,
+      "sha256": "b16106f4229f6ece6d74426b3e73ff6a677df2908d2a06f76ef0329fa27c0282",
+      "from_archive": "slb_adm.xls"
+    },
+    {
+      "path": "extracted/slb_adm/theme/theme/themeManager.xml",
+      "bytes": 138,
+      "sha256": "09ddbe6d159c1fae7299f5d4e1281dad6068331d9f651f45a51265277b80f0ed",
+      "from_archive": "slb_adm.xls"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "slb_polbnda.zip",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/4a8fb938-32f0-4b2c-8eed-2741762978e3/download/slb_polbnda.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/4a8fb938-32f0-4b2c-8eed-2741762978e3/slb_polbnda.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:31Z"
+    },
+    {
+      "path": "slb_admbnda_adm0.zip",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/3d31ed08-f138-4a2e-9c64-6dfb12849676/download/slb_admbnda_adm0.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/3d31ed08-f138-4a2e-9c64-6dfb12849676/slb_admbnda_adm0.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:35Z"
+    },
+    {
+      "path": "slb_admbnda_adm1.zip",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/7df578eb-5cb7-42c1-adad-1d882c0a3322/download/slb_admbnda_adm1.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/7df578eb-5cb7-42c1-adad-1d882c0a3322/slb_admbnda_adm1.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:39Z"
+    },
+    {
+      "path": "slb_admbnda_adm2.zip",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b08401a2-25a4-4894-b677-1d8986a1b401/download/slb_admbnda_adm2.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/b08401a2-25a4-4894-b677-1d8986a1b401/slb_admbnda_adm2.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:46Z"
+    },
+    {
+      "path": "slb_admbnda_adm3.zip",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/5b69c85c-392f-42da-81dc-ebb0a5659fa2/download/slb_admbnda_adm3.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/5b69c85c-392f-42da-81dc-ebb0a5659fa2/slb_admbnda_adm3.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:50Z"
+    },
+    {
+      "path": "slb_adm.xls",
+      "url": "https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b2e7845e-8322-4500-9ae3-09953bf4c76c/download/slb_adm.xls",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/b2e7845e-8322-4500-9ae3-09953bf4c76c/slb_adm.xls",
+      "http_status": 200,
+      "content_type": "application/vnd.ms-excel",
+      "retrieved_at": "2026-11-19T21:57:53Z"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-slb",
+      "url_effective": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-slb",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T21:57:54Z"
+    }
+  ],
+  "notes": "HDX COD-AB Solomon Islands adm0-3 (established 2018; reviewed Oct 2024). Source: SINSO 2009 Census of Population and Housing; vetted by ITOS."
+}

@@ -1,0 +1,220 @@
+iso3: KIR
+country_name: Kiribati
+# Stack: Island group (3: Gilbert, Phoenix, Line; no government) > Island / island council (36 in
+# COD-AB incl. uninhabited islands and Betio split from South Tarawa) > Village (183, 2018) >
+# Enumeration area (391, 2018 household listing).
+# Note: the SDD census "island" layers are 25 km coastal BUFFERS (display only), not land polygons.
+sources:
+  - source_id: kir-ocha-codab-2020
+    title: "Kiribati - Subnational Administrative Boundaries (COD-AB) 2020"
+    publisher: "OCHA Office of the Pacific Islands (HDX)"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-kir
+    download_urls:
+      - https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/30c02bf1-d705-46ad-b828-b4b9bbed46e6/download/kir_adm_2020_shp.zip
+      - https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/e6759485-f662-4261-8e11-8184472a6ec8/download/kir_adm_2020_gdb.gdb.zip
+      - https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/135e3bac-64ed-405c-b360-3f80de9d2287/download/kir_admgz_2020.xlsx
+    retrieval_method: http
+    license:
+      name: CC-BY-3.0-IGO
+      url: http://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2020-01-13
+    version: "2020 (reviewed Oct 2024, no update required)"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Kiribati
+        layer: kir_adm_2020_shp/kir_admbnda_adm0_2020.shp
+        name_field: ADM0_EN
+        code_field: ADM0_PCODE
+        parent_field: null
+        nests: true
+      - level_code: admin1
+        level_type: region
+        level_name_local: Island group
+        layer: kir_adm_2020_shp/kir_admbnda_adm1_2020.shp
+        name_field: ADM1_EN
+        code_field: ADM1_PCODE
+        parent_field: ADM0_PCODE
+        nests: true
+      - level_code: admin2
+        level_type: island
+        level_name_local: Island (island council)
+        layer: kir_adm_2020_shp/kir_admbnda_adm2_2020.shp
+        name_field: ADM2_EN
+        code_field: ADM2_PCODE
+        parent_field: ADM1_PCODE
+        nests: true
+        notes: "36 units incl. uninhabited Phoenix/Line islands; Betio (KI124) separate from South Tarawa (KI107), matching Betio Town Council / Teinainano Urban Council."
+    status: selected
+    raw_path: data/raw/KIR/kir-ocha-codab-2020/
+    notes: "HDX: 'Sourced from SPC SDD (kiribati.popgis.spc.int)'. i.e. DERIVED from the SDD census GIS but on land polygons (860 km2) and complete for all islands. Also shipped as FileGDB (kir_adm_2020_gdb.gdb, same content). kir_admbndl_ALL = shoreline lines (AdmLevel 99), not used."
+
+  - source_id: kir-spc-sdd-hhl2018
+    title: "2018 Kiribati Household Listing administrative boundaries (Island, Village, Enumeration Area)"
+    publisher: "SPC Statistics for Development Division (SDD) for Kiribati National Statistics Office"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2018_kir_hhl_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/cfb956da-2bb5-4984-ae58-679612a6d39b/download/2018_hhl_kir_eaid_3832.geojson
+      - https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/9b8b6df7-3c89-41ae-84a9-bff823b125b4/download/2018_hhl_kir_vid_3832.geojson
+      - https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/baac4740-cc6a-4a62-a5d0-b498fe12935a/download/2018_hhl_kir_iid_3832.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH page states 'Creative Commons Attribution' (no version given)."
+    publication_date: 2020-07-10   # PDH record created; data = 2018 household listing (DHS-MICS frame)
+    version: "2018 HHL"
+    format: geojson
+    crs: EPSG:3832
+    levels:
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: 2018_hhl_kir_vid_3832.geojson
+        name_field: libgeo
+        code_field: vid_2018
+        code_scheme: sdd-census
+        parent_field: null   # leading digits of vid_2018 = SDD island id (iid), not the COD P-code -> [processing] parent island by largest overlap (handles Betio)
+        nests: true
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Enumeration Area (2018 household listing)
+        layer: 2018_hhl_kir_eaid_3832.geojson
+        name_field: null
+        code_field: east
+        code_scheme: sdd-census
+        parent_field: vid_2018   # [processing] code = zero-padded 'east' (ea_2018 drops the leading zero)
+        nests: true
+      - level_code: other
+        level_type: island
+        level_name_local: Island (25 km display buffer)
+        layer: 2018_hhl_kir_iid_3832.geojson
+        name_field: i_name
+        code_field: iid
+        parent_field: null
+        nests: false
+        use: false   # [processing] D-009: display buffers, never used as land
+        notes: "Buffered display polygons (64,811 km2). Use only as a crosswalk SDD iid -> island name; do NOT use geometry."
+    status: selected
+    raw_path: data/raw/KIR/kir-spc-sdd-hhl2018/
+    notes: "Official statistical geography (KNSO via SPC). Village and EA layers cover 630 km2 (inhabited islands only), so the 13 uninhabited COD islands fall back to admin2. Village/EA codes use the SDD island id (iid 1-23), which must be crosswalked to COD ADM2_PCODE (Betio villages lie inside COD KI124). East field 'east' has zero-padded codes; ea_2018 drops leading zero."
+
+  - source_id: kir-spc-sdd-phc2010
+    title: "2010 Kiribati Population and Housing Census administrative boundaries (Island, Village, Enumeration Area)"
+    publisher: "SPC Statistics for Development Division (SDD) for Kiribati National Statistics Office"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2010_kir_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/b0033b58-2c9b-4973-a732-27e391b7bd4c/resource/da5deb66-014b-4e71-87b0-a0a20b673c98/download/2010_phc_kir_eaid_3832.geojson
+      - https://pacificdata.org/data/dataset/b0033b58-2c9b-4973-a732-27e391b7bd4c/resource/6ae2fdf3-9a58-4a8f-9598-1751db36ac44/download/2010_phc_kir_vid_3832.geojson
+      - https://pacificdata.org/data/dataset/b0033b58-2c9b-4973-a732-27e391b7bd4c/resource/e7b09464-166c-4e81-a43b-09af89642997/download/2010_phc_kir_iidbuff_3832.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH page states 'Creative Commons Attribution'."
+    publication_date: 2020-06-29
+    version: "2010 PHC"
+    format: geojson
+    crs: EPSG:3832
+    levels:
+      - {level_code: admin3, level_type: ward_village, level_name_local: Village, layer: 2010_phc_kir_vid_3832.geojson, name_field: v_name, code_field: vid, parent_field: null, nests: true}
+      - {level_code: admin4, level_type: statistical, level_name_local: Enumeration Area (2010 census), layer: 2010_phc_kir_eaid_3832.geojson, name_field: ea_name, code_field: eaid, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/KIR/kir-spc-sdd-phc2010/
+    notes: "Superseded by 2018 HHL. Village/EA polygons cover only 70 km2 (settlement footprints, not full land). Island layer is a 25 km buffer (do not use)."
+
+  - source_id: kir-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen KIR ADM0-ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#KIR
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/KIR/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM0/geoBoundaries-KIR-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM1/geoBoundaries-KIR-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM2/geoBoundaries-KIR-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: ODbL-1.0
+      url: https://opendatacommons.org/licenses/odbl/1-0/
+      redistribution_ok: true
+      notes: "All levels sourced from 'OpenStreetMap, Wambacher' under ODbL 1.0: share-alike, flag it."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Kiribati, layer: geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: region, level_name_local: Island group, layer: geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.geojson, name_field: shapeName, code_field: shapeISO, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: island, level_name_local: Island, layer: geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/KIR/kir-geoboundaries-gbopen/
+    notes: "OSM-derived (24 ADM2 units). Lower tier than COD-AB; ODbL."
+
+  - source_id: kir-spc-gem-island-aal
+    title: "Annual Average Loss from Tropical Cyclones and Earthquakes for Kiribati (island)"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/ki-island-aal-tc-eq-1751
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/ki_island_aal_tc_eq/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ki_island_aal_tc_eq&outputFormat=json&content-disposition=attachment
+    retrieval_method: api
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: "Non-commercial, share-alike."}
+    publication_date: 2025-10-14
+    version: "PCRAFI AAL layer"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin2, level_type: island, level_name_local: Island, layer: ki_island_aal_tc_eq.geojson, name_field: island, code_field: iid, parent_field: gid, nests: true}
+    status: rejected
+    raw_path: data/raw/KIR/kir-spc-gem-island-aal/
+    notes: "Hazard-loss product; 35 features, 860 km2 (same geometry family as COD-AB). NC-SA licence."
+
+  - source_id: kir-gadm-41
+    title: "GADM 4.1 Kiribati"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_KIR.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Kiribati, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+    status: reference
+    raw_path: data/raw/KIR/kir-gadm-41/
+    notes: "ADM0 only."
+
+decisions:
+  - level_code: admin1
+    chosen: kir-ocha-codab-2020
+    alternatives: [kir-geoboundaries-gbopen]
+    reason: "No national layer for island groups; COD-AB (tier 2, from SPC SDD) beats OSM-derived geoBoundaries."
+    escalated: false
+  - level_code: admin2
+    chosen: kir-ocha-codab-2020
+    alternatives: [kir-spc-sdd-hhl2018, kir-spc-sdd-phc2010, kir-geoboundaries-gbopen, kir-spc-gem-island-aal]
+    reason: "The tier-1 SDD island layers are 25 km display buffers, not land; COD-AB is derived from SDD on land polygons, covers all 36 islands and separates Betio."
+    escalated: false
+  - level_code: admin3
+    chosen: kir-spc-sdd-hhl2018
+    alternatives: [kir-spc-sdd-phc2010]
+    reason: "Official; most recent (2018 vs 2010); covers full inhabited land rather than settlement footprints."
+    escalated: false
+  - level_code: admin4
+    chosen: kir-spc-sdd-hhl2018
+    alternatives: [kir-spc-sdd-phc2010]
+    reason: "Most recent official EA frame (2018). 2020 census EAs not published."
+    escalated: false

@@ -1,0 +1,35 @@
+{
+  "source_id": "ton-tsd-phc2021-admin-boundaries",
+  "iso3": "TON",
+  "retrieved_at": "2026-11-19T22:02:18Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2021_tonga_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/9f308944-01c1-4b36-bd18-00b05966b03b/resource/2b872e2c-efd1-4c2c-903e-83ecda5b45a3/download/ton_phc_2021_4326.gpkg"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "ton_phc_2021_4326.gpkg",
+      "bytes": 1916928,
+      "sha256": "9c10b85420b5b5707418b39997f30147eb582ccc933ca925e5368364ae26f4dc"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "ton_phc_2021_4326.gpkg",
+      "url": "https://pacificdata.org/data/dataset/9f308944-01c1-4b36-bd18-00b05966b03b/resource/2b872e2c-efd1-4c2c-903e-83ecda5b45a3/download/ton_phc_2021_4326.gpkg",
+      "effective_url": "https://pacificdata.org/data/dataset/9f308944-01c1-4b36-bd18-00b05966b03b/resource/2b872e2c-efd1-4c2c-903e-83ecda5b45a3/download/ton_phc_2021_4326.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:02:18Z"
+    }
+  ],
+  "notes": "Published by SPC SDD on Pacific Data Hub (2025-03); boundaries used for Tonga 2021 PHC (Tonga Statistics Department)."
+}

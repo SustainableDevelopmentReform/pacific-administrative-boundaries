@@ -1,0 +1,71 @@
+{
+  "source_id": "ncl-noumea-quartiers",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T22:11:40Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://data.noumea.nc/datasets/33f91ef1da014808b5375c0be0b92141_0/about",
+  "download_urls": [
+    "https://data.noumea.nc/api/download/v1/items/33f91ef1da014808b5375c0be0b92141/shapefile?layers=0"
+  ],
+  "license": {
+    "name": "Licence Ouverte v2.0 (Etalab)",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  },
+  "files": [
+    {
+      "path": "quartiers_noumea_layer0.zip",
+      "bytes": 755414,
+      "sha256": "556e7aa33a5d75fc9bdfbbeb4c50f41dde9c4fba8c20d5ab4fe91b6ac82a2e89"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    },
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.dbf",
+      "bytes": 10402,
+      "sha256": "ceaaa49a153e6470e1458baf7ae1738262f5f899c0abd9efeb8f6a8eb81a1a1b",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    },
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.prj",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    },
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.shp",
+      "bytes": 1659236,
+      "sha256": "199c77cb20a7ac7fb3902eb65285c46e50b62e949dc16365470df61e3d168205",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    },
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.shx",
+      "bytes": 612,
+      "sha256": "da633772f762716c1927c21b94cf5397e4101edc33edba791ed3a94067f681eb",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    },
+    {
+      "path": "extracted/quartiers_noumea_layer0/Quartiers.xml",
+      "bytes": 6759,
+      "sha256": "f9615f8bfeea891357675e49c2d93e124300e68a59ea5bca5481676c1912d54f",
+      "from_archive": "quartiers_noumea_layer0.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "quartiers_noumea_layer0.zip",
+      "url": "https://data.noumea.nc/api/download/v1/items/33f91ef1da014808b5375c0be0b92141/shapefile?layers=0",
+      "url_effective": "https://hub.arcgis.com/api/v3/datasets/33f91ef1da014808b5375c0be0b92141_0/downloads/data?format=shp&spatialRefId=3857&where=1%3D1",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:11:40Z"
+    }
+  ],
+  "notes": "Ville de Noumea: 37 official administrative quartiers (deliberations 82/124, 83/16, 96/89); last edit 23/03/2021; catalogued on data.gouv.nc (quartiers-noumea, Licence Ouverte v2.0). Covers Noumea commune only (partial coverage)."
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "kir-gadm-41",
+  "iso3": "KIR",
+  "retrieved_at": "2026-11-19T21:55:39Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_KIR.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html"
+  },
+  "files": [
+    {
+      "path": "gadm41_KIR.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_KIR.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "bytes": 671744,
+      "sha256": "9bf4233cc0c106bff81aba76d69c81a92c9522b0ae25258ab84523227f2bebcf"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution and commercial use not allowed without permission."
+}

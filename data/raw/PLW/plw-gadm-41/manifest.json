@@ -1,0 +1,27 @@
+{
+  "source_id": "plw-gadm-41",
+  "iso3": "PLW",
+  "retrieved_at": "2026-11-19T21:55:58Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PLW.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html"
+  },
+  "files": [
+    {
+      "path": "gadm41_PLW.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PLW.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "bytes": 516096,
+      "sha256": "f45dadb70a8dbc8a14ee1cc71f01a614c720b9225dc4a82b3dd47c7623124c61"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution and commercial use not allowed without permission."
+}

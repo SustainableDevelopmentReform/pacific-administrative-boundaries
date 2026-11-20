@@ -1,0 +1,230 @@
+iso3: NIU
+country_name: Niue
+# Hierarchy (D-020, nz_realm_update 2026-11-20):
+#   admin0 = LINZ Niue Island Polygon (Topo50 1:50k, CC-BY-4.0; 261.3 km2) - official NZ topographic outline
+#   admin1 = Village (14; Alofi split into Alofi North / Alofi South). Villages are also the 14 village
+#            constituencies of the Niue Assembly (6 further seats are national common roll), so no
+#            separate electoral layer is needed.
+sources:
+  - source_id: niu-spc-sdd-phc2011-villages
+    title: "2011 Niue Population and Housing Census administrative boundaries (villages)"
+    publisher: "Pacific Community (SPC) Statistics for Development Division / Niue Statistics Office"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_niu_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/07ecef48-c768-4a43-8cd3-75876c2e0308/resource/fe2589c8-9d37-4319-b99c-4e6cab516bfc/download/2011_phc_niu_vid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY (Creative Commons Attribution; version unstated on PDH)
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH disclaimer: boundaries may differ slightly from official ones; no endorsement implied."
+    publication_date: 2020-06-29   # PDH record created; data = 2011 census geography
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: ward_village
+        level_name_local: Village
+        layer: 2011_phc_niu_vid_4326.geojson
+        name_field: vname
+        code_field: vid
+        parent_field: null
+        nests: true
+        # D-023: clip the census villages to the official LINZ coastline (overlap IoU 0.995)
+        clip_to: {source_id: niu-linz-island-polygons-topo, layer: layer-52181.geojson}
+    status: selected
+    raw_path: data/raw/NIU/niu-spc-sdd-phc2011-villages/
+    notes: >-
+      14 villages (vid 50-63), 261.4 km2. Official census geography via SPC PopGIS; source of geoBoundaries NIU ADM1.
+      [nz_realm_update] vs LINZ outline: IoU 0.995; 0.71 km2 of villages lie outside the LINZ coastline and 0.62 km2
+      of LINZ land is not covered (coastline generalisation differences, < 0.3%).
+
+  - source_id: niu-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen Niue ADM0, ADM1"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/NIU/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NIU/ADM0/geoBoundaries-NIU-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NIU/ADM1/geoBoundaries-NIU-ADM1-all.zip
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: ""}
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: geoBoundaries-NIU-ADM0-all/geoBoundaries-NIU-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: ward_village, level_name_local: Village, layer: geoBoundaries-NIU-ADM1-all/geoBoundaries-NIU-ADM1.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/NIU/niu-geoboundaries-gbopen/
+    notes: "ADM1 is DERIVED from niu-spc-sdd-phc2011-villages (boundarySource 'Pacific Data Hub'; identical area). ADM0 from Sentinel-2 2021 land cover."
+
+  - source_id: niu-spc-sdd-coastal-2019-villages
+    title: "Coastal proximity of populations - Niue village boundaries (SPC SDD 2019)"
+    publisher: "Pacific Community (SPC) SDD"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/coastal-population-dataset-niu
+    download_urls:
+      - https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/73583905-d7a8-4ff4-824c-c03c12d49751/download/ni_village_2011pop.geojson
+      - https://pacificdata.org/data/dataset/7d0cbf9e-f675-42dd-aa38-8147a1cd4f2b/resource/24272e93-4142-4ed7-85d9-dab98145ef0b/download/readme.txt
+    retrieval_method: http
+    license: {name: "CC-BY (version unstated)", url: http://www.opendefinition.org/licenses/cc-by, redistribution_ok: true, notes: ""}
+    publication_date: 2019-10-29
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: ward_village, level_name_local: Village, layer: ni_village_2011pop.geojson, name_field: Village, code_field: id, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/NIU/niu-spc-sdd-coastal-2019-villages/
+    notes: "Derived from the 2011 PHC villages with 2011 population; duplicate geometry."
+
+  - source_id: niu-spc-pcrafi-aal-village
+    title: "Annual Average Loss at village level, Niue (PCRAFI)"
+    publisher: "Pacific Community (SPC) GEM"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/nu-village-aal-275
+    download_urls:
+      - "https://geonode.pacificdata.org/geoserver/geonode/nu_village_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:nu_village_aal&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/nu_village_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:nu_village_aal&outputFormat=json"
+    retrieval_method: api
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      redistribution_ok: true
+      agreement: "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+      notes: "NonCommercial + ShareAlike as published on PDH; usable/redistributable under the CSDR-SPC agreement (D-020)."
+    publication_date: 2025-10-14
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: ward_village, level_name_local: Village, layer: nu_village_aal.geojson, name_field: village, code_field: vid, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/NIU/niu-spc-pcrafi-aal-village/
+    notes: >-
+      PCRAFI 2010 village geography with loss attributes (no plain PCRAFI village layer exists on GeoNode/PDH;
+      the only other Niue village layer, nu_village_aal_tc_eq, is a further loss table and was not downloaded).
+      13 villages (Alofi not split; Alofi = Alofi North + South, IoU 0.90). Internal village lines differ
+      materially from the 2011 census villages (per-village IoU 0.51-0.91; Namukulu 0.51, Toi 0.65, Tuapa 0.63);
+      outline matches (IoU 0.995 with LINZ). Alternative only.
+
+  - source_id: niu-osm-admin-relations
+    title: "OpenStreetMap village relations, Niue (13)"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/relation/1558556
+    download_urls:
+      - "https://polygons.openstreetmap.fr/get_geojson.py?id=<relation_id>&params=0 (relations 1558543-1558555)"
+      - "https://api.openstreetmap.org/api/0.6/relation/<relation_id>.json (tags)"
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: https://www.openstreetmap.org/copyright, redistribution_ok: true, notes: "share-alike; attribution required"}
+    publication_date: 2026-11-20   # snapshot
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: ward_village, level_name_local: Village, layer: "r<id>.geojson (admin_level=8)", name_field: "name (in r<id>_tags.json)", code_field: "relation id", parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/NIU/niu-osm-admin-relations/
+    notes: "13 villages (Alofi as one), land-based (Alofi 47.5 km2). Relations not linked as subareas of the country relation; enumerated via Nominatim."
+
+  - source_id: niu-linz-island-polygons-topo
+    title: "Niue Island Polygons (Topo, 1:50k)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52181-niue-island-polygons-topo-150k/
+    download_urls:   # LDS WFS; API key sent as header 'Authorization: key <LINZ_API_KEY>' (path form services;key=<LINZ_API_KEY>;/wfs returned 400 for GetFeature)
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52181&outputFormat=json&count=1000&startIndex=0"
+    auth: {type: header, name: Authorization, value_env: LINZ_API_KEY, prefix: "key "}   # LDS API key from env/.env, never recorded
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: "Attribution: sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0."
+    publication_date: 2022-06-28   # LDS published_at (first published 2014-12-01)
+    version: "LDS version 337269"
+    format: geojson
+    crs: EPSG:32702
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: layer-52181.geojson, name_field: name, code_field: null, parent_field: null, nests: true}
+    status: selected
+    raw_path: data/raw/NIU/niu-linz-island-polygons-topo/
+    notes: >-
+      1 polygon ('Niue Island'), 261.34 km2, EPSG:32702. Official NZ Topo50 land outline. Village layers
+      (SDD 2011, PCRAFI) agree with it to IoU 0.995; processing may clip admin1 to this outline.
+
+  - source_id: niu-linz-geographic-names-topo
+    title: "Niue Geographic Names (Topo, 1:50k)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52176-niue-geographic-names-topo-150k/
+    download_urls:
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52176&outputFormat=json&count=1000&startIndex=0"
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: "LINZ Data Service"}
+    publication_date: 2022-06-28
+    version: "LDS version 336683"
+    format: geojson
+    crs: EPSG:32702
+    levels: []
+    status: reference
+    raw_path: data/raw/NIU/niu-linz-geographic-names-topo/
+    notes: "190 name points; 13 POPL village points (Alofi as 'Alofi Township'). Name check only; no polygons."
+
+  - source_id: niu-gadm-41
+    title: "GADM 4.1 Niue"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NIU.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; redistribution not allowed)", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Reference only"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+    status: reference
+    raw_path: data/raw/NIU/niu-gadm-41/
+    notes: "ADM0 only."
+
+  - source_id: niu-kontur-boundaries
+    title: "Niue: Administrative Division with Aggregated Population (Kontur, HDX)"
+    publisher: "Kontur"
+    publisher_type: commercial
+    landing_url: https://data.humdata.org/dataset/kontur-boundaries-niue
+    download_urls: []
+    retrieval_method: http
+    license: {name: ODbL, url: https://opendatacommons.org/licenses/odbl/, redistribution_ok: true, notes: ""}
+    publication_date: 2022-04-07
+    version: null
+    format: gpkg
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "OSM-derived duplicate; not downloaded."
+
+decisions:
+  - level_code: admin0
+    chosen: niu-linz-island-polygons-topo
+    alternatives: [niu-spc-sdd-phc2011-villages, niu-geoboundaries-gbopen, niu-gadm-41]
+    reason: "D-020: LINZ Topo50 island polygon is the official NZ topographic land outline (CC-BY-4.0); census-village union agrees to IoU 0.995."
+    escalated: false
+  - level_code: admin1
+    chosen: niu-spc-sdd-phc2011-villages
+    alternatives: [niu-spc-pcrafi-aal-village, niu-geoboundaries-gbopen, niu-spc-sdd-coastal-2019-villages, niu-osm-admin-relations]
+    reason: >-
+      2011 census villages (14, CC-BY) match the 14 village councils / Assembly village constituencies
+      (Alofi North and Alofi South separate) and are the newer official census geography. PCRAFI (2010, 13
+      villages, Alofi unsplit; usable under the SPC agreement) has different internal lines (per-village IoU
+      0.51-0.91) and only loss attributes; LINZ has no village polygons (13 name points only).
+    escalated: false

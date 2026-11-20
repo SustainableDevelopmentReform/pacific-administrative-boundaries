@@ -1,0 +1,712 @@
+{
+  "source_id": "kir-ocha-codab-2020",
+  "iso3": "KIR",
+  "retrieved_at": "2026-11-19T21:56:14Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-kir",
+  "download_urls": [
+    "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/135e3bac-64ed-405c-b360-3f80de9d2287/download/kir_admgz_2020.xlsx",
+    "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/30c02bf1-d705-46ad-b828-b4b9bbed46e6/download/kir_adm_2020_shp.zip",
+    "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/e6759485-f662-4261-8e11-8184472a6ec8/download/kir_adm_2020_gdb.gdb.zip"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "kir_admgz_2020.xlsx",
+      "url": "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/135e3bac-64ed-405c-b360-3f80de9d2287/download/kir_admgz_2020.xlsx",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 17791,
+      "sha256": "9e976c16e275ae25b366d69f9d72e0033c4cba1717771d2e524fb565dda12d1a"
+    },
+    {
+      "path": "kir_adm_2020_shp.zip",
+      "url": "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/30c02bf1-d705-46ad-b828-b4b9bbed46e6/download/kir_adm_2020_shp.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 6101546,
+      "sha256": "2ef3118aea1e1227d94e1ba18e63e63e9094073be66e721e769d4599d71fa19a"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb.zip",
+      "url": "https://data.humdata.org/dataset/156a0966-1e09-455c-9e4f-e68676aa2fbf/resource/e6759485-f662-4261-8e11-8184472a6ec8/download/kir_adm_2020_gdb.gdb.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1930501,
+      "sha256": "231391b877544219917ae7bc2ed5deb3cfde1ec9417ea1247f03524006d248ee"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "kir_admgz_2020/[Content_Types].xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 1692,
+      "sha256": "212470214b4202012803729cc4eeb53dc31ad8627056ab8a92e1aa178a02b3b2"
+    },
+    {
+      "path": "kir_admgz_2020/_rels/.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 588,
+      "sha256": "73e5a29f48d5ab979eeda062493bc7e679265c1344ef936978b8becec5549497"
+    },
+    {
+      "path": "kir_admgz_2020/xl/workbook.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 2356,
+      "sha256": "533bb7e33f8212108553abd86e6cadbd8c20c7fdd71fea923e1a273a0746d2fa"
+    },
+    {
+      "path": "kir_admgz_2020/xl/_rels/workbook.xml.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 1121,
+      "sha256": "8f93a84f1a2d32c5c35b83fd71c820105b7e35b2504118f0c52190c52f8dc3ab"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/sheet1.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 1583,
+      "sha256": "ad705c1b31774caac88ea448ee0aec63cbdab1542526e5fa30cfa1a7ad0fe6da"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/sheet2.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 2336,
+      "sha256": "e66f71d8b7dfab77af62af6525f9c3b21b19e4ec4065990e7161e87fc080a0c3"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/sheet3.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 11320,
+      "sha256": "bfecdd513e0fe4d1c9e9128ae8baa9ea5274acd6c74003db3682d9f48a62276c"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/sheet4.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 3568,
+      "sha256": "d26269f808c077db48eb88fa646d27037735e80fb082202064f8f120a2767ad8"
+    },
+    {
+      "path": "kir_admgz_2020/xl/theme/theme1.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 8390,
+      "sha256": "b16106f4229f6ece6d74426b3e73ff6a677df2908d2a06f76ef0329fa27c0282"
+    },
+    {
+      "path": "kir_admgz_2020/xl/styles.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 4203,
+      "sha256": "2ad6d43edd5c0350c2782f81bc6e2199850148a3f439a862e3b018e7b40cf158"
+    },
+    {
+      "path": "kir_admgz_2020/xl/sharedStrings.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 3040,
+      "sha256": "043f8118d2122a51949c05d5241596775c0757dda0627824fc733f37dac557bd"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/_rels/sheet1.xml.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 322,
+      "sha256": "65cefb6727e21f882eb83bb6c10370afa59aafda7f007f531df0c30026dc4684"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/_rels/sheet2.xml.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 322,
+      "sha256": "fe0fffb5ec78558e2b46557177888c220c2b7d2389c24965089ed5618d66be54"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/_rels/sheet3.xml.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 322,
+      "sha256": "08bb3cc2258e8b92a5b8837d7580917fafdf0341a466d85361d3543a9960f1ef"
+    },
+    {
+      "path": "kir_admgz_2020/xl/worksheets/_rels/sheet4.xml.rels",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 878,
+      "sha256": "dbbebcc3f23a7d0a824bed1a46416a5d7fe39caca6671f7aad64d3487ec759e2"
+    },
+    {
+      "path": "kir_admgz_2020/xl/printerSettings/printerSettings1.bin",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 4016,
+      "sha256": "72490e0dd7014c60f6a9f462224d6e32a5b82044fa2b665a9d26539a6b878ec6"
+    },
+    {
+      "path": "kir_admgz_2020/xl/printerSettings/printerSettings2.bin",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 4016,
+      "sha256": "72490e0dd7014c60f6a9f462224d6e32a5b82044fa2b665a9d26539a6b878ec6"
+    },
+    {
+      "path": "kir_admgz_2020/xl/printerSettings/printerSettings3.bin",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 4016,
+      "sha256": "72490e0dd7014c60f6a9f462224d6e32a5b82044fa2b665a9d26539a6b878ec6"
+    },
+    {
+      "path": "kir_admgz_2020/docProps/core.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 600,
+      "sha256": "df3992a309196c0e9de82fcdadfc5f7612892753f1a5e817ef7f58d003c3c412"
+    },
+    {
+      "path": "kir_admgz_2020/docProps/app.xml",
+      "from": "kir_admgz_2020.xlsx",
+      "bytes": 916,
+      "sha256": "fe27a6d64d568bf23709d067042e31cd09396290adf30b69995ce194c294e0f4"
+    },
+    {
+      "path": "kir_adm_2020_shp/KIR COD-AB 2020_01_13.pdf",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 134335,
+      "sha256": "c5c30de426be3daf97597857c623576d9e7d338154f48ff52c091c98b7394118"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.cpg",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.dbf",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 607,
+      "sha256": "32e3a9589c7387be4a52967e4b48a58ee59b1f86b42953e13fc22c1d4e16174b"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.prj",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.sbn",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 132,
+      "sha256": "7b41465b1d4fb1eb62fbf850bc76824fa9d7f8d29384e735d1459d9384107eed"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.sbx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 116,
+      "sha256": "ad90456f2ba4444f2d935fcc0ce22fa83cefe69dcd344a5a8a91fe5a408251fc"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.shp",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 4994608,
+      "sha256": "453fba83f3e65fac42eb90b866c027c934a240743da882f3b7c8ce134e3c1291"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.shp.xml",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 5664,
+      "sha256": "ab7d520fb4f795b545997ecfcc68095ba7f30b0bea591b6c0fba0057d96718a2"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm0_2020.shx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 108,
+      "sha256": "03aa01392029b088748de107cabc8cadb97ed01f14db3e00627ce378b8ed1d3e"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.cpg",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.dbf",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 3213,
+      "sha256": "225caf7560e17ff06232806e34151a2a109abfd9d437bb9891331e42fe9cba7b"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.prj",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.sbn",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 172,
+      "sha256": "adaf0d081e1e7e530c3578beec31cc6e7ad38ce83dbeb83675f6e00e730f0ada"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.sbx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 124,
+      "sha256": "e1cd0d539587c2182ec795318844e4b8f62f1deef72375539d45a8c051c89de2"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.shp",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 4994904,
+      "sha256": "d0564990f34f1af31f5da5ee2e74629d27c17536552fcc9a6abe0a8834f6b0b6"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.shp.xml",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 6161,
+      "sha256": "fb890501ee9a1c4a1a5d20fe466928e55d1d96433ccf590a633b6b495c9799f0"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm1_2020.shx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 124,
+      "sha256": "2628630147ca8cd20aaf8050b396f4f20cc722d6d5d81d4575b1c46f915838ce"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.cpg",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.dbf",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 55126,
+      "sha256": "0b9124c4f5943d82b7d55e37fd501604b47fe1ab120c02411bbea633b0f37942"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.prj",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.sbn",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 476,
+      "sha256": "e0debccc763eb621d9e0eec131a5e9b86bd09f8cc079c1e9a550be5fab25d501"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.sbx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 132,
+      "sha256": "7a905b59f691f5ec743fcb8649dd27a2a37c9547c06582488551567982291351"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.shp",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 4997712,
+      "sha256": "75a130a07bf2fe677d724bba210edcda0657965d3627dcb5774e13ba22a7a133"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbnda_adm2_2020.shx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 388,
+      "sha256": "d76e5fb18bb0b80939f4626775e3142fe432eae0391975035c6aac3a6dadc059"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.cpg",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.dbf",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 180762,
+      "sha256": "d04d38b63277118b53bc008413549d6b4305eabc21613bd6ca6b4825fbca9eae"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.prj",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.sbn",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 10532,
+      "sha256": "a398acf9c311eb18e2eba3e2c88984e8037117296a95cadebbc80252bebb1983"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.sbx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 244,
+      "sha256": "c7ee9f2a598f62992e92d8b230fb5950c9efa0a1caac6d35561272e4a16c9608"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.shp",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 2387524,
+      "sha256": "a3699f9e07d82aa17b921720e6d6e566a610c3d19d230d0faad22806e2fb9b81"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.shp.xml",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 470,
+      "sha256": "ae52becc9b510fca884ae3d780c7ecdeffd8273b47757fde753e8c21ff44d0e1"
+    },
+    {
+      "path": "kir_adm_2020_shp/kir_admbndl_ALL.shx",
+      "from": "kir_adm_2020_shp.zip",
+      "bytes": 8356,
+      "sha256": "db6033052f5daab9b5b38fd142ffda784aa3a70eaa00e6d970c46261e50acd93"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000001.freelist",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 12632,
+      "sha256": "e388ab3e6a58c65b7601123d7f35cf5381491a717226459d680693d530080fb3"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000001.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 110,
+      "sha256": "80ba95b873e151074244f7655f9e29ce8967aab1bd57ff4c06a329b723a3d46c"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000001.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 498,
+      "sha256": "909453142c70b76ea377372afe2bbd314e8501b9dd5b431cd222378ac163c33b"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000001.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "fea67187ad8843d05903acefeb59a93cafe640f18245216b1c109036042254d4"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000001.TablesByName.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "2c269ec66e86ec06575a1c85efdafc725ae6c16e57020a1d47600c16960e9163"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000002.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 2055,
+      "sha256": "9efa50dc62a40e109a546054943ae5ad4b3d41aa81ece0dfa026b7b23cb09da8"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000002.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "f3ac9865dec6ab40e73d91dd1f5c2eef0248e66e359d4abb1d97edba92b5df88"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000003.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 42,
+      "sha256": "de0911d18e2f304380c04ae123ea18057d262d788301f7cc3148298231c7c618"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000003.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 758,
+      "sha256": "f0b433e6b7bb0ddc5430f22b113dbc83bdc4b62e32911368cfcdd9bb309fbfe9"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000003.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "d63fd5f8a490aa6aeffde1336e80ce35b5399af5752a72b316570a670b09d167"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.CatItemsByPhysicalName.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "b5fb03d2a9b5b249aed060616173732f0280b9d2784b9c22fc749e140a711b3d"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.CatItemsByType.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "98d43d03e73e75fc8fc1a830464674adf0f2b381280249a6473701876024f3e5"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.FDO_UUID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "e140ecfe3d13864f625564a3695bea7393a7c04b19a723b0e85c22a51c5e2f2f"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.freelist",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 45400,
+      "sha256": "e20e1d44dc65d5307612c1371fc686ffb8d9fd8e59b81f97cccef03b27a2d26b"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 310,
+      "sha256": "f29887c93b126a3feb0e20958cd73cc774f76ab79284b9c7286dc12eb05db858"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 101737,
+      "sha256": "a95e66877d8d4d25e3dc5c95c82dd6a554f56ed429872d79ffb7faef3ebbf0ae"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "86f6491743ccd2b27411501ed8b6b3446e38590182efc60a348446ca56ae620e"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000004.spx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "614e36bde2744ce4ac1e5fdba6fd308f42d6ad4ad38e4b0b0380541abf8ad822"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.CatItemTypesByName.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 12310,
+      "sha256": "d4192a7ffbfd8874a33550e3a8a3a6360bbbedbf50974b39b36d5b9d95b66ecc"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "734002286b28c61dc67415a7736f02f7aedd3c67d872d6514d53dc82027de503"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.CatItemTypesByUUID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "2f70f50cbca3b0743256ff3fd6955b19e83ccb816baafc05793967112de47515"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 296,
+      "sha256": "c21e650994b48cc72d174b3caf2ac1bd19e2d7305c8087aaae97e24caecf98a5"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 1803,
+      "sha256": "267c26f43ed4faed8b8bee869d962f28d7e2984ffc0b636a2c408353e0e06e67"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000005.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "e6d9a1c73e734d41336a12d2fa7cd024347fff56b83712544798a3dad114fc5a"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.CatRelsByDestinationID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "41a3f2a4213a2a106cd8ea520fefc190ef1288ee7f7541e0d3cc3c06041bd0a6"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.CatRelsByOriginID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "7cf76996de2e7fb9b5462409b72d74c7396bc50e907ba7c34d37da81ff31128f"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.CatRelsByType.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "b743d60ef68f5e0c5d3d0b692ea9e91afa53e2352fa1122c105ab1f7b4e8e4b0"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.FDO_UUID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "43fca9c40b802dcdfba27904060346264218c9b7db464fb4e16f3c34b40c6eca"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.freelist",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 8536,
+      "sha256": "eec29a8809c727858b377db40d8fb30adf17e45d76bf3d58986d8a4689a653ee"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 318,
+      "sha256": "1919a00326f198a90dc97545ec448c10b2b90d367020222212f7b00433fe09b5"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 2984,
+      "sha256": "ccd63405be0761352991450e3c259403e2729fab9c15900e429c8ecd42a75cf3"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000006.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "e513803603c022f9b0b7ca13e279a5eca350a9a03029b44c72de639e28221475"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "f010277f68ed505ede605844a31aa1d17799676ebf4f7607e326149c58470a45"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "9c024eacd604ad99b86f07d2e97c5cc1ae9b307eac2cd39f762f41808c7fdf92"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "abf7c54e966e29e947f75e3d8415b5b21ddc3fd1b9b12fb264475939e15df1ec"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByName.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "b29ea79e62f9294e998e1d33b60f12dce56d1b5e66338773a16c6e63c43e127d"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "11c75f4dc4aef491c0da0ba33e5a76bed2cdad9d301135f97ad5d45097b66817"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.CatRelTypesByUUID.atx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "30d1e729870fe9761350d8aa4bf4b00dbe70ccc028e27a88ba068ef0bd95a49a"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 602,
+      "sha256": "dc98e24d04eddd7f38905d176c1ea43c547a3a2daa0c80091a20d3443c726621"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 2504,
+      "sha256": "2a8cfd5ab2a0f1494cbc11288931a6c56fd04e040c0be273f9b36279276ebac4"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000007.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "0b5946b3849a3cbf86d70831eee9195b12d94995c9b56fbbe5047ced804a3e89"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000e.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000e.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 1175411,
+      "sha256": "ad48b58ec281bc385bd2e5f64797715dec7add7d01eaf080f8181739041b19b2"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000e.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "93e0c1d4730b29de88bdae3962687289ecf107ddf46f4afdb0e8844a0e851fa7"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000e.spx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "c3d243b7669aac3f4db28a2f7fe446f40a2eebbc569ae81c2b9f6fc38dfec941"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000f.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000f.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 1015400,
+      "sha256": "635b2ebeac1487c838a1cc07a25bda50bedba37dade681bab4aba524b75b45a3"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000f.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "f6e0d4c682cb479f75fc6e95e950cdeff8917e0700ede960530141f56bf129ad"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a0000000f.spx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "3187417bff23d613af709b9e6c0544b1b9df30446a9d9e711994be0814196da9"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000010.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000010.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 1015577,
+      "sha256": "0c32e63d8afd490980970511c60211bf3c0aba5852acaa1d58676fb33e0a7da0"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000010.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 5152,
+      "sha256": "da8bdce49877b00689228c9dbcf6448af5a0e83a25eac2e192cbe188f776e166"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000010.spx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4118,
+      "sha256": "be5d5dc7d40aaa49e99b470cbbd2a948d9b9daa5c3b5e79e222642d7dcc1147e"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000011.gdbindexes",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000011.gdbtable",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 562944,
+      "sha256": "6be8a4eb1fcd6ad8b7d4864d2f5464b983809ccd59a52138905694a31d366b42"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000011.gdbtablx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 10272,
+      "sha256": "85a8450be2589eb3d71f081f733aec81ff7d498a326ce820f2bb0e2099c10764"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/a00000011.spx",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 20502,
+      "sha256": "0769a1beb5c21ab47b109fe5155351fba89b60850497cf9e53dddd6ade2934ce"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/gdb",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 4,
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "path": "kir_adm_2020_gdb.gdb/kir_adm_2020_GDB.gdb/timestamps",
+      "from": "kir_adm_2020_gdb.gdb.zip",
+      "bytes": 400,
+      "sha256": "223cb8b89a517d415898eacfb7982d16128a2d870a4888b2bf1e764db108a019"
+    }
+  ],
+  "notes": "HDX COD-AB. Source per HDX: Secretariat of the Pacific Community, Statistics for Development Division (kiribati.popgis.spc.int). Last modified 2020-01-13T14:56:07.408041."
+}

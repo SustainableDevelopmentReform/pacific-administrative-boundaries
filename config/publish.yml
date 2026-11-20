@@ -1,0 +1,15 @@
+# Publication targets. Code/docs live on GitHub; data + STAC live on S3.
+# repo_url is PROVISIONAL (org taken from the sibling csdr-cloud-spatial repo); confirm before release.
+repo_url: https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries
+s3_bucket: csdr-public-datasets
+s3_prefix: pacific-administrative-boundaries
+# Public HTTPS root for the same prefix (virtual-hosted style; use <bucket>.s3.<region>.amazonaws.com if the bucket is outside us-east-1)
+https_base: https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries
+version: v0.1.0
+# Git ref used in STAC links to GitHub files (docs/sources.md anchors, raw manifests); the release tag
+git_ref: v0.1.0
+# Name used for this project in STAC `providers` (producer/processor)
+project_name: Pacific administrative boundaries
+# What `pab publish` mirrors (data/ is the published root, D-022): data/processed (excluding
+# *_restricted.parquet), data/combined, data/catalog.json, data/collection.json.
+# data/raw is never mirrored (no redistribution rights for originals); manifests are on GitHub.

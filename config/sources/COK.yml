@@ -1,0 +1,485 @@
+iso3: COK
+country_name: Cook Islands
+# Hierarchy (D-020, nz_realm_update 2026-11-20):
+#   admin0 = union of admin2 islands (LINZ Topo50 island polygons, CC-BY-4.0; 240.7 km2)
+#   admin1 = Group (3: Rarotonga, Southern, Northern) [region; no government of its own]
+#            geometry dissolved from the LINZ islands; names and membership from PCRAFI ck_group/ck_island (gid 1/2/3)
+#   admin2 = Island (15 incl. uninhabited Manuae, Takutea, Suwarrow; each inhabited island has an Island Government/Council)
+#            geometry = LINZ island polygons split by island (layers 52251, 52293, 52203, 52222);
+#            names = official island names (LINZ ISLD name points); PCRAFI iid recorded per island for joins
+#   admin3 = Census District (44), 2011 census. PARTIAL coverage: covers only populated/coastal land
+#            (e.g. Rarotonga CDs = 24 km2 of 67 km2); finest partition must fall back to island.
+#   admin4 = Enumeration Area (134), 2011 census, also partial.
+#   other  = Electoral constituency (24, 2010), non-nesting.
+# Rarotonga vaka (Te Au O Tonga, Takitumu, Puaikura) and tapere: no polygon source found (searched PDH CKAN,
+#   SPC GeoNode incl. PCRAFI/NC-SA layers, LINZ LDS, 2026-11-20).
+sources:
+  - source_id: cok-spc-sdd-phc2011-boundaries
+    title: "2011 Cook Islands Population and Housing Census administrative boundaries (EA, census district)"
+    publisher: "Pacific Community (SPC) Statistics for Development Division / Cook Islands Statistics Office"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_cok_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/70805a7a-86de-4455-ac42-07307e85f7cd/download/2011_phc_cok_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/b46c3299-881e-4751-b23a-6fd6b7648179/download/2011_phc_cok_cd_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY (Creative Commons Attribution; version unstated on PDH)
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH disclaimer: upper-level units may differ slightly from official boundaries; no endorsement implied."
+    publication_date: 2020-06-26   # PDH record created; data = 2011 census geography
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin3
+        level_type: statistical
+        level_name_local: Census District
+        layer: 2011_phc_cok_cd_4326.geojson
+        name_field: {field: cd_name, case: title}
+        code_field: cdid
+        code_scheme: sdd-census
+        parent_field: null     # [processing] SDD iid numbering matches no island code -> parent island by largest overlap
+        nests: true
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Enumeration Area
+        layer: 2011_phc_cok_eaid_4326.geojson
+        name_field: {field: ea_name, case: title}
+        code_field: eaid
+        code_scheme: sdd-census
+        parent_field: cdid
+        nests: true
+    status: selected
+    raw_path: data/raw/COK/cok-spc-sdd-phc2011-boundaries/
+    notes: >-
+      Official census geography (NSO via SPC PopGIS), open licence. Partial land coverage (CDs 145 km2,
+      EAs 61 km2 vs ~240 km2 land): uninhabited interiors/islets are not in any unit. Census districts
+      on Rarotonga approximate tapere groupings; on outer islands they are villages. 13 islands
+      represented (no Manuae, Takutea). Lower-case names.
+
+  - source_id: cok-spc-pcrafi-2010-exposure-boundaries
+    title: "PCRAFI 2010 population exposure geographies, Cook Islands (Group, Island, Electoral Boundary, Census District, EA)"
+    publisher: "Pacific Community (SPC) Geoscience, Energy and Maritime Division (PCRAFI); source PopGIS / Cook Islands Statistics Office"
+    publisher_type: regional_body
+    landing_url: https://geonode.pacificdata.org/catalogue/#/dataset/497
+    download_urls:
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_group/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_group&outputFormat=json"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_island/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_island&outputFormat=json"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_electoral_boundary/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoral_boundary&outputFormat=json"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_census_district/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_census_district&outputFormat=json"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_enumeration_area/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_enumeration_area&outputFormat=json"
+    retrieval_method: api
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      redistribution_ok: true
+      agreement: "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+      notes: >-
+        GeoNode dataset 497 itself says "Not Specified"; the PCRAFI collection on PDH is published under
+        CC BY-NC-SA 4.0. Used and redistributed under the CSDR-SPC data use agreement (decision D-020).
+    publication_date: 2020-02-03   # GeoNode publication date; data vintage 2010
+    version: "PCRAFI 2010 exposure"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: region
+        level_name_local: Group
+        layer: ck_group.geojson
+        name_field: group
+        code_field: gid
+        code_scheme: pcrafi
+        parent_field: null
+        nests: true
+        use: false   # D-020: admin1 geometry = groups dissolved from LINZ islands; names/gid from this layer (see cok-linz-island-polygons-topo)
+      - level_code: admin2
+        level_type: island
+        level_name_local: Island
+        layer: ck_island.geojson
+        name_field: iname
+        code_field: iid
+        code_scheme: pcrafi
+        parent_field: gid
+        nests: true
+        use: false   # D-020: admin2 geometry = LINZ islands (this layer is offset up to 8 km on outer atolls); iid/iname joined via the LINZ derive list
+      - level_code: other
+        level_type: electoral
+        level_name_local: Electoral Constituency
+        layer: ck_electoral_boundary.geojson
+        name_field: {field: elec_bound, case: title}
+        code_field: ebid
+        code_scheme: pcrafi
+        layer_key: electoral
+        parent_field: null
+        nests: false
+      - level_code: admin3
+        level_type: statistical
+        level_name_local: Census District
+        layer: ck_census_district.geojson
+        name_field: census_dis
+        code_field: cdid
+        parent_field: iid
+        nests: true
+        use: false   # admin3 selected from cok-spc-sdd-phc2011-boundaries
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Enumeration Area
+        layer: ck_enumeration_area.geojson
+        name_field: enum_area
+        code_field: eaid
+        parent_field: iid
+        nests: true
+        use: false   # admin4 selected from cok-spc-sdd-phc2011-boundaries
+    status: selected   # for other/electoral only (and group/island names+codes); admin1/admin2 geometry from LINZ, CD/EA from SDD
+    raw_path: data/raw/COK/cok-spc-pcrafi-2010-exposure-boundaries/
+    notes: >-
+      Geography: Group(3), Island(15), Electoral Boundary(24), Census District(44), EA(247 of which 131 are
+      eaid=0 filler polygons). Only full-coverage island layer found (15 islands, 244 km2). Abstract warns of
+      attribute misalignment inherited from PopGIS; observed: ck_island Palmerston gid=2 but group='Northern';
+      ck_electoral_boundary 'group' field wrong for some rows (e.g. TAKUVAINE-TUTAKIMOA 'Northern');
+      ck_census_district Aitutaki cdid/geometry pairing differs from SDD 2011. Use names/geometry, verify
+      attributes. Electoral boundaries are 2010; current (post-2010) constituency boundaries not found.
+      Both SHAPE-ZIP and GeoJSON exports kept; GeoJSON preferred (untruncated field names).
+      [nz_realm_update] ck_island vs LINZ Topo50 island polygons: areas agree (238.4 vs 240.7 km2) but outer
+      islands are displaced (centroid offsets: Penrhyn 8.0 km, Pukapuka 4.6, Manihiki 4.1, Manuae 2.7,
+      Rakahanga 1.7, Suwarrow 1.6 km; IoU < 0.15), Rarotonga/Mangaia/Mitiaro match (IoU >= 0.90). 'Mainihiki'
+      misspelt. Electoral polygons extend over reef/lagoon (237.6 km2, of which 196.7 km2 on LINZ land) and
+      inherit the same outer-island offsets; processing may clip them to LINZ land. No vaka/tapere layer on
+      GeoNode/PDH.
+
+  - source_id: cok-spc-pcrafi-aal-electoral
+    title: "Annual Average Loss at electoral boundary level for Cook Islands (PCRAFI)"
+    publisher: "Pacific Community (SPC) GEM"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/ck-electoralboundary-aal-382
+    download_urls:
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+      - "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=json"
+    retrieval_method: api
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      redistribution_ok: true
+      agreement: "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+      notes: "NonCommercial + ShareAlike as published on PDH; usable/redistributable under the CSDR-SPC agreement (D-020)."
+    publication_date: 2025-10-14
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: other
+        level_type: electoral
+        level_name_local: Electoral Constituency
+        layer: ck_electoralboundary_aal.geojson
+        name_field: elec_bound
+        code_field: ebid
+        parent_field: null
+        nests: false
+    status: alternative
+    raw_path: data/raw/COK/cok-spc-pcrafi-aal-electoral/
+    notes: "Same geometry as ck_electoral_boundary (derived) with PCRAFI loss attributes; kept as alternative only (no new boundary information)."
+
+  - source_id: cok-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen Cook Islands ADM0"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/COK/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/COK/ADM0/geoBoundaries-COK-ADM0-all.zip
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: ""}
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: geoBoundaries-COK-ADM0-all/geoBoundaries-COK-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      # [processing] ruling E-005: open derived island and group layers that carry the admin1/admin2
+      # hierarchy (and the combined product); the PCRAFI layers stay in the per-country table, restricted.
+      - level_code: admin2
+        level_type: island
+        level_name_local: Island
+        layer: null
+        code_scheme: name-slug
+        nests: true
+        use: false   # D-020: superseded by the LINZ-derived islands (cok-linz-island-polygons-topo)
+        derive:
+          method: islands_from_parts
+          max_km: 30
+          sources:
+            - {source_id: cok-geoboundaries-gbopen, layer: geoBoundaries-COK-ADM0-all/geoBoundaries-COK-ADM0.geojson, method_token: split_from_admin0_by_island}
+            - {source_id: cok-spc-sdd-phc2011-boundaries, layer: 2011_phc_cok_cd_4326.geojson, method_token: dissolved_from_census_districts}
+          islands:   # approximate island/atoll centres (WGS84) used only to label parts
+            - {code: rarotonga, name: Rarotonga, lon: -159.78, lat: -21.23, group: rarotonga}
+            - {code: aitutaki, name: Aitutaki, lon: -159.79, lat: -18.86, group: southern}
+            - {code: manuae, name: Manuae, lon: -158.94, lat: -19.26, group: southern}
+            - {code: takutea, name: Takutea, lon: -158.29, lat: -19.81, group: southern}
+            - {code: atiu, name: Atiu, lon: -158.12, lat: -19.99, group: southern}
+            - {code: mitiaro, name: Mitiaro, lon: -157.71, lat: -19.87, group: southern}
+            - {code: mauke, name: Mauke, lon: -157.34, lat: -20.16, group: southern}
+            - {code: mangaia, name: Mangaia, lon: -157.93, lat: -21.92, group: southern}
+            - {code: palmerston, name: Palmerston, lon: -163.17, lat: -18.04, group: southern}
+            - {code: suwarrow, name: Suwarrow, lon: -163.11, lat: -13.25, group: northern}
+            - {code: nassau, name: Nassau, lon: -165.42, lat: -11.56, group: northern}
+            - {code: pukapuka, name: Pukapuka, lon: -165.85, lat: -10.88, group: northern}
+            - {code: rakahanga, name: Rakahanga, lon: -161.09, lat: -10.03, group: northern}
+            - {code: manihiki, name: Manihiki, lon: -161.00, lat: -10.43, group: northern}
+            - {code: penrhyn, name: Penrhyn, name_alt: Tongareva, lon: -158.03, lat: -9.00, group: northern}
+        notes: "[processing] E-005 open islands: geoBoundaries ADM0 (CC-BY) parts by nearest island point; it lacks the islands of Palmerston, Suwarrow, Nassau, Pukapuka, Rakahanga and Manihiki, which are filled from the open SDD 2011 census districts (populated land only; Suwarrow from its national-park CD). Escalated."
+      - level_code: admin1
+        level_type: region
+        level_name_local: Group
+        layer: null
+        code_scheme: name-slug
+        nests: true
+        use: false   # D-020: superseded by the LINZ-derived groups (cok-linz-island-polygons-topo)
+        derive:
+          method: dissolve_children
+          child_level: admin2
+          child_source: cok-geoboundaries-gbopen
+          groups:
+            rarotonga: {name: Rarotonga, members: [rarotonga]}
+            southern: {name: Southern Group, members: [aitutaki, manuae, takutea, atiu, mitiaro, mauke, mangaia, palmerston]}
+            northern: {name: Northern Group, members: [suwarrow, nassau, pukapuka, rakahanga, manihiki, penrhyn]}
+        notes: "[processing] E-005 open groups dissolved from the derived islands (Palmerston in the Southern Group as in the PCRAFI/SDD gid coding)."
+    status: alternative
+    raw_path: data/raw/COK/cok-geoboundaries-gbopen/
+    notes: >-
+      ADM0 only (Sentinel-2 2021 land cover raster-to-polygon, 218 km2; lacks Palmerston, Suwarrow, Nassau,
+      Pukapuka, Rakahanga, Manihiki). E-005 derived islands/groups superseded by LINZ (D-020); kept as alternative.
+
+  - source_id: cok-osm-admin-relations
+    title: "OpenStreetMap administrative relations, Cook Islands (11 islands, 5 Rarotonga districts)"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/relation/2184233
+    download_urls:
+      - "https://polygons.openstreetmap.fr/get_geojson.py?id=<relation_id>&params=0 (16 relations; see manifest)"
+      - "https://api.openstreetmap.org/api/0.6/relation/<relation_id>.json (tags)"
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: https://www.openstreetmap.org/copyright, redistribution_ok: true, notes: "share-alike; attribution required"}
+    publication_date: 2026-11-20   # snapshot
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin2, level_type: island, level_name_local: Island, layer: "r<id>.geojson (admin_level=4)", name_field: "name (in r<id>_tags.json)", code_field: "relation id", parent_field: null, nests: true}
+      - {level_code: other, level_type: customary, level_name_local: "District (Rarotonga)", layer: "r3830341, r14367542, r14367543, r3830340, r3830337 (admin_level=8)", name_field: name, code_field: "relation id", parent_field: null, nests: false}
+    status: rejected
+    raw_path: data/raw/COK/cok-osm-admin-relations/
+    notes: >-
+      Polygons are maritime (e.g. Rarotonga 2372 km2, Aitutaki 4557 km2), i.e. sea areas around islands,
+      not land; only 11 of 15 islands; Rarotonga level-8 set mixes vaka (Takitumu) with districts
+      (Matavera, Ngatangiia) and is inconsistent. Kept for reference only.
+
+  - source_id: cok-linz-island-polygons-topo
+    title: "Cook Islands Island Polygons (Topo50 series; 1:25k Zone4/Zone3 and 1:50k Zone4/Zone3)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52251-cook-islands-island-polygons-topo-125k-zone4/
+    download_urls:   # LDS WFS; API key sent as header 'Authorization: key <LINZ_API_KEY>' (path form services;key=<LINZ_API_KEY>;/wfs returned 400 for GetFeature)
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52251&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52293&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52203&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52222&outputFormat=json&count=1000&startIndex=0"
+    auth: {type: header, name: Authorization, value_env: LINZ_API_KEY, prefix: "key "}   # LDS API key from env/.env, never recorded
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: "Attribution: sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0."
+    publication_date: 2022-06-29   # latest LDS publication of the four layers (first published 2014-12-02)
+    version: "LDS versions 338169 (52251), 336482 (52293), 338899 (52203), 336629 (52222)"
+    format: geojson
+    crs: EPSG:32704   # 52251/52203 in EPSG:32704, 52293/52222 in EPSG:32703; each GeoJSON carries its CRS
+    levels:
+      - level_code: admin2
+        level_type: island
+        level_name_local: Island
+        layer: null
+        name_field: null
+        code_field: null
+        parent_field: null
+        code_scheme: name-slug
+        nests: true
+        derive:
+          method: islands_from_parts
+          max_km: 30
+          sources:   # the four layers cover disjoint islands; each fills the islands not yet found
+            - {source_id: cok-linz-island-polygons-topo, layer: layer-52251.geojson, method_token: split_from_land_by_island}
+            - {source_id: cok-linz-island-polygons-topo, layer: layer-52293.geojson, method_token: split_from_land_by_island}
+            - {source_id: cok-linz-island-polygons-topo, layer: layer-52203.geojson, method_token: split_from_land_by_island}
+            - {source_id: cok-linz-island-polygons-topo, layer: layer-52222.geojson, method_token: split_from_land_by_island}
+          islands:   # label points = LINZ Geographic Names ISLD points (cok-linz-geographic-names-topo); pcrafi_iid = ck_island.iid for joins
+            - {code: rarotonga, name: Rarotonga, lon: -159.781, lat: -21.235, group: rarotonga, pcrafi_iid: 1}
+            - {code: aitutaki, name: Aitutaki, lon: -159.786, lat: -18.86, group: southern, pcrafi_iid: 2}
+            - {code: manuae, name: Manuae, lon: -158.964, lat: -19.264, group: southern, pcrafi_iid: 14}
+            - {code: takutea, name: Takutea, lon: -158.289, lat: -19.812, group: southern, pcrafi_iid: 15}
+            - {code: atiu, name: Atiu, lon: -158.113, lat: -19.997, group: southern, pcrafi_iid: 4}
+            - {code: mitiaro, name: Mitiaro, lon: -157.721, lat: -19.864, group: southern, pcrafi_iid: 6}
+            - {code: mauke, name: Mauke, lon: -157.34, lat: -20.161, group: southern, pcrafi_iid: 5}
+            - {code: mangaia, name: Mangaia, lon: -157.921, lat: -21.924, group: southern, pcrafi_iid: 3}
+            - {code: palmerston, name: Palmerston, lon: -163.152, lat: -18.047, group: southern, pcrafi_iid: 7}
+            - {code: suwarrow, name: Suwarrow, lon: -163.126, lat: -13.285, group: northern, pcrafi_iid: 13}
+            - {code: nassau, name: Nassau, lon: -165.415, lat: -11.559, group: northern, pcrafi_iid: 9}
+            - {code: pukapuka, name: Pukapuka, lon: -165.853, lat: -10.879, group: northern, pcrafi_iid: 8}
+            - {code: rakahanga, name: Rakahanga, lon: -161.089, lat: -10.016, group: northern, pcrafi_iid: 11}
+            - {code: manihiki, name: Manihiki, lon: -160.999, lat: -10.419, group: northern, pcrafi_iid: 10}
+            - {code: penrhyn, name: Penrhyn, name_alt: Tongareva, lon: -157.974, lat: -8.995, group: northern, pcrafi_iid: 12}
+        notes: >-
+          Geometry from LINZ (official NZ topographic land outline). Layer coverage: 52251 = Rarotonga, Aitutaki,
+          Manuae, Takutea, Atiu, Mitiaro, Mauke, Mangaia, Manihiki, Rakahanga; 52293 = Palmerston, Pukapuka,
+          Nassau; 52203 = Penrhyn; 52222 = Suwarrow. grp_name agrees with nearest-point assignment for every
+          polygon (0 mismatches); farthest part 16.7 km (Penrhyn). Island codes are name slugs; PCRAFI iid
+          (and group gid) are listed per island so census/PCRAFI attributes can be joined.
+      - level_code: admin1
+        level_type: region
+        level_name_local: Group
+        layer: null
+        code_scheme: name-slug
+        nests: true
+        derive:
+          method: dissolve_children
+          child_level: admin2
+          child_source: cok-linz-island-polygons-topo
+          groups:   # names/membership from PCRAFI ck_group/ck_island gid (1 Rarotonga, 2 Southern, 3 Northern)
+            rarotonga: {name: Rarotonga, pcrafi_gid: 1, members: [rarotonga]}
+            southern: {name: Southern Group, pcrafi_gid: 2, members: [aitutaki, manuae, takutea, atiu, mitiaro, mauke, mangaia, palmerston]}
+            northern: {name: Northern Group, pcrafi_gid: 3, members: [suwarrow, nassau, pukapuka, rakahanga, manihiki, penrhyn]}
+        notes: "Groups dissolved from the LINZ islands. Palmerston in the Southern Group per PCRAFI/SDD gid=2 (PCRAFI 'group' text says Northern; gid wins)."
+    status: selected
+    raw_path: data/raw/COK/cok-linz-island-polygons-topo/
+    notes: >-
+      Downloaded 2026-11-20 with the project LDS key. 329 polygons, 240.66 km2 total (all 15 islands incl.
+      uninhabited Manuae, Takutea, Suwarrow). Island areas (km2): Rarotonga 67.76, Mangaia 48.44, Atiu 28.48,
+      Mitiaro 22.88, Mauke 19.20, Aitutaki 17.99, Penrhyn 9.97, Manuae 6.90, Manihiki 5.12, Rakahanga 3.96,
+      Pukapuka 3.94, Palmerston 2.54, Nassau 1.21, Suwarrow 1.14, Takutea 1.13. Lagoons excluded (separate
+      LINZ lagoon layers 52252/52295/52205/52223 not downloaded). Fields: grp_name, name, macronated.
+
+  - source_id: cok-linz-geographic-names-topo
+    title: "Cook Islands Geographic Names (Topo50 series; 1:25k Zone4/Zone3 and 1:50k Zone4/Zone3)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52247-cook-islands-geographic-names-topo-125k-zone4/
+    download_urls:
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52247&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52292&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52204&outputFormat=json&count=1000&startIndex=0"
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52221&outputFormat=json&count=1000&startIndex=0"
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: "LINZ Data Service"}
+    publication_date: 2022-06-29
+    version: "LDS versions 336545 (52247), 338878 (52292), 336588 (52204), 336691 (52221)"
+    format: geojson
+    crs: EPSG:32704
+    levels: []
+    status: reference
+    raw_path: data/raw/COK/cok-linz-geographic-names-topo/
+    notes: >-
+      Point names (desc_code ISLD/LOC/POPL/TOWN ...). Used for the island label points and to verify island
+      names; contains no vaka/tapere polygons (some LOC points name Rarotonga localities only).
+
+  - source_id: cok-gadm-41
+    title: "GADM 4.1 Cook Islands"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_COK.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; redistribution not allowed)", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Reference only"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: island, level_name_local: Island, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/COK/cok-gadm-41/
+    notes: "11 islands (no Nassau, Suwarrow, Manuae, Takutea); 'Penhryn' misspelt."
+
+  - source_id: cok-spc-sdd-coastal-2019
+    title: "Coastal proximity of populations - Cook Islands (SPC SDD 2019)"
+    publisher: "Pacific Community (SPC) SDD"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/coastal-population-dataset-cok
+    download_urls: []
+    retrieval_method: http
+    license: {name: "CC-BY", url: http://www.opendefinition.org/licenses/cc-by, redistribution_ok: true, notes: ""}
+    publication_date: 2019-10-29
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Resource labelled 'COK EA boundaries' actually links to cok1kmbuff_4326.geojson (the coastal buffer); no boundary layer available. Not downloaded."
+
+  - source_id: cok-kontur-boundaries
+    title: "Cook Islands: Administrative Division with Aggregated Population (Kontur, HDX)"
+    publisher: "Kontur"
+    publisher_type: commercial
+    landing_url: https://data.humdata.org/dataset/kontur-boundaries-cook-islands
+    download_urls: []
+    retrieval_method: http
+    license: {name: ODbL, url: https://opendatacommons.org/licenses/odbl/, redistribution_ok: true, notes: ""}
+    publication_date: 2022-04-07
+    version: null
+    format: gpkg
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Derived from OSM (2022); duplicate of cok-osm-admin-relations. Not downloaded. Who's On First (HDX, CC-BY) also rejected as an aggregator."
+
+decisions:
+  - level_code: admin0
+    chosen: cok-linz-island-polygons-topo
+    alternatives: [cok-geoboundaries-gbopen, cok-gadm-41]
+    reason: "Union of the LINZ island polygons (official NZ topographic outline, CC-BY-4.0, all 15 islands, 240.7 km2); geoBoundaries ADM0 misses 6 islands; GADM restricted."
+    escalated: false
+  - level_code: admin1
+    chosen: cok-linz-island-polygons-topo
+    alternatives: [cok-spc-pcrafi-2010-exposure-boundaries, cok-geoboundaries-gbopen]
+    reason: >-
+      D-020. Groups dissolved from the LINZ islands so admin0/1/2 share one geometry and nest exactly; group
+      names, membership and gid taken from PCRAFI ck_group/ck_island (now usable under the SPC agreement).
+      PCRAFI ck_group geometry not used because it inherits the outer-island offsets of ck_island.
+    escalated: false
+  - level_code: admin2
+    chosen: cok-linz-island-polygons-topo
+    alternatives: [cok-spc-pcrafi-2010-exposure-boundaries, cok-geoboundaries-gbopen, cok-spc-sdd-phc2011-boundaries, cok-gadm-41, cok-osm-admin-relations]
+    reason: >-
+      D-020. LINZ Topo50 island polygons are the official land outline (CC-BY-4.0, 1:25k/1:50k, all 15 islands).
+      PCRAFI ck_island has matching areas but is displaced by 1.6-8 km on Penrhyn, Pukapuka, Manihiki, Manuae,
+      Rakahanga and Suwarrow (IoU < 0.15). Names: official island names (LINZ name points; Penrhyn alt
+      Tongareva); PCRAFI iid recorded per island in the derive list for attribute joins.
+    escalated: false
+  - level_code: admin3
+    chosen: cok-spc-sdd-phc2011-boundaries
+    alternatives: [cok-spc-pcrafi-2010-exposure-boundaries]
+    reason: "Same 2011 census geography; SDD copy is the NSO/SPC census release (CC-BY) with consistent attributes. Partial coverage (145 km2; 141.8 km2 on LINZ land): finest partition falls back to island."
+    escalated: false
+  - level_code: admin4
+    chosen: cok-spc-sdd-phc2011-boundaries
+    alternatives: [cok-spc-pcrafi-2010-exposure-boundaries]
+    reason: "SDD 2011 EAs (134) are the census units; PCRAFI EA layer has 131 unlabelled filler polygons."
+    escalated: false
+  - level_code: other
+    chosen: cok-spc-pcrafi-2010-exposure-boundaries
+    alternatives: [cok-spc-pcrafi-aal-electoral, cok-osm-admin-relations]
+    reason: >-
+      Electoral constituencies (24, 2010): only source, now usable under the SPC agreement (D-020). The AAL
+      copy is derived. Polygons cover reef/lagoon and carry the PCRAFI outer-island offsets (recommend clip
+      to LINZ land in processing). No vaka/tapere polygons exist; current (post-2010) constituencies not found.
+    escalated: false

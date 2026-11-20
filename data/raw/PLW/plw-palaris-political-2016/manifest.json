@@ -1,0 +1,305 @@
+{
+  "source_id": "plw-palaris-political-2016",
+  "iso3": "PLW",
+  "retrieved_at": "2026-11-19T21:57:15Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry_line.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/pw_plrs_hato_bndry.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/pw_plrs_sons_bndry.html",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/pw_plrs_ngar_bndry.html"
+  ],
+  "license": {
+    "name": "PacIOOS data use (free use and redistribution, not for legal use)",
+    "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html",
+    "notes": "Use Limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+  },
+  "files": [
+    {
+      "path": "pw_plrs_all_political_bndry.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1196135,
+      "sha256": "0f2675adc7af9a20438735a92c28f8edccc4c4cdcee37978eefbb61963704e55"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 256375,
+      "sha256": "99858c8b0d98a8601d25188491b199090519f68d8b44240a32997099ef2ce237"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46398,
+      "sha256": "8359d86c738b3b72dfeeba6bb1c16122ccd6b490ec21f8e76e3baf0fe1dd9f9e"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 18936,
+      "sha256": "dcf941e7c98c56c0008b5bdd0e9298e2804a25525ab2b047787416427f3ebacb"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_all_political_bndry_line&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 5858,
+      "sha256": "cccdfe225bd43caf08b61383287d8b554acb31cebbc4193f62c22f1f27019511"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_all_political_bndry_line.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46156,
+      "sha256": "fbb674a42c06f44c595b0d38a735221628f46a54c06738f9d50525714de30117"
+    },
+    {
+      "path": "pw_plrs_hato_bndry.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 3250,
+      "sha256": "cc7fb67e7bb36c8e6bfa0db01a75168ced11542692bd8d50daa09ba7a80a1655"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_hato_bndry&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1737,
+      "sha256": "8b5798140841175d745d71f64a45c60cd6cdd0968387a157835486d74f5a0f64"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_hato_bndry.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46442,
+      "sha256": "f0503f8cc8b1765c743835c64bf3307d67837cb1a4fe2c135bfba49caf6b19fd"
+    },
+    {
+      "path": "pw_plrs_sons_bndry.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 5728,
+      "sha256": "c7e79b0a92a82cb4c5f94bd13796ae74049aec261c5b7ed32085d673217d4800"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_sons_bndry&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 2274,
+      "sha256": "b7738ad9aacd7a9122b767d1f71eb53722a810811f79cab30be05e4462a19d62"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_sons_bndry.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46437,
+      "sha256": "591f2d228d078f568ac2433658e8bbc231743e902b8e72456c01ec65d3570fc8"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 2328,
+      "sha256": "7817794b7c21c3a6e7b940e9b66ad3f93e3e9ae98adfceba162841e2d2300bd9"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:pw_plrs_ngar_bndry&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1710,
+      "sha256": "5cdec9a6c109d4ef6163ba6be556f7a9a37be936cc5cfc1417f0ee51d027d1fc"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/pw_plrs_ngar_bndry.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 46878,
+      "sha256": "40fcd7d7b465a716c7f781c5c4aac7f5d08a11bf7349b7e8a9ed3fa46d0ef617"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "pw_plrs_all_political_bndry_shp/pw_plrs_all_political_bndry.shx",
+      "from": "pw_plrs_all_political_bndry_shp.zip",
+      "bytes": 6100,
+      "sha256": "aa2470b434de75f69a0123a62c49965339456b32b0934dca537bc3363daa37e2"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_shp/pw_plrs_all_political_bndry.dbf",
+      "from": "pw_plrs_all_political_bndry_shp.zip",
+      "bytes": 240879,
+      "sha256": "2ba2e221432c0661a25ae4a3ac0754b43f661e976c602131f65b0bfb902a0ded"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_shp/pw_plrs_all_political_bndry.shp",
+      "from": "pw_plrs_all_political_bndry_shp.zip",
+      "bytes": 709044,
+      "sha256": "d2f3f62aaed33ad6291aeb52577788c481c990eb6f67639afa722f2aae0d3a9d"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_shp/pw_plrs_all_political_bndry.prj",
+      "from": "pw_plrs_all_political_bndry_shp.zip",
+      "bytes": 703,
+      "sha256": "82d71eb7ae1206cc9e0686b8e844ae9f74025ebef431e93d114eed4741c8e7c9"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_shp/pw_plrs_all_political_bndry.cst",
+      "from": "pw_plrs_all_political_bndry_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp/pw_plrs_all_political_bndry_line.shp",
+      "from": "pw_plrs_all_political_bndry_line_shp.zip",
+      "bytes": 10732,
+      "sha256": "2326ca56c24674d3328d79c4f8520df5c26e67a646d7ea26eb4418df8fa53062"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp/pw_plrs_all_political_bndry_line.prj",
+      "from": "pw_plrs_all_political_bndry_line_shp.zip",
+      "bytes": 703,
+      "sha256": "82d71eb7ae1206cc9e0686b8e844ae9f74025ebef431e93d114eed4741c8e7c9"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp/pw_plrs_all_political_bndry_line.cst",
+      "from": "pw_plrs_all_political_bndry_line_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp/pw_plrs_all_political_bndry_line.dbf",
+      "from": "pw_plrs_all_political_bndry_line_shp.zip",
+      "bytes": 4993,
+      "sha256": "2b11d60537f7118ab8378bc2e4881c392a173180ea5cefdf9e3ad44c5fd3643e"
+    },
+    {
+      "path": "pw_plrs_all_political_bndry_line_shp/pw_plrs_all_political_bndry_line.shx",
+      "from": "pw_plrs_all_political_bndry_line_shp.zip",
+      "bytes": 236,
+      "sha256": "8df0065dc89fa20bb75057aceda26aa25b02394de832df55fcb65f121e412367"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp/pw_plrs_hato_bndry.prj",
+      "from": "pw_plrs_hato_bndry_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp/pw_plrs_hato_bndry.shx",
+      "from": "pw_plrs_hato_bndry_shp.zip",
+      "bytes": 116,
+      "sha256": "3957a65e7a6b5b420d332ccabf0f68a37e5d1c60ab377a9550b2123aa7a6fcf7"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp/pw_plrs_hato_bndry.dbf",
+      "from": "pw_plrs_hato_bndry_shp.zip",
+      "bytes": 1165,
+      "sha256": "f2830c2f6573a941cdd90cdd1beee8e1bbdfeafab9de9f87e8dc112a549d0a03"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp/pw_plrs_hato_bndry.shp",
+      "from": "pw_plrs_hato_bndry_shp.zip",
+      "bytes": 1844,
+      "sha256": "fc6ce3c4c2ba59c88da75dc9c1b28b063a315379ef6aed08035c39072050d8e1"
+    },
+    {
+      "path": "pw_plrs_hato_bndry_shp/pw_plrs_hato_bndry.cst",
+      "from": "pw_plrs_hato_bndry_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp/pw_plrs_sons_bndry.shp",
+      "from": "pw_plrs_sons_bndry_shp.zip",
+      "bytes": 3252,
+      "sha256": "5f65e235a31db971feea99f73e6fc53f270d5ef85aedbb987a2f2a983acd88cb"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp/pw_plrs_sons_bndry.shx",
+      "from": "pw_plrs_sons_bndry_shp.zip",
+      "bytes": 132,
+      "sha256": "833c8e30137f590af6befdbd077036235a01f9a0e2a41df03b8133f635ea01a6"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp/pw_plrs_sons_bndry.prj",
+      "from": "pw_plrs_sons_bndry_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp/pw_plrs_sons_bndry.cst",
+      "from": "pw_plrs_sons_bndry_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "pw_plrs_sons_bndry_shp/pw_plrs_sons_bndry.dbf",
+      "from": "pw_plrs_sons_bndry_shp.zip",
+      "bytes": 2201,
+      "sha256": "81ce20fa4626ff14b2d563e172f1bf88350758e4e6e38acd8a9c5bf910565996"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp/pw_plrs_ngar_bndry.shp",
+      "from": "pw_plrs_ngar_bndry_shp.zip",
+      "bytes": 828,
+      "sha256": "4f69dd6809c3fccb4a42ce6a4a541e5be82a19be15935359b574a3c1c414cfec"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp/pw_plrs_ngar_bndry.prj",
+      "from": "pw_plrs_ngar_bndry_shp.zip",
+      "bytes": 703,
+      "sha256": "82d71eb7ae1206cc9e0686b8e844ae9f74025ebef431e93d114eed4741c8e7c9"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp/pw_plrs_ngar_bndry.dbf",
+      "from": "pw_plrs_ngar_bndry_shp.zip",
+      "bytes": 493,
+      "sha256": "1687944f193f092746d864fc905d931da685fbc9986c9d640a6457880dba10fa"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp/pw_plrs_ngar_bndry.cst",
+      "from": "pw_plrs_ngar_bndry_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "pw_plrs_ngar_bndry_shp/pw_plrs_ngar_bndry.shx",
+      "from": "pw_plrs_ngar_bndry_shp.zip",
+      "bytes": 156,
+      "sha256": "3c0de7e7280124f0363a70668448444f8d2c10e1d36b03964b6356f04d71e8b1"
+    }
+  ],
+  "notes": "PacIOOS GeoServer WFS 1.0.0. Original data provider: Palau Automated Land and Resources Information System (PALARIS). PacIOOS service date 2016-01-25. GeoJSON output is EPSG:4326; SHAPE-ZIP is native CRS."
+}

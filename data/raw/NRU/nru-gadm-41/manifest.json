@@ -1,0 +1,27 @@
+{
+  "source_id": "nru-gadm-41",
+  "iso3": "NRU",
+  "retrieved_at": "2026-11-19T21:55:47Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NRU.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html"
+  },
+  "files": [
+    {
+      "path": "gadm41_NRU.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_NRU.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "bytes": 176128,
+      "sha256": "05b2293395ebaff399910af88176fb9222a7857666a26ad308ec0cb1bf44e464"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution and commercial use not allowed without permission."
+}

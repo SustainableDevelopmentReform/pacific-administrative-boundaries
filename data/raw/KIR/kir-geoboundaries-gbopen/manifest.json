@@ -1,0 +1,343 @@
+{
+  "source_id": "kir-geoboundaries-gbopen",
+  "iso3": "KIR",
+  "retrieved_at": "2026-11-19T21:55:37Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html#KIR",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/KIR/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM0/geoBoundaries-KIR-ADM0-all.zip",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM1/geoBoundaries-KIR-ADM1-all.zip",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM2/geoBoundaries-KIR-ADM2-all.zip"
+  ],
+  "license": {
+    "name": "ADM0: Open Data Commons Open Database License 1.0; ADM1: Open Data Commons Open Database License 1.0; ADM2: Open Data Commons Open Database License 1.0",
+    "url": "https://www.geoboundaries.org/"
+  },
+  "files": [
+    {
+      "path": "geoboundaries_api_ALL.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/KIR/ALL/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 5260,
+      "sha256": "664f6fae03561b0b9492ecfb4cf1eeb9f962ed25be0a9d9f97bcbc0c5d976f5c"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM0/geoBoundaries-KIR-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 613050,
+      "sha256": "43c09d3612ef9b86f1059719ea5fc8dae4ba614b3dc0bd41ec26639d1ec738f1"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM1/geoBoundaries-KIR-ADM1-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 611180,
+      "sha256": "788733eef4e26afd37eb1403c9f405d5e58a1105de7971981f0e5256d9c02ed2"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM2/geoBoundaries-KIR-ADM2-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 566569,
+      "sha256": "5aa2f7415726b097b1e943d2430cad2df14eeaaef5d1e69fb3b8e4d97eda4a2e"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0-metaData.json",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 833,
+      "sha256": "a1f12df0e88d33abd962bba851d8a21928e5e26784fa15d2d79a3d678188cda7"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0-metaData.txt",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 988,
+      "sha256": "1672d4f41072d00d31356fa7bab5777d20d0ff2863c3242e361e2cf29ab1bc38"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.shp",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 328540,
+      "sha256": "c7197216a8ea7f5bd1d55592740003a57399cd208f15dc700ad5a0b9debf9499"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.shx",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "4cacd87167af8f2e61260b9d753d6615120a20ac9cdb9e95caf3ba6d5664a667"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.dbf",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 236,
+      "sha256": "92603fc124b47ca7b57df405a89275719a8246dd6c8620df981b83a2d25e2801"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.prj",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.topojson",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 179896,
+      "sha256": "d90599f177afe0ab1ce08e560bcaac3c797d94cda9e49ea861ba183e0f0a77c7"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0.geojson",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 805751,
+      "sha256": "8ae4e8915709032641c56ec8f47a095f49a29817ef8fea7fc6a179bb9904ee6b"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.shp",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 29500,
+      "sha256": "0a3cb09f7b816e535979dbc8b0fd424cf9107093d9c8099cda40a5488162f8f4"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.shx",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "6142e118a39fe529b52f89c64b51d79756e60ff8e680040d757dab0bc8546774"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.dbf",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 236,
+      "sha256": "92603fc124b47ca7b57df405a89275719a8246dd6c8620df981b83a2d25e2801"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.prj",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.topojson",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 17405,
+      "sha256": "dbb56fa2df57330d73c6f2665a3b12e78e67ac2217441e7165a448d3755ef5d2"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0_simplified.geojson",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 72777,
+      "sha256": "606987cf092682dc20373adf251783d202c30b76d7f7a93332694ca0fb71a8e2"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM0-all/geoBoundaries-KIR-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-KIR-ADM0-all.zip",
+      "bytes": 26415,
+      "sha256": "40c9f3d11e6d365c12620f27eead4452a856a66cf96ca0aa05ed9f348516f8e8"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1-metaData.json",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 852,
+      "sha256": "e611d682fb3eb7e64176ac9753942321819a847443c1d3c87f8885e1b981211c"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1-metaData.txt",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 1011,
+      "sha256": "fdc280bda89bd8cf643d51d75d2be4e1ff80899835578f4a62cc84a61e6429c5"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.shp",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 328644,
+      "sha256": "82af6612633938f0322cb6245b860f7f4ecd141765cee215bd4ce34a11294f86"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.shx",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 124,
+      "sha256": "95821ba2dd2050511f0b99a918091e8a5f68b76f3adf51476bcb1dfa33e96f08"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.dbf",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 344,
+      "sha256": "db0706014aa0d894dbc1bb1f9002737ab76337f5c205feb596a6db9bc77a76db"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.prj",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.topojson",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 180240,
+      "sha256": "ddb825f081642264bf11615d1fe778559d870f085a0679ee0b7e60c472ca3a40"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1.geojson",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 805741,
+      "sha256": "93a0914dc2572951a72cae1aef5145bc056180d75b96812c770bff06e8d8e86f"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.shp",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 29604,
+      "sha256": "8662428a25251edb58f9bedf453880519e41df859155e828b90864e20309d33f"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.shx",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 124,
+      "sha256": "9300e2495ed66479e85b1ffbe6fea641d10625ca002719c16121ff97baa2f6b7"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.dbf",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 344,
+      "sha256": "db0706014aa0d894dbc1bb1f9002737ab76337f5c205feb596a6db9bc77a76db"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.prj",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.topojson",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 17757,
+      "sha256": "a40b8b9066a9d6b2bd8c59e2bcefe4e8ac48c9a4f0c2e58b0f35baf0f1662397"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1_simplified.geojson",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 73286,
+      "sha256": "a2e55d40d5a45738a1927b1c3c4334c9bae73466cca2f96c7f7a0aa440ed8f81"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM1-all/geoBoundaries-KIR-ADM1-PREVIEW.png",
+      "from": "geoBoundaries-KIR-ADM1-all.zip",
+      "bytes": 23813,
+      "sha256": "e9b76e33639e6b3dbfd0f914369eda50321ca84ec5e67c0718bafe79d283f9cf"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2-metaData.json",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 852,
+      "sha256": "1085176e9d14e97e912aee7f82c755ba35ebae5f7968f67acd069b6b1061246e"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2-metaData.txt",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 1012,
+      "sha256": "b66e0e94126c45ea5e94c1c9a352f1edd55969db3365ee3513ddc0176167ab6e"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.shp",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 329736,
+      "sha256": "ff8d51b3e596595af5aba110e91dd54ad8647a7605ced4d6236de77631890596"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.shx",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 292,
+      "sha256": "5b2957b28a76c08f9ab2676b010c9b467d135d5934aea4a25eeb5c8fbf14812c"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.dbf",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 1370,
+      "sha256": "d60fcb2b4ed1700bbc69a50e5e18a4a5f75ee7c522347dba76f0c993ed28388b"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.prj",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.topojson",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 183434,
+      "sha256": "cd637af4ca05fcd4cd14677719a0b47072bbe544de3374218052ba5527b1ab4a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2.geojson",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 626059,
+      "sha256": "97c5b87cfbac364d718ad87373c7b4afc52bbbaf4712ee2fc5b98c9ed84e909a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.shp",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 30520,
+      "sha256": "768338d67fdb5bd086ecd19225774e3af31150d9e1fbf88a7398a51122f26ffe"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.shx",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 292,
+      "sha256": "ac1bbca9d027c6d66436a3af95b1ce355f1e1470487cd2348f3ea7fc747c56cd"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.dbf",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 1370,
+      "sha256": "d60fcb2b4ed1700bbc69a50e5e18a4a5f75ee7c522347dba76f0c993ed28388b"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.prj",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.topojson",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 20857,
+      "sha256": "200611703e6fbede2fb22edabcfdd02878e3a1ed75398a19d8b882013b5ac0f9"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2_simplified.geojson",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 60859,
+      "sha256": "d52bb5b73a9c090459f383618c8be5848d5f7d058c868e934417734030bacc4e"
+    },
+    {
+      "path": "geoBoundaries-KIR-ADM2-all/geoBoundaries-KIR-ADM2-PREVIEW.png",
+      "from": "geoBoundaries-KIR-ADM2-all.zip",
+      "bytes": 23979,
+      "sha256": "774d0fb89b5d35e3811b814460772c78b1180c36c1bca35535eb2d500783aab8"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen current release (build Dec 12, 2023, commit 9469f09). Per-level upstream source and licence in geoboundaries_api_ALL.json."
+}

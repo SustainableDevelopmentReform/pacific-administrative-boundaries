@@ -1,0 +1,49 @@
+{
+  "source_id": "wlf-stsee-phc2013-admin-boundaries",
+  "iso3": "WLF",
+  "retrieved_at": "2026-11-19T22:02:31Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2013_wallisfutuna_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/ac8a29eb-7725-45e8-a166-cd38c3e87c4f/download/2013_phc_wlf_vid_4326.geojson",
+    "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/5ecf2c68-36df-47eb-93ee-ff14abde0b20/download/2013_phc_wlf_did_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2013_phc_wlf_vid_4326.geojson",
+      "bytes": 1314914,
+      "sha256": "928ffa574f12a8c4c62ac012708cec1443f675028540da2a9339e6b2a5b94d29"
+    },
+    {
+      "path": "2013_phc_wlf_did_4326.geojson",
+      "bytes": 1286373,
+      "sha256": "376771c7af6c7c430cf49f1419792e604fffb94e1ae42e5ac698fdbeb3058791"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2013_phc_wlf_vid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/ac8a29eb-7725-45e8-a166-cd38c3e87c4f/download/2013_phc_wlf_vid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/ac8a29eb-7725-45e8-a166-cd38c3e87c4f/download/2013_phc_wlf_vid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:31Z"
+    },
+    {
+      "path": "2013_phc_wlf_did_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/5ecf2c68-36df-47eb-93ee-ff14abde0b20/download/2013_phc_wlf_did_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/f8e8122c-1dbe-4cdb-a265-bef6415205cb/resource/5ecf2c68-36df-47eb-93ee-ff14abde0b20/download/2013_phc_wlf_did_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:31Z"
+    }
+  ],
+  "notes": "Published by SPC SDD on Pacific Data Hub; boundaries used for Wallis and Futuna 2013 census (STSEE / INSEE)."
+}

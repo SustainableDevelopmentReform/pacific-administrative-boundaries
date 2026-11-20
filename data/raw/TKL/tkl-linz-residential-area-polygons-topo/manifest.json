@@ -1,0 +1,68 @@
+{
+  "source_id": "tkl-linz-residential-area-polygons-topo",
+  "iso3": "TKL",
+  "retrieved_at": "2026-11-20T00:20:16Z",
+  "retrieved_by": "retrieval agent (nz_realm_update) via python urllib",
+  "retrieval_method": "api",
+  "landing_url": "https://data.linz.govt.nz/layer/52156-tokelau-residential-area-polygons-topo-125k/",
+  "download_urls": [
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52156&outputFormat=json&count=1000&startIndex=0"
+  ],
+  "auth": "LINZ Data Service API key sent as HTTP header 'Authorization: key <LINZ_API_KEY>' (key in repo .env, never recorded). The documented path form https://data.linz.govt.nz/services;key=<LINZ_API_KEY>;/wfs?... returned HTTP 400 'Feature type unknown' for GetFeature with this key on 2026-11-20, so the header form was used against the same WFS endpoint.",
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0 (Toitu Te Whenua Land Information New Zealand)"
+  },
+  "layers": [
+    {
+      "layer_id": 52156,
+      "title": "Tokelau Residential Area Polygons (Topo, 1:25k)",
+      "landing_url": "https://data.linz.govt.nz/layer/52156-tokelau-residential-area-polygons-topo-125k/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-01T20:36:57.238141Z",
+      "published_at": "2022-06-29T02:41:27.058187Z",
+      "version_id": 338862,
+      "crs": "EPSG:32702",
+      "feature_count": 3,
+      "geometry_type": "polygon",
+      "fields": [
+        "GEOMETRY",
+        "t50_fid",
+        "name_ascii",
+        "macronated",
+        "name"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "layer-52156.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52156&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 7721,
+      "sha256": "ed7251401435420b2115796ce79d6f6ba0a2c2d21e30d155c128e289c49f655e",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 3,
+      "retrieved_at": "2026-11-20T00:20:16Z"
+    },
+    {
+      "path": "layer-52156.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52156/",
+      "auth": "none",
+      "bytes": 8101,
+      "sha256": "f9f8d3c10742cd3e77857538717f2ed1aee909a1157a1a283f174ac8f37b2091",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:16Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "WFS 2.0.0 GetFeature, outputFormat=json, count=1000/startIndex=0 (single page; returned feature counts equal LDS feature_count for every layer). GeoJSON is in the layer's native UTM CRS (crs member urn:ogc:def:crs:EPSG::327xx); reproject on read. Downloaded to scratchpad, verified (HTTP 200, JSON parse, feature count), then copied and sha256 re-checked. LDS metadata JSON (no key) saved alongside."
+}

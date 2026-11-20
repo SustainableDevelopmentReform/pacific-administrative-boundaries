@@ -1,0 +1,35 @@
+{
+  "source_id": "wlf-gadm41",
+  "iso3": "WLF",
+  "retrieved_at": "2026-11-19T22:02:27Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WLF.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html",
+    "restricted": true
+  },
+  "files": [
+    {
+      "path": "gadm41_WLF.gpkg",
+      "bytes": 262144,
+      "sha256": "7af15381d091f42066bee2886732f569e5495903166f87a26222691629351d06"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_WLF.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WLF.gpkg",
+      "effective_url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WLF.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:02:27Z"
+    }
+  ],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution or commercial use not allowed without permission."
+}

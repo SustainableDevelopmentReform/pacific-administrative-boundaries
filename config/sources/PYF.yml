@@ -1,0 +1,298 @@
+iso3: PYF
+country_name: French Polynesia
+sources:
+- source_id: pyf-ispf-limites-administratives-2022
+  title: Limites geographiques administratives (Communes, Communes associees, Iles, Quartiers 2000)
+  publisher: Institut de la statistique de la Polynesie francaise (ISPF)
+  publisher_type: national
+  landing_url: https://www.data.gouv.fr/datasets/limites-geographiques-administratives
+  download_urls:
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20220610-202135/shapefiles.zip
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communesassociees.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communes.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/subdivisions.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/quartiers2000.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/iles.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/districts2017.csv
+  - https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/geo.csv
+  retrieval_method: http
+  license:
+    name: ODbL-1.0
+    url: https://opendatacommons.org/licenses/odbl/1-0/
+    redistribution_ok: true
+    notes: data.gouv.fr licence 'odc-odbl' - share-alike; derived database must stay ODbL.
+  publication_date: 2022-06-10
+  version: shapefiles 2022-06-10 (RP2017 indicators)
+  format: shapefile
+  crs: EPSG:4687 (RGPF) for Com/Comas/Ile; EPSG:4326 for Quartiers2000
+  levels:
+  - level_code: admin4
+    level_type: statistical
+    level_name_local: Quartier (Quartiers 2000)
+    layer: shapefiles/Quartiers2000.shp
+    name_field: Quartier20
+    code_field: IDQuart17
+    parent_field: null
+    code_scheme: ispf
+    nests: true
+    nest_check: {min_share: 0.95}
+    notes: '170 units covering all 116 commune/CA units; different geometry base (EPSG:4326; total area
+      ~3654 km2 vs 3732 km2 Comas). [processing] parent_field dropped: ISPF IDComAs is an internal code
+      that does not match DAF codes, so parents (DAF communes associees) are assigned by largest overlap;
+      nest_check per E-004.'
+  status: selected
+  raw_path: data/raw/PYF/pyf-ispf-limites-administratives-2022/
+  notes: 'Statistics office layers with RP2017 counts. geojson.zip (2021-04-22) not downloaded (older
+    upload of same content). ESCALATED clash with DAF (see decisions). [Orchestrator 2026-11-20, E-004]
+    Selected ONLY for admin4 Quartiers 2000 (sole source). admin1-admin3 and islands come from DAF. Processing:
+    Quartiers nest check against DAF communes associees; if union mismatch > tolerance, set nests=false
+    and assign parent by majority area. ODbL share-alike applies to admin4 rows.'
+- source_id: pyf-daf-geographie-administrative-2022
+  title: Geographie administrative de la Polynesie francaise (communes et communes associees, iles, groupements)
+  publisher: Section Cadastre-Topographie de la Polynesie francaise (Direction des affaires foncieres,
+    DAF)
+  publisher_type: national
+  landing_url: https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise
+  download_urls:
+  - https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205331/loc-commune-associee.zip
+  - https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205413/loc-groupe-ile.zip
+  - https://static.data.gouv.fr/resources/geographie-administrative-de-la-polynesie-francaise/20220228-205614/loc-ile.zip
+  retrieval_method: http
+  license:
+    name: CC-BY-4.0
+    url: https://www.data.gouv.fr/datasets/geographie-administrative-de-la-polynesie-francaise
+    redistribution_ok: true
+    notes: data.gouv.fr licence field 'cc-by'.
+  publication_date: 2022-02-28
+  version: '2022-02-28'
+  format: shapefile
+  crs: EPSG:4687
+  levels:
+  - level_code: admin1
+    level_type: region   # [processing] D-018: administrative subdivision without its own government
+    level_name_local: Subdivision administrative
+    layer: loc-commune-associee/loc_commune_associee.shp
+    name_field:
+      field: code_subdi
+      map: {1: Îles du Vent, 2: Îles Sous-le-Vent, 3: Îles Marquises, 4: Îles Australes, 5: Îles Tuamotu-Gambier}
+    code_field: code_subdi
+    code_scheme: daf-subdivision
+    parent_field: null
+    dissolve: true
+    nests: true
+    notes: 'Derive by dissolving on code_subdi (1-5); names from ISPF subdivisions.csv. loc_groupe_ile
+      type DIVISION_ADMINISTRATIVE polygons are figurative (schematic) - do not use. [processing] dissolve
+      + name map (code 1-5 per ISPF subdivisions.csv) made machine-readable.'
+  - level_code: admin2
+    level_type: local_government
+    level_name_local: Commune
+    layer: loc-commune-associee/loc_commune_associee.shp
+    name_field: nom
+    code_field: code_com_i
+    code_scheme: insee
+    parent_field: code_subdi
+    dissolve: true
+    nests: true
+    notes: Dissolve on code_com_i (INSEE COG code 987xx, 48 values).
+  - level_code: admin3
+    level_type: ward_village
+    level_name_local: Commune associee
+    layer: loc-commune-associee/loc_commune_associee.shp
+    name_field: nom_commun
+    code_field: code_com_1
+    code_scheme: daf
+    parent_field: code_com_i
+    dissolve: true
+    nests: true
+    notes: 179 single-part features; dissolve on code_com_1 (116 units).
+  - level_code: other
+    level_type: island
+    level_name_local: Ile / atoll
+    layer: loc-ile/loc_ile.shp
+    name_field: nom
+    name_alt_field: autre_nom
+    code_field: id_ile
+    code_scheme: daf
+    parent_field: null
+    nests: false
+  status: selected
+  raw_path: data/raw/PYF/pyf-daf-geographie-administrative-2022/
+  notes: 'Territorial cadastre/topography authority; CC-BY; carries INSEE codes. Geometry differs from
+    ISPF (total ~3467 km2 vs ~3732 km2; overlap ~3414 km2). Recommended over ISPF for admin1-3 if the
+    orchestrator weighs licence and INSEE codes over the 3-month recency gap. [Orchestrator 2026-11-20,
+    E-004] Selected for admin1-admin3 and islands: cadastral authority, CC-BY-4.0, INSEE codes.'
+- source_id: pyf-tefenua-wfs
+  title: Te Fenua geoportal WFS (Gouvernement de la Polynesie francaise)
+  publisher: Te Fenua / Service de l'informatique (SIPF), Gouvernement de la Polynesie francaise
+  publisher_type: national
+  landing_url: https://www.tefenua.gov.pf/
+  download_urls: []
+  retrieval_method: api
+  license:
+    name: unspecified
+    url: null
+    redistribution_ok: false
+    notes: WFS endpoint https://www.tefenua.gov.pf/api/wfs returns HTTP 401 UNAUTHORIZED without an account
+      (tested 2026-11-20).
+  publication_date: null
+  version: null
+  format: other
+  crs: null
+  levels: []
+  status: rejected
+  raw_path: null
+  notes: Not accessible anonymously. The DAF data.gouv.fr release is the open export of the same administrative
+    layers.
+- source_id: pyf-ign-admin-express
+  title: IGN ADMIN EXPRESS / ADMIN EXPRESS COG
+  publisher: IGN
+  publisher_type: national
+  landing_url: https://www.data.gouv.fr/datasets/admin-express/
+  download_urls: []
+  retrieval_method: http
+  license:
+    name: Licence Ouverte 2.0
+    url: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+    redistribution_ok: true
+    notes: ''
+  publication_date: null
+  version: null
+  format: other
+  crs: null
+  levels: []
+  status: rejected
+  raw_path: null
+  notes: 'Not downloaded: coverage is metropolitan France + DOM only; PYF (a COM) is not included.'
+- source_id: pyf-geoboundaries-gbopen
+  title: geoBoundaries gbOpen PYF (ADM0 only)
+  publisher: geoBoundaries (William & Mary geoLab)
+  publisher_type: academic
+  landing_url: https://www.geoboundaries.org/api/current/gbOpen/PYF/ALL/
+  download_urls:
+  - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PYF/ADM0/geoBoundaries-PYF-ADM0-all.zip
+  retrieval_method: api
+  license:
+    name: CC-BY-4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+    redistribution_ok: true
+    notes: Sentinel-2 2021 land cover raster2polygon.
+  publication_date: 2023-12-12
+  version: gbOpen 9469f09
+  format: geojson
+  crs: EPSG:4326
+  levels:
+  - level_code: admin0
+    level_type: country
+    level_name_local: Pays d'outre-mer
+    layer: geoBoundaries-PYF-ADM0-all/geoBoundaries-PYF-ADM0.geojson
+    name_field: shapeName
+    code_field: shapeID
+    parent_field: null
+    nests: true
+  status: alternative
+  raw_path: data/raw/PYF/pyf-geoboundaries-gbopen/
+  notes: Raster-derived coastline; prefer admin0 dissolved from communes. Archive also contains shapefile
+    copy.
+- source_id: pyf-gadm41
+  title: GADM 4.1 French Polynesia
+  publisher: GADM
+  publisher_type: academic
+  landing_url: https://gadm.org/download_country.html
+  download_urls:
+  - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PYF.gpkg
+  retrieval_method: http
+  license:
+    name: GADM licence (non-commercial; no redistribution)
+    url: https://gadm.org/license.html
+    redistribution_ok: false
+    notes: license_restricted = true
+  publication_date: 2022-07-16
+  version: '4.1'
+  format: gpkg
+  crs: EPSG:4326
+  levels:
+  - level_code: admin0
+    level_type: country
+    level_name_local: Pays d'outre-mer
+    layer: ADM_ADM_0
+    name_field: COUNTRY
+    code_field: GID_0
+    parent_field: null
+    nests: true
+  - level_code: admin1
+    level_type: district
+    level_name_local: Subdivision administrative
+    layer: ADM_ADM_1
+    name_field: NAME_1
+    code_field: GID_1
+    parent_field: GID_0
+    nests: true
+  status: reference
+  raw_path: data/raw/PYF/pyf-gadm41/
+  notes: Reference only; admin1 (5 subdivisions) only.
+- source_id: pyf-osm-admin
+  title: OpenStreetMap administrative relations (PF)
+  publisher: OpenStreetMap contributors
+  publisher_type: osm
+  landing_url: https://www.openstreetmap.org/
+  download_urls: []
+  retrieval_method: api
+  license:
+    name: ODbL-1.0
+    url: https://opendatacommons.org/licenses/odbl/1-0/
+    redistribution_ok: true
+    notes: share-alike
+  publication_date: null
+  version: null
+  format: other
+  crs: EPSG:4326
+  levels: []
+  status: rejected
+  raw_path: null
+  notes: Not downloaded (Overpass endpoints returned 502/timeouts on 2026-11-20); two official open sources
+    cover all levels.
+decisions:
+- level_code: admin2
+  chosen: pyf-daf-geographie-administrative-2022
+  alternatives:
+  - pyf-ispf-limites-administratives-2022
+  reason: 'Two official territorial sources (tier 1) with materially different geometry. ISPF is the most
+    recent upload (2022-06-10 vs 2022-02-28) so selected per rule, but DAF is the cadastral authority,
+    is CC-BY (ISPF is ODbL share-alike) and carries INSEE codes. Recommend orchestrator choose DAF. ORCHESTRATOR
+    RULING E-004: DAF chosen. Three-month upload gap is not a meaningful recency difference; DAF is the
+    cadastral authority, carries INSEE codes and is CC-BY (no share-alike).'
+  escalated: false
+  resolved_by: orchestrator E-004 2026-11-20
+- level_code: admin3
+  chosen: pyf-daf-geographie-administrative-2022
+  alternatives:
+  - pyf-ispf-limites-administratives-2022
+  reason: 'Same clash as admin2 (communes associees). ORCHESTRATOR RULING E-004: DAF chosen. Three-month
+    upload gap is not a meaningful recency difference; DAF is the cadastral authority, carries INSEE codes
+    and is CC-BY (no share-alike).'
+  escalated: false
+  resolved_by: orchestrator E-004 2026-11-20
+- level_code: admin1
+  chosen: pyf-daf-geographie-administrative-2022
+  alternatives:
+  - pyf-ispf-limites-administratives-2022
+  - pyf-gadm41
+  reason: 'Derived by dissolving the selected admin2; follows the admin2 decision. ORCHESTRATOR RULING
+    E-004: DAF chosen. Three-month upload gap is not a meaningful recency difference; DAF is the cadastral
+    authority, carries INSEE codes and is CC-BY (no share-alike).'
+  escalated: false
+  resolved_by: orchestrator E-004 2026-11-20
+- level_code: admin4
+  chosen: pyf-ispf-limites-administratives-2022
+  alternatives: []
+  reason: Only source of sub-commune statistical quarters.
+  escalated: false
+- level_code: other
+  chosen: pyf-daf-geographie-administrative-2022
+  alternatives:
+  - pyf-ispf-limites-administratives-2022
+  reason: 'Islands layer; follows admin2 decision (DAF loc_ile has 128 features incl. more islets). ORCHESTRATOR
+    RULING E-004: DAF chosen. Three-month upload gap is not a meaningful recency difference; DAF is the
+    cadastral authority, carries INSEE codes and is CC-BY (no share-alike).'
+  escalated: false
+  resolved_by: orchestrator E-004 2026-11-20

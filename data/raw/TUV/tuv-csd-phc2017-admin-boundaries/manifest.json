@@ -1,0 +1,63 @@
+{
+  "source_id": "tuv-csd-phc2017-admin-boundaries",
+  "iso3": "TUV",
+  "retrieved_at": "2026-11-19T22:02:19Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2017_tuv_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/e5fbdd9a-01a9-4fd9-bd82-9bd3bfd90d6a/download/2017_phc_tuv_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/9eefabe8-d129-44ee-a3a4-7f93a24b2349/download/2017_phc_tuv_vid_4326.geojson",
+    "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/d6ed90e1-abaf-48d4-b28a-8d6836a36155/download/2017_phc_tuv_iid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2017_phc_tuv_eaid_4326.geojson",
+      "bytes": 143635,
+      "sha256": "9840b6d32d22c446ba22bc236254dadc6069c455a5b7ea299785c188fcb67257"
+    },
+    {
+      "path": "2017_phc_tuv_vid_4326.geojson",
+      "bytes": 119835,
+      "sha256": "555d1cd786ecbdc059a7f38e62c1ac1b54f9d914500f9c24327f805aa0c69ad9"
+    },
+    {
+      "path": "2017_phc_tuv_iid_4326.geojson",
+      "bytes": 466382,
+      "sha256": "ae2912da8a55f56847df461a455a3af840493bd1344a112501fa1c00319dd5c4"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2017_phc_tuv_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/e5fbdd9a-01a9-4fd9-bd82-9bd3bfd90d6a/download/2017_phc_tuv_eaid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/e5fbdd9a-01a9-4fd9-bd82-9bd3bfd90d6a/download/2017_phc_tuv_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:19Z"
+    },
+    {
+      "path": "2017_phc_tuv_vid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/9eefabe8-d129-44ee-a3a4-7f93a24b2349/download/2017_phc_tuv_vid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/9eefabe8-d129-44ee-a3a4-7f93a24b2349/download/2017_phc_tuv_vid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:20Z"
+    },
+    {
+      "path": "2017_phc_tuv_iid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/d6ed90e1-abaf-48d4-b28a-8d6836a36155/download/2017_phc_tuv_iid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/e5027bdf-ab88-4473-8148-f04e5a67b083/resource/d6ed90e1-abaf-48d4-b28a-8d6836a36155/download/2017_phc_tuv_iid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:20Z"
+    }
+  ],
+  "notes": "Published by SPC SDD on Pacific Data Hub; boundaries used for Tuvalu 2017 PHC (Central Statistics Division)."
+}

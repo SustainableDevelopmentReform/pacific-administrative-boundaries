@@ -1,0 +1,90 @@
+{
+  "source_id": "vut-sdd-phc2016-boundaries",
+  "iso3": "VUT",
+  "retrieved_at": "2026-11-19T22:00:49Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2016_vut_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/3d490d87-99c0-47fd-98bd-211adaf44f71/download/2016_phc_vut_pid_4326.geojson",
+    "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/66ae054b-9b67-4876-b59c-0b078c31e800/download/2016_phc_vut_iid_4326.geojson",
+    "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/c551af2a-3a0f-4d9c-a466-a30efa2c356f/download/2016_phc_vut_acid_4326.geojson",
+    "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/edc67007-1a16-483b-8d6d-aaf713621c24/download/2016_phc_vut_eaid_4326.geojson",
+    "https://pacificdata.org/data/api/3/action/package_show?id=2016_vut_phc_admin_boundaries"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "2016_phc_vut_pid_4326.geojson",
+      "bytes": 3102682,
+      "sha256": "c839f28a6784b32be9fc51ffdf6a70e8c9f230f2d8858f0aec8db986531b5a29"
+    },
+    {
+      "path": "2016_phc_vut_iid_4326.geojson",
+      "bytes": 3113911,
+      "sha256": "1bf9412f1efdde62df3b8a46df960f0ce6336f898fab30d21cb50b60cb9f7645"
+    },
+    {
+      "path": "2016_phc_vut_acid_4326.geojson",
+      "bytes": 4224672,
+      "sha256": "06d7151d2f8bbff75474b21921c0eb4ee6448be6fc7d85cbcd6ceaf6aef5140b"
+    },
+    {
+      "path": "2016_phc_vut_eaid_4326.geojson",
+      "bytes": 6778943,
+      "sha256": "ea828874391d5c4d49fc11fa9d6e39d599fec67c80f344a031177fb67d0037dd"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "bytes": 14112,
+      "sha256": "ff6a0f605fd98531027feaea530caf22429cec2bf4638d7d5edcba33cd767b50"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2016_phc_vut_pid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/3d490d87-99c0-47fd-98bd-211adaf44f71/download/2016_phc_vut_pid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/3d490d87-99c0-47fd-98bd-211adaf44f71/download/2016_phc_vut_pid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:46Z"
+    },
+    {
+      "path": "2016_phc_vut_iid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/66ae054b-9b67-4876-b59c-0b078c31e800/download/2016_phc_vut_iid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/66ae054b-9b67-4876-b59c-0b078c31e800/download/2016_phc_vut_iid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:47Z"
+    },
+    {
+      "path": "2016_phc_vut_acid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/c551af2a-3a0f-4d9c-a466-a30efa2c356f/download/2016_phc_vut_acid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/c551af2a-3a0f-4d9c-a466-a30efa2c356f/download/2016_phc_vut_acid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:47Z"
+    },
+    {
+      "path": "2016_phc_vut_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/edc67007-1a16-483b-8d6d-aaf713621c24/download/2016_phc_vut_eaid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/9dba1377-740c-429e-92ce-6a484657b4d9/resource/edc67007-1a16-483b-8d6d-aaf713621c24/download/2016_phc_vut_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:48Z"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "url": "https://pacificdata.org/data/api/3/action/package_show?id=2016_vut_phc_admin_boundaries",
+      "url_effective": "https://pacificdata.org/data/api/3/action/package_show?id=2016_vut_phc_admin_boundaries",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:00:49Z"
+    }
+  ],
+  "notes": "SPC SDD on Pacific Data Hub: boundaries used for Vanuatu 2016 Mini-Census / PHC (Vanuatu Bureau of Statistics), used in Vanuatu PopGIS3: province, island, area council, EA."
+}

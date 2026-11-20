@@ -1,0 +1,145 @@
+{
+  "source_id": "fji-geoboundaries-adm2",
+  "iso3": "FJI",
+  "retrieved_at": "2026-11-19T21:53:49Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM2/geoBoundaries-FJI-ADM2-all.zip",
+    "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM2/"
+  ],
+  "license": {
+    "name": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "url": ""
+  },
+  "files": [
+    {
+      "path": "geoBoundaries-FJI-ADM2-all.zip",
+      "bytes": 1067619,
+      "sha256": "0121ffbbd59eb2e43a204108461e2e17ea490fdd49f477cd10d2e7bd29db447a"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "bytes": 1867,
+      "sha256": "35e5eff798967d740490f28420d48a11ce7f764acc8470c4354b11a4e6272564"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/CITATION-AND-USE-geoBoundaries.txt",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2-PREVIEW.png",
+      "bytes": 23935,
+      "sha256": "45957fb479b88e2077434895aa2672a02fd977781475e58c92004edcd97d9339",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2-metaData.json",
+      "bytes": 970,
+      "sha256": "2a518d79ff779e3dddd3cfabd0357885c078e7226fdeceb0ddc3e10d47d31925",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2-metaData.txt",
+      "bytes": 1129,
+      "sha256": "cdd595850c1c6918d1c17d9970f0a5b2d1c9b01f87a9f4dd45dfccfa6ac80b48",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.dbf",
+      "bytes": 884,
+      "sha256": "442a7a0f933e1c7e63d2d4fc895cbd09e0fe8f028707be1f497278e54af5dc52",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.geojson",
+      "bytes": 1357011,
+      "sha256": "a9cd94789cb5eb66cfbcbaf32a21bcbceba16b9a76adacba9ac675b950ca1ccd",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.shp",
+      "bytes": 475320,
+      "sha256": "a281c0128fdf48507f80489f836e1711dd941a96c830f7e6068fdf125c6c7134",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.shx",
+      "bytes": 220,
+      "sha256": "d3c315e5f464afa1e40c1b483702f743251524cab7e1d7899d6c7f2738d3a04a",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2.topojson",
+      "bytes": 195662,
+      "sha256": "5fadc41b1d5885e25392da703bc3889c7ad705347cdd643f582a27584f80448e",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.dbf",
+      "bytes": 884,
+      "sha256": "442a7a0f933e1c7e63d2d4fc895cbd09e0fe8f028707be1f497278e54af5dc52",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.geojson",
+      "bytes": 335438,
+      "sha256": "0339f90794264719b98c93a9a7c2d71fdb473c0a2f9c1e9b74ecd98a67ddb93f",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.shp",
+      "bytes": 117540,
+      "sha256": "ebf76479e339ddb667a61e4cb690e4e5a603418849676812a2b2649845452e38",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.shx",
+      "bytes": 220,
+      "sha256": "b4a0373e20af007ddd63fe8f7d3edd3c54e5c60a05828a7a5d69884aaf779229",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-FJI-ADM2-all/geoBoundaries-FJI-ADM2_simplified.topojson",
+      "bytes": 55410,
+      "sha256": "7dcf7dbd71c8abf5de1f016ed174c6a9ffca27bd463afdc7e1bf891e38d86dc7",
+      "from_archive": "geoBoundaries-FJI-ADM2-all.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "geoBoundaries-FJI-ADM2-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM2/geoBoundaries-FJI-ADM2-all.zip",
+      "url_effective": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/FJI/ADM2/geoBoundaries-FJI-ADM2-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:53:48Z"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM2/",
+      "url_effective": "https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM2/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T21:53:49Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen ADM2 (Provinces); boundarySource: pacificdata.org; sourceURL: pacificdata.org/data/geographic_data/2007_fji_phc_admin_boundaries/resource/5880cadb-2287-4eac-9f3d-8b321730e6cd; year represented 2020; buildDate Dec 12, 2023; units 15; API https://www.geoboundaries.org/api/current/gbOpen/FJI/ADM2/"
+}

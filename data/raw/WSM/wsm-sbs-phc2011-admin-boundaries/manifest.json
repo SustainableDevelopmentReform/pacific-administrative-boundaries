@@ -1,0 +1,63 @@
+{
+  "source_id": "wsm-sbs-phc2011-admin-boundaries",
+  "iso3": "WSM",
+  "retrieved_at": "2026-11-19T22:02:36Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2011_wsm_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/238fe7bf-4120-4034-896d-1155bf21fbb7/download/2011_phc_wsm_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/d5aee425-5e46-41f1-929e-3b7413ff1d4a/download/2011_phc_wsm_did_4326.geojson",
+    "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/4f3c197c-929f-4f29-884f-3077188f523e/download/2011_phc_wsm_rid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2011_phc_wsm_eaid_4326.geojson",
+      "bytes": 1706149,
+      "sha256": "10d8b6382b5b698eb4d8116e0b51d56972f07c598170b3b9f87f05300d492d20"
+    },
+    {
+      "path": "2011_phc_wsm_did_4326.geojson",
+      "bytes": 579378,
+      "sha256": "5a363c06c00643daa6a0e3aa4c8ec52976d5b060755cf6c16ae8b26f7592f2d2"
+    },
+    {
+      "path": "2011_phc_wsm_rid_4326.geojson",
+      "bytes": 448237,
+      "sha256": "990ac7b0f1e4bf510dc4e00f1012d7dcd7f21f176d6f58dfc297a78f3bf4724d"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2011_phc_wsm_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/238fe7bf-4120-4034-896d-1155bf21fbb7/download/2011_phc_wsm_eaid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/238fe7bf-4120-4034-896d-1155bf21fbb7/download/2011_phc_wsm_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:36Z"
+    },
+    {
+      "path": "2011_phc_wsm_did_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/d5aee425-5e46-41f1-929e-3b7413ff1d4a/download/2011_phc_wsm_did_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/d5aee425-5e46-41f1-929e-3b7413ff1d4a/download/2011_phc_wsm_did_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:37Z"
+    },
+    {
+      "path": "2011_phc_wsm_rid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/4f3c197c-929f-4f29-884f-3077188f523e/download/2011_phc_wsm_rid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/4f3c197c-929f-4f29-884f-3077188f523e/download/2011_phc_wsm_rid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:37Z"
+    }
+  ],
+  "notes": "Published by SPC SDD on Pacific Data Hub; boundaries used for Samoa 2011 PHC (Samoa Bureau of Statistics)."
+}

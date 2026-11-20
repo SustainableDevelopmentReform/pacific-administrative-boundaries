@@ -1,0 +1,331 @@
+{
+  "source_id": "asm-census-tiger-2026",
+  "iso3": "ASM",
+  "retrieved_at": "2026-11-19T22:05:31Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+  "download_urls": [
+    "https://www2.census.gov/geo/tiger/TIGER2026/COUNTY/tl_2026_us_county.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2026/COUSUB/tl_2026_60_cousub.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2026/PLACE/tl_2026_60_place.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2026/TRACT/tl_2026_60_tract.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2026/BG/tl_2026_60_bg.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2026/TABBLOCK20/tl_2026_60_tabblock20.zip"
+  ],
+  "license": {
+    "name": "Public domain (US Government work, 17 U.S.C. 105)",
+    "url": "https://www.census.gov/about/policies/open-gov/open-data.html"
+  },
+  "files": [
+    {
+      "path": "tl_2026_us_county.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/COUNTY/tl_2026_us_county.zip",
+      "bytes": 83378454,
+      "sha256": "b527c9ba7aeb8f17ef118f026eae5e5a938aa1d00b873bc32342d0dce59321c0",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:25Z"
+    },
+    {
+      "path": "tl_2026_60_cousub.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/COUSUB/tl_2026_60_cousub.zip",
+      "bytes": 32807,
+      "sha256": "8f7c436c0ed31ce5e6317fdb01625c7731bd4bd769dc8795226fa8f226bea883",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:27Z"
+    },
+    {
+      "path": "tl_2026_60_place.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/PLACE/tl_2026_60_place.zip",
+      "bytes": 82861,
+      "sha256": "abf17506dad6d6ea7c716f547a25a3627f7c53e102bd195f8470433bf708c657",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:28Z"
+    },
+    {
+      "path": "tl_2026_60_tract.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/TRACT/tl_2026_60_tract.zip",
+      "bytes": 40072,
+      "sha256": "c68bef746eb1e4106a23b2739690b75803866dc360e99bdce93517d69d947bd7",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:29Z"
+    },
+    {
+      "path": "tl_2026_60_bg.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/BG/tl_2026_60_bg.zip",
+      "bytes": 76151,
+      "sha256": "09ff21ddbc674ff77c5b0c44d86cfb93610192ff28e52f2022cddc5258e6dc5d",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:29Z"
+    },
+    {
+      "path": "tl_2026_60_tabblock20.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2026/TABBLOCK20/tl_2026_60_tabblock20.zip",
+      "bytes": 1017521,
+      "sha256": "62d7e185c7e4676685eb9fc3a4c28cc5c6d95b0694f49d6e435ed3a6cbd2949b",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:31Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.cpg",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.dbf",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 993755,
+      "sha256": "ad4c6bb035d21825a790e6f48ca94c367b91ebbd60815d75e9421035381ef371"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.prj",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.shp",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 132423184,
+      "sha256": "109fdca4914cfea84d5421584400874095afc1e48191942114b62898d244d351"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.shp.ea.iso.xml",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 42065,
+      "sha256": "6a3cd4ff5175ba534aa8840a865c394a68a527017df9b5ec1dc2f1c7fbaf8cfb"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.shp.iso.xml",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 50509,
+      "sha256": "828948a3ccab9bfbc2ab6987686790e421ca0c88e61aaecbabe826fa41ce1eb7"
+    },
+    {
+      "path": "tl_2026_us_county/tl_2026_us_county.shx",
+      "from": "tl_2026_us_county.zip",
+      "bytes": 25980,
+      "sha256": "24a52847c1f6149d686ba86b511ffdf7210568ae9d5ff70f9b45770ff94d607c"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.cpg",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.dbf",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 5490,
+      "sha256": "f0b5f4c4768651a31c0f9e802c9c9e71b4aba7b3d056add387c2d62d6f6584f1"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.prj",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.shp",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 36904,
+      "sha256": "01281e19dddcb61b11260ae901d774f05dacdeb332fe7e38e90e8f62fd723cba"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.shp.ea.iso.xml",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 62493,
+      "sha256": "37312db78482b78944b268734968103f0cf703d286dc390533f5229fadf25699"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.shp.iso.xml",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 51167,
+      "sha256": "1a51dd20f2a6e7f4e2ea0ff1918952fc2ce70207add968252bcf585570d6fd42"
+    },
+    {
+      "path": "tl_2026_60_cousub/tl_2026_60_cousub.shx",
+      "from": "tl_2026_60_cousub.zip",
+      "bytes": 228,
+      "sha256": "9ab4b786e16c83016ef23038775b0fedad726b8a9bad6728e6b88c07eced1245"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.cpg",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.dbf",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 23723,
+      "sha256": "7f0780e6113e535e6cfaf4c4e330c2afc6e22b46d4522c57c20ae72ce786e9d5"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.prj",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.shp",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 115772,
+      "sha256": "3184e31d963af9a23eb9000e5c98b208e8e4879ee11560512b31adb47d598773"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.shp.ea.iso.xml",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 48819,
+      "sha256": "95fd2793cc9e8cefd7a26d7b95fde55fad17505840b0f877f61339f27ee93e95"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.shp.iso.xml",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 51462,
+      "sha256": "511c091c238f85b1e9836a785b9c555d81614c86faca4a754287ccd5de9848b1"
+    },
+    {
+      "path": "tl_2026_60_place/tl_2026_60_place.shx",
+      "from": "tl_2026_60_place.zip",
+      "bytes": 716,
+      "sha256": "7998ac0f771d10e7e85d1f8ef05664519445a4d5894f9387f3f6f8394dccc731"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.cpg",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.dbf",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 2736,
+      "sha256": "dd6e0419521d9aeed3e2b268a2cd7fb6ec705e57e24a824715bbf8fd2f576a20"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.prj",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.shp",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 57560,
+      "sha256": "bf7ba9dac4448c45854d29e8503f3dfe1d97f5d61677247a222f63aa22bd4445"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.shp.ea.iso.xml",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 23137,
+      "sha256": "b3128b2b30807f0ffae3d0c5bea7b53f8c93a1e81efe5840ee23ff9dd72a6ae5"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.shp.iso.xml",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 50959,
+      "sha256": "03ca0cb3d49e5df304f58f00ca67ea154c52b16e6c2e9cafb1ef0f504b5fdcad"
+    },
+    {
+      "path": "tl_2026_60_tract/tl_2026_60_tract.shx",
+      "from": "tl_2026_60_tract.zip",
+      "bytes": 244,
+      "sha256": "90bf28272f73094d3b6c34f5ad7c6498be8277eb1e1b7dffea578a78df8a6de8"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.cpg",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.dbf",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 5438,
+      "sha256": "532ab701389426aeac437514c0a4283570aba70d1feb759d15f06bf43596ef35"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.prj",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.shp",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 117868,
+      "sha256": "7ae339eb0d563c8dcebab810355837e6604c6f016851586838a4a8ca26f568eb"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.shp.ea.iso.xml",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 23269,
+      "sha256": "a52ade35cb9cedd12f055b4f2be03d68fc686ad738afc35ae08a195c6d2de88d"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.shp.iso.xml",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 50272,
+      "sha256": "b72fd4a3f74e90907af0b75645e4ef94972c0dfce3026af91ef34202c9be29ac"
+    },
+    {
+      "path": "tl_2026_60_bg/tl_2026_60_bg.shx",
+      "from": "tl_2026_60_bg.zip",
+      "bytes": 444,
+      "sha256": "58a83969a2f261a1772a45a05ad44f24f2d0126b93c93b447550fba3add0d432"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.cpg",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.dbf",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 86458,
+      "sha256": "5db871666c02760854878bbe860edab1954538dc1ea3e419923ca58d11d8be10"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.prj",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.shp",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 1562252,
+      "sha256": "75b65785c76e0df8a841e52b7dfc73207679adf6a7e9aef47e176d1ee460adef"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.shp.ea.iso.xml",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 30649,
+      "sha256": "f6f2c5382e20f87c79eac6536c0c2f3264744ec9da0827099cc063d86400cc36"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.shp.iso.xml",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 50659,
+      "sha256": "92b271abb2d62254f850c20522411418fb7c10b63ed1a828cf2089cbad164c15"
+    },
+    {
+      "path": "tl_2026_60_tabblock20/tl_2026_60_tabblock20.shx",
+      "from": "tl_2026_60_tabblock20.zip",
+      "bytes": 4620,
+      "sha256": "bd4c9bfb35fb67d346e7dbb808390d64b6ccaceb9a51c43f13cc2692e566ea9f"
+    }
+  ],
+  "notes": "TIGER/Line 2026. COUNTY file is nationwide (filter STATEFP='60' at processing). COUSUB/PLACE/TRACT/BG/TABBLOCK20 are FIPS 60 state files."
+}

@@ -1,0 +1,145 @@
+{
+  "source_id": "slb-geoboundaries-adm2",
+  "iso3": "SLB",
+  "retrieved_at": "2026-11-19T21:54:14Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM2/geoBoundaries-SLB-ADM2-all.zip",
+    "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM2/"
+  ],
+  "license": {
+    "name": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+    "url": ""
+  },
+  "files": [
+    {
+      "path": "geoBoundaries-SLB-ADM2-all.zip",
+      "bytes": 7098863,
+      "sha256": "31798aef1bfb6c10f506a97ebcedc730f7bf7ff5224a08340201a0ac303b3e35"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "bytes": 1924,
+      "sha256": "90026ff939a16699c9b151b5ffca25875d5fce750500cc9fc484cccb37daaad4"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/CITATION-AND-USE-geoBoundaries.txt",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2-PREVIEW.png",
+      "bytes": 43826,
+      "sha256": "538f36a90315ddc9e6b913527c40e52a71e50f4b7812efc657a94d31322cee02",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2-metaData.json",
+      "bytes": 1014,
+      "sha256": "fe4c5ad1c2dedef72496cabfb4fcc532994dd00a1c00ba77750ec8278b272dd1",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2-metaData.txt",
+      "bytes": 1172,
+      "sha256": "7681e1c9277946c9d34712bfd6e549ef9671dadcfb67a07a79feba5c69da7352",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.dbf",
+      "bytes": 3044,
+      "sha256": "bd5a0bcaa645c7df830681b97ca8160313d884cc6281b7769f2334f26f355acf",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.geojson",
+      "bytes": 9197717,
+      "sha256": "f12e8a50dabbbcd9a61453949489eae2879245abea1cde39f2005b2597df00e4",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.shp",
+      "bytes": 3279504,
+      "sha256": "1af83a68f0ca9113fd75358355b9432f7fbd50e1f7c25c556727bd358b3c524e",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.shx",
+      "bytes": 500,
+      "sha256": "d982f952d4305409087730439917787df1b4d4e32d20085287d995d08a6b61d3",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.topojson",
+      "bytes": 1856955,
+      "sha256": "2b2b67f388553e850597b27c9124209bd1c59f4ef80d98063cc1329027f01e0a",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.dbf",
+      "bytes": 3044,
+      "sha256": "bd5a0bcaa645c7df830681b97ca8160313d884cc6281b7769f2334f26f355acf",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.geojson",
+      "bytes": 956327,
+      "sha256": "e129bb4624e54b33e75f976cbb24f3deed5f83a1ace770c8f35703a76b0252fc",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.shp",
+      "bytes": 340868,
+      "sha256": "a67d28f77fba322cd13df71393b00a76e31660d398f4305a4e512429a9cb956f",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.shx",
+      "bytes": 500,
+      "sha256": "ebe4e223bc53c569a36479b3980255d0b2c8ac34279dcf6a2bb06319f538f08f",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2_simplified.topojson",
+      "bytes": 209884,
+      "sha256": "bd7b5aff3984127c4be8d55d94d6fc67345d1ae8acdb3bb17bbf3f0cba877557",
+      "from_archive": "geoBoundaries-SLB-ADM2-all.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "geoBoundaries-SLB-ADM2-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM2/geoBoundaries-SLB-ADM2-all.zip",
+      "url_effective": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/SLB/ADM2/geoBoundaries-SLB-ADM2-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:54:13Z"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM2/",
+      "url_effective": "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM2/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T21:54:14Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen ADM2 (Constituency); boundarySource: Solomon Islands National Statistics Office (SINSO), OCHA ROAP; sourceURL: data.humdata.org/dataset/solomon-islands-administrative-level-0-1-2-and-3-boundary-polygons; year represented 2018; buildDate Dec 12, 2023; units 50; API https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM2/"
+}

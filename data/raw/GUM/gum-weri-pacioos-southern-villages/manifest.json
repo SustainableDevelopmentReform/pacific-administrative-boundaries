@@ -1,0 +1,77 @@
+{
+  "source_id": "gum-weri-pacioos-southern-villages",
+  "iso3": "GUM",
+  "retrieved_at": "2026-11-19T21:58:07Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html",
+  "download_urls": [
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=application/json",
+    "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=SHAPE-ZIP",
+    "https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html"
+  ],
+  "license": {
+    "name": "PacIOOS data use (free use and redistribution, not for legal use)",
+    "url": "https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html",
+    "notes": "Use Limitation: 'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+  },
+  "files": [
+    {
+      "path": "gu_weri_sog_pop_villages.geojson",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=application/json",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1509,
+      "sha256": "81290d19213d7f40f40dd1702ed204536447880f24666212f3a603cc4146cad6"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_shp.zip",
+      "url": "https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:gu_weri_sog_pop_villages&outputFormat=SHAPE-ZIP",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1322,
+      "sha256": "9ac5e5513388b59d6e53e1f3656e75b6c61e5fb1785eef4ab930fe6701c3fccf"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_metadata.html",
+      "url": "https://www.pacioos.hawaii.edu/metadata/gu_weri_sog_pop_villages.html",
+      "http_status": 200,
+      "content_type": "text/html;",
+      "bytes": 44251,
+      "sha256": "3d24c8cf2e6c41f5166e7558fd2d909b68d0fbd35f6b5ccba5ef28c283667d76"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "gu_weri_sog_pop_villages_shp/gu_weri_sog_pop_villages.prj",
+      "from": "gu_weri_sog_pop_villages_shp.zip",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_shp/gu_weri_sog_pop_villages.dbf",
+      "from": "gu_weri_sog_pop_villages_shp.zip",
+      "bytes": 1850,
+      "sha256": "db24cbfb8e6e6e2c04cf01ac3a0719d5f9df199aa4ca8c5057fc6cf2f77da62a"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_shp/gu_weri_sog_pop_villages.shp",
+      "from": "gu_weri_sog_pop_villages_shp.zip",
+      "bytes": 296,
+      "sha256": "11a2e6ee6e0de442b576251b9046b79a9570e8a814b280eeda799b223045be82"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_shp/gu_weri_sog_pop_villages.cst",
+      "from": "gu_weri_sog_pop_villages_shp.zip",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "gu_weri_sog_pop_villages_shp/gu_weri_sog_pop_villages.shx",
+      "from": "gu_weri_sog_pop_villages_shp.zip",
+      "bytes": 156,
+      "sha256": "c06d292b28ca6a3f0c7e48f3a6ed7d2619c9dc4a825c51e017a13b5c10deee35"
+    }
+  ],
+  "notes": "PacIOOS GeoServer WFS 1.0.0. Original data provider: Water and Environmental Research Institute of the Western Pacific (WERI), University of Guam. PacIOOS service date 2016-01-25. GeoJSON output is EPSG:4326; SHAPE-ZIP is native CRS."
+}

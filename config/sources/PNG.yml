@@ -1,0 +1,142 @@
+# Source register for Papua New Guinea. Written by the retrieval stage (Melanesia agent), 2026-11-20.
+# Hierarchy: Region (4, not an official administrative division) > Province (20 + NCD + AROB = 22)
+#            > District (87, 2011-census set) > Local Level Government (326) > Ward (not public).
+# Note: PNG created further districts/open electorates in 2022 (96 open electorates); no public polygons found.
+iso3: PNG
+country_name: Papua New Guinea
+sources:
+  - source_id: png-ocha-cod-ab-2019
+    title: "Papua New Guinea - Subnational Administrative Boundaries (COD-AB) adm0-3, v01"
+    publisher: "OCHA (HDX); source Papua New Guinea National Statistics Office; contributed by OCHA ROAP"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-png
+    download_urls:
+      - https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/156e393b-1a62-46dd-a7af-e915c750a967/download/png_admin_boundaries.gdb.zip
+      - https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/c0386530-3455-45b4-b413-f41ccbdd2215/download/png_admin_boundaries.shp.zip
+      - https://data.humdata.org/dataset/f260301d-c32f-4e9e-a7d6-05bde2f70b6b/resource/afa0ebcd-1861-4eac-9cd8-af06f942633a/download/png_admin_boundaries.xlsx
+    retrieval_method: http
+    license:
+      name: CC-BY-3.0-IGO
+      url: http://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2019-05-10
+    version: "v01 (valid_on 2019-05-08; reviewed 2025-10-30; files regenerated 2026-01-26)"
+    format: other  # Esri FileGDB (shapefile copy also present)
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb::png_admin0", name_field: adm0_name, code_field: adm0_pcode, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: state_province, level_name_local: "Province / Autonomous Region / National Capital District", layer: "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb::png_admin1", name_field: adm1_name, code_field: adm1_pcode, parent_field: adm0_pcode, nests: true, notes: "COD adm1 = our admin2 because Regions are inserted as admin1. Region membership must be joined (by province) from png-nso-regions-2015."}
+      - {level_code: admin3, level_type: district, level_name_local: District, layer: "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb::png_admin2", name_field: adm2_name, code_field: adm2_pcode, parent_field: adm1_pcode, nests: true}
+      - {level_code: admin4, level_type: local_government, level_name_local: "Local Level Government (LLG)", layer: "extracted/png_admin_boundaries.gdb/png_admin_boundaries.gdb::png_admin3", name_field: adm3_name, code_field: adm3_pcode, parent_field: adm2_pcode, nests: true, notes: "326 LLGs incl. urban LLGs."}
+    status: selected
+    raw_path: data/raw/PNG/png-ocha-cod-ab-2019/
+    derived_from: [png-nso-census2011-boundaries]
+    notes: "Format is FileGDB (layer given as <gdb>::<layer>); shapefile copy also extracted under extracted/png_admin_boundaries.shp/. Geometry matches the NSO 2011 census set (same counts 22/87/326, vertex totals within 0.1%, area equal): treat as the openly licensed release of the NSO boundaries. Also has adminlines and adminpoints layers (not needed)."
+
+  - source_id: png-nso-regions-2015
+    title: "Papua New Guinea Regions (2015)"
+    publisher: "Papua New Guinea National Statistics Office via OCHA ROAP (HDX)"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/papua-new-guinea-regions
+    download_urls:
+      - https://data.humdata.org/dataset/e43b17b8-d127-4be0-8d92-dc3d2dcb39ff/resource/70d094d9-5b61-4c97-b651-9e42ce328b6e/download/png_polbnda_regions_2015_nso.zip
+    retrieval_method: http
+    license: {name: CC-BY-3.0-IGO, url: http://creativecommons.org/licenses/by/3.0/igo/legalcode, redistribution_ok: true, notes: ""}
+    publication_date: 2015-11-10
+    version: "2015"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: region, level_name_local: Region, layer: null, name_field: Region, code_field: null, parent_field: null, nests: true, code_scheme: name-slug, derive: {method: dissolve_children, child_level: admin2, child_source: png-ocha-cod-ab-2019, group_layer: extracted/png_polbnda_regions_2015_nso/PNG_polbnda_regions_2015_nso.shp, group_name_field: Region}, notes: "[processing] derive block: COD provinces assigned to region polygons by largest overlap, region geometry = union of provinces (E-008). 4 regions (Southern/Papua, Highlands, Momase, Islands). HDX: 'Regions are not an official administrative division'. No codes (generate). Older province geometry than the COD: prefer dissolving COD provinces by region membership (geometry_method dissolved_from_children)."}
+    status: selected
+    raw_path: data/raw/PNG/png-nso-regions-2015/
+    derived_from: []
+    notes: "Only region layer found. Orchestrator may prefer to treat regions as `other` (non-nesting) rather than admin1."
+
+  - source_id: png-nso-census2011-boundaries
+    title: "PNG Administrative Boundaries (2011 census province, district, LLG)"
+    publisher: "Papua New Guinea National Statistics Office (custodian) via PNG Environment Data Portal (SPREP)"
+    publisher_type: national
+    landing_url: https://png-data.sprep.org/dataset/png-administrative-boundaries
+    download_urls:
+      - "https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/NSO_PNG%2520Boundaries.zip"
+      - https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_prov_boundaries_2011census_region.json
+      - https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_dist_boundaries_2011census_region.json
+      - https://pacific-data.sprep.org/system/files/1c6e95df-c69f-419b-afec-0bc482d14f5e/png_llg_boundaries_2011census_region.json
+    retrieval_method: http
+    license:
+      name: "SPREP Public License (CC-BY-NC-SA-4.0)"
+      url: https://pacific-data.sprep.org/dataset/data-portal-license-agreements
+      redistribution_ok: false
+      notes: "The 'SPREP Public Data License Agreement (Creative Commons)' text is CC BY-NC-SA 4.0 (copies saved in raw folder). Non-commercial and share-alike, so not usable in the open combined product."
+    publication_date: 2022-03-07
+    version: "2011 census"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin2, level_type: state_province, level_name_local: Province, layer: extracted/NSO_PNG_Boundaries/png_prov_boundaries_2011census_region.shp, name_field: PROVNAME, code_field: PROVID, parent_field: null, nests: true}
+      - {level_code: admin3, level_type: district, level_name_local: District, layer: extracted/NSO_PNG_Boundaries/png_dist_boundaries_2011census_region.shp, name_field: DISTNAME, code_field: GEOCODE, parent_field: null, nests: true}
+      - {level_code: admin4, level_type: local_government, level_name_local: LLG, layer: extracted/NSO_PNG_Boundaries/png_llg_boundaries_2011census_region.shp, name_field: LLGNAME, code_field: GEOCODE, parent_field: null, nests: true, notes: "NSO GEOCODE e.g. OCNPNG0010010209 encodes province/district/LLG."}
+    status: alternative
+    raw_path: data/raw/PNG/png-nso-census2011-boundaries/
+    derived_from: []
+    notes: "Tier 1 originator but NC licence; COD-AB carries the same geometry under CC BY 3.0 IGO. Useful for NSO GEOCODEs (census linkage). Also mirrored on PDH (png-administrative-boundaries1c6e95df-...)."
+
+  - {source_id: png-geoboundaries-adm0, title: "geoBoundaries gbOpen PNG ADM0", publisher: "geoBoundaries; source OpenStreetMap (Wambacher)", publisher_type: osm, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/PNG/ADM0/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PNG/ADM0/geoBoundaries-PNG-ADM0-all.zip"], retrieval_method: api, license: {name: ODbL-1.0, url: "https://opendatacommons.org/licenses/odbl/1-0/", redistribution_ok: true, notes: "share-alike"}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/geoBoundaries-PNG-ADM0-all/geoBoundaries-PNG-ADM0.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: alternative, raw_path: data/raw/PNG/png-geoboundaries-adm0/, derived_from: [], notes: "OSM-based land outline."}
+  - {source_id: png-geoboundaries-adm1, title: "geoBoundaries gbOpen PNG ADM1 (Provinces)", publisher: "geoBoundaries; source PNG NSO, OCHA ROAP", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/PNG/ADM1/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PNG/ADM1/geoBoundaries-PNG-ADM1-all.zip"], retrieval_method: api, license: {name: CC-BY-3.0-IGO, url: "http://creativecommons.org/licenses/by/3.0/igo/legalcode", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin2, level_type: state_province, level_name_local: Province, layer: extracted/geoBoundaries-PNG-ADM1-all/geoBoundaries-PNG-ADM1.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/PNG/png-geoboundaries-adm1/, derived_from: [png-ocha-cod-ab-2019], notes: "Repackaged COD-AB; do not double count."}
+  - {source_id: png-geoboundaries-adm2, title: "geoBoundaries gbOpen PNG ADM2 (Districts)", publisher: "geoBoundaries; source OCHA ROAP, PNG NSO", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/PNG/ADM2/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PNG/ADM2/geoBoundaries-PNG-ADM2-all.zip"], retrieval_method: api, license: {name: CC-BY-3.0-IGO, url: "http://creativecommons.org/licenses/by/3.0/igo/legalcode", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin3, level_type: district, level_name_local: District, layer: extracted/geoBoundaries-PNG-ADM2-all/geoBoundaries-PNG-ADM2.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/PNG/png-geoboundaries-adm2/, derived_from: [png-ocha-cod-ab-2019], notes: "Repackaged COD-AB."}
+  - {source_id: png-geoboundaries-adm3, title: "geoBoundaries gbOpen PNG ADM3 (LLGs)", publisher: "geoBoundaries; source PNG NSO, OCHA ROAP", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/PNG/ADM3/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PNG/ADM3/geoBoundaries-PNG-ADM3-all.zip"], retrieval_method: api, license: {name: CC-BY-3.0-IGO, url: "http://creativecommons.org/licenses/by/3.0/igo/legalcode", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin4, level_type: local_government, level_name_local: LLG, layer: extracted/geoBoundaries-PNG-ADM3-all/geoBoundaries-PNG-ADM3.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/PNG/png-geoboundaries-adm3/, derived_from: [png-ocha-cod-ab-2019], notes: "Repackaged COD-AB."}
+
+  - source_id: png-gadm-4-1
+    title: "GADM 4.1 Papua New Guinea"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PNG.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Non-commercial; redistribution prohibited. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: state_province, level_name_local: Province, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin3, level_type: district, level_name_local: District, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/PNG/png-gadm-4-1/
+    derived_from: []
+    notes: "Reference only; no LLG level."
+
+  # Candidates searched but not available / not downloaded
+  - {source_id: png-pdh-pcrafi-llg-cu, title: "PCRAFI 'Population by LLG / Census Unit in 2010' (pg_local_level_govt, pg_census_unit)", publisher: "SPC GEM (PDH GeoNode); primary source SOPAC, PNG NSO", publisher_type: regional_body, landing_url: "https://pacificdata.org/data/dataset/pg-census-unit-190", download_urls: [], retrieval_method: api, license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: ""}, publication_date: 2025-11-04, version: "PCRAFI 2010 exposure", format: other, crs: null, levels: [{level_code: other, level_type: statistical, level_name_local: Census Unit, layer: null, name_field: null, code_field: null, parent_field: null, nests: false}], status: rejected, raw_path: null, derived_from: [], notes: "Census-unit layer is WMS preview only (no WFS/download); LLG layer is a 2010 thematic derivative under NC licence. Not downloaded."}
+  - {source_id: png-wards, title: "PNG ward boundaries (LLG wards, ~6,000+)", publisher: "PNG NSO / Department of Provincial and Local Government Affairs", publisher_type: national, landing_url: null, download_urls: [], retrieval_method: manual, license: {name: unspecified, url: null, redistribution_ok: false, notes: ""}, publication_date: null, version: null, format: other, crs: null, levels: [{level_code: admin5, level_type: ward_village, level_name_local: Ward, layer: null, name_field: null, code_field: null, parent_field: null, nests: true}], status: rejected, raw_path: null, derived_from: [], notes: "Not publicly available as polygons (searched HDX, PDH + GeoNode WFS, PNG SPREP portal, web). NSO publishes ward population tables only."}
+  - {source_id: png-open-electorates, title: "PNG open electorates (89 in 2017; 96 from 2022)", publisher: "PNG Electoral Commission", publisher_type: national, landing_url: null, download_urls: [], retrieval_method: manual, license: {name: unspecified, url: null, redistribution_ok: false, notes: ""}, publication_date: null, version: null, format: other, crs: null, levels: [{level_code: other, level_type: electoral, level_name_local: Open Electorate, layer: null, name_field: null, code_field: null, parent_field: null, nests: false}], status: rejected, raw_path: null, derived_from: [], notes: "No public polygons found. Open electorates historically coincide with districts (admin3); the 2022 additions are not reflected in any public layer."}
+
+decisions:
+  - level_code: admin0
+    chosen: png-ocha-cod-ab-2019
+    alternatives: [png-geoboundaries-adm0, png-gadm-4-1]
+    reason: "COD adm0 consistent with selected admin2-4."
+    escalated: false
+  - level_code: admin1
+    chosen: png-nso-regions-2015
+    alternatives: []
+    reason: "Only regions layer; recommend dissolving COD provinces by region instead of using its geometry. Regions are not an official administrative division (level choice for orchestrator)."
+    escalated: false
+  - level_code: admin2
+    chosen: png-ocha-cod-ab-2019
+    alternatives: [png-nso-census2011-boundaries, png-geoboundaries-adm1, png-gadm-4-1]
+    reason: "NSO 2011 set is the originator but licensed CC BY-NC-SA (SPREP Public License); COD-AB carries the same NSO geometry under CC BY 3.0 IGO and is more recent (2019, reviewed 2025)."
+    escalated: false
+  - level_code: admin3
+    chosen: png-ocha-cod-ab-2019
+    alternatives: [png-nso-census2011-boundaries, png-geoboundaries-adm2, png-gadm-4-1]
+    reason: "As admin2."
+    escalated: false
+  - level_code: admin4
+    chosen: png-ocha-cod-ab-2019
+    alternatives: [png-nso-census2011-boundaries, png-geoboundaries-adm3]
+    reason: "As admin2."
+    escalated: false

@@ -1,0 +1,76 @@
+{
+  "source_id": "fji-sdd-phc2007-boundaries",
+  "iso3": "FJI",
+  "retrieved_at": "2026-11-19T22:00:46Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2007_fji_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/5880cadb-2287-4eac-9f3d-8b321730e6cd/download/2007_phc_fji_pid_32760.geojson",
+    "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/010783ac-a0a9-41b5-90e6-9f07c8935b7d/download/2007_phc_fji_tid_32760.geojson",
+    "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/17f6df1c-e90b-476f-a335-46ec6dd96d39/download/2007_phc_fji_eaid_32760.geojson",
+    "https://pacificdata.org/data/api/3/action/package_show?id=2007_fji_phc_admin_boundaries"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "2007_phc_fji_pid_32760.geojson",
+      "bytes": 1564731,
+      "sha256": "6cc59a6d8c10d6d5fe613da39a0d2f8b787d8bb7d229a7b23a137048398d59cd"
+    },
+    {
+      "path": "2007_phc_fji_tid_32760.geojson",
+      "bytes": 2699115,
+      "sha256": "086d2516253476b8af4d91e27a4f97183375fee4a8d3fcca4cde9528f2d30cd3"
+    },
+    {
+      "path": "2007_phc_fji_eaid_32760.geojson",
+      "bytes": 7473849,
+      "sha256": "2cd8da683ad0de1694cf517a4165402c9e47317c8e2559fe7ca6f7497e554c63"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "bytes": 13779,
+      "sha256": "50f04814c3035855a99730bf5c9812d29b6a4f1c9ae2ea7eb461af2c7a06f2f9"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2007_phc_fji_pid_32760.geojson",
+      "url": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/5880cadb-2287-4eac-9f3d-8b321730e6cd/download/2007_phc_fji_pid_32760.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/5880cadb-2287-4eac-9f3d-8b321730e6cd/download/2007_phc_fji_pid_32760.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:44Z"
+    },
+    {
+      "path": "2007_phc_fji_tid_32760.geojson",
+      "url": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/010783ac-a0a9-41b5-90e6-9f07c8935b7d/download/2007_phc_fji_tid_32760.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/010783ac-a0a9-41b5-90e6-9f07c8935b7d/download/2007_phc_fji_tid_32760.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:44Z"
+    },
+    {
+      "path": "2007_phc_fji_eaid_32760.geojson",
+      "url": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/17f6df1c-e90b-476f-a335-46ec6dd96d39/download/2007_phc_fji_eaid_32760.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/5eb30a1b-9de6-4929-9281-16ab7850c4cf/resource/17f6df1c-e90b-476f-a335-46ec6dd96d39/download/2007_phc_fji_eaid_32760.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:45Z"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "url": "https://pacificdata.org/data/api/3/action/package_show?id=2007_fji_phc_admin_boundaries",
+      "url_effective": "https://pacificdata.org/data/api/3/action/package_show?id=2007_fji_phc_admin_boundaries",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:00:46Z"
+    }
+  ],
+  "notes": "SPC SDD on Pacific Data Hub: boundaries used for Fiji 2007 Population and Housing Census (Fiji Bureau of Statistics). CRS EPSG:32760 per resource names. Superseded by 2017 set."
+}

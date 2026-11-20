@@ -1,0 +1,212 @@
+{
+  "source_id": "cok-linz-geographic-names-topo",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-20T00:20:14Z",
+  "retrieved_by": "retrieval agent (nz_realm_update) via python urllib",
+  "retrieval_method": "api",
+  "landing_url": "https://data.linz.govt.nz/layer/52247-cook-islands-geographic-names-topo-125k-zone4/",
+  "download_urls": [
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52247&outputFormat=json&count=1000&startIndex=0",
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52292&outputFormat=json&count=1000&startIndex=0",
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52204&outputFormat=json&count=1000&startIndex=0",
+    "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52221&outputFormat=json&count=1000&startIndex=0"
+  ],
+  "auth": "LINZ Data Service API key sent as HTTP header 'Authorization: key <LINZ_API_KEY>' (key in repo .env, never recorded). The documented path form https://data.linz.govt.nz/services;key=<LINZ_API_KEY>;/wfs?... returned HTTP 400 'Feature type unknown' for GetFeature with this key on 2026-11-20, so the header form was used against the same WFS endpoint.",
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0 (Toitu Te Whenua Land Information New Zealand)"
+  },
+  "layers": [
+    {
+      "layer_id": 52247,
+      "title": "Cook Islands Geographic Names (Topo, 1:25k, Zone4)",
+      "landing_url": "https://data.linz.govt.nz/layer/52247-cook-islands-geographic-names-topo-125k-zone4/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-02T03:05:30.599059Z",
+      "published_at": "2022-06-28T21:35:43.082376Z",
+      "version_id": 336545,
+      "crs": "EPSG:32704",
+      "feature_count": 346,
+      "geometry_type": "point",
+      "fields": [
+        "GEOMETRY",
+        "t50_fid",
+        "size",
+        "name_ascii",
+        "macronated",
+        "name",
+        "desc_code"
+      ]
+    },
+    {
+      "layer_id": 52292,
+      "title": "Cook Islands Geographic Names (Topo, 1:25k, Zone3)",
+      "landing_url": "https://data.linz.govt.nz/layer/52292-cook-islands-geographic-names-topo-125k-zone3/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-02T19:17:11.452319Z",
+      "published_at": "2022-06-29T02:38:47.711442Z",
+      "version_id": 338878,
+      "crs": "EPSG:32703",
+      "feature_count": 89,
+      "geometry_type": "point",
+      "fields": [
+        "GEOMETRY",
+        "t50_fid",
+        "size",
+        "name_ascii",
+        "macronated",
+        "name",
+        "desc_code"
+      ]
+    },
+    {
+      "layer_id": 52204,
+      "title": "Cook Islands Geographic Names (Topo, 1:50k, Zone4)",
+      "landing_url": "https://data.linz.govt.nz/layer/52204-cook-islands-geographic-names-topo-150k-zone4/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-01T23:32:44.086109Z",
+      "published_at": "2022-06-28T21:37:02.127440Z",
+      "version_id": 336588,
+      "crs": "EPSG:32704",
+      "feature_count": 292,
+      "geometry_type": "point",
+      "fields": [
+        "GEOMETRY",
+        "size",
+        "name_ascii",
+        "macronated",
+        "name",
+        "desc_code"
+      ]
+    },
+    {
+      "layer_id": 52221,
+      "title": "Cook Islands Geographic Names (Topo, 1:50k, Zone3)",
+      "landing_url": "https://data.linz.govt.nz/layer/52221-cook-islands-geographic-names-topo-150k-zone3/",
+      "license": {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "lds_url": "https://data.linz.govt.nz/license/attribution-4-0-international/"
+      },
+      "first_published_at": "2014-12-02T02:02:50.609081Z",
+      "published_at": "2022-06-28T21:36:41.937142Z",
+      "version_id": 336691,
+      "crs": "EPSG:32703",
+      "feature_count": 25,
+      "geometry_type": "point",
+      "fields": [
+        "GEOMETRY",
+        "size",
+        "name_ascii",
+        "macronated",
+        "name",
+        "desc_code"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "layer-52247.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52247&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 95753,
+      "sha256": "b7fb4706351aedfff952fe9d19e1e072e7a07baab78c1419cc2b0b884929390c",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 346,
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52247.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52247/",
+      "auth": "none",
+      "bytes": 8655,
+      "sha256": "3c904d87d44ba860bd7637f5925a3c32bdde8ab43650d8ea96bb7c3a082bb374",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52292.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52292&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 25005,
+      "sha256": "67588191998626c4c1a2f6b17908929fc87a41e7e1defc8fa0289a146fdb1d64",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 89,
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52292.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52292/",
+      "auth": "none",
+      "bytes": 8659,
+      "sha256": "dc2418f68df9e26eaf61c7a65189dc35cae1c2b9c82486781fd0f69e185d7f70",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52204.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52204&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 74120,
+      "sha256": "d8da27da190fa75371a26c2bdfe03e1c59f93adf9b08cde0fdb28fe71fcaa689",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 292,
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52204.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52204/",
+      "auth": "none",
+      "bytes": 8622,
+      "sha256": "03b4e388ca9f75d2d883ee52276299939ee931ac77c07dcbd47f2b627e49b594",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52221.geojson",
+      "url": "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52221&outputFormat=json&count=1000&startIndex=0",
+      "auth": "HTTP header 'Authorization: key <LINZ_API_KEY>'",
+      "bytes": 6717,
+      "sha256": "f3122f346e0aaf1524b2b65087fd7e81fdf95b692757918f8e7c3a87e6177cda",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "feature_count": 25,
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    },
+    {
+      "path": "layer-52221.lds-metadata.json",
+      "url": "https://data.linz.govt.nz/services/api/v1.x/layers/52221/",
+      "auth": "none",
+      "bytes": 8621,
+      "sha256": "ad3481021041b9ab85f9b357dd96a1d47918573e9238ba9f106d487d7b2d62de",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-20T00:20:14Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "WFS 2.0.0 GetFeature, outputFormat=json, count=1000/startIndex=0 (single page; returned feature counts equal LDS feature_count for every layer). GeoJSON is in the layer's native UTM CRS (crs member urn:ogc:def:crs:EPSG::327xx); reproject on read. Downloaded to scratchpad, verified (HTTP 200, JSON parse, feature count), then copied and sha256 re-checked. LDS metadata JSON (no key) saved alongside."
+}

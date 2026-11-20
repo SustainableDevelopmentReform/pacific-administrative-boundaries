@@ -1,0 +1,28 @@
+{
+  "source_id": "niu-spc-sdd-phc2011-villages",
+  "iso3": "NIU",
+  "retrieved_at": "2026-11-19T22:05:42Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2011_niu_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/07ecef48-c768-4a43-8cd3-75876c2e0308/resource/fe2589c8-9d37-4319-b99c-4e6cab516bfc/download/2011_phc_niu_vid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY (Creative Commons Attribution, version unstated on PDH)",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "2011_phc_niu_vid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/07ecef48-c768-4a43-8cd3-75876c2e0308/resource/fe2589c8-9d37-4319-b99c-4e6cab516bfc/download/2011_phc_niu_vid_4326.geojson",
+      "bytes": 110376,
+      "sha256": "940365a74188a6c75fe1fac8116158e33af8876df092b9104be8680fad17069b",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:42Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "SPC SDD, village boundaries used for 2011 Niue Census (PopGIS3)."
+}

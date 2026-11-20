@@ -1,0 +1,481 @@
+{
+  "source_id": "tuv-geoboundaries-gbopen",
+  "iso3": "TUV",
+  "retrieved_at": "2026-11-19T22:06:16Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/api/current/gbOpen/TUV/ALL/",
+  "download_urls": [
+    "https://www.geoboundaries.org/api/current/gbOpen/TUV/ALL/",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM0/geoBoundaries-TUV-ADM0-all.zip",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM1/geoBoundaries-TUV-ADM1-all.zip",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM2/geoBoundaries-TUV-ADM2-all.zip",
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM3/geoBoundaries-TUV-ADM3-all.zip"
+  ],
+  "license": {
+    "name": "per-level (see notes)",
+    "url": "https://www.geoboundaries.org/",
+    "per_level": {
+      "ADM0": "ODbL-1.0",
+      "ADM1": "ODbL-1.0",
+      "ADM2": "CC-BY-4.0",
+      "ADM3": "Other - Direct Permission"
+    }
+  },
+  "files": [
+    {
+      "path": "gbOpen_TUV_ALL_meta.json",
+      "bytes": 7101,
+      "sha256": "7eba2bc48b9a88285f7a642a8a01243dda65de5cf9e43d8e4bb0ba043d7bdc23"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 94817,
+      "sha256": "8eae6ca853567579186c09d4fd6516ba8cba6dd716ed0c75d4815bae1bef65a1"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 90101,
+      "sha256": "a8c8242722d2782e60bf6c4dd6e621045baa238e58ab59fc1c7044c4ccb84dcc"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 113430,
+      "sha256": "64bdaa370d8484b89127f0a81cd2382c044c69db9b4b245511d9f39ed2c048dc"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 112828,
+      "sha256": "e213fc76cffbb15558ad15a6e550b9214f7de132c8652accded6738c96751884"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0-PREVIEW.png",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 26036,
+      "sha256": "80e39be6c5405e004d2a43765a1a4ca6be90ad5ca6a1e5169e046ae494d63fb5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0-metaData.json",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 816,
+      "sha256": "e9406e7b7d1c41de32d76f6f98446f4b6f8adb378966147a112e687359d744ed"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0-metaData.txt",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 974,
+      "sha256": "5ace1862ac3eb1f6c7c7d8d7320f976efff8a8c0d98ba4de5b272b807b290e83"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.dbf",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 234,
+      "sha256": "f769098b6254821921d2259d75ad82efe5d669515a30714a96b9ec72d928e176"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.geojson",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 99803,
+      "sha256": "84aad1891d78f181ebd0b4898772c6258f98c51ca7aaef2053fadb8f12ac385e"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.prj",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.shp",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 40352,
+      "sha256": "a5346d83ca0903a2ab3bfc10083066fe88f48ad8591356f630d1afbd0186a930"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.shx",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "8812fb81b900584f841dc984f1b557b21b33ca85fdeda39feff94f5561807600"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0.topojson",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 21400,
+      "sha256": "71b906f0f85b50f2155fe12f7026bf3814ea5a52cda3fc4b9e28965b635260b2"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.dbf",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 234,
+      "sha256": "f769098b6254821921d2259d75ad82efe5d669515a30714a96b9ec72d928e176"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.geojson",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 6664,
+      "sha256": "3fc12c0654ca32ca2f4d49d3d7498365deb108b12487a2bb57a8e4dea18578e5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.prj",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.shp",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 2736,
+      "sha256": "47568e106497619d5e89a3c3804d3ebce96dd2681549d9ec8e7447e1c5d4e488"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.shx",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 108,
+      "sha256": "994673bebfd8d91e0c388859304f42c304f6582ee4cd04085494070f5f88fc16"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all/geoBoundaries-TUV-ADM0_simplified.topojson",
+      "from": "geoBoundaries-TUV-ADM0-all.zip",
+      "bytes": 1937,
+      "sha256": "92c89380e6099b96608ebda178f4f2800ec817abb7eea42c1feecc0cb96417a5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1-PREVIEW.png",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 24859,
+      "sha256": "999d37f25dc040bdfdc19a278659313c866b3d071b59a7b93e918a67b1aca31f"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1-metaData.json",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 849,
+      "sha256": "ef3474d8b744a6cf19b969f1dc9200ac2c30dd5fedbed6d3d6bd1b21766b9d18"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1-metaData.txt",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 1011,
+      "sha256": "362d40a5b4c099caf9bdd43c0ef0a0674f52f0b95847f6bf508826c5f15c37ce"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.dbf",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 570,
+      "sha256": "5cedc4baad4a9ba71213c721fb48ae04d001b8c44f103e20fc18f8562af7f206"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.geojson",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 79396,
+      "sha256": "3c06779be3173360c9a2927729798eacb5533c745e31313f11940041585030aa"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.prj",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.shp",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 40716,
+      "sha256": "5ab148bc38201add64d87a467c9bc9d84bc6ff9dc66372c8b0bd8de1eee2ccd6"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.shx",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 164,
+      "sha256": "fca7efacf90fc35f5e6e1175eb5e123925a290f87a4faeac4cd5cc6e1f42487c"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1.topojson",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 22503,
+      "sha256": "7ba43937330d9976bf815ed2593dea2dac47af798feb93f230ba6979f1fdaaf6"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.dbf",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 570,
+      "sha256": "5cedc4baad4a9ba71213c721fb48ae04d001b8c44f103e20fc18f8562af7f206"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.geojson",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 6657,
+      "sha256": "be6847909466920d2775ddf2f106ff88c9e249db2ab22fe9ee4f38349245f55e"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.prj",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.shp",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 3020,
+      "sha256": "5f784648cd072ef9209109cd6fb3f5cf551d2b747a00a9d9629c678e8be148d0"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.shx",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 164,
+      "sha256": "07c9b5aa70f5441a77b935938bcbf86992fe2bf3f2903e6bdf871101ffc75bc8"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all/geoBoundaries-TUV-ADM1_simplified.topojson",
+      "from": "geoBoundaries-TUV-ADM1-all.zip",
+      "bytes": 2988,
+      "sha256": "057269fcc4d6264b040333864bf2aaacaa462a76b3a1651d106c3f60d332ff91"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2-PREVIEW.png",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 20556,
+      "sha256": "0df94845b588591d3d7efd05e5f404408057f20bbbe50a11f0aa4a52c3c11ace"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2-metaData.json",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 981,
+      "sha256": "7092e3ed37fef28ec7368728ba8ab784071be0fba95790b6dee36c1a04f189ca"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2-metaData.txt",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 1142,
+      "sha256": "cb11a41735d6dbc8961f3d0bf0a03e067d8d9424fc42c7967c602f4e7e71348a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.dbf",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 1690,
+      "sha256": "c042995aec1501256d61209f94b478cb88c034054696bafa247cfe7b7e305655"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.geojson",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 122193,
+      "sha256": "1da154acb668b9e683719614fa602bf100e6a04e7f5faffe73516af9137e03a2"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.prj",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.shp",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 42956,
+      "sha256": "a7f7b9a47e87ca436e8b6ed3dc692a4e8b1cfd914e5238efaecaa42c6d1dd77f"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.shx",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 372,
+      "sha256": "80f1410da5196cc31b6744bbfc2fa9333b30f703272c10c0e9a77f2132fe94ae"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2.topojson",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 27596,
+      "sha256": "f9cd26c71a833d36489b585c2a2fc1f5dd68d879852b7c99a243d9c28cdafa93"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.dbf",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 1690,
+      "sha256": "c042995aec1501256d61209f94b478cb88c034054696bafa247cfe7b7e305655"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.geojson",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 20511,
+      "sha256": "685bdd6d4d54346d62863d159fe726c68fd94c007e76946f001a2ad6494e8622"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.prj",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.shp",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 6620,
+      "sha256": "4d16e7da7408ed89503601ba485f0dc7e22bc5cdf8832c230638b4e92a41fd7c"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.shx",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 372,
+      "sha256": "81002a824f6212ad5cb40408e730aa8d53e62108661a30d3ef7cb00b3d8a9d48"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all/geoBoundaries-TUV-ADM2_simplified.topojson",
+      "from": "geoBoundaries-TUV-ADM2-all.zip",
+      "bytes": 8952,
+      "sha256": "605d02074503b9cc806e3db6d36c3fc2839884f9968734551e6d864320bb1ecd"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/CITATION-AND-USE-geoBoundaries.txt",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3-PREVIEW.png",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 18429,
+      "sha256": "39de4f2b1f0d097d6deb4d7a6f62c0caaf6df245d39f970064e6a955029ab3c0"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3-metaData.json",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 838,
+      "sha256": "20a2cb4f1755b91d785652cdd3c216d224063f58b89ef0a0e8c204ccd7788b24"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3-metaData.txt",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 999,
+      "sha256": "866d1b477addadced6928c99a6247c739f66e0697e11cdea3d2f66e558828354"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.dbf",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 2816,
+      "sha256": "9fab153431a263281348302f871da451c888bdd6c65955afdfb54a8740cd28ab"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.geojson",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 126778,
+      "sha256": "39920b6decaaeac8d4864bd6abb831f391900d1eeae9d5b076d11114031f4d86"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.prj",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.shp",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 43856,
+      "sha256": "f9f52df8a7679585c8bdf9137e2c4cc2d7c06f95cdfc0c31c1126f906761f0d0"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.shx",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 652,
+      "sha256": "0dcffac2703f0fa7ea88a39e5713fdd43915cfc11109541c2f71f7a743f432fe"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3.topojson",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 33898,
+      "sha256": "2b6a915fb4aefaadbfc5e666fb8411905b0158a2a10e02243310ec5624e34bbc"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.dbf",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 2816,
+      "sha256": "9fab153431a263281348302f871da451c888bdd6c65955afdfb54a8740cd28ab"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.geojson",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 33985,
+      "sha256": "642402f909927db741e04475babf85888a4f642d0299d94f0ea95c61b4b281dd"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.prj",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.shp",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 10688,
+      "sha256": "f2fa90a2c40508c905d3198047692f8753966bbe291322527e729624f850b221"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.shx",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 652,
+      "sha256": "da632661cfc3f15cb708574b6e5f8132c00726dfa708b94e03f6f32e055bf579"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all/geoBoundaries-TUV-ADM3_simplified.topojson",
+      "from": "geoBoundaries-TUV-ADM3-all.zip",
+      "bytes": 16876,
+      "sha256": "b9746fc11fbda7715f1a9f1ee4706e936cf8acf41284d22278369feccbcd5899"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "gbOpen_TUV_ALL_meta.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/TUV/ALL/",
+      "effective_url": "https://www.geoboundaries.org/api/current/gbOpen/TUV/ALL/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:06:16Z"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM0/geoBoundaries-TUV-ADM0-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/TUV/ADM0/geoBoundaries-TUV-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:17Z"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM1-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM1/geoBoundaries-TUV-ADM1-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/TUV/ADM1/geoBoundaries-TUV-ADM1-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:17Z"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM2-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM2/geoBoundaries-TUV-ADM2-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/TUV/ADM2/geoBoundaries-TUV-ADM2-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:17Z"
+    },
+    {
+      "path": "geoBoundaries-TUV-ADM3-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM3/geoBoundaries-TUV-ADM3-all.zip",
+      "effective_url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/TUV/ADM3/geoBoundaries-TUV-ADM3-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:18Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen release 9469f09 (build Dec 12, 2023). Licence differs by level: ADM0: ODbL-1.0; ADM1: ODbL-1.0; ADM2: CC-BY-4.0; ADM3: Other - Direct Permission. See gbOpen_*_meta.json for upstream source per level."
+}

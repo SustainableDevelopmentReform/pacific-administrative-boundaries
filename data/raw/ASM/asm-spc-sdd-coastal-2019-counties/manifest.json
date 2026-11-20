@@ -1,0 +1,38 @@
+{
+  "source_id": "asm-spc-sdd-coastal-2019-counties",
+  "iso3": "ASM",
+  "retrieved_at": "2026-11-19T22:05:49Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/coastal-population-dataset-asm",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/808e22e1-9ec4-4179-a3f3-83dabf1abef7/download/as_counties_4326.geojson",
+    "https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/f16c8731-3300-4770-9fcc-64a64cb1f5e3/download/readme.txt"
+  ],
+  "license": {
+    "name": "CC-BY (Creative Commons Attribution, version unstated on PDH)",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "as_counties_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/808e22e1-9ec4-4179-a3f3-83dabf1abef7/download/as_counties_4326.geojson",
+      "bytes": 42292,
+      "sha256": "b2211fd76693416f46128940edacef73d2da3497deace7621009a981e78d175d",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:49Z"
+    },
+    {
+      "path": "readme.txt",
+      "url": "https://pacificdata.org/data/dataset/e04fe335-e679-4cf8-b67a-99d428496ac8/resource/f16c8731-3300-4770-9fcc-64a64cb1f5e3/download/readme.txt",
+      "bytes": 1516,
+      "sha256": "13ad6e1c91dbcdf9161985e539582f65d7334e263e3e414f96a50df1c145cf9f",
+      "http_status": 200,
+      "content_type": "text/plain",
+      "retrieved_at": "2026-11-19T22:05:49Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "SPC SDD 2019 'Coastal proximity of populations' input layer (ASM counties). Derived (most likely) from US Census TIGER county subdivisions."
+}

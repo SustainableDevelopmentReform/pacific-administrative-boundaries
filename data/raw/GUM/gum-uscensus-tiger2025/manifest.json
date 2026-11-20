@@ -1,0 +1,427 @@
+{
+  "source_id": "gum-uscensus-tiger2025",
+  "iso3": "GUM",
+  "retrieved_at": "2026-11-19T21:56:51Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html",
+  "download_urls": [
+    "https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/COUSUB/tl_2025_66_cousub.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_66_place.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_66_tract.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_66_bg.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/TABBLOCK20/tl_2025_66_tabblock20.zip",
+    "https://www2.census.gov/geo/tiger/TIGER2025/PUMA20/tl_2025_66_puma20.zip"
+  ],
+  "license": {
+    "name": "Public domain (US Government work, TIGER/Line)",
+    "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html"
+  },
+  "files": [
+    {
+      "path": "tl_2025_us_state.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 9956072,
+      "sha256": "59a220888a8d9be8117c4fcd38f542bd02d81abf0d198c78113595ad540dd957"
+    },
+    {
+      "path": "tl_2025_us_county.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 83989800,
+      "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763"
+    },
+    {
+      "path": "tl_2025_66_cousub.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/COUSUB/tl_2025_66_cousub.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 467142,
+      "sha256": "5c4eb200858af0cc131f78b2c2495c44f19c6fef9d1fe0afbb315d8359558f73"
+    },
+    {
+      "path": "tl_2025_66_place.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_66_place.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 267049,
+      "sha256": "1047ceb9991b1ad0d65ec3e643004f6a3ee25db111dcba71e0a623b80c3eaebb"
+    },
+    {
+      "path": "tl_2025_66_tract.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_66_tract.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 560541,
+      "sha256": "5f3d3fa57fab1e17c610e994158459e77b1c7a9597ae3426cad715e3ac062a00"
+    },
+    {
+      "path": "tl_2025_66_bg.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_66_bg.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 753941,
+      "sha256": "a4dcf1b4c999a4977313db3f91976fe2afdecbecee66952c1a80aadee2a749cf"
+    },
+    {
+      "path": "tl_2025_66_tabblock20.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/TABBLOCK20/tl_2025_66_tabblock20.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 1568379,
+      "sha256": "0a91532da8ae892d8bd2e7af8a9b6eaf09715c13b5c94800bcd06e197a7b2e0f"
+    },
+    {
+      "path": "tl_2025_66_puma20.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/PUMA20/tl_2025_66_puma20.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 18620,
+      "sha256": "7b4a711c62ed740e0f44f226646c920ff7b8aa42471526a18cf451b6a66c1ef3"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.cpg",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.dbf",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 11098,
+      "sha256": "b7716edb108a571e5892fc11dbbb027a46e343113ab9b872dae72177476d807d"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.prj",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.shp",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 15534960,
+      "sha256": "181a2728c6c0ecc94e02ed45d6a6f28871ec8d52191893d5b1fea48ac7d99be7"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.shp.ea.iso.xml",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 32964,
+      "sha256": "266aab70b82d1a0964e621951ea5c185d5863c842697d6936294671e34ea4d85"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.shp.iso.xml",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 49139,
+      "sha256": "b199416773957109d33a91c9e7c7d64ee9ceada2ce11363fe3f911aaf683d669"
+    },
+    {
+      "path": "tl_2025_us_state/tl_2025_us_state.shx",
+      "from": "tl_2025_us_state.zip",
+      "bytes": 548,
+      "sha256": "734438dabaee5dd5069cfd18ea17a16453548a48007f504c070982f4820bee42"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.cpg",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.dbf",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 993755,
+      "sha256": "966a258724c861daa722dfa64038df494fac089781c695a88615d9786e61a5cb"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.prj",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.shp",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 132270192,
+      "sha256": "d2add252ccd38f1c46efaba677efe0d20cdd9bf1f3ff7af7ce84fe06a3205df7"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.shp.ea.iso.xml",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 42065,
+      "sha256": "b5f0d05b1df7a4db80b897b1bb5a56819e1ca10f43e3e3c965d64cef5cee34c7"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.shp.iso.xml",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 50716,
+      "sha256": "8c5b6359d59a06e0fdb8c9564a925e993aeea5b0575505365555442a316444c8"
+    },
+    {
+      "path": "tl_2025_us_county/tl_2025_us_county.shx",
+      "from": "tl_2025_us_county.zip",
+      "bytes": 25980,
+      "sha256": "b570cb996fa7620e36ebeae8964f0b606fd8d7df700b33f6950c7e268ea281fe"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.cpg",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.dbf",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 6726,
+      "sha256": "c5271e3f97db264b3e7268145d1f9c7efb3950e1c47ff08879927ec1af032fe2"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.prj",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.shp",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 711424,
+      "sha256": "53fa92a80231620afdf53466160adc3fb7a88981c60cd15ae59083c4a832f139"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.shp.ea.iso.xml",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 62493,
+      "sha256": "2516791662382464f552a33fef862168f734998f51b172033839b4d4b2958a83"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.shp.iso.xml",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 51341,
+      "sha256": "24a0b54a0fbedb5aaccdddbcd60a60283a7feef2e32dd05bbdbc7bc23d481cf2"
+    },
+    {
+      "path": "tl_2025_66_cousub/tl_2025_66_cousub.shx",
+      "from": "tl_2025_66_cousub.zip",
+      "bytes": 260,
+      "sha256": "0dbd2df2903e90194a46ba8660bd0c0e609d315d10e597227cdc7587a8c2bf56"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.cpg",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.dbf",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 17703,
+      "sha256": "a9f9af381bf183ae44ecfb7fa0d0717ea0c11c53e1c2e03515d1d85cca6ae64e"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.prj",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.shp",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 399248,
+      "sha256": "da3feb3d92f020bae0f0eb0f85351432b8e10ce44191a5d3f8e4faad53b4b45a"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.shp.ea.iso.xml",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 48819,
+      "sha256": "51756c3665c159aec5340a52c4d81595b8d6bca6a5cbf91200e2287d2e6789b3"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.shp.iso.xml",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 51623,
+      "sha256": "f18f61b80c6413263c37f76075afe229f43fa8d6bafd644bad6140a4c863ffe6"
+    },
+    {
+      "path": "tl_2025_66_place/tl_2025_66_place.shx",
+      "from": "tl_2025_66_place.zip",
+      "bytes": 556,
+      "sha256": "3fb1fc1dc15e0e7203555fb83ff38eb3757559f692c15053789c96b60e4283ec"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.cpg",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.dbf",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 7689,
+      "sha256": "c257df55039dd7efea3f655e02fdae7593d37824b803a653e9a771e4111192eb"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.prj",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.shp",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 870824,
+      "sha256": "0a3b215df4c88351e9e61c7143f230b99d4ad438ce4f89fc860b0d6c10fe47d6"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.shp.ea.iso.xml",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 23137,
+      "sha256": "0bbe4f65e96c9f6db5371452218c7863912af04df34ab9b9b3ae16ca82b4aec6"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.shp.iso.xml",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 51127,
+      "sha256": "308b65f89eca9e8c41a114e1dbfc306b85cb416ff08440e7a73724d3381a6cbf"
+    },
+    {
+      "path": "tl_2025_66_tract/tl_2025_66_tract.shx",
+      "from": "tl_2025_66_tract.zip",
+      "bytes": 556,
+      "sha256": "90cd311c7819fdccceb33377129e2c49d5919544c4948a6f7f15034b9570d3fc"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.cpg",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.dbf",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 25854,
+      "sha256": "1edb46ed279fda2664adc3f4b64ff31d3fb0e590f729aadddafd322f4056d350"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.prj",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.shp",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 1198596,
+      "sha256": "4195f1ebfd6736565cda0c46fdb2bd1c0dd3dc05743441431dc9e1c7484fd4a3"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.shp.ea.iso.xml",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 23269,
+      "sha256": "364f887e341695a74c32cd9580f85746d2c881bb609cc0ca68223e56a233265e"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.shp.iso.xml",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 50440,
+      "sha256": "21d24192054fecdab0c95ed3f174412ac04a9c5077a9e39e4ab0293840618c89"
+    },
+    {
+      "path": "tl_2025_66_bg/tl_2025_66_bg.shx",
+      "from": "tl_2025_66_bg.zip",
+      "bytes": 1852,
+      "sha256": "8a27d40c04f20d205ab2ccaf6e8532cfd9c27336732ab1b77f8d8dd315f961f9"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.cpg",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.dbf",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 276610,
+      "sha256": "bfda0e0df5f234480aa6082c15c936222f40723b69058148293bc043037a860e"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.prj",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.shp",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 2499508,
+      "sha256": "e902ddca43975273e30e4c4cd032bbbb40e6738d2c086c6d6b5c979d97dca387"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.shp.ea.iso.xml",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 30649,
+      "sha256": "fbf5adc0c74514a2e7fba9cf15cad44756a1c24b1109f98c837effc207ce82a1"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.shp.iso.xml",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 50833,
+      "sha256": "7aa201e5ec44b8a07f85366915b3217a1750e6e6fd3b800404c3c05723772b75"
+    },
+    {
+      "path": "tl_2025_66_tabblock20/tl_2025_66_tabblock20.shx",
+      "from": "tl_2025_66_tabblock20.zip",
+      "bytes": 14628,
+      "sha256": "f00882cdbccd097bb14150000fe4fe698c4a84ab703522aee77ca613d1379bf1"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.cpg",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.dbf",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 574,
+      "sha256": "fed40359252f152442fbabba0d4911cb55e04a34fd302425d7328bbf3207eda7"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.prj",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.shp",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 9884,
+      "sha256": "b434772299ac876513a2dba5b4a411e413bccb99546e393e352953e69d7090ab"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.shp.ea.iso.xml",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 19182,
+      "sha256": "d4a413c941a9b61a9d47018126d304cb011c9a8436d16eb592a7ed3b07678066"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.shp.iso.xml",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 50439,
+      "sha256": "8f0c4fabab11bba2978001fc7970c912cf5104c5e37beb0cc296c8199442eeeb"
+    },
+    {
+      "path": "tl_2025_66_puma20/tl_2025_66_puma20.shx",
+      "from": "tl_2025_66_puma20.zip",
+      "bytes": 108,
+      "sha256": "8e3516e6c819d61a1d865d2786dd085ee434335148cafb9fd8ed24b5c8250946"
+    }
+  ],
+  "notes": "US Census Bureau TIGER/Line 2025. National STATE and COUNTY files included (filter STATEFP=66)."
+}

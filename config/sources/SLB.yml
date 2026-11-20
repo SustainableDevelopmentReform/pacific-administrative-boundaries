@@ -1,0 +1,121 @@
+# Source register for Solomon Islands. Written by the retrieval stage (Melanesia agent), 2026-11-20.
+# Census hierarchy (SINSO 2009): Province (9 + Honiara Capital Territory = 10) > Constituency (50) > Ward (183) > EA (1,344).
+# Constituencies are national-parliament electoral units but nest strictly in this geography, so they are admin2.
+iso3: SLB
+country_name: Solomon Islands
+sources:
+  - source_id: slb-sdd-phc2009-boundaries
+    title: "2009 Solomon Islands Population and Housing Census admin boundaries (Province, Constituency, Ward, EA)"
+    publisher: "SPC Statistics for Development Division (SDD) for Solomon Islands National Statistics Office (Pacific Data Hub)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2009_slb_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/8b6bc4e2-17da-4ace-9a6c-7ea186e1dd42/download/2009_phc_slb_pid_4326.geojson
+      - https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/00bdccf0-7384-42b1-b9b2-a3f77eff2d20/download/2009_phc_slb_coid2_4326.geojson
+      - https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/5af441a0-aafa-4876-93d3-4fb397542249/download/2009_phc_slb_wid_4326.geojson
+      - https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/7b19ab32-2a3b-4afb-84d2-f4deef9050d8/download/2009_phc_slb_eaid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence 'cc-by' (version unstated). Disclaimer: upper-level units may slightly differ from official boundaries; no endorsement by SPC."
+    publication_date: 2020-06-29
+    version: "2009 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin1, level_type: state_province, level_name_local: "Province (incl. Honiara Capital Territory)", layer: 2009_phc_slb_pid_4326.geojson, name_field: PName, code_field: PID, code_scheme: sdd-census, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: electoral, level_name_local: Constituency, layer: 2009_phc_slb_coid2_4326.geojson, name_field: coname, code_field: coid, code_scheme: sdd-census, parent_field: pid, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Ward, layer: 2009_phc_slb_wid_4326.geojson, name_field: WName, code_field: WID, code_scheme: sdd-census, parent_field: coid, nests: true, notes: "Internal layer name is mislabelled '2009_PHC_SLB_coid_4326'; content is 183 wards."}
+      - {level_code: admin4, level_type: statistical, level_name_local: Enumeration Area, layer: 2009_phc_slb_eaid_4326.geojson, name_field: EAName, code_field: EAID, code_scheme: sdd-census, parent_field: wid, nests: true}
+    status: selected
+    raw_path: data/raw/SLB/slb-sdd-phc2009-boundaries/
+    derived_from: []
+    notes: "Tier 1 census geography. Ward geometry is identical to COD-AB adm3 and geoBoundaries ADM3 (same vertex count and area), so those are copies."
+
+  - source_id: slb-ocha-cod-ab-2018
+    title: "Solomon Islands - Subnational Administrative Boundaries (COD-AB) adm0-3"
+    publisher: "OCHA ROAP (HDX); source SINSO 2009 Census; vetted by ITOS"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-slb
+    download_urls:
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/4a8fb938-32f0-4b2c-8eed-2741762978e3/download/slb_polbnda.zip
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/3d31ed08-f138-4a2e-9c64-6dfb12849676/download/slb_admbnda_adm0.zip
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/7df578eb-5cb7-42c1-adad-1d882c0a3322/download/slb_admbnda_adm1.zip
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b08401a2-25a4-4894-b677-1d8986a1b401/download/slb_admbnda_adm2.zip
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/5b69c85c-392f-42da-81dc-ebb0a5659fa2/download/slb_admbnda_adm3.zip
+      - https://data.humdata.org/dataset/776dd627-a97a-4f86-9b0d-52ce64525120/resource/b2e7845e-8322-4500-9ae3-09953bf4c76c/download/slb_adm.xls
+    retrieval_method: http
+    license: {name: CC-BY-3.0-IGO, url: http://creativecommons.org/licenses/by/3.0/igo/legalcode, redistribution_ok: true, notes: ""}
+    publication_date: 2018-11-01
+    version: "established 2018; reviewed 2024-10"
+    format: shapefile
+    crs: "World_Mercator_150 (ESRI custom Mercator, central meridian 150)"
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/slb_admbnda_adm0/slb_admbnda_adm0.shp, name_field: COUNTRY, code_field: ADM0_PCODE, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: extracted/slb_admbnda_adm1/slb_admbnda_adm1.shp, name_field: ADM1_NAME, code_field: ADM1_PCODE, parent_field: ADM0_PCODE, nests: true}
+      - {level_code: admin2, level_type: electoral, level_name_local: Constituency, layer: extracted/slb_admbnda_adm2/slb_admbnda_adm2.shp, name_field: ADM2_NAME, code_field: ADM2_PCODE, parent_field: ADM1_PCODE, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Ward, layer: extracted/slb_admbnda_adm3/slb_admbnda_adm3.shp, name_field: ADM3_NAME, code_field: ADM3_PCODE, parent_field: ADM2_PCODE, nests: true}
+    status: alternative
+    raw_path: data/raw/SLB/slb-ocha-cod-ab-2018/
+    derived_from: [slb-sdd-phc2009-boundaries]
+    notes: "Same SINSO 2009 geometry, adds P-codes (join on SINSO_PID/SINSO_CID/SINSO_WID). slb_polbnda.zip holds an Access personal geodatabase (slb_polbnda.mdb) - use the shapefiles."
+
+  - {source_id: slb-geoboundaries-adm0, title: "geoBoundaries gbOpen SLB ADM0", publisher: "geoBoundaries; source Natural Earth", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM0/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM0/geoBoundaries-SLB-ADM0-all.zip"], retrieval_method: api, license: {name: Public Domain, url: "https://www.naturalearthdata.com/about/terms-of-use/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin0, level_type: country, level_name_local: Country, layer: extracted/geoBoundaries-SLB-ADM0-all/geoBoundaries-SLB-ADM0.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/SLB/slb-geoboundaries-adm0/, derived_from: [], notes: "Natural Earth (coarse)."}
+  - {source_id: slb-geoboundaries-adm1, title: "geoBoundaries gbOpen SLB ADM1", publisher: "geoBoundaries; source Natural Earth", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM1/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM1/geoBoundaries-SLB-ADM1-all.zip"], retrieval_method: api, license: {name: Public Domain, url: "https://www.naturalearthdata.com/about/terms-of-use/", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin1, level_type: state_province, level_name_local: Province, layer: extracted/geoBoundaries-SLB-ADM1-all/geoBoundaries-SLB-ADM1.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/SLB/slb-geoboundaries-adm1/, derived_from: [], notes: "Natural Earth (coarse)."}
+  - {source_id: slb-geoboundaries-adm2, title: "geoBoundaries gbOpen SLB ADM2 (Constituency)", publisher: "geoBoundaries; source SINSO, OCHA ROAP", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM2/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM2/geoBoundaries-SLB-ADM2-all.zip"], retrieval_method: api, license: {name: CC-BY-3.0-IGO, url: "http://creativecommons.org/licenses/by/3.0/igo/legalcode", redistribution_ok: true, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin2, level_type: electoral, level_name_local: Constituency, layer: extracted/geoBoundaries-SLB-ADM2-all/geoBoundaries-SLB-ADM2.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/SLB/slb-geoboundaries-adm2/, derived_from: [slb-ocha-cod-ab-2018], notes: "Repackaged COD-AB."}
+  - {source_id: slb-geoboundaries-adm3, title: "geoBoundaries gbOpen SLB ADM3 (Wards)", publisher: "geoBoundaries; source POPGIS", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM3/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM3/geoBoundaries-SLB-ADM3-all.zip"], retrieval_method: api, license: {name: "Other - Direct Permission", url: null, redistribution_ok: false, notes: "geoBoundaries obtained direct permission from POPGIS; terms not published."}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2014)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin3, level_type: ward_village, level_name_local: Ward, layer: extracted/geoBoundaries-SLB-ADM3-all/geoBoundaries-SLB-ADM3.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/SLB/slb-geoboundaries-adm3/, derived_from: [slb-sdd-phc2009-boundaries], notes: "Copy of PopGIS wards."}
+  - {source_id: slb-geoboundaries-adm4, title: "geoBoundaries gbOpen SLB ADM4 (EAs)", publisher: "geoBoundaries; source POPGIS", publisher_type: academic, landing_url: "https://www.geoboundaries.org/api/current/gbOpen/SLB/ADM4/", download_urls: ["https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM4/geoBoundaries-SLB-ADM4-all.zip"], retrieval_method: api, license: {name: "Other - Direct Permission", url: null, redistribution_ok: false, notes: ""}, publication_date: 2023-12-12, version: "gbOpen 9469f09 (year represented 2014)", format: shapefile, crs: EPSG:4326, levels: [{level_code: admin4, level_type: statistical, level_name_local: Enumeration Area, layer: extracted/geoBoundaries-SLB-ADM4-all/geoBoundaries-SLB-ADM4.shp, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}], status: rejected, raw_path: data/raw/SLB/slb-geoboundaries-adm4/, derived_from: [slb-sdd-phc2009-boundaries], notes: "geoBoundaries labels this 'Wards' but it is the 1,344 2009 EAs (copy of PopGIS)."}
+
+  - source_id: slb-gadm-4-1
+    title: "GADM 4.1 Solomon Islands"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_SLB.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Non-commercial; redistribution prohibited. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Country, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: Province, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin3, level_type: ward_village, level_name_local: Ward, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true, notes: "GADM ADM2 = 183 wards (skips constituencies)."}
+    status: reference
+    raw_path: data/raw/SLB/slb-gadm-4-1/
+    derived_from: []
+    notes: "Reference only."
+
+  # Candidates searched but not available / not downloaded
+  - {source_id: slb-pdh-pcrafi-2010, title: "PCRAFI 'Population by Province/Ward/Enumeration Area in 2010' (sb_province, sb_ward, sb_enumeration_area)", publisher: "SPC GEM (PDH GeoNode); primary source PopGIS, SINSO", publisher_type: regional_body, landing_url: "https://pacificdata.org/data/dataset/sb-enumeration-area-18", download_urls: [], retrieval_method: api, license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode", redistribution_ok: false, notes: ""}, publication_date: 2025-11-04, version: "PCRAFI 2010 exposure", format: other, crs: null, levels: [], status: rejected, raw_path: null, derived_from: [slb-sdd-phc2009-boundaries], notes: "Thematic derivatives of the 2009 PopGIS geometry under NC licence; not downloaded."}
+  - {source_id: slb-phc2019-eas, title: "2019 Solomon Islands census enumeration areas / wards", publisher: "Solomon Islands National Statistics Office", publisher_type: national, landing_url: null, download_urls: [], retrieval_method: manual, license: {name: unspecified, url: null, redistribution_ok: false, notes: ""}, publication_date: null, version: "2019 PHC", format: other, crs: null, levels: [{level_code: admin4, level_type: statistical, level_name_local: Enumeration Area, layer: null, name_field: null, code_field: null, parent_field: null, nests: true}], status: rejected, raw_path: null, derived_from: [], notes: "Not published on PDH/HDX/geoBoundaries as of 2026-11-20 (only 2009 census geography is public)."}
+
+decisions:
+  - level_code: admin0
+    chosen: slb-sdd-phc2009-boundaries
+    alternatives: [slb-ocha-cod-ab-2018, slb-geoboundaries-adm0, slb-gadm-4-1]
+    reason: "Derive from the union of SDD 2009 provinces (COD adm0 is the same geometry)."
+    escalated: false
+  - level_code: admin1
+    chosen: slb-sdd-phc2009-boundaries
+    alternatives: [slb-ocha-cod-ab-2018, slb-geoboundaries-adm1, slb-gadm-4-1]
+    reason: "Tier 1 census geography; COD-AB is an identical copy (keep for P-codes)."
+    escalated: false
+  - level_code: admin2
+    chosen: slb-sdd-phc2009-boundaries
+    alternatives: [slb-ocha-cod-ab-2018, slb-geoboundaries-adm2]
+    reason: "As admin1."
+    escalated: false
+  - level_code: admin3
+    chosen: slb-sdd-phc2009-boundaries
+    alternatives: [slb-ocha-cod-ab-2018, slb-geoboundaries-adm3, slb-gadm-4-1]
+    reason: "As admin1 (identical geometry verified)."
+    escalated: false
+  - level_code: admin4
+    chosen: slb-sdd-phc2009-boundaries
+    alternatives: [slb-geoboundaries-adm4]
+    reason: "Only open EA source."
+    escalated: false

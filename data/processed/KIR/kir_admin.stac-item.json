@@ -1,0 +1,397 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/version/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "id": "pab-kir-admin",
+  "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            180.0,
+            -13.838333
+          ],
+          [
+            180.0,
+            7.879056
+          ],
+          [
+            169.52122,
+            7.879056
+          ],
+          [
+            169.52122,
+            -13.838333
+          ],
+          [
+            180.0,
+            -13.838333
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            -146.8143,
+            -13.838333
+          ],
+          [
+            -146.8143,
+            7.879056
+          ],
+          [
+            -180.0,
+            7.879056
+          ],
+          [
+            -180.0,
+            -13.838333
+          ],
+          [
+            -146.8143,
+            -13.838333
+          ]
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    169.52122,
+    -13.838333,
+    -146.8143,
+    7.879056
+  ],
+  "properties": {
+    "title": "Kiribati administrative and jurisdictional boundaries (long table)",
+    "description": "All boundary levels for Kiribati, from the EEZ to the finest published level, stacked in one table (one row per unit per level). Sources: OCHA Office of the Pacific Islands (HDX), \"Kiribati - Subnational Administrative Boundaries (COD-AB) 2020\" (kir-ocha-codab-2020); SPC Statistics for Development Division (SDD) for Kiribati National Statistics Office, \"2018 Kiribati Household Listing administrative boundaries (Island, Village, Enumeration Area)\" (kir-spc-sdd-hhl2018); Pacific Community (SPC), Geoscience, Energy and Maritime Division, \"Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)\" (spc-gem-pacific-eez-200nm). Licences (per row in the `license` column): CC-BY-NC-SA-4.0, CC-BY-3.0-IGO, CC-BY-4.0. Some rows are used and redistributed by this project under a data-use agreement (CSDR-SPC data use agreement (user-confirmed 2026-11-20)); downstream users are bound by the row's public licence (e.g. CC BY-NC-SA 4.0) unless they hold their own agreement. Full provenance and source notes: https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/sources.md#kir-kiribati.",
+    "start_datetime": "2020-01-13T00:00:00Z",
+    "end_datetime": "2025-09-17T00:00:00Z",
+    "created": "2026-11-20T00:27:08Z",
+    "updated": "2026-11-20T01:05:08Z",
+    "providers": [
+      {
+        "name": "OCHA Office of the Pacific Islands (HDX)",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://data.humdata.org/dataset/cod-ab-kir"
+      },
+      {
+        "name": "SPC Statistics for Development Division (SDD) for Kiribati National Statistics Office",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://pacificdata.org/data/dataset/2018_kir_hhl_admin_boundaries"
+      },
+      {
+        "name": "Pacific Community (SPC), Geoscience, Energy and Maritime Division",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743"
+      },
+      {
+        "name": "Pacific administrative boundaries",
+        "description": "Harmonised the source boundaries; code, documentation and full provenance in the GitHub repository.",
+        "roles": [
+          "producer",
+          "processor"
+        ],
+        "url": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries"
+      },
+      {
+        "name": "Amazon Web Services (S3)",
+        "description": "Public bucket s3://csdr-public-datasets/pacific-administrative-boundaries/",
+        "roles": [
+          "host"
+        ],
+        "url": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries"
+      }
+    ],
+    "license": "other",
+    "proj:code": "EPSG:4326",
+    "proj:bbox": [
+      169.52122,
+      -13.838333,
+      -146.8143,
+      7.879056
+    ],
+    "table:columns": [
+      {
+        "name": "uid",
+        "type": "large_string"
+      },
+      {
+        "name": "iso3",
+        "type": "large_string"
+      },
+      {
+        "name": "country_name",
+        "type": "large_string"
+      },
+      {
+        "name": "sovereign_iso3",
+        "type": "large_string"
+      },
+      {
+        "name": "political_status",
+        "type": "large_string"
+      },
+      {
+        "name": "level_rank",
+        "type": "int16"
+      },
+      {
+        "name": "level_code",
+        "type": "large_string"
+      },
+      {
+        "name": "level_type",
+        "type": "large_string"
+      },
+      {
+        "name": "level_name_local",
+        "type": "large_string"
+      },
+      {
+        "name": "nests",
+        "type": "bool"
+      },
+      {
+        "name": "unit_name",
+        "type": "large_string"
+      },
+      {
+        "name": "unit_name_alt",
+        "type": "string"
+      },
+      {
+        "name": "unit_code",
+        "type": "large_string"
+      },
+      {
+        "name": "code_scheme",
+        "type": "large_string"
+      },
+      {
+        "name": "parent_uid",
+        "type": "string"
+      },
+      {
+        "name": "eez_uid",
+        "type": "string"
+      },
+      {
+        "name": "source_id",
+        "type": "large_string"
+      },
+      {
+        "name": "source_publisher",
+        "type": "large_string"
+      },
+      {
+        "name": "source_url",
+        "type": "large_string"
+      },
+      {
+        "name": "source_version",
+        "type": "string"
+      },
+      {
+        "name": "source_date",
+        "type": "date32[day]"
+      },
+      {
+        "name": "retrieved_at",
+        "type": "timestamp[us, tz=UTC]"
+      },
+      {
+        "name": "license",
+        "type": "large_string"
+      },
+      {
+        "name": "license_url",
+        "type": "large_string"
+      },
+      {
+        "name": "license_agreement",
+        "type": "string"
+      },
+      {
+        "name": "license_restricted",
+        "type": "bool"
+      },
+      {
+        "name": "geometry_method",
+        "type": "large_string"
+      },
+      {
+        "name": "area_km2",
+        "type": "double"
+      },
+      {
+        "name": "geometry",
+        "type": "binary"
+      },
+      {
+        "name": "bbox",
+        "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+      }
+    ],
+    "table:row_count": 617,
+    "table:primary_geometry": "geometry",
+    "version": "v0.1.0",
+    "processing:software": {
+      "pab": "0.1.0"
+    },
+    "processing:lineage": "raw manifest -> config/sources register -> pab process/combine",
+    "processing:datetime": "2026-11-20T01:05:08Z",
+    "pab:levels": [
+      "admin0",
+      "admin1",
+      "admin2",
+      "admin3",
+      "admin4",
+      "eez"
+    ],
+    "pab:source_ids": [
+      "kir-ocha-codab-2020",
+      "kir-spc-sdd-hhl2018",
+      "spc-gem-pacific-eez-200nm"
+    ],
+    "pab:licenses": [
+      "CC-BY-NC-SA-4.0",
+      "CC-BY-3.0-IGO",
+      "CC-BY-4.0"
+    ],
+    "pab:license_agreements": [
+      "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+    ],
+    "pab:iso3": "KIR",
+    "sci:citation": "OCHA Office of the Pacific Islands (HDX) (2020). Kiribati - Subnational Administrative Boundaries (COD-AB) 2020. https://data.humdata.org/dataset/cod-ab-kir; SPC Statistics for Development Division (SDD) for Kiribati National Statistics Office (2020). 2018 Kiribati Household Listing administrative boundaries (Island, Village, Enumeration Area). https://pacificdata.org/data/dataset/2018_kir_hhl_admin_boundaries; Pacific Community (SPC), Geoscience, Energy and Maritime Division (2025). Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries). https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743",
+    "pab:git_commit": null,
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "about",
+      "href": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/sources.md#kir-kiribati",
+      "type": "text/html",
+      "title": "Sources, licences and processing notes (GitHub)"
+    },
+    {
+      "rel": "via",
+      "href": "https://data.humdata.org/dataset/cod-ab-kir",
+      "type": "text/html",
+      "title": "Source: Kiribati - Subnational Administrative Boundaries (COD-AB) 2020"
+    },
+    {
+      "rel": "via",
+      "href": "https://pacificdata.org/data/dataset/2018_kir_hhl_admin_boundaries",
+      "type": "text/html",
+      "title": "Source: 2018 Kiribati Household Listing administrative boundaries (Island, Village, Enumeration Area)"
+    },
+    {
+      "rel": "via",
+      "href": "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743",
+      "type": "text/html",
+      "title": "Source: Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "title": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "title": "CC-BY-3.0-IGO"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries/processed/KIR/kir_admin.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "Kiribati administrative and jurisdictional boundaries (long table)",
+      "roles": [
+        "data"
+      ],
+      "alternate": {
+        "s3": {
+          "href": "s3://csdr-public-datasets/pacific-administrative-boundaries/processed/KIR/kir_admin.parquet",
+          "alternate:name": "S3"
+        }
+      }
+    },
+    "provenance": {
+      "href": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries/processed/KIR/provenance.json",
+      "type": "application/json",
+      "title": "Processing provenance (step records)",
+      "roles": [
+        "metadata"
+      ],
+      "alternate": {
+        "s3": {
+          "href": "s3://csdr-public-datasets/pacific-administrative-boundaries/processed/KIR/provenance.json",
+          "alternate:name": "S3"
+        }
+      }
+    },
+    "manifest-kir-ocha-codab-2020": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/KIR/kir-ocha-codab-2020/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest kir-ocha-codab-2020 (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "manifest-kir-spc-sdd-hhl2018": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/KIR/kir-spc-sdd-hhl2018/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest kir-spc-sdd-hhl2018 (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "manifest-spc-gem-pacific-eez-200nm": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/EEZ/spc-gem-pacific-eez-200nm/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest spc-gem-pacific-eez-200nm (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
+  "collection": "pacific-admin-boundaries"
+}

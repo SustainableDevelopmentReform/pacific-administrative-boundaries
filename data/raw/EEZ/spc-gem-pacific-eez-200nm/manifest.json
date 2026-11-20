@@ -1,0 +1,693 @@
+{
+  "source_id": "spc-gem-pacific-eez-200nm",
+  "iso3": "EEZ",
+  "retrieved_at": "2026-11-19T21:57:59Z",
+  "retrieved_by": "pab cache",
+  "retrieval_method": "api",
+  "landing_url": "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:as_eez_pol,geonode:au_eez_pol,geonode:ck_eez_pol,geonode:fm_eez_pol,geonode:fj_eez_pol,geonode:pf_eez_pol,geonode:gu_eez_pol,geonode:ki_eez_pol,geonode:mh_eez_pol,geonode:matthew_hunter_pol_sept25,geonode:nr_eez_pol,geonode:nc_eez_pol,geonode:nz_eez_pol,geonode:nu_eez_pol,geonode:mp_eez_pol,geonode:pw_eez_pol,geonode:pg_eez_pol,geonode:pn_eez_pol,geonode:ws_eez_pol,geonode:sb_eez_pol,geonode:tk_eez_pol,geonode:to_eez_pol,geonode:tv_eez_pol,geonode:us_territories_pol_sep25,geonode:vu_eez_pol,geonode:wf_eez_pol&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8"
+  ],
+  "license": {
+    "name": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "agreement": "CSDR-SPC data use agreement (user-confirmed 2026-11-20)",
+    "redistribution_ok": true,
+    "notes": "Pacific Data Hub licence_id cc-nc-sa-4.0. Used under the CSDR-SPC data use agreement (decision D-019); downstream users are bound by CC BY-NC-SA 4.0 unless they hold their own agreement with SPC."
+  },
+  "notes": "SPC Geoscience, Energy and Maritime (GEM) division / Pacific Maritime Boundaries programme EEZ polygons on Pacific Data Hub GeoNode, dataset 'Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset' (CKAN metadata_modified 2026-11-02, version 1). 26 GeoNode layers in one SHAPE-ZIP: 22 PICTs + Australia, New Zealand, Matthew & Hunter overlapping claim, US Pacific remote islands (Howland & Baker, Jarvis, Palmyra, Wake). The CKAN resource URL used WFS 2.0.0, which returned lat/lon axis order in the shapefile; it was re-requested with WFS 1.0.0 (same layer list, generic /geonode/wfs endpoint) to get lon/lat. Attribute schema mirrors Marine Regions (MRGID, GEONAME, POL_TYPE, ...) plus 'source' (DOALOS deposit URL) and 'nation'. area_km2 attribute is wrong for GUM, MHL, MNP (m2 not km2) and missing for Wake. Licence CC BY-NC-SA 4.0, used under the CSDR-SPC data use agreement (D-019); selected EEZ base layer from 2026-11-20.",
+  "files": [
+    {
+      "path": "spc_pacific_eez_200nm_wfs1.zip",
+      "bytes": 1129825,
+      "sha256": "c2624b1ebd25accc674a60d69d7c3524ccd26163602639aa276f9fe86a957030"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/as_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/as_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "11fd603f10db04145ac3984f278b16cd4c7f9bdab3947976c86e6bb40dd3cde0"
+    },
+    {
+      "path": "extracted/as_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/as_eez_pol.shp",
+      "bytes": 1852,
+      "sha256": "48edda7e68f70f0ff792aa0872686805feee2c13bfff0187b7cd47e0e2ded9e2"
+    },
+    {
+      "path": "extracted/as_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "8473b9a3a4ab68a4e33d57d706ee2b49d0bb9b9d84d1e2c4084d6afeec75f2ad"
+    },
+    {
+      "path": "extracted/au_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/au_eez_pol.dbf",
+      "bytes": 21667,
+      "sha256": "2642218846bf864c05857d8287647f011a1308e4243f928ae6b8d7e75e7c9297"
+    },
+    {
+      "path": "extracted/au_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/au_eez_pol.shp",
+      "bytes": 219348,
+      "sha256": "9b31513cb795259ed0fc0bb091912dfabd12454e690466a88402203d05762436"
+    },
+    {
+      "path": "extracted/au_eez_pol.shx",
+      "bytes": 148,
+      "sha256": "7468759e206e1ff34001bf57836da3eda081d6cdcac6c6af0ab3cfb006602b94"
+    },
+    {
+      "path": "extracted/ck_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/ck_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "b43f45cc924e6bd44672205b8a10951875618c84418f9346aa6225c1c74751d6"
+    },
+    {
+      "path": "extracted/ck_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/ck_eez_pol.shp",
+      "bytes": 34412,
+      "sha256": "6a2e0df1ed8da9f4da9c9005ddde64848647131faad1c55e0d924537d5bef901"
+    },
+    {
+      "path": "extracted/ck_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "d210408120ed72454753cc49519288d7d9d05b1e6de84237db87c1c6246fcb8e"
+    },
+    {
+      "path": "extracted/fj_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/fj_eez_pol.dbf",
+      "bytes": 7565,
+      "sha256": "e477c6f3dffee5408588ac7b1ed2d6a7fb7a6aa4e2892ff3b51e2e1e0b6e28d2"
+    },
+    {
+      "path": "extracted/fj_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/fj_eez_pol.shp",
+      "bytes": 3312,
+      "sha256": "eca397e0c7cd0954a5aeb1f90fcb7a63b80f213a95c439e45ddf1b98ffed7f6e"
+    },
+    {
+      "path": "extracted/fj_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "e4eda77995b21f6b1b64d282fdbc0941bd87965e8a091f184f298c0ec22d55e0"
+    },
+    {
+      "path": "extracted/fm_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/fm_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "827558f5e508a121aac4c4d0bae81d61c6eab938b0eb95c77e4b93b74d6c7b18"
+    },
+    {
+      "path": "extracted/fm_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/fm_eez_pol.shp",
+      "bytes": 18076,
+      "sha256": "f0d0742c2ff49e4b9a4b57ad4e70c664a75ff49fe7365f4da167e781e563035f"
+    },
+    {
+      "path": "extracted/fm_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "edaf3feac4f7d95d8c8a404555e695dd63791a7db04398e9dcc133dc0d0870f1"
+    },
+    {
+      "path": "extracted/gu_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/gu_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "b3228aa918d16776df1bdbd29e2669b3bed3af7b52009852e9a24e8603f81ca5"
+    },
+    {
+      "path": "extracted/gu_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/gu_eez_pol.shp",
+      "bytes": 17196,
+      "sha256": "1e08fc85d58956a583a64b0e0f4448255fbaca4cb9590939ea498ea83e34df96"
+    },
+    {
+      "path": "extracted/gu_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "7d58f13f23a9a57a117fb01fca3b0fc5c2065e820375ddd4ef0c4900344e5273"
+    },
+    {
+      "path": "extracted/ki_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/ki_eez_pol.dbf",
+      "bytes": 21918,
+      "sha256": "d9ee27ce83aa4514da17bd467cd2f08149dc4eb6bd85a72bfd420b42bd7dcaa1"
+    },
+    {
+      "path": "extracted/ki_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/ki_eez_pol.shp",
+      "bytes": 71872,
+      "sha256": "981c425f10776b0a10567e72e4f21e6ae9930b29284e4eebae02580b5f046797"
+    },
+    {
+      "path": "extracted/ki_eez_pol.shx",
+      "bytes": 124,
+      "sha256": "5b8b46069f275f2808e121c363edb3e86598daf08396ea3422c389aa66c61926"
+    },
+    {
+      "path": "extracted/matthew_hunter_pol_sept25.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/matthew_hunter_pol_sept25.dbf",
+      "bytes": 6118,
+      "sha256": "cea616e507e6bef0ea6d43bf4c2139d11d894c43b3d5b0b1f0bb157ddabbaab2"
+    },
+    {
+      "path": "extracted/matthew_hunter_pol_sept25.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/matthew_hunter_pol_sept25.shp",
+      "bytes": 18796,
+      "sha256": "de222e7e677e7e8bbb1c27d0d09ecdae9c1d17898658634850113e78fd8130a0"
+    },
+    {
+      "path": "extracted/matthew_hunter_pol_sept25.shx",
+      "bytes": 108,
+      "sha256": "4ab77a37824f32421449a6e592209f2aca0798e9142cbd31aa3000ec8489d69f"
+    },
+    {
+      "path": "extracted/mh_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/mh_eez_pol.dbf",
+      "bytes": 4252,
+      "sha256": "12423c619a2bb9c1c3a9de8dfddefa019a96e496d8176cf592a62e5c9c16a0bd"
+    },
+    {
+      "path": "extracted/mh_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/mh_eez_pol.shp",
+      "bytes": 24588,
+      "sha256": "3eb5973c5b7e11e607d0ecf1e4501b43a1da55c0d6718ccb9561e37636fc56a7"
+    },
+    {
+      "path": "extracted/mh_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "6693dfbab7adf716f538c7c36c876bd85c66fd138a978e481c33381929c5ab44"
+    },
+    {
+      "path": "extracted/mp_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/mp_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "0e2280403ef559d28c80b40141fa30ac04b9980f406a3947726ccad87d4d7c33"
+    },
+    {
+      "path": "extracted/mp_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/mp_eez_pol.shp",
+      "bytes": 76300,
+      "sha256": "af577b962d2c9ca74cff3d7b798983c9cca82df20eeccdda53b341ffbd76ff95"
+    },
+    {
+      "path": "extracted/mp_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "0b36ce4175c4008f0626c68112bd537a8d0b90701b221d9484b44af56fd01581"
+    },
+    {
+      "path": "extracted/nc_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/nc_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "06e3ae9a1c8dd86c318b809bc2f8988584d89142a4d9980f28c36b5467746747"
+    },
+    {
+      "path": "extracted/nc_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/nc_eez_pol.shp",
+      "bytes": 44396,
+      "sha256": "4aa0dcc9ae9d08068db8804b057a34bb1bbdd9ea4a2e8b03e82613c50d957c3e"
+    },
+    {
+      "path": "extracted/nc_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "74e482654d1955f3e0c4ee8eec8578cfe0f6bd0f2471b638df64c996f95537e0"
+    },
+    {
+      "path": "extracted/nr_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/nr_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "80380e80b7a5f3d54759a62c28778147d54f2ac20e5dbd1a71e9c93c79d56c6d"
+    },
+    {
+      "path": "extracted/nr_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/nr_eez_pol.shp",
+      "bytes": 11692,
+      "sha256": "35a7ef8a80dbede73efed73529f36ff827c8cde346bbfe554e23596920c0e54c"
+    },
+    {
+      "path": "extracted/nr_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "44a442ba0b73fd7b75259959c540178766a5ed014cd7274c529fc2a8927f213d"
+    },
+    {
+      "path": "extracted/nu_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/nu_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "19fc1506d2fe3c374ac523e803d5b5f1abb65efbe770491ce54448665d88fafa"
+    },
+    {
+      "path": "extracted/nu_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/nu_eez_pol.shp",
+      "bytes": 7820,
+      "sha256": "1b591f77d8a452a0e39188404a381c065448dac18bc24ac50a45d40797d70646"
+    },
+    {
+      "path": "extracted/nu_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "c5fbab0b6db33b669a6f2b46c7e172609c426c68961351267f2f56b432a09c6c"
+    },
+    {
+      "path": "extracted/nz_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/nz_eez_pol.dbf",
+      "bytes": 4252,
+      "sha256": "2992307ebf4cc991bf5a850fc1ceb3f653e38406e4e9db684ca4ca14dd8f7a8d"
+    },
+    {
+      "path": "extracted/nz_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/nz_eez_pol.shp",
+      "bytes": 106152,
+      "sha256": "2867b7f24fda98538366b05a6b7bddc662a22303b39c57ae78dbc8d1622aa2c9"
+    },
+    {
+      "path": "extracted/nz_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "14c58cc50ef478468e576fe1691d37c774ef9b9234f8199875b472ec427a848c"
+    },
+    {
+      "path": "extracted/pf_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/pf_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "b574a1d295131af0d1cb6892178814bbb60c2a93b9477ed96a7d9cf891d40ee7"
+    },
+    {
+      "path": "extracted/pf_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/pf_eez_pol.shp",
+      "bytes": 328704,
+      "sha256": "b1207cf78635c933f45c164736df842852bffed2f32a8263982a23ee5b3c4b22"
+    },
+    {
+      "path": "extracted/pf_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "03de96a8ddb43157254492ca8d651450c687391b1420bd5503e2f25c146fe13f"
+    },
+    {
+      "path": "extracted/pg_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/pg_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "2f64547a53d0988810cb02172d94c5ad083583bf03f0d3dbf9e6d9e281fb45b1"
+    },
+    {
+      "path": "extracted/pg_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/pg_eez_pol.shp",
+      "bytes": 25052,
+      "sha256": "cc26ac8dc484655eb88d6d6d535cc77662b750a351dae413a60c1b0a9c0cf7be"
+    },
+    {
+      "path": "extracted/pg_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "9d627b6dc93a0161b553926d6c83a9b5298f3507ac87bb8c96da6176b82b97d4"
+    },
+    {
+      "path": "extracted/pn_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/pn_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "ae7220cb183d30b89bc89f6160fb94ad2d19d259df67d9ef2aea9fe9d18895f7"
+    },
+    {
+      "path": "extracted/pn_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/pn_eez_pol.shp",
+      "bytes": 105756,
+      "sha256": "ff5494c43146bf547d990223e3c21ed9b71847e81536656e79fdfa13d02f01f8"
+    },
+    {
+      "path": "extracted/pn_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "ba0ab0c47f2900538e3779a36f192a3a3ac5947420222f3e165772221bf14f6a"
+    },
+    {
+      "path": "extracted/pw_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/pw_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "b536f9941b6169acfcba1f95dbd62a70150f92ca0a57fda703641f3a77af83f9"
+    },
+    {
+      "path": "extracted/pw_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/pw_eez_pol.shp",
+      "bytes": 40508,
+      "sha256": "8399bd372136926b41ccf93c76fb82b320da58fde8041b603d86c557cfda16ed"
+    },
+    {
+      "path": "extracted/pw_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "89cbdaaca9206357e55e5ff0dde0c45ccaa8d62cda9d0fedcb9b6c5745fe85ef"
+    },
+    {
+      "path": "extracted/sb_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/sb_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "72fc65dc9b3432d45b0c9670eeb2ea8c015b9b7b5f137d074c4c53c05afed26d"
+    },
+    {
+      "path": "extracted/sb_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/sb_eez_pol.shp",
+      "bytes": 71724,
+      "sha256": "824f7ae961dc264f52a5c776930fc2f599ae507a16e19725d9058830b3792ce7"
+    },
+    {
+      "path": "extracted/sb_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "9c106cbb15080db3856a4cded85c0632859b84dbd7f55a1f09995b92a4eee946"
+    },
+    {
+      "path": "extracted/tk_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/tk_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "ca5d2d8636d72b2b8a753f259a000202b888c610f32b9e6a4541063d02c55baa"
+    },
+    {
+      "path": "extracted/tk_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/tk_eez_pol.shp",
+      "bytes": 17324,
+      "sha256": "fa85f03cec6ac9fcc43abfa2be4f3c80e5c1277f41ddad7d537eb8985d57edb5"
+    },
+    {
+      "path": "extracted/tk_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "361239f8013a2b3c013a262aac23e1ead388cfabea9edbbd4c18513b6fa161ae"
+    },
+    {
+      "path": "extracted/to_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/to_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "c80f2957a7e81846f19b7a7b69961a4bbc2716e94a83d69f640dea840ba552f6"
+    },
+    {
+      "path": "extracted/to_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/to_eez_pol.shp",
+      "bytes": 41740,
+      "sha256": "d026e9b0db485679ea06c9494af5b4c209325b30343df4bd659ad068ae106064"
+    },
+    {
+      "path": "extracted/to_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "3690582bb23acb1d73ce6b3cae90e19470cb0e407e380f33e4e67b4d89f059c2"
+    },
+    {
+      "path": "extracted/tv_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/tv_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "32d09889918545b6b7d5051ba459a2b9ac58f12169adc854d6ba40c77f9c0bea"
+    },
+    {
+      "path": "extracted/tv_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/tv_eez_pol.shp",
+      "bytes": 14544,
+      "sha256": "a2f3339ee335a68bcbc9c5f173403b9793329516abcb7ef6459a5aa9b9fff0c5"
+    },
+    {
+      "path": "extracted/tv_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "43d041d2848c78c2f527384a5780ed9d1fb183dbca0bdb1afcce35fc4980702b"
+    },
+    {
+      "path": "extracted/us_territories_pol_sep25.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/us_territories_pol_sep25.dbf",
+      "bytes": 20917,
+      "sha256": "da4dd0c9a493b18ff74e76e48e726accc70c4d408ed11cb4a6a067de7ec89498"
+    },
+    {
+      "path": "extracted/us_territories_pol_sep25.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/us_territories_pol_sep25.shp",
+      "bytes": 131060,
+      "sha256": "ba8e6e8eeb17903dcb774d2fa5b0951d02e41341b18d69ce90a9bd85e13f4017"
+    },
+    {
+      "path": "extracted/us_territories_pol_sep25.shx",
+      "bytes": 132,
+      "sha256": "61291d6ae9ca0e970f4dd1edb9c77f0484ad029f74b5529f3e2e46e9d59c3148"
+    },
+    {
+      "path": "extracted/vu_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/vu_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "cd33036587027273fc7818b816b4d1d56d8de33944facbf1b3f50601666e1444"
+    },
+    {
+      "path": "extracted/vu_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/vu_eez_pol.shp",
+      "bytes": 10060,
+      "sha256": "48ac65daf8ab3b2ee5598f47f6debc22ed6ac46d5ac17708d8d16bd135f6cccd"
+    },
+    {
+      "path": "extracted/vu_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "d98b3366f775c98ff3a4ef3551b8d7983e075efb4e584b1fbf6116843502d0ca"
+    },
+    {
+      "path": "extracted/wf_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/wf_eez_pol.dbf",
+      "bytes": 4252,
+      "sha256": "8271ef2a30010deffc017f633abd847034adf84dc6249bd5d84661dae5d0244d"
+    },
+    {
+      "path": "extracted/wf_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/wf_eez_pol.shp",
+      "bytes": 7984,
+      "sha256": "9459a15e8eb1a4b9c2597afef1c3e08c3c9aa8834c756004120e6f198b7626f9"
+    },
+    {
+      "path": "extracted/wf_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "2785b94ac092330a3b6a9791fc891ef2e725a539719bf8cfb527526dc61621d4"
+    },
+    {
+      "path": "extracted/ws_eez_pol.cst",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "extracted/ws_eez_pol.dbf",
+      "bytes": 5756,
+      "sha256": "56ca93005d8410128da5138447c39a2655e0cb0091842400ccf16c8050751e11"
+    },
+    {
+      "path": "extracted/ws_eez_pol.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/ws_eez_pol.shp",
+      "bytes": 1612,
+      "sha256": "c1d6c3af38d08d31b0a0880c1eb8777074528085f74e516c44175df07be38e7f"
+    },
+    {
+      "path": "extracted/ws_eez_pol.shx",
+      "bytes": 108,
+      "sha256": "ea89894051c017a3ee4832f76638c64c3302f1474407b32f753e4729cc74b324"
+    }
+  ],
+  "axis_order": "The CKAN resource URLs use WFS 2.0.0 (https://geonode.pacificdata.org/geoserver/geonode/global_eez_200nm_split/wfs?service=WFS&version=2.0.0&...), which returns EPSG:4326 in lat/lon axis order. The archive here was requested with WFS 1.0.0 on the generic /geoserver/geonode/wfs endpoint (same 26 typeNames), which returns lon/lat. Keep using version=1.0.0 for any re-download.",
+  "verification": [
+    {
+      "checked_at": "2026-11-20T00:20:00Z",
+      "result": "current, no re-download",
+      "ckan_metadata_modified": "2026-11-02T15:15:33",
+      "ckan_api": "https://pacificdata.org/data/api/3/action/package_show?id=geonode-global-eez-200nm-split-1743",
+      "ckan_layers": 26,
+      "layers_missing": [],
+      "layers_extra": [],
+      "geonode_layer_last_updated": "2025-10-14 (au, nz, pn, tv, wf split layers) to 2026-11-01 (all others); publication dates 2025-04-24 to 2025-09-17",
+      "method": "Re-requested the identical WFS 1.0.0 SHAPE-ZIP into a scratch directory (1129832 bytes, sha256 3a142fe67bc17345d1f6c560148d610253aa5c27631d8d4ecfe14182036c9673) and compared all 130 extracted files with this manifest: .shp/.shx/.prj/.cst identical; the 26 .dbf files differ only at byte offset 3 (DBF header last-update day, 19 vs 20). Geometry and attributes unchanged, so the stored archive was kept.",
+      "related_layers_not_in_dataset": "fj/ki/tv/wf/nz_eez_pol_3832 (unsplit versions of the split layers used here), us_territories_eez_pol (2026-06, all US EEZs), asia_pacific_eez_pol and global_eez_200nm (remote layer groups, no WFS feature type)."
+    }
+  ]
+}

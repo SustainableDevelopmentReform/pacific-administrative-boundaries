@@ -1,0 +1,143 @@
+iso3: MNP
+country_name: Northern Mariana Islands
+# Stack: Commonwealth > Municipality (4: Saipan, Tinian, Rota, Northern Islands; TIGER 'county')
+# > District (TIGER county subdivision; these are the CNMI House election districts 1-7)
+# > Village (135, TIGER place with LSAD 'village', full land coverage).
+# Statistical: 2020 tracts (26 rows / 23 codes), block groups (58), blocks (873).
+# Senatorial districts (3: Rota, Tinian+Aguiguan, Saipan+Northern Islands) could be dissolved from municipalities (not published as a layer).
+sources:
+  - source_id: mnp-uscensus-tiger2025
+    title: "US Census Bureau TIGER/Line Shapefiles 2025 - Commonwealth of the Northern Mariana Islands (state FIPS 69)"
+    publisher: "U.S. Census Bureau"
+    publisher_type: national
+    landing_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html
+    download_urls:
+      - https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/COUSUB/tl_2025_69_cousub.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_69_place.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_69_tract.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_69_bg.zip
+      - https://www2.census.gov/geo/tiger/TIGER2025/TABBLOCK20/tl_2025_69_tabblock20.zip
+    retrieval_method: http
+    license:
+      name: Public domain (US Government work)
+      url: https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html
+      redistribution_ok: true
+      notes: "TIGER/Line files are not copyrighted; 'TIGER/Line' is a registered trademark of the Census Bureau."
+    publication_date: 2025-09-22   # HTTP Last-Modified; boundaries as of 2025-01-01
+    version: "TIGER/Line 2025"
+    format: shapefile
+    crs: EPSG:4269
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Commonwealth of the Northern Mariana Islands
+        layer: tl_2025_us_state/tl_2025_us_state.shp
+        filter: {STATEFP: '69'}
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null
+        nests: true
+        use: false   # [processing] admin0 = union of land-clipped municipalities
+        notes: "Includes water; derive land outline from union of places/cousubs with ALAND > 0."
+      - level_code: admin1
+        level_type: local_government
+        level_name_local: Municipality
+        layer: tl_2025_us_county/tl_2025_us_county.shp
+        filter: {STATEFP: '69'}
+        name_field: NAME
+        code_field: GEOID
+        parent_field: STATEFP
+        nests: true
+        notes: "4 municipalities (085 Northern Islands, 100 Rota, 110 Saipan, 120 Tinian); polygons include large water areas."
+      - level_code: admin2
+        level_type: district
+        level_name_local: District (election district)
+        layer: tl_2025_69_cousub/tl_2025_69_cousub.shp
+        exclude: {COUSUBFP: '00000'}
+        name_field: NAMELSAD
+        code_field: GEOID
+        parent_field: {template: "{STATEFP}{COUNTYFP}"}   # [processing] county GEOID; GEOID keys keep the two 'District 4' units apart (D-009)
+        nests: true
+        notes: "8 land units: Saipan Districts 1-5, Tinian District 6, Rota District 7, and 'District 4' part in Northern Islands (GEOID 6908514075; TIGER assigns the Northern Islands to District 4). Drop 4 water-only 'Municipality subdivision not defined' rows (COUSUBFP 00000). Use GEOID, not NAME, as key (District 4 appears in two municipalities)."
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village
+        layer: tl_2025_69_place/tl_2025_69_place.shp
+        name_field: NAME
+        code_field: GEOID
+        parent_field: null
+        nests: true
+        notes: "135 villages (LSAD 47, CLASSFP C9); ALAND sum equals county ALAND (472.3 km2), i.e. complete land coverage. Nesting within districts to be verified spatially (no county/cousub code on place records)."
+      - {level_code: other, level_type: statistical, level_name_local: Census tract, layer: tl_2025_69_tract/tl_2025_69_tract.shp, name_field: NAMELSAD, code_field: GEOID, parent_field: COUNTYFP, nests: false}
+      - {level_code: other, level_type: statistical, level_name_local: Census block group, layer: tl_2025_69_bg/tl_2025_69_bg.shp, name_field: NAMELSAD, code_field: GEOID, parent_field: TRACTCE, nests: false}
+      - {level_code: other, level_type: statistical, level_name_local: Census block (2020), layer: tl_2025_69_tabblock20/tl_2025_69_tabblock20.shp, name_field: NAME20, code_field: GEOID20, parent_field: TRACTCE20, nests: false}
+    status: selected
+    raw_path: data/raw/MNP/mnp-uscensus-tiger2025/
+    land_mask:   # [processing] county polygons include large water areas: clip all levels to 2020 blocks with ALAND20 > 0
+      layer: tl_2025_69_tabblock20/tl_2025_69_tabblock20.shp
+      filter: {ALAND20: {gt: 0}}
+    notes: "Only official sub-territorial geography found; No downloadable CNMI-government boundary layer was found (searched web, PacIOOS GeoServer, PDH, HDX). No PUMA20 file exists for 69."
+
+  - source_id: mnp-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen MNP ADM0, ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#MNP
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/MNP/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MNP/ADM0/geoBoundaries-MNP-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MNP/ADM2/geoBoundaries-MNP-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0: CC-BY-4.0; ADM2: Public Domain"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM0 from 'Sentinel-2 10-Meter Land Use/LandCover' (CC BY 4.0); ADM2 'Municipality' from 'United States Census Bureau, MAF/TIGER'."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Northern Mariana Islands, layer: geoBoundaries-MNP-ADM0-all/geoBoundaries-MNP-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: local_government, level_name_local: Municipality, layer: geoBoundaries-MNP-ADM2-all/geoBoundaries-MNP-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/MNP/mnp-geoboundaries-gbopen/
+    notes: "ADM2 DERIVED from TIGER (older vintage). ADM0 is a Sentinel-2 land mask."
+
+  - source_id: mnp-gadm-41
+    title: "GADM 4.1 Northern Mariana Islands"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls: [https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_MNP.gpkg]
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial, no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "Reference only. license_restricted = true."}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Northern Mariana Islands, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: local_government, level_name_local: Municipality, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/MNP/mnp-gadm-41/
+    notes: ""
+
+decisions:
+  - level_code: admin1
+    chosen: mnp-uscensus-tiger2025
+    alternatives: [mnp-geoboundaries-gbopen, mnp-gadm-41]
+    reason: "Only official source; geoBoundaries is a derived copy."
+    escalated: false
+  - level_code: admin2
+    chosen: mnp-uscensus-tiger2025
+    alternatives: []
+    reason: "Only source for districts."
+    escalated: false
+  - level_code: admin3
+    chosen: mnp-uscensus-tiger2025
+    alternatives: []
+    reason: "Only source for villages."
+    escalated: false

@@ -1,0 +1,113 @@
+{
+  "type": "Catalog",
+  "id": "pab",
+  "stac_version": "1.1.0",
+  "title": "Pacific administrative boundaries",
+  "description": "Pacific administrative and jurisdictional boundaries: harmonised GeoParquet for 22 Pacific Island countries and territories. Data on AWS S3; code, documentation and provenance on GitHub (https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries).",
+  "providers": [
+    {
+      "name": "Pacific administrative boundaries",
+      "description": "Harmonised the source boundaries; code, documentation and full provenance in the GitHub repository.",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries"
+    },
+    {
+      "name": "Amazon Web Services (S3)",
+      "description": "Public bucket s3://csdr-public-datasets/pacific-administrative-boundaries/",
+      "roles": [
+        "host"
+      ],
+      "url": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries"
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "Pacific administrative boundaries"
+    },
+    {
+      "rel": "child",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "Pacific administrative boundaries"
+    },
+    {
+      "rel": "about",
+      "href": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries",
+      "type": "text/html",
+      "title": "GitHub repository: code, documentation, licence and full provenance"
+    },
+    {
+      "rel": "documentation",
+      "href": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/usage.md",
+      "type": "text/html",
+      "title": "Usage guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/sources.md#summary",
+      "type": "text/html",
+      "title": "Sources and licences"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "title": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.census.gov/about/policies/open-gov/open-data.html",
+      "title": "Public domain (US Government work)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html",
+      "title": "Public domain (US Government work)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "title": "CC-BY-3.0-IGO"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+      "title": "PacIOOS data use (free redistribution, not for legal use)"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+      "title": "LO-2.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.geoboundaries.org/",
+      "title": "Public domain"
+    },
+    {
+      "rel": "license",
+      "href": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "title": "ODbL-1.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "title": "CC-BY-SA-3.0"
+    }
+  ]
+}

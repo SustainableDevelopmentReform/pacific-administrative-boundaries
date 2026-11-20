@@ -1,0 +1,39 @@
+{
+  "source_id": "pcn-osm-admin-relations",
+  "iso3": "PCN",
+  "retrieved_at": "2026-11-19T22:10:42Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://www.openstreetmap.org/relation/2185375",
+  "download_urls": [
+    "https://polygons.openstreetmap.fr/get_geojson.py?id=2185375&params=0",
+    "https://api.openstreetmap.org/api/0.6/relation/2185375.json"
+  ],
+  "license": {
+    "name": "ODbL-1.0",
+    "url": "https://www.openstreetmap.org/copyright",
+    "notes": "Share-alike; attribution '(c) OpenStreetMap contributors'"
+  },
+  "files": [
+    {
+      "path": "r2185375.geojson",
+      "url": "https://polygons.openstreetmap.fr/get_geojson.py?id=2185375&params=0",
+      "bytes": 41515,
+      "sha256": "7e2a35a0430072054ecb57861c0494b013f1852768727a277c08547c61c648d0",
+      "http_status": 200,
+      "content_type": "application/geo+json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:10:40Z"
+    },
+    {
+      "path": "r2185375_tags.json",
+      "url": "https://api.openstreetmap.org/api/0.6/relation/2185375.json",
+      "bytes": 2771,
+      "sha256": "b3528ef6365a06b90bb8156f8a23dcbe48dd992f6f3f63b1a55a6644130a8573",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:10:42Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "OSM boundary=administrative relations. Geometry: polygons.openstreetmap.fr get_geojson (params=0, unsimplified) per relation (rNNN.geojson, no tags); tags/members from OSM API v0.6 (rNNN_tags.json). Relation IDs enumerated via OSM API subarea members / Nominatim (Overpass unreachable at retrieval time). Snapshot as of retrieval date."
+}

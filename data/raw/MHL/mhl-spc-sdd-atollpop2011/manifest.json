@@ -1,0 +1,89 @@
+{
+  "source_id": "mhl-spc-sdd-atollpop2011",
+  "iso3": "MHL",
+  "retrieved_at": "2026-11-19T21:56:31Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/rmi_atoll_population_2011census",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/00a4d983-0feb-4925-b296-a4d62f32f907/download/rmi_atol_pop_2011.geojson",
+    "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/cc0763ac-6f4a-4837-9100-50da3f1d0bc3/download/rmi_atol_pop_2011.kml",
+    "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/6661ae45-39b9-4e61-a35d-5adb8a13e0a4/download/rmi_atol_pop_2011.zip"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH page states 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "rmi_atol_pop_2011.geojson",
+      "url": "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/00a4d983-0feb-4925-b296-a4d62f32f907/download/rmi_atol_pop_2011.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 864652,
+      "sha256": "a5892a902ab2e2b9dbb4a96a9ac8faa37bfde547a5ae870e6580e46eb02eaee6"
+    },
+    {
+      "path": "rmi_atol_pop_2011.kml",
+      "url": "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/cc0763ac-6f4a-4837-9100-50da3f1d0bc3/download/rmi_atol_pop_2011.kml",
+      "http_status": 200,
+      "content_type": "application/vnd.google-earth.kml+xml",
+      "bytes": 687078,
+      "sha256": "23cdfa2515de1e33230cb9272ad7258268ab32fe9263d2419246daa24a07ba5b"
+    },
+    {
+      "path": "rmi_atol_pop_2011.zip",
+      "url": "https://pacificdata.org/data/dataset/3a74d05c-099e-4b89-bc8c-e6047fddeb48/resource/6661ae45-39b9-4e61-a35d-5adb8a13e0a4/download/rmi_atol_pop_2011.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 240767,
+      "sha256": "a9647e188a537db2a58675f9156f3218217e9f6e3b1e9fbbb99d47ed86720b05"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.cpg",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.dbf",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 1280,
+      "sha256": "05e9353583a3435d77d9ec0429acd3029c540ac7de39575eaa1b6bd29662de14"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.prj",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.qpj",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 257,
+      "sha256": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.shp",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 315772,
+      "sha256": "dc76bce1fb46951b54f3ae0133d53d11b6d5c694090683da84ea246bd0bbab5e"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.shp.xml",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 5578,
+      "sha256": "cf01a44c6a742ee7677b268b98a78fd9988946ad899c7983373996d10a31a042"
+    },
+    {
+      "path": "rmi_atol_pop_2011/RMI_Atol_Pop_2011.shx",
+      "from": "rmi_atol_pop_2011.zip",
+      "bytes": 300,
+      "sha256": "fcbaba943befedbf615fc6ca536201c5b851ad0ae265a20fc4b9e49784fe04f9"
+    }
+  ],
+  "notes": "Pacific Data Hub, SPC Statistics for Development Division (SDD). metadata_created 2019-05-03, modified 2022-05-08."
+}

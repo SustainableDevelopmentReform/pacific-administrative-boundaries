@@ -1,0 +1,55 @@
+{
+  "source_id": "plw-spc-sdd-phc2015",
+  "iso3": "PLW",
+  "retrieved_at": "2026-11-19T21:56:34Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2015_plw_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/92304f02-a4fe-4750-98b7-3a0a216b0d32/download/2015_phc_plw_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/fe6dd29b-6ec5-4a06-9aac-e8d84d895b21/download/2015_phc_plw_hid_4326.geojson",
+    "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/de0f3f73-1170-4634-8d34-d4b107ff3a18/download/2015_phc_plw_sid_4326.geojson",
+    "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/f99b62ee-368f-4aa5-b4d9-d84fc6285623/download/2015_phc_plw_gsid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH page states 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2015_phc_plw_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/92304f02-a4fe-4750-98b7-3a0a216b0d32/download/2015_phc_plw_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1802681,
+      "sha256": "ccc9238e180c0894b122f24eb4e6dd166117af83d8ab919d8669ff5d34bf607c"
+    },
+    {
+      "path": "2015_phc_plw_hid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/fe6dd29b-6ec5-4a06-9aac-e8d84d895b21/download/2015_phc_plw_hid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1714693,
+      "sha256": "796239f375beb250ad9ef4745487049671d113233b702468fefb6bd36967088c"
+    },
+    {
+      "path": "2015_phc_plw_sid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/de0f3f73-1170-4634-8d34-d4b107ff3a18/download/2015_phc_plw_sid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1658397,
+      "sha256": "b96de4535b349443f7eb259c157a81b02424e796e1e1335bc84f2dc68a33abf3"
+    },
+    {
+      "path": "2015_phc_plw_gsid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/720db74a-1add-45dd-a442-e852b2ca6f21/resource/f99b62ee-368f-4aa5-b4d9-d84fc6285623/download/2015_phc_plw_gsid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1629550,
+      "sha256": "c633e7265fbfb31fdcedeb3e02af0d317a55e60d1e9e670065babb03c4d56e92"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Statistics for Development Division (SDD). metadata_created 2020-06-29, modified 2022-05-08."
+}

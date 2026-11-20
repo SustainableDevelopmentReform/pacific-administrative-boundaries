@@ -1,0 +1,35 @@
+{
+  "source_id": "tuv-gadm41",
+  "iso3": "TUV",
+  "retrieved_at": "2026-11-19T22:02:21Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TUV.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial, no redistribution)",
+    "url": "https://gadm.org/license.html",
+    "restricted": true
+  },
+  "files": [
+    {
+      "path": "gadm41_TUV.gpkg",
+      "bytes": 245760,
+      "sha256": "f3c6727c936317efe37af99cfbb50327fd137f49614d971d10b663806918f36e"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_TUV.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TUV.gpkg",
+      "effective_url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TUV.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T22:02:21Z"
+    }
+  ],
+  "notes": "REFERENCE ONLY. GADM licence: free for academic/non-commercial use; redistribution or commercial use not allowed without permission."
+}

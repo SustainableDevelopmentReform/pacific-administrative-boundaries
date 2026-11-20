@@ -1,0 +1,1271 @@
+{
+  "source_id": "ncl-gnc-bdadmin-2022",
+  "iso3": "NCL",
+  "retrieved_at": "2026-11-19T22:05:09Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://georep-dtsi-sgt.opendata.arcgis.com/documents/bc8f0eec7d614853b0e9d1a9bd9649ef/about",
+  "download_urls": [
+    "https://sig-public.gouv.nc/plateforme_telechargement/BDADMINNC.zip"
+  ],
+  "license": {
+    "name": "Licence Ouverte v2.0 (Etalab)",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+  },
+  "files": [
+    {
+      "path": "BDADMINNC.zip",
+      "bytes": 25287153,
+      "sha256": "66363268e37d5f58c9e49864ea29ef11ecf518f4d24b09b31daa98bcc6c6e59d"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000001.TablesByName.atx",
+      "bytes": 16406,
+      "sha256": "59e92feb588fe17a0accb1ccfcb33fbec9f6e8ba444ae545cf8212f2bd51d699",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000001.gdbindexes",
+      "bytes": 110,
+      "sha256": "80ba95b873e151074244f7655f9e29ce8967aab1bd57ff4c06a329b723a3d46c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000001.gdbtable",
+      "bytes": 1321,
+      "sha256": "0d20b134e6ec6eba5123b12fc1145aeae1536b5e7a82cd3deca94df8fb4a4787",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000001.gdbtablx",
+      "bytes": 5152,
+      "sha256": "cd3064f79d3b61df39ff4146824b4a17688528253dfe1c13de8fe158a7719b9a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000002.gdbtable",
+      "bytes": 2055,
+      "sha256": "9efa50dc62a40e109a546054943ae5ad4b3d41aa81ece0dfa026b7b23cb09da8",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000002.gdbtablx",
+      "bytes": 5152,
+      "sha256": "f3ac9865dec6ab40e73d91dd1f5c2eef0248e66e359d4abb1d97edba92b5df88",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000003.gdbindexes",
+      "bytes": 42,
+      "sha256": "de0911d18e2f304380c04ae123ea18057d262d788301f7cc3148298231c7c618",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000003.gdbtable",
+      "bytes": 1153,
+      "sha256": "10d1a43e13d3ade6d2a0dfd8cfb21ec38c555c60375e4e2ed450c1ab31921e28",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000003.gdbtablx",
+      "bytes": 5152,
+      "sha256": "d63fd5f8a490aa6aeffde1336e80ce35b5399af5752a72b316570a670b09d167",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.CatItemsByPhysicalName.atx",
+      "bytes": 12310,
+      "sha256": "6ddcb6e9a17153fa961f18f57fe4747ecb7d8f1c9970058b954ab63afc193fef",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.CatItemsByType.atx",
+      "bytes": 4118,
+      "sha256": "a717d5d77d9e8bbab132cde5a17adf529c8708fecbb9e4d8523926b9884a2c20",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "4c26a75f7cf6c2e79b7c16d3eadb9e8d190db202d353615ee96b378c4028bafb",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.gdbindexes",
+      "bytes": 310,
+      "sha256": "f29887c93b126a3feb0e20958cd73cc774f76ab79284b9c7286dc12eb05db858",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.gdbtable",
+      "bytes": 568063,
+      "sha256": "99d5277b28d52f4cd0c77d79f5658d8a87ee02b019d6ba3373b480358206bf03",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.gdbtablx",
+      "bytes": 5152,
+      "sha256": "97b3f92ce4045126c165bd1b91352a8e4ecb7aec418b4fbeab834fa404274091",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000004.spx",
+      "bytes": 4118,
+      "sha256": "027866f78134de031571290fab2599ab7879bd7df84030ee324b233b891058aa",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.CatItemTypesByName.atx",
+      "bytes": 12310,
+      "sha256": "545eb2f6dd3dce7115b3c45fe2eefe4c33587861d8d9602756fe678760519b8b",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+      "bytes": 4118,
+      "sha256": "efb73113782b1068e0e61d0efc0643c5245cdd2790d7c543ed3bf6a2b7680c0e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.CatItemTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "39b734011f8962321f641e9d5858e448e5407ffb88fcddb43b27169c8f9511b3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.gdbindexes",
+      "bytes": 296,
+      "sha256": "c21e650994b48cc72d174b3caf2ac1bd19e2d7305c8087aaae97e24caecf98a5",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.gdbtable",
+      "bytes": 1803,
+      "sha256": "647c02d817f7990db156581ca31e3f0d5b61127ecc976ec849b51e613b58b482",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000005.gdbtablx",
+      "bytes": 5152,
+      "sha256": "153ae837d96be7e5542ca07bb96f347a39d879af16e8206466f464891cd552f8",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.CatRelsByDestinationID.atx",
+      "bytes": 4118,
+      "sha256": "0e6fe8dc174f4613a3693d3096dd387086338969e946508d982285daf356055d",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.CatRelsByOriginID.atx",
+      "bytes": 4118,
+      "sha256": "bd0b0621a16e23fddf89f72203308ce8f6e69b46bd29dead5b975e3a3cc2bcf9",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.CatRelsByType.atx",
+      "bytes": 4118,
+      "sha256": "b5db4dc0b1ebb1d9d14a8d96fd1fc9e60234cfa9e5edf8e2e975cdbf5eaf0f81",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "62480222193d200fd4a9eb249ebf2ea2cca95f85aa989559fa155a38aff87c6d",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.gdbindexes",
+      "bytes": 318,
+      "sha256": "1919a00326f198a90dc97545ec448c10b2b90d367020222212f7b00433fe09b5",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.gdbtable",
+      "bytes": 3183,
+      "sha256": "939f90decb86d35212920826159c08757d07d2f4556622c9665936503b165426",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000006.gdbtablx",
+      "bytes": 5152,
+      "sha256": "3c9cc60f57b2fc3d00f784db59f4daef007833b2c3d9858c7aa3a5a1a1c996f0",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "7a87764bcf0fef1546b3e0d3f096880946ddc0d51eb645b73888f8791c0a24f7",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "1f943cb5b6eea7e715cfd2f6441124b411d25a184ae778a35c3e7d1c1759c033",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "66207673c5d40592f49840b2c796970977594645e1941b86221d8a9bb8392658",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByName.atx",
+      "bytes": 4118,
+      "sha256": "2e483ecfc9775f3d2282432cdd02d9d5d3d19f3f30534bf9e54ddf0260f47771",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "917291fdb2214498c9fa46e13b556141578cf2338a5e171cf29ccd5a45e015fc",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.CatRelTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "54f67673a7a3687979b7ecd7e9556cd4f8300249e36e7c617d7ae3d7babd562a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.gdbindexes",
+      "bytes": 602,
+      "sha256": "dc98e24d04eddd7f38905d176c1ea43c547a3a2daa0c80091a20d3443c726621",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.gdbtable",
+      "bytes": 2504,
+      "sha256": "5c04eba37540889d440db11bcf9438db0176db1d0f0902e03ed2273cdb390c84",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000007.gdbtablx",
+      "bytes": 5152,
+      "sha256": "6316ed4ee0269e0a0cb9afe992849e047af2f21013ef791d5f900708ce5e82b3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000009.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000009.gdbtable",
+      "bytes": 54019,
+      "sha256": "bd939353b2667ebce767336f867fdc9b57f969ea1b29af062f16f35de3353e74",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000009.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000009.spx",
+      "bytes": 4118,
+      "sha256": "1b2f1941d0f01783524b42e1ecc989c177482548ecfabfeb0080b1b90fe89a6a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000a.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000a.gdbtable",
+      "bytes": 18153,
+      "sha256": "2fb3d24955ef8f012eeecd9a52dd76f7022b2f48bda109ac352a9420bc54a8a6",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000a.spx",
+      "bytes": 4118,
+      "sha256": "f717cd8b5f70f5e156e6b6136be0b11cf73bd27353a9fa70aedfc7be11dc913f",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000b.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000b.gdbtable",
+      "bytes": 84823,
+      "sha256": "2cf3a2847cafb94a3fef0dd700588de945a55b0b3cdfc3d96c9efd5d7cbb8160",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000b.spx",
+      "bytes": 4118,
+      "sha256": "0d00037d4995a1734bb092c7246d4c724f7e2e968bf24744615335e7696d61bb",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000c.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000c.gdbtable",
+      "bytes": 129428,
+      "sha256": "9a0f4694cce5e1f120fd4d7f1afac0a89c843812d82b526badfe073b9e7b5d2b",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "b97b6ad2ae4293fac7c4eb518692afdaf200b26a2ba0d38ec29a9c599d534a40",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000c.spx",
+      "bytes": 4118,
+      "sha256": "6445f3c91bc00a19673ccfad3697cd7cf31e2fde432ce6e51e727ca3f505871e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000d.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000d.gdbtable",
+      "bytes": 65789,
+      "sha256": "bf6b7997749d0a62fa248d9022b18bda495a8b35ed3e1ade6a867c79358ea973",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000d.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000d.spx",
+      "bytes": 4118,
+      "sha256": "3a064af483026d1205efa0e4a2282296a8f8b580c225e92da2ae34cacb8267a7",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000e.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000e.gdbtable",
+      "bytes": 45183,
+      "sha256": "f9b578daa150e950211217d84060b7ca228a235cedb3242e72e12d2a63f9a80b",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000e.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000e.spx",
+      "bytes": 4118,
+      "sha256": "68236ee793508ed8585f1832a0bc6b22e4e5a622110a35e3ce41f5ff985aae41",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000f.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000f.gdbtable",
+      "bytes": 51881,
+      "sha256": "ee1ba4f8c4a04cd2f6a810f36ca15860af961e5dd838dcce5926e2ce1e048c8a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000f.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000000f.spx",
+      "bytes": 4118,
+      "sha256": "f098412e68a84128f9596ac4e2ec637f9a77b1da1820e701cd032d9520a5b6ba",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000010.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000010.gdbtable",
+      "bytes": 1638,
+      "sha256": "7a70cac3e80f9056e37accf15068e552b0c36ba64a191f3208de47978fc0aa99",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000010.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000010.spx",
+      "bytes": 4118,
+      "sha256": "08a10f782e0a4c88a5e8cd1909e58f88da9f63631fc543b6024b601b3b29dc29",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000011.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000011.gdbtable",
+      "bytes": 43006,
+      "sha256": "2fa0a1735a16fada2675deeec3595b3831168a7b1f96fcc285a82b2cbcf7579f",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000011.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000011.spx",
+      "bytes": 4118,
+      "sha256": "fd8f768a93cc97ef19a9ed5fa92027a7600230c3f5a5d7fb1d527e77dbd64d12",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000012.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000012.gdbtable",
+      "bytes": 1651,
+      "sha256": "8666cb64c325240a425526db9df68dd8ff584a58df33a3785aad6001cbc5a2fe",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000012.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000012.spx",
+      "bytes": 4118,
+      "sha256": "b383c6238456e70cf2ac6c2969c40476461b8f6c67163a97b99cd269cb482aaf",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000013.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000013.gdbtable",
+      "bytes": 30386,
+      "sha256": "b5fe3d174bdce332ff5740c93279095e956a319547315b7b6bae02fc1dd083d5",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000013.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000013.spx",
+      "bytes": 4118,
+      "sha256": "5db70911578124975ac56ed1462a62bffe4a5472677666e672077a696ff23df7",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000014.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000014.gdbtable",
+      "bytes": 1262130,
+      "sha256": "49f05c5e49345bd04635c6baedc4052d0aac078213be11e4c8c8181d26b98375",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000014.gdbtablx",
+      "bytes": 5152,
+      "sha256": "06063fc7660d1806f2e8f7d9d9456cb7bb8dd8be9aea45892128a08d0c359be5",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000014.spx",
+      "bytes": 4118,
+      "sha256": "9c89f7710440894e5fdc5e4c2ce82fe2044e7a955def64df0e216cc00347eb25",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000015.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000015.gdbtable",
+      "bytes": 38080,
+      "sha256": "08581540509eae16a040d34e18a142bc7c9455ca997f1e0be5c2b85f1556adc4",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000015.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000015.spx",
+      "bytes": 4118,
+      "sha256": "54dad65fdb16e2ad94876a271b86f057b4a6f0ad7089ff8cb2f120b49486a219",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000016.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000016.gdbtable",
+      "bytes": 30816,
+      "sha256": "ec0822dc8b5aaac4b908c24d104dcbcb97acb9c17ae9715a66b6e8dde8dc88e9",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000016.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000016.spx",
+      "bytes": 4118,
+      "sha256": "376c1a84b8773831363445ed2793b41b76fdaf266cd1f6c007f64d555b672620",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000017.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000017.gdbtable",
+      "bytes": 274247,
+      "sha256": "5e18a471f0a0eeeb692b78dd5c3c1b5baf809932dbc4e8f7e08ca353d6aa6f98",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000017.gdbtablx",
+      "bytes": 5152,
+      "sha256": "817a36ea7ba68e79a5673b28b0dc245a057e866d4ddc92237e5cda686ab53040",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000017.spx",
+      "bytes": 4118,
+      "sha256": "ad4b7339369a35516cab9fdfbe800b5ce076318a37082fe5795a22aa4a87b4fa",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000018.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000018.gdbtable",
+      "bytes": 145888,
+      "sha256": "ac98ca33f8f1a5ecace1ac3d04b31e9a3f7bdee3873c4e8fc1cbefb062c3071e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000018.gdbtablx",
+      "bytes": 5152,
+      "sha256": "b97b6ad2ae4293fac7c4eb518692afdaf200b26a2ba0d38ec29a9c599d534a40",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000018.spx",
+      "bytes": 4118,
+      "sha256": "29b9e4589de138c4d5207b3aaa0e296ce9e70714f617fff29129b19147e4ea70",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000019.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000019.gdbtable",
+      "bytes": 7818056,
+      "sha256": "302b00e2feebd4580a791e62f0c41b2fc9c9e59871b3b79daa750961fabde376",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000019.gdbtablx",
+      "bytes": 5152,
+      "sha256": "456d9b04bcd12593d4af87c9b4c4c65170ad5387b5c5b7057724cd0958a1385a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000019.spx",
+      "bytes": 4118,
+      "sha256": "e6329166a5c1a8db82ff2c532f9dd696cee0c106bfb41d518b330e18d4c53db7",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001a.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001a.gdbtable",
+      "bytes": 51339,
+      "sha256": "520b428c57e170d821e1bb36d66590487431374c27928df720c7d1d16895ec84",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001a.spx",
+      "bytes": 4118,
+      "sha256": "881b88b7b760c457323289c2e1be64caf7675f5f4aae2cf21660f04e27cbc24a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001b.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001b.gdbtable",
+      "bytes": 66570,
+      "sha256": "33a311350f7746801848243ae81f51e6058831634950abfa1027a2f1d6a3430c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001b.spx",
+      "bytes": 4118,
+      "sha256": "096f36204bde888f73b7e30cc5295629d55d5a24f044684ec7146123b5c4f733",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001c.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001c.gdbtable",
+      "bytes": 47484,
+      "sha256": "2eb90cd500c2591bca31d92349a9b5445ba694d285901ad42404022a6bd7f55e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001c.spx",
+      "bytes": 4118,
+      "sha256": "64c73c0a5f9067c859f43568ac3079732eb1671763876709a18c15c31a7c370e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001d.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001d.gdbtable",
+      "bytes": 1624,
+      "sha256": "ded5f15a0c9680e445d318962651bc69622e4ba5dc518ad892a9e6c62ea57d08",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001d.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001d.spx",
+      "bytes": 4118,
+      "sha256": "29969aaa01f93fba638637cdcc95f5a049f905e29e6e712b834ad948bb22e709",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001e.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001e.gdbtable",
+      "bytes": 63375,
+      "sha256": "9b93acfc0f3edf463d0ec7d22f1ac0951a12fa2f4820b4ec4956486d2d3ac018",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001e.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001e.spx",
+      "bytes": 4118,
+      "sha256": "56675c9ee5ecb28cb83a2e191e77da2d29101e6be26bac62668bf226635a9444",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001f.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001f.gdbtable",
+      "bytes": 67739,
+      "sha256": "c52deaa13ed0d91aa8e95b23f1057859043866e360779fb58f46b3b675627375",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001f.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000001f.spx",
+      "bytes": 4118,
+      "sha256": "fd8f768a93cc97ef19a9ed5fa92027a7600230c3f5a5d7fb1d527e77dbd64d12",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000020.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000020.gdbtable",
+      "bytes": 33983,
+      "sha256": "1fbc15b72adab5d04b1f35d6c1a096921ecad53498bb5684ce5a56d443304b2d",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000020.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000020.spx",
+      "bytes": 4118,
+      "sha256": "eded02a9197a85cc7b78e62abeffa7be1dc7140434760610b42c3fdf2fbe3391",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000021.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000021.gdbtable",
+      "bytes": 10255,
+      "sha256": "e5c4da449776c1e13d718409a911ec336ebc35c005c59e21a43cbcaf7d1c22f0",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000021.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000021.spx",
+      "bytes": 4118,
+      "sha256": "256c36db40109ceb9d72e6330737da082e7dfb23af00851d60ad36f98991b2ec",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000022.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000022.gdbtable",
+      "bytes": 62054,
+      "sha256": "f3a9bb08d856c20c6d8e2e3bd7e2af645f16a941646cbccb5227d43877760502",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000022.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000022.spx",
+      "bytes": 4118,
+      "sha256": "7bc51363db9cdf9025b7016429f27a610dcb709dcd8b91605087aa8732c801c1",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000023.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000023.gdbtable",
+      "bytes": 49028,
+      "sha256": "ad958f4ca881217722bc78ec18ac9a2a0235d1fadd55411f97220da024412f25",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000023.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000023.spx",
+      "bytes": 4118,
+      "sha256": "9e23ecec40819d8e8eded61e22e1159eac2a57d345cc8026d88a8c279da06b17",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000024.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000024.gdbtable",
+      "bytes": 41608,
+      "sha256": "fb572c39451d5ee4c242bde8c06739a25fd3b3c0d29a72efaee607eec373bc34",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000024.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000024.spx",
+      "bytes": 4118,
+      "sha256": "a9edefbe5e2ab738f683e1f6c4aa5e2bcdba2d841fdac79826cf9f60b22425a8",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000025.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000025.gdbtable",
+      "bytes": 1763,
+      "sha256": "8a07365f776d6501e33d25756d41a40fdb95d826a456954ff75746753b8b1e1e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000025.gdbtablx",
+      "bytes": 5152,
+      "sha256": "b97b6ad2ae4293fac7c4eb518692afdaf200b26a2ba0d38ec29a9c599d534a40",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000025.spx",
+      "bytes": 4118,
+      "sha256": "44d857f6c6cc37fe96040435a1ac86ca1c2e0f9a52bdc910328584f3b28850c1",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000026.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000026.gdbtable",
+      "bytes": 1687,
+      "sha256": "a0f71d039ba66bb9ac1ea59a7c5c4579160bbb4361f43d9b560d3ebb821a83b5",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000026.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000026.spx",
+      "bytes": 4118,
+      "sha256": "900b71d176b9dd38fcfb375e3d94e467f0cf4ac3a63ad19e8b3e3222b1a807ec",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000027.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000027.gdbtable",
+      "bytes": 40578,
+      "sha256": "7bfad576f4f16ec243f282280c911b987996a812b504ca31416a6309d9dd2c29",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000027.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000027.spx",
+      "bytes": 4118,
+      "sha256": "c62ddfa458c355a24b98f591cc908ee760c067f5a6b8ab9bb264133e486b21b3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000028.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000028.gdbtable",
+      "bytes": 46576,
+      "sha256": "b08c6c180cba8ef117ae3cdd3a05d500052cb897e3457fdb30b0f850e96f0cbc",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000028.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000028.spx",
+      "bytes": 4118,
+      "sha256": "bbd36697ce90bf728e0b2276e2e81c7b5331d14d71727af6867f8bac53d6f415",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000029.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000029.gdbtable",
+      "bytes": 35373,
+      "sha256": "f479146ed581447b49a36ef70e30076112fcd34dd863d7fc07fd1db173e12b24",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000029.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000029.spx",
+      "bytes": 4118,
+      "sha256": "aa6bf4b545c3c74662efd35fa07536b80b3ac46992310e0fa4be14f700fd2498",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002a.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002a.gdbtable",
+      "bytes": 46152,
+      "sha256": "4c6255549a1459881636a2651619d48d68cec370e969f08f0a40f2a478c69613",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002a.spx",
+      "bytes": 4118,
+      "sha256": "6a36de1f68fd2629bfdcb9e20d508d3608746d3ff32bccb0e7c426b0ee8f6465",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002b.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002b.gdbtable",
+      "bytes": 25464,
+      "sha256": "46e1a8966565d4b11647b17d62fdfe39c3aa2a46f59585da839a5660cffff777",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002b.spx",
+      "bytes": 4118,
+      "sha256": "22f4b14c7390bace81dffd4680c41b5d485461fe1c41ae344331c13b45c6b0e3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002c.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002c.gdbtable",
+      "bytes": 7834958,
+      "sha256": "ea6de0fc010bc0a029ead61ca43d418ebf00505995783eacf034c392f60b2144",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "cf7685f5348132ee92fb5de3fe329de1ccbf11a971dac1701506efce17e796fd",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002c.spx",
+      "bytes": 4118,
+      "sha256": "5344bb1ca39175ed92a19f9381f8072e550c39d93783e21aa04e3435af4a6a73",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002d.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002d.gdbtable",
+      "bytes": 49860,
+      "sha256": "897966528c33c6626882e4f0caebfaaa85ee3fab91d67815c84708000a38f4d7",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002d.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002d.spx",
+      "bytes": 4118,
+      "sha256": "efabe6be9193f03e929aae5951377d346a1c6e86395fba564f1ac51bbcae988e",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002e.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002e.gdbtable",
+      "bytes": 8780575,
+      "sha256": "cc5092b44be64b39e3a1f67e0e9d65a0afcda10d5048ace8bbdb6dd8a25cd224",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002e.gdbtablx",
+      "bytes": 5152,
+      "sha256": "eb2f6e0075553a7c1f14ba51ed8eb891b6303f5815645faa60df4b319c846d0d",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002e.spx",
+      "bytes": 4118,
+      "sha256": "de6caaa7e8aff79c02f90ba08bd32c4784e0256ac93de989bd865e84451c62fd",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002f.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002f.gdbtable",
+      "bytes": 42698,
+      "sha256": "955054f35664634fa614e95e9671758d08b247732b6f89f5713af13a788e7ced",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002f.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a0000002f.spx",
+      "bytes": 4118,
+      "sha256": "cefafa7b25744e775cf87634fb813129c144e4b97eaeab8c4b7ce00d59e5a327",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000030.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000030.gdbtable",
+      "bytes": 60157,
+      "sha256": "0fbc5459ecf6ba076023994ae87b72544b20fc8e0c8746f6b64f3f58148a0a1a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000030.gdbtablx",
+      "bytes": 5152,
+      "sha256": "525ca8c3dcbe41bfe672e6708d4b27612cbfd5a428e8c6ad26ee61b1c32052d3",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000030.spx",
+      "bytes": 4118,
+      "sha256": "a9232f98d39db610e72b4ceae1bac585c3cd9ec0649d9d1af86a023cf5243d7a",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000031.gdbindexes",
+      "bytes": 116,
+      "sha256": "1ac18e6ed03c8c681c664e4891377f95e89ce2dacd129fdb792fb954cd34391c",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000031.gdbtable",
+      "bytes": 7912077,
+      "sha256": "8b1d81d60f19bf0ed83140542fa44d1cda2c62e254dc94968bb43a53614b8759",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000031.gdbtablx",
+      "bytes": 10272,
+      "sha256": "4f06ddd7cf21d5f3ceb4970d87ff1c792971a73d8288e39adca5980cec70e222",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/a00000031.spx",
+      "bytes": 28694,
+      "sha256": "be4bf105e4766fa3a526cf2e04d42a5db0547c8e2f7336b097edfa4c64405a98",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/gdb",
+      "bytes": 4,
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/BDADMIN-NC.gdb/timestamps",
+      "bytes": 400,
+      "sha256": "0b7b4012a1a7b325a956d7110f1a2eab4a97efca63d6b761e78ea87d0966b97f",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/DITTT_BDADMIN-NC_lisez-moi.pdf",
+      "bytes": 304178,
+      "sha256": "7de892a2810317857b562cfff99ebe4c0be852e18db7801f9b43f18ab8fa1c01",
+      "from_archive": "BDADMINNC.zip"
+    },
+    {
+      "path": "extracted/BDADMINNC/DITTT_CGU_juillet2017.pdf",
+      "bytes": 52125,
+      "sha256": "feef3c0f6c86d301c9e3de897300d6c80e0d99336a16a430d3d1c97092fda737",
+      "from_archive": "BDADMINNC.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "BDADMINNC.zip",
+      "url": "https://sig-public.gouv.nc/plateforme_telechargement/BDADMINNC.zip",
+      "url_effective": "https://sig-public.gouv.nc/plateforme_telechargement/BDADMINNC.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:09Z"
+    }
+  ],
+  "notes": "BDADMIN-NC (Gouvernement de la Nouvelle-Caledonie / DITTT, now DINUM Service de la Geomatique et Teledetection), full-resolution administrative limits geodatabase; last data update 02/03/2022 (Grand Noumea communes); file Last-Modified 2022-05-23. Also catalogued on data.gouv.nc as bdadmin-nc-au-format-geodatabase (Licence Ouverte v2.0). Source a citer: Gouvernement de la Nouvelle-Caledonie / D.I.T.T.T."
+}

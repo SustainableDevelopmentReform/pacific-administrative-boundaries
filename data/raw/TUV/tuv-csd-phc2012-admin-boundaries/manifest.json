@@ -1,0 +1,63 @@
+{
+  "source_id": "tuv-csd-phc2012-admin-boundaries",
+  "iso3": "TUV",
+  "retrieved_at": "2026-11-19T22:02:18Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2012_tuv_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/cb543601-798e-4bc7-8613-806948f86704/download/2012_phc_tuv_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/e697e3b6-db2c-43c6-8522-3d5391a552fe/download/2012_phc_tuv_vid_4326.geojson",
+    "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/6b4a9510-112b-4f53-9ece-6e0566a74904/download/2012_phc_tuv_iid_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH dataset licence 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2012_phc_tuv_eaid_4326.geojson",
+      "bytes": 130036,
+      "sha256": "7de8b0730938c76e042a1810098c33c7626da67217d1b1ab3f6319caee49e43c"
+    },
+    {
+      "path": "2012_phc_tuv_vid_4326.geojson",
+      "bytes": 109483,
+      "sha256": "2ee4a8faaad5573717a39501249f81403e1f4a2183c0742b9c75edb0e132f59a"
+    },
+    {
+      "path": "2012_phc_tuv_iid_4326.geojson",
+      "bytes": 466382,
+      "sha256": "8fb99734abc83b58728df090f6722527f6139d60d1af14fa371dfa33834571e3"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2012_phc_tuv_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/cb543601-798e-4bc7-8613-806948f86704/download/2012_phc_tuv_eaid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/cb543601-798e-4bc7-8613-806948f86704/download/2012_phc_tuv_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:18Z"
+    },
+    {
+      "path": "2012_phc_tuv_vid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/e697e3b6-db2c-43c6-8522-3d5391a552fe/download/2012_phc_tuv_vid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/e697e3b6-db2c-43c6-8522-3d5391a552fe/download/2012_phc_tuv_vid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:19Z"
+    },
+    {
+      "path": "2012_phc_tuv_iid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/6b4a9510-112b-4f53-9ece-6e0566a74904/download/2012_phc_tuv_iid_4326.geojson",
+      "effective_url": "https://pacificdata.org/data/dataset/2131942c-9e63-4a2c-985b-1801e1568d8e/resource/6b4a9510-112b-4f53-9ece-6e0566a74904/download/2012_phc_tuv_iid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:02:19Z"
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,427 @@
+{
+  "source_id": "ton-hdx-cod-ab",
+  "iso3": "TON",
+  "retrieved_at": "2026-11-19T22:06:37Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-ton",
+  "download_urls": [
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/62e0ff40-1bcc-46b7-818e-f0de7cfe1564/download/ton_admbnda_adm1_2022_v2.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/a9c920a0-464e-4602-a481-07df4e86294d/download/ton_admbnda_adm0_2022_v2.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d3e75d1d-7515-4180-bcb3-de9471487e7a/download/ton_polbnda.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d966049c-d54d-473d-ae9e-1996b5872797/download/ton_polbnda_adm0_country.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/4f5001bf-118e-462c-b948-eda8a1b9781a/download/ton_polbnda_adm1_division.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/01691a6d-a80a-44bc-8348-f62103abac84/download/ton_polbnda_adm2_district.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/0642e284-9b71-428e-abba-6d4dc5949d02/download/ton_polbnda_adm3_village.zip",
+    "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/bb61c322-4ae7-478e-a69c-1d5d721faf22/download/ton_admin_boundary_taxonomy_metadata.xlsx"
+  ],
+  "license": {
+    "name": "CC-BY-IGO-3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 1670099,
+      "sha256": "5f94d32fce940c4bebeb90fdc127294c91dce3ea79d596f4f701971dd0175167"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 1663124,
+      "sha256": "0ede442f9e4237112038a52e8583d7fc0c9629489b867a45752d9a0eebc4bd61"
+    },
+    {
+      "path": "ton_polbnda.zip",
+      "bytes": 13566730,
+      "sha256": "abe26cdfdb3a6dbfaa5a0cd163b69529add3088b583a6968aabcbe1cf4068464"
+    },
+    {
+      "path": "ton_polbnda_adm0_country.zip",
+      "bytes": 85145,
+      "sha256": "9f6e63e391cf962fe56726ce589669a9f450415f6fdf963d5b0a59ec4ec0c6e3"
+    },
+    {
+      "path": "ton_polbnda_adm1_division.zip",
+      "bytes": 86753,
+      "sha256": "6389ad01f6364ea8595407be1b7da38284b7d99f07a8593221b184c160d99422"
+    },
+    {
+      "path": "ton_polbnda_adm2_district.zip",
+      "bytes": 93913,
+      "sha256": "8639d1540fec5346007f85e61d8da81494487227be109d4a5fbd78016573dd00"
+    },
+    {
+      "path": "ton_polbnda_adm3_village.zip",
+      "bytes": 122229,
+      "sha256": "85661df55980402349b7918e2e66c0d538e06283ede64f1ece13a0c876a6c26d"
+    },
+    {
+      "path": "ton_admin_boundary_taxonomy_metadata.xlsx",
+      "bytes": 27451,
+      "sha256": "a06bfdcca05f0b5668fc8d2362720e2136a8a6da1646472ed22b40ca3a36641a"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.cpg",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.dbf",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 1436,
+      "sha256": "9f7a0caf62696d37102a853bccad19303d2e5402ee7773182989b88a4765a754"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.prj",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.sbn",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 196,
+      "sha256": "4beb7571f78a2cfa7a7f9b9e13859b3137fd07103b295ce41392baa6dce4ad29"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.sbx",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 124,
+      "sha256": "23bbdeb01284f68a878ccad16c8d4d3da2203db1d0231519d873bb695a063faf"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.shp",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 4520964,
+      "sha256": "a323d9a255baf585ace33a8989648ffce3651e913ca717f831fb6a8620312055"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.shp.xml",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 17835,
+      "sha256": "3134f43f4df205c4e4b3c31a75524710558b9828396835b90d3df54be4fc3083"
+    },
+    {
+      "path": "ton_admbnda_adm1_2022_v2/ton_admbnda_adm1_2022_v2.shx",
+      "from": "ton_admbnda_adm1_2022_v2.zip",
+      "bytes": 148,
+      "sha256": "0f241f8757ce2381855509784e4f3af32ab5da67071868358f0e568152f964fc"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.cpg",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.dbf",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 281,
+      "sha256": "bf8ff0273d1372b83d129db51edb8b2c6b44518b6c5fa41e96e17c25a837a5f3"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.prj",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.sbn",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 132,
+      "sha256": "dd6cff6d6c2ad6be55d9caf70ef539f38a905bf20ddc118374a8e1119fa16871"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.sbx",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 116,
+      "sha256": "b1ef1cd65374f2a6328db2c64ced4369fb0603a7ccfc4ba3c6ddeb2de7380c13"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.shp",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 4515104,
+      "sha256": "a7915e086267c0dff2375690b16b7d0c66e8579069d136c0a19ffc7cf27d728f"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.shp.xml",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 18209,
+      "sha256": "2fca207445192c7c7ced3854dfae91675f31eb6319d17c2f529da9085bbf3835"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2/ton_admbnda_adm0_2022_v2.shx",
+      "from": "ton_admbnda_adm0_2022_v2.zip",
+      "bytes": 108,
+      "sha256": "c7dbd8df87929aba6ae604e91b4ab8d353e0f2fb5ba698fe25c9890e8e8f31e1"
+    },
+    {
+      "path": "ton_polbnda/ton_polbnda.mdb",
+      "from": "ton_polbnda.zip",
+      "bytes": 42291200,
+      "sha256": "b2c22ce3f9512fdb8a6bb90eb28de5ad582163409365c42ec6763a4db1ea60be"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.cpg",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.dbf",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 237,
+      "sha256": "95c13e9f0f15c998cc8ed698689cf99c464ed58ca042737b9f28a93189af093d"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.prj",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.sbn",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 132,
+      "sha256": "de582feba40d378b8ace3a13a170b71a5d1752dc968b30061913d79cad4940a1"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.sbx",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 116,
+      "sha256": "2b4a66ea76cae055c033a4c25ebead69037b1e2e37f6c1198bb252a54416fa24"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.shp",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 232688,
+      "sha256": "c0221c83b8114c545470c4365a6286a8c80d9a705ea1d1fa9756eb1c78f12254"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.shp.xml",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 8310,
+      "sha256": "8cddd1abfef82be09e3340cf33c097b5dc5f0c4543111a308e9ffa7009915797"
+    },
+    {
+      "path": "ton_polbnda_adm0_country/ton_polbnda_adm0_country.shx",
+      "from": "ton_polbnda_adm0_country.zip",
+      "bytes": 108,
+      "sha256": "9d91facf9dbb68dda971289c403f0cb2946780723323d1535a0d019ca0862708"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.cpg",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.dbf",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 848,
+      "sha256": "21ef1c35cba1e5d6031e54b59616bbd224b9ea7f2390619247da88fe489edb53"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.prj",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.sbn",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 196,
+      "sha256": "2dc69e4d6d2ea0c184787753b59b3124dbe9d8e5eb3c585a243e8bbd520f0e65"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.sbx",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 132,
+      "sha256": "0aa3270d6cb16ab8b03ce4ae4dc76d59e2e8ac39c98510853b26d5b7686114a8"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.shp",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 233024,
+      "sha256": "e40d9bea139fe7eb42db12c620fea9506693c84dd31dd9220d1ffeb734075eac"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.shp.xml",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 9877,
+      "sha256": "33dd60216e84b302397500842b02b56fa3f93c59fccde9e35255b648940e03ce"
+    },
+    {
+      "path": "ton_polbnda_adm1_division/ton_polbnda_adm1_division.shx",
+      "from": "ton_polbnda_adm1_division.zip",
+      "bytes": 140,
+      "sha256": "da482f15f71e704af931599a61ddc8cd6a04a8ee3f07db23c081e9d647e02bdd"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.cpg",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.dbf",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 3818,
+      "sha256": "ba5db7f4f69bedeb1b7222191ba9eff97ffa4cf289852f8167755b7d5f551cf7"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.prj",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.sbn",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 340,
+      "sha256": "60b965255f79824b924763425ec75e552256011f18d4dc385989d9f4d1b16aa2"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.sbx",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 132,
+      "sha256": "bb248ca932dd7c6ad9a631509e46edecd14f20659443f00e03767a6e92099717"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.shp",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 252084,
+      "sha256": "d2f981f6e2772edb7c78347e72513d8d29c83e259d8bb1df356e187b8b54334d"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.shp.xml",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 10912,
+      "sha256": "695bd5f43cf2e2fb1635dfd2e8e082022513293c2b46f2bc942af71f9953b620"
+    },
+    {
+      "path": "ton_polbnda_adm2_district/ton_polbnda_adm2_district.shx",
+      "from": "ton_polbnda_adm2_district.zip",
+      "bytes": 284,
+      "sha256": "f08e879b553de4881072c910352d5c78f0bdfff8dee766af198cd95819cb6a78"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.cpg",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.dbf",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 32258,
+      "sha256": "625093aa6fdd15e828d06134eff553d08c239cc9ef8484b1ec24fc8746a9029e"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.prj",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.sbn",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 1764,
+      "sha256": "ac23661bbf560b2528a876c9ae93804c4edd4cf99c492befab9657358ca8ba84"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.sbx",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 188,
+      "sha256": "779a17253242bcd0c8972dfc10673d37e349a41b0ac77c0027483888e7b77057"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.shp",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 337464,
+      "sha256": "1622836b8f6f3043b66bf074f9a41323348b47c94e742fffc48d131ffca66d0a"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.shp.xml",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 11922,
+      "sha256": "6e8fccc8e4bf6bb3591419f83d030a690711cc2c0bdf6a06c35d40088f82852c"
+    },
+    {
+      "path": "ton_polbnda_adm3_village/ton_polbnda_adm3_village.shx",
+      "from": "ton_polbnda_adm3_village.zip",
+      "bytes": 1428,
+      "sha256": "5acd6b9a5926c61b66d9ffe12d1f11a7b9438f56f12aaad3210f8963f98198cf"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "ton_admbnda_adm1_2022_v2.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/62e0ff40-1bcc-46b7-818e-f0de7cfe1564/download/ton_admbnda_adm1_2022_v2.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/62e0ff40-1bcc-46b7-818e-f0de7cfe1564/ton_admbnda_adm1_2022_v2.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=WMjE%2FQ7FjjGQAINAV%2FZbFuItPY8%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126178",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "retrieved_at": "2026-11-19T22:06:37Z"
+    },
+    {
+      "path": "ton_admbnda_adm0_2022_v2.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/a9c920a0-464e-4602-a481-07df4e86294d/download/ton_admbnda_adm0_2022_v2.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/a9c920a0-464e-4602-a481-07df4e86294d/ton_admbnda_adm0_2022_v2.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=W91ZqeR1MSRQyZkq2UPYDAjLHOI%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126182",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "retrieved_at": "2026-11-19T22:06:41Z"
+    },
+    {
+      "path": "ton_polbnda.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d3e75d1d-7515-4180-bcb3-de9471487e7a/download/ton_polbnda.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/d3e75d1d-7515-4180-bcb3-de9471487e7a/ton_polbnda.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=XWu%2Ffq6CrXr70se9R4Y7Bafhls0%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126186",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:44Z"
+    },
+    {
+      "path": "ton_polbnda_adm0_country.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/d966049c-d54d-473d-ae9e-1996b5872797/download/ton_polbnda_adm0_country.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/d966049c-d54d-473d-ae9e-1996b5872797/ton_polbnda_adm0_country.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=tpzfwgoZtv7WyuPfGb5C7g%2BTpYo%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126192",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:51Z"
+    },
+    {
+      "path": "ton_polbnda_adm1_division.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/4f5001bf-118e-462c-b948-eda8a1b9781a/download/ton_polbnda_adm1_division.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/4f5001bf-118e-462c-b948-eda8a1b9781a/ton_polbnda_adm1_division.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=HCujNrdCWwblfmW4EnjRygr1%2FXE%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126195",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:54Z"
+    },
+    {
+      "path": "ton_polbnda_adm2_district.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/01691a6d-a80a-44bc-8348-f62103abac84/download/ton_polbnda_adm2_district.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/01691a6d-a80a-44bc-8348-f62103abac84/ton_polbnda_adm2_district.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=w48juRM0txGNf0skeqXvDV9om1M%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126202",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:06:57Z"
+    },
+    {
+      "path": "ton_polbnda_adm3_village.zip",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/0642e284-9b71-428e-abba-6d4dc5949d02/download/ton_polbnda_adm3_village.zip",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/0642e284-9b71-428e-abba-6d4dc5949d02/ton_polbnda_adm3_village.zip?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=SD%2B00Km16Hs2NcAUHU5lszYfNoQ%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126205",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:07:04Z"
+    },
+    {
+      "path": "ton_admin_boundary_taxonomy_metadata.xlsx",
+      "url": "https://data.humdata.org/dataset/723b5226-781a-4aee-9718-37e3fbddd886/resource/bb61c322-4ae7-478e-a69c-1d5d721faf22/download/ton_admin_boundary_taxonomy_metadata.xlsx",
+      "effective_url": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/bb61c322-4ae7-478e-a69c-1d5d721faf22/ton_admin_boundary_taxonomy_metadata.xlsx?AWSAccessKeyId=ASIAXYC32WNAUTVQHXR4&Signature=JkgToHKvXm%2Fa4Pyc5PXBaAStP0s%3D&x-amz-security-token=FwoGZXIvYXdzEGcaDJihAmlQi23BGQLSVyLBAbuxiZTBO3gyDKXqccwm1wdijfXvPhHbBYze5lDZLxauutaYqbH%2BE5cJp06WMbIdwGDc2iv%2BIt%2B1Ov2xEMlwCH%2BNABzfpChbUSYscS5sHCoiSMzcMqYSaPbEUWjSWPQYE15F9IQ9rF%2B1VIxUuJdzgy4iODRn9IzLTKw5QozbFV3gsLdClkEyKo9nkjFi9GicBSreCOpjkMrNuysbrP0g%2FZ33GpAEXR5sLgzRvZbOuDMupSwn%2F%2Ft5HwkmXR7ec5bwNIQo19j91wYyLTyO8mBpI7K5vZ%2FuYaKKkLO9AlVwZLwGr8w1nv8ci1MER%2FXMMRP0EnyIpGsV2g%3D%3D&Expires=1795126210",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "retrieved_at": "2026-11-19T22:07:07Z"
+    }
+  ],
+  "notes": "OCHA ROP COD-AB; source stated: SPC SDD and Department of Lands. adm0/adm1 2022 v2 (uploaded 2022-01-26); polbnda adm0-3 uploaded 2018-02."
+}

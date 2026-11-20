@@ -1,0 +1,69 @@
+{
+  "source_id": "cok-spc-pcrafi-aal-electoral",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-19T22:05:46Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "api",
+  "landing_url": "https://pacificdata.org/data/dataset/ck-electoralboundary-aal-382",
+  "download_urls": [
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+    "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=json"
+  ],
+  "license": {
+    "name": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+  },
+  "files": [
+    {
+      "path": "ck_electoralboundary_aal.zip",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=SHAPE-ZIP&format_options=charset%3AUTF-8",
+      "bytes": 660236,
+      "sha256": "df096d9e330f7f7981379f17803b6d2f472022d44ba94ee78a2a33b12fc8efa9",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:05:45Z"
+    },
+    {
+      "path": "ck_electoralboundary_aal.geojson",
+      "url": "https://geonode.pacificdata.org/geoserver/geonode/ck_electoralboundary_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:ck_electoralboundary_aal&outputFormat=json",
+      "bytes": 1657395,
+      "sha256": "09d7182f50cc773f3735fa38247fa3e3c2caccc5225cd5ee4dec28ac2655ab8a",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "retrieved_at": "2026-11-19T22:05:46Z"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "ck_electoralboundary_aal/ck_electoralboundary_aal.dbf",
+      "from": "ck_electoralboundary_aal.zip",
+      "bytes": 35777,
+      "sha256": "c4589dd2f1a4b9579f3463dfb4c9682a759150c8c132db5b952522a0711b982b"
+    },
+    {
+      "path": "ck_electoralboundary_aal/ck_electoralboundary_aal.prj",
+      "from": "ck_electoralboundary_aal.zip",
+      "bytes": 335,
+      "sha256": "0f8030724ab577ea5f39a40de4b262dd3e5119c2e4666d079483ec87b15b61f0"
+    },
+    {
+      "path": "ck_electoralboundary_aal/ck_electoralboundary_aal.cst",
+      "from": "ck_electoralboundary_aal.zip",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "ck_electoralboundary_aal/ck_electoralboundary_aal.shx",
+      "from": "ck_electoralboundary_aal.zip",
+      "bytes": 292,
+      "sha256": "037a6bb8d3c1ba2ee144ac63750421e28ca574f255b14e74cd41435990dffa2b"
+    },
+    {
+      "path": "ck_electoralboundary_aal/ck_electoralboundary_aal.shp",
+      "from": "ck_electoralboundary_aal.zip",
+      "bytes": 922484,
+      "sha256": "7dd239c81f4b7e2f68c0812ea103e8a4a6b7c2372a9e5f1b67fb5868f512f98f"
+    }
+  ],
+  "notes": "PCRAFI average annual loss by electoral boundary; geometry derived from ck_electoral_boundary (2010)."
+}

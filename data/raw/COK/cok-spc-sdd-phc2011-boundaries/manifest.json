@@ -1,0 +1,38 @@
+{
+  "source_id": "cok-spc-sdd-phc2011-boundaries",
+  "iso3": "COK",
+  "retrieved_at": "2026-11-19T22:05:42Z",
+  "retrieved_by": "retrieval agent (polynesia_a) via curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2011_cok_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/70805a7a-86de-4455-ac42-07307e85f7cd/download/2011_phc_cok_eaid_4326.geojson",
+    "https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/b46c3299-881e-4751-b23a-6fd6b7648179/download/2011_phc_cok_cd_4326.geojson"
+  ],
+  "license": {
+    "name": "CC-BY (Creative Commons Attribution, version unstated on PDH)",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "2011_phc_cok_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/70805a7a-86de-4455-ac42-07307e85f7cd/download/2011_phc_cok_eaid_4326.geojson",
+      "bytes": 724169,
+      "sha256": "72b43dd16d99371d18d9426dc97535778abc08a6a94ca0f2878f7589def15e6b",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:41Z"
+    },
+    {
+      "path": "2011_phc_cok_cd_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/2e650db6-5eb3-4c60-ac2c-4eb5c2d52193/resource/b46c3299-881e-4751-b23a-6fd6b7648179/download/2011_phc_cok_cd_4326.geojson",
+      "bytes": 834772,
+      "sha256": "cfcdbbfbb82334289716854e14f689eb444771f3791ae09c2605f29c2a45a704",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:05:42Z"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "SPC SDD, boundaries used for 2011 Cook Islands Census (PopGIS3). Enumeration areas + census districts."
+}

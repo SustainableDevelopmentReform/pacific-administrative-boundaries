@@ -1,0 +1,399 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/version/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "id": "pab-mhl-admin",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          175.518175,
+          1.777313
+        ],
+        [
+          175.518175,
+          22.669927
+        ],
+        [
+          157.463889,
+          22.669927
+        ],
+        [
+          157.463889,
+          1.777313
+        ],
+        [
+          175.518175,
+          1.777313
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    157.463889,
+    1.777313,
+    175.518175,
+    22.669927
+  ],
+  "properties": {
+    "title": "Marshall Islands administrative and jurisdictional boundaries (long table)",
+    "description": "All boundary levels for Marshall Islands, from the EEZ to the finest published level, stacked in one table (one row per unit per level). Sources: Flanders Marine Institute (VLIZ), Marine Regions, \"Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12\" (marineregions-eez-v12); OCHA Regional Office for Asia and the Pacific (HDX), \"Marshall Islands - Subnational Administrative Boundaries (COD-AB), 2021 census geography\" (mhl-ocha-codab-2021); PacIOOS (data provider: U.S. Agency for International Development), \"Marshall Islands Local Government Areas, Village Boundaries and Atolls (USAID, served by PacIOOS)\" (mhl-usaid-pacioos-lga-2017); Pacific Community (SPC), Geoscience, Energy and Maritime Division, \"Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)\" (spc-gem-pacific-eez-200nm). Licences (per row in the `license` column): CC-BY-NC-SA-4.0, CC-BY-4.0, CC-BY-3.0-IGO, PacIOOS data use (free redistribution, not for legal use). Some rows are used and redistributed by this project under a data-use agreement (CSDR-SPC data use agreement (user-confirmed 2026-11-20)); downstream users are bound by the row's public licence (e.g. CC BY-NC-SA 4.0) unless they hold their own agreement. Full provenance and source notes: https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/sources.md#mhl-marshall-islands.",
+    "start_datetime": "2017-04-19T00:00:00Z",
+    "end_datetime": "2025-09-17T00:00:00Z",
+    "created": "2026-11-20T00:27:08Z",
+    "updated": "2026-11-20T01:05:08Z",
+    "providers": [
+      {
+        "name": "Flanders Marine Institute (VLIZ), Marine Regions",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://www.marineregions.org/downloads.php"
+      },
+      {
+        "name": "OCHA Regional Office for Asia and the Pacific (HDX)",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://data.humdata.org/dataset/cod-ab-mhl"
+      },
+      {
+        "name": "PacIOOS (data provider: U.S. Agency for International Development)",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html"
+      },
+      {
+        "name": "Pacific Community (SPC), Geoscience, Energy and Maritime Division",
+        "roles": [
+          "licensor",
+          "producer"
+        ],
+        "url": "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743"
+      },
+      {
+        "name": "Pacific administrative boundaries",
+        "description": "Harmonised the source boundaries; code, documentation and full provenance in the GitHub repository.",
+        "roles": [
+          "producer",
+          "processor"
+        ],
+        "url": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries"
+      },
+      {
+        "name": "Amazon Web Services (S3)",
+        "description": "Public bucket s3://csdr-public-datasets/pacific-administrative-boundaries/",
+        "roles": [
+          "host"
+        ],
+        "url": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries"
+      }
+    ],
+    "license": "other",
+    "proj:code": "EPSG:4326",
+    "proj:bbox": [
+      157.463889,
+      1.777313,
+      175.518175,
+      22.669927
+    ],
+    "table:columns": [
+      {
+        "name": "uid",
+        "type": "large_string"
+      },
+      {
+        "name": "iso3",
+        "type": "large_string"
+      },
+      {
+        "name": "country_name",
+        "type": "large_string"
+      },
+      {
+        "name": "sovereign_iso3",
+        "type": "large_string"
+      },
+      {
+        "name": "political_status",
+        "type": "large_string"
+      },
+      {
+        "name": "level_rank",
+        "type": "int16"
+      },
+      {
+        "name": "level_code",
+        "type": "large_string"
+      },
+      {
+        "name": "level_type",
+        "type": "large_string"
+      },
+      {
+        "name": "level_name_local",
+        "type": "large_string"
+      },
+      {
+        "name": "nests",
+        "type": "bool"
+      },
+      {
+        "name": "unit_name",
+        "type": "large_string"
+      },
+      {
+        "name": "unit_name_alt",
+        "type": "string"
+      },
+      {
+        "name": "unit_code",
+        "type": "large_string"
+      },
+      {
+        "name": "code_scheme",
+        "type": "large_string"
+      },
+      {
+        "name": "parent_uid",
+        "type": "string"
+      },
+      {
+        "name": "eez_uid",
+        "type": "string"
+      },
+      {
+        "name": "source_id",
+        "type": "large_string"
+      },
+      {
+        "name": "source_publisher",
+        "type": "large_string"
+      },
+      {
+        "name": "source_url",
+        "type": "large_string"
+      },
+      {
+        "name": "source_version",
+        "type": "string"
+      },
+      {
+        "name": "source_date",
+        "type": "date32[day]"
+      },
+      {
+        "name": "retrieved_at",
+        "type": "timestamp[us, tz=UTC]"
+      },
+      {
+        "name": "license",
+        "type": "large_string"
+      },
+      {
+        "name": "license_url",
+        "type": "large_string"
+      },
+      {
+        "name": "license_agreement",
+        "type": "string"
+      },
+      {
+        "name": "license_restricted",
+        "type": "bool"
+      },
+      {
+        "name": "geometry_method",
+        "type": "large_string"
+      },
+      {
+        "name": "area_km2",
+        "type": "double"
+      },
+      {
+        "name": "geometry",
+        "type": "binary"
+      },
+      {
+        "name": "bbox",
+        "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+      }
+    ],
+    "table:row_count": 229,
+    "table:primary_geometry": "geometry",
+    "version": "v0.1.0",
+    "processing:software": {
+      "pab": "0.1.0"
+    },
+    "processing:lineage": "raw manifest -> config/sources register -> pab process/combine",
+    "processing:datetime": "2026-11-20T01:05:08Z",
+    "pab:levels": [
+      "admin0",
+      "admin1",
+      "admin2",
+      "eez",
+      "other"
+    ],
+    "pab:source_ids": [
+      "marineregions-eez-v12",
+      "mhl-ocha-codab-2021",
+      "mhl-usaid-pacioos-lga-2017",
+      "spc-gem-pacific-eez-200nm"
+    ],
+    "pab:licenses": [
+      "CC-BY-NC-SA-4.0",
+      "CC-BY-4.0",
+      "CC-BY-3.0-IGO",
+      "PacIOOS data use (free redistribution, not for legal use)"
+    ],
+    "pab:license_agreements": [
+      "CSDR-SPC data use agreement (user-confirmed 2026-11-20)"
+    ],
+    "pab:iso3": "MHL",
+    "sci:citation": "Flanders Marine Institute (VLIZ), Marine Regions (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. https://www.marineregions.org/downloads.php; OCHA Regional Office for Asia and the Pacific (HDX) (2024). Marshall Islands - Subnational Administrative Boundaries (COD-AB), 2021 census geography. https://data.humdata.org/dataset/cod-ab-mhl; PacIOOS (data provider: U.S. Agency for International Development) (2017). Marshall Islands Local Government Areas, Village Boundaries and Atolls (USAID, served by PacIOOS). https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html; Pacific Community (SPC), Geoscience, Energy and Maritime Division (2025). Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries). https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743",
+    "pab:git_commit": null,
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "about",
+      "href": "https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries/blob/v0.1.0/docs/sources.md#mhl-marshall-islands",
+      "type": "text/html",
+      "title": "Sources, licences and processing notes (GitHub)"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.marineregions.org/downloads.php",
+      "type": "text/html",
+      "title": "Source: Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12"
+    },
+    {
+      "rel": "via",
+      "href": "https://data.humdata.org/dataset/cod-ab-mhl",
+      "type": "text/html",
+      "title": "Source: Marshall Islands - Subnational Administrative Boundaries (COD-AB), 2021 census geography"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+      "type": "text/html",
+      "title": "Source: Marshall Islands Local Government Areas, Village Boundaries and Atolls (USAID, served by PacIOOS)"
+    },
+    {
+      "rel": "via",
+      "href": "https://pacificdata.org/data/dataset/geonode-global-eez-200nm-split-1743",
+      "type": "text/html",
+      "title": "Source: Global Exclusive Economic Zones (200 Nautical Miles) - Merged Dataset (SPC Pacific Maritime Boundaries)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "title": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "title": "CC-BY-3.0-IGO"
+    },
+    {
+      "rel": "license",
+      "href": "https://www.pacioos.hawaii.edu/metadata/mh_mgd_all_local_gov_areas.html",
+      "title": "PacIOOS data use (free redistribution, not for legal use)"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries/processed/MHL/mhl_admin.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "Marshall Islands administrative and jurisdictional boundaries (long table)",
+      "roles": [
+        "data"
+      ],
+      "alternate": {
+        "s3": {
+          "href": "s3://csdr-public-datasets/pacific-administrative-boundaries/processed/MHL/mhl_admin.parquet",
+          "alternate:name": "S3"
+        }
+      }
+    },
+    "provenance": {
+      "href": "https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries/processed/MHL/provenance.json",
+      "type": "application/json",
+      "title": "Processing provenance (step records)",
+      "roles": [
+        "metadata"
+      ],
+      "alternate": {
+        "s3": {
+          "href": "s3://csdr-public-datasets/pacific-administrative-boundaries/processed/MHL/provenance.json",
+          "alternate:name": "S3"
+        }
+      }
+    },
+    "manifest-marineregions-eez-v12": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/EEZ/marineregions-eez-v12/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest marineregions-eez-v12 (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "manifest-mhl-ocha-codab-2021": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/MHL/mhl-ocha-codab-2021/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest mhl-ocha-codab-2021 (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "manifest-mhl-usaid-pacioos-lga-2017": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/MHL/mhl-usaid-pacioos-lga-2017/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest mhl-usaid-pacioos-lga-2017 (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "manifest-spc-gem-pacific-eez-200nm": {
+      "href": "https://raw.githubusercontent.com/SustainableDevelopmentReform/pacific-administrative-boundaries/v0.1.0/data/raw/EEZ/spc-gem-pacific-eez-200nm/manifest.json",
+      "type": "application/json",
+      "title": "Raw download manifest spc-gem-pacific-eez-200nm (checksums, retrieval date)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
+  "collection": "pacific-admin-boundaries"
+}

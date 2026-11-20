@@ -1,0 +1,183 @@
+iso3: WSM
+country_name: Samoa
+# Hierarchy (Samoa Bureau of Statistics census geography, verified in 2011 PHC layers):
+#   admin1 Region (4 statistical regions: Apia Urban Area, North West Upolu, Rest of Upolu, Savaii)
+#   admin2 District (43 census/faipule districts, incl. 2 '(PART)' Upolu exclaves of Gagaemauga I/II)
+#   admin3 Village (330 census villages; NOT shipped - derive by dissolving EAs on floor(eaid/100))
+#   admin4 Enumeration area (876)
+# Non-nesting: 11 traditional/political districts (itumalo: Tuamasaga, A'ana, Atua, ...) - these cross the
+#   4 statistical regions, so they are kept as a parallel layer (level_code other).
+# Electoral: 51 constituencies (Electoral Constituencies Act 2019) are defined by village lists; no GIS layer
+#   is published (gap).
+sources:
+  - source_id: wsm-sbs-phc2011-admin-boundaries
+    title: "2011 Samoa PHC administrative boundaries (regions, districts, enumeration areas)"
+    publisher: "SPC Statistics for Development Division (SDD) for Samoa Bureau of Statistics"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2011_wsm_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/238fe7bf-4120-4034-896d-1155bf21fbb7/download/2011_phc_wsm_eaid_4326.geojson
+      - https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/d5aee425-5e46-41f1-929e-3b7413ff1d4a/download/2011_phc_wsm_did_4326.geojson
+      - https://pacificdata.org/data/dataset/f65c2527-8223-42ac-aebf-7b773ddc412f/resource/4f3c197c-929f-4f29-884f-3077188f523e/download/2011_phc_wsm_rid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH licence field 'Creative Commons Attribution'."
+    publication_date: 2020-06-29
+    version: "2011 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: region
+        level_name_local: Region
+        layer: 2011_phc_wsm_rid_4326.geojson
+        name_field: r_name
+        code_field: rid
+        parent_field: null
+        nests: true
+      - level_code: admin2
+        level_type: district
+        level_name_local: District (itumalo / faipule district)
+        layer: 2011_phc_wsm_did_4326.geojson
+        name_field: d_name
+        code_field: did
+        code_scheme: sbs-census
+        parent_field: null
+        nests: true
+        notes: "No region field; assign parent region spatially (or from SBS district->region table)."
+      - level_code: admin3
+        level_type: ward_village
+        level_name_local: Village (nu'u, census village)
+        layer: 2011_phc_wsm_eaid_4326.geojson
+        name_field: {field: ea_name, regex_sub: ['\s*\d+\s*$', '']}
+        code_field: {field: eaid, floordiv: 100}
+        code_scheme: sbs-census
+        parent_field: {field: eaid, floordiv: 10000}
+        dissolve: true
+        nests: true
+        notes: "[processing] machine-readable village derivation (D-010). Derived: dissolve EAs on village code = floor(eaid/100) (330 villages); district = floor(eaid/10000) matches did (43). Village name = ea_name without trailing EA number. geometry_method dissolved_from_children."
+      - level_code: admin4
+        level_type: statistical
+        level_name_local: Enumeration area
+        layer: 2011_phc_wsm_eaid_4326.geojson
+        name_field: ea_name
+        code_field: eaid
+        code_scheme: sbs-census
+        parent_field: {field: eaid, floordiv: 100}
+        nests: true
+        notes: "876 EAs; eaid = DD VV EE (district, village, EA). [processing] parent village = floor(eaid/100)."
+    status: selected
+    raw_path: data/raw/WSM/wsm-sbs-phc2011-admin-boundaries/
+    notes: "Only official sub-national geometry published openly. 2016 and 2021 census geographies were not found on PDH, SBS or HDX (searched 2026-11-20); East View sells a 2016 census GIS edition (commercial, not considered)."
+  - source_id: wsm-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen WSM ADM0-ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/api/current/gbOpen/WSM/ALL/
+    download_urls:
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WSM/ADM0/geoBoundaries-WSM-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WSM/ADM1/geoBoundaries-WSM-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WSM/ADM2/geoBoundaries-WSM-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: "ADM0 ODbL-1.0 (OSM); ADM1 CC-BY-SA-3.0 (Wikipedia); ADM2 CC-BY-4.0 (PDH 2011)"
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "ADM1 is share-alike (CC BY-SA 3.0) - flag in license field."
+    publication_date: 2023-12-12
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Samoa, layer: geoBoundaries-WSM-ADM0-all/geoBoundaries-WSM-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true, use: false, notes: "[processing] not used: admin0 dissolved from official regions."}
+      - level_code: other
+        level_type: district
+        level_name_local: Itumalo (political district)
+        layer_key: itumalo
+        license: {name: CC-BY-SA-3.0, url: "https://creativecommons.org/licenses/by-sa/3.0/"}   # [processing] D-016: ADM1 (Wikipedia-derived) licence
+        layer: geoBoundaries-WSM-ADM1-all/geoBoundaries-WSM-ADM1.geojson
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: false
+        notes: "11 traditional districts; source year 2018 (Wikipedia-derived). Cross the 4 statistical regions, hence non-nesting."
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: geoBoundaries-WSM-ADM2-all/geoBoundaries-WSM-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: selected
+    raw_path: data/raw/WSM/wsm-geoboundaries-gbopen/
+    notes: "SELECTED ONLY for the 11-itumalo non-nesting layer (no official open alternative). ADM2 is a copy of the PDH 2011 districts (do not double count); ADM0 is OSM-derived (use admin0 dissolved from official regions)."
+  - source_id: wsm-gadm41
+    title: "GADM 4.1 Samoa"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_WSM.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; no redistribution)", url: "https://gadm.org/license.html", redistribution_ok: false, notes: "license_restricted = true"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Samoa, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: other, level_type: district, level_name_local: Itumalo, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: false}
+      - {level_code: admin2, level_type: district, level_name_local: District, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/WSM/wsm-gadm41/
+    notes: "Reference only. 11 itumalo + 43 districts."
+  - source_id: wsm-spc-gem-pcrafi-district-aal
+    title: "PCRAFI Annual Average Loss at district level for Samoa"
+    publisher: "SPC GEM"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/ws-district-aal-465
+    download_urls: []
+    retrieval_method: http
+    license: {name: CC-BY-NC-SA-4.0, url: "https://creativecommons.org/licenses/by-nc-sa/4.0/", redistribution_ok: false, notes: ""}
+    publication_date: null
+    version: null
+    format: shapefile
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "Not downloaded: risk-model attributes on district polygons (derived), NC licence."
+  - source_id: wsm-oec-constituencies-2019
+    title: "Electoral constituencies (51), Electoral Constituencies Act 2019"
+    publisher: "Office of the Electoral Commissioner / Parliament of Samoa"
+    publisher_type: national
+    landing_url: https://paclii.org/ws/legis/consol_act_2020/eca2019265
+    download_urls: []
+    retrieval_method: manual
+    license: {name: unspecified, url: null, redistribution_ok: false, notes: "Legal text only"}
+    publication_date: 2019-01-01
+    version: "2019"
+    format: pdf
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "No GIS published. Act Schedule lists villages/sub-villages per constituency; could be built from census villages in processing (future work)."
+decisions:
+  - level_code: admin1
+    chosen: wsm-sbs-phc2011-admin-boundaries
+    alternatives: []
+    reason: "Only source of the 4 statistical regions."
+    escalated: false
+  - level_code: admin2
+    chosen: wsm-sbs-phc2011-admin-boundaries
+    alternatives: [wsm-geoboundaries-gbopen, wsm-gadm41]
+    reason: "Official census geography; geoBoundaries ADM2 is a copy."
+    escalated: false
+  - level_code: admin3
+    chosen: wsm-sbs-phc2011-admin-boundaries
+    alternatives: []
+    reason: "Villages derivable from official EAs; no other open village layer."
+    escalated: false
+  - level_code: other
+    chosen: wsm-geoboundaries-gbopen
+    alternatives: [wsm-gadm41]
+    reason: "11 itumalo only available from geoBoundaries (CC BY-SA, Wikipedia-derived) or GADM (restricted). Low officialness."
+    escalated: false

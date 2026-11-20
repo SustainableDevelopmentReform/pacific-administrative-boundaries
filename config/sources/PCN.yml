@@ -1,0 +1,112 @@
+iso3: PCN
+country_name: Pitcairn Islands
+# No subnational administrative units exist (single Island Council for the territory; only Pitcairn
+# Island is inhabited). Only admin0 is produced. An optional non-administrative 'island' split
+# (Pitcairn, Henderson, Ducie, Oeno) can be derived from the admin0 parts if wanted.
+# The Pitcairn Islands Marine Reserve (designated Sept 2016, ~830,000 km2: EEZ beyond 12 nm) is a
+# protected area, not an admin unit, and is left to the EEZ/marine stage (no download here).
+sources:
+  - source_id: pcn-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen Pitcairn Islands ADM0"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/PCN/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PCN/ADM0/geoBoundaries-PCN-ADM0-all.zip
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: ""}
+    publication_date: 2023-12-12   # buildDate; data year 2021
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory
+        layer: null
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: true
+        derive:   # [processing] geoBoundaries PCN ADM0 holds Henderson Island only; fill missing islands from Natural Earth (ESCALATED)
+          method: islands_from_parts
+          max_km: 25
+          sources:
+            - {source_id: pcn-geoboundaries-gbopen, layer: geoBoundaries-PCN-ADM0-all/geoBoundaries-PCN-ADM0.geojson, method_token: as_published}
+            - {source_id: pcn-naturalearth-10m-admin0, layer: ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp, filter: {ADM0_A3: PCN}, method_token: supplemented_from_natural_earth}
+          islands:
+            - {code: pitcairn, name: Pitcairn Island, lon: -130.10, lat: -25.07}
+            - {code: henderson, name: Henderson Island, lon: -128.32, lat: -24.37}
+            - {code: ducie, name: Ducie Island, lon: -124.79, lat: -24.67}
+            - {code: oeno, name: Oeno Island, lon: -130.74, lat: -23.93}
+          collapse: {code: PCN, name: Pitcairn Islands}
+        notes: "[processing] geoBoundaries ADM0 (labelled 'Pitcairn Island') is actually Henderson Island only (bbox -128.36..-128.29); Pitcairn, Oeno and Ducie are filled from the Natural Earth 10m alternative (public domain). Escalated." 
+    status: selected
+    raw_path: data/raw/PCN/pcn-geoboundaries-gbopen/
+    notes: "Sentinel-2 2021 land cover derived, 42.6 km2. No official UK/Pitcairn Government digital outline found."
+
+  - source_id: pcn-naturalearth-10m-admin0
+    title: "Natural Earth 1:10m Admin 0 - Countries v5.1.1"
+    publisher: "Natural Earth"
+    publisher_type: other
+    landing_url: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/
+    download_urls:
+      - https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip
+    retrieval_method: http
+    license: {name: Public domain (Natural Earth), url: https://www.naturalearthdata.com/about/terms-of-use/, redistribution_ok: true, notes: ""}
+    publication_date: null
+    version: "5.1.1"
+    format: shapefile
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: "ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp (ADM0_A3='PCN')", name_field: NAME, code_field: ADM0_A3, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/PCN/pcn-naturalearth-10m-admin0/
+    notes: "Global file, coarse (1:10m); last resort. Area 42.6 km2."
+
+  - source_id: pcn-osm-admin-relations
+    title: "OpenStreetMap relation Pitcairn Islands (2185375)"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/relation/2185375
+    download_urls:
+      - https://polygons.openstreetmap.fr/get_geojson.py?id=2185375&params=0
+      - https://api.openstreetmap.org/api/0.6/relation/2185375.json
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: https://www.openstreetmap.org/copyright, redistribution_ok: true, notes: "share-alike"}
+    publication_date: 2026-11-20   # snapshot
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: r2185375.geojson, name_field: "name (r2185375_tags.json)", code_field: "relation id", parent_field: null, nests: true}
+    status: rejected
+    raw_path: data/raw/PCN/pcn-osm-admin-relations/
+    notes: "Maritime outline (7,553 km2, territorial-sea style), not land. No subarea relations."
+
+  - source_id: pcn-gadm-41
+    title: "GADM 4.1 Pitcairn Islands"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_PCN.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; redistribution not allowed)", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Reference only"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+    status: reference
+    raw_path: data/raw/PCN/pcn-gadm-41/
+    notes: "ADM0 only; 54.2 km2 (appears to include atoll lagoons)."
+
+decisions:
+  - level_code: admin0
+    chosen: pcn-geoboundaries-gbopen
+    alternatives: [pcn-naturalearth-10m-admin0, pcn-gadm-41]
+    reason: "Higher-resolution open land outline (Sentinel-2) vs Natural Earth 1:10m; GADM restricted; OSM maritime."
+    escalated: false

@@ -1,0 +1,50 @@
+{
+  "source_id": "marineregions-eez-v12",
+  "iso3": "EEZ",
+  "retrieved_at": "2026-11-19T21:52:57Z",
+  "retrieved_by": "pab cache",
+  "retrieval_method": "api",
+  "landing_url": "https://www.marineregions.org/downloads.php",
+  "download_urls": [
+    "https://geo.vliz.be/geoserver/MarineRegions/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=MarineRegions:eez&outputFormat=SHAPE-ZIP"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "notes": "Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. https://doi.org/10.14284/632. WFS layer title 'Exclusive Economic Zones (200 NM) (v12, world, 2023)'; 285 features (all polygons worldwide, no filter). Retrieved via VLIZ GeoServer WFS 1.0.0 (lon/lat axis order) because the marineregions.org download_file.php?name=World_EEZ_v12_20231025.zip route requires a form with personal data (name, organisation, e-mail, country, user category, purpose) and has no stable URL. Equivalent manual route: marineregions.org/downloads.php > Maritime Boundaries (latest version) > World EEZ v12 (2023-10-25) > Shapefile/GeoPackage > fill form > Download. WFS shapefile field names are lowercase; DBF encoding ISO-8859-1 (eez.cst). Marine Regions asks users not to make products available for download elsewhere (request, not a licence term).",
+  "files": [
+    {
+      "path": "MarineRegions_eez_v12_wfs.zip",
+      "bytes": 118171225,
+      "sha256": "f2261169b9bcf1de2bf2b1b0a9c9b4e3d52ce787df632a2596b3024639199d62"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/eez.cst",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "path": "extracted/eez.dbf",
+      "bytes": 1113095,
+      "sha256": "4f8058f728ba4841d0fd72501f6d2352ab03bdab2a69ff3da9e84c5fd072a563"
+    },
+    {
+      "path": "extracted/eez.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "path": "extracted/eez.shp",
+      "bytes": 163901012,
+      "sha256": "bb68ebda72f96ecf4f6428cd11079c50ec94eb2ffc4f711e092698dbb79066e5"
+    },
+    {
+      "path": "extracted/eez.shx",
+      "bytes": 2380,
+      "sha256": "1f0c943d9ffeeb3c63d145c5bf4c0e3bd64a7572c5bf24fa9d7f3c6fbf79556b"
+    }
+  ]
+}

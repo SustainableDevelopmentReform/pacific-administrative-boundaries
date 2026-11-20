@@ -1,0 +1,749 @@
+{
+  "source_id": "fji-ocha-cod-ab-2017",
+  "iso3": "FJI",
+  "retrieved_at": "2026-11-19T21:57:08Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://data.humdata.org/dataset/cod-ab-fji",
+  "download_urls": [
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/c3dc129d-6434-48c8-bb2b-d14b1c05e9b5/download/fji_polbnda_adm.gdb.zip",
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/90d68ce7-aa45-470a-b0b0-a7bd1c4a5d24/download/fji_polbnda_adm0_country.zip",
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/fe4e5724-3133-4d2f-9a49-4d67beebf63e/download/fji_polbnda_adm1_district.zip",
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/8ec2ca4b-973b-409c-8c2f-53e26b816852/download/fji_polbnda_adm2_province.zip",
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/d949f7a8-7ac3-41eb-8aec-0e29af5042f6/download/fji_polbnda_adm3_tikina.zip",
+    "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/898dd96d-9eae-4532-bd17-d4f795a371b2/download/fji_adm_gz.xlsx",
+    "https://data.humdata.org/api/3/action/package_show?id=cod-ab-fji"
+  ],
+  "license": {
+    "name": "CC-BY-3.0-IGO",
+    "url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode"
+  },
+  "files": [
+    {
+      "path": "fji_polbnda_adm.gdb.zip",
+      "bytes": 6984861,
+      "sha256": "438b389e0ba1ed16cc72c33d8f031c6ee793d99487fe5352def4f5237992fc52"
+    },
+    {
+      "path": "fji_polbnda_adm0_country.zip",
+      "bytes": 3665167,
+      "sha256": "baeaee8983a975eb1bb8a9e473e28e0d4ecfb8e58c09db64c16c2fafec8f2317"
+    },
+    {
+      "path": "fji_polbnda_adm1_district.zip",
+      "bytes": 3709308,
+      "sha256": "74326a529402e5d2cc78cadb34683200b99541c81628caf4580273294c519663"
+    },
+    {
+      "path": "fji_polbnda_adm2_province.zip",
+      "bytes": 3865330,
+      "sha256": "ca5d682ce6543a2349479ad4c8c1b9e9acdb1769e58f3b0e6d6733fb05c5deaf"
+    },
+    {
+      "path": "fji_polbnda_adm3_tikina.zip",
+      "bytes": 3799064,
+      "sha256": "95a68f4ef0d3c8f53a9bbd0462da4bbeef2f940cbb3c6743439ffd29f78c4a72"
+    },
+    {
+      "path": "fji_adm_gz.xlsx",
+      "bytes": 20583,
+      "sha256": "3828a278cd3952ebe9056ae65508a555fa7e0b87a2117e16af4a67e8b0b6d03b"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "bytes": 29897,
+      "sha256": "aace9b2c937532582487e062e739a76ecaa5545088f7b14d32a99348dac4c3ef"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000001.TablesByName.atx",
+      "bytes": 4118,
+      "sha256": "a57c6a451e325c8eeeb4aefe57cd74fadee81572b90430a3dad7b5a89f273de9",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000001.gdbindexes",
+      "bytes": 110,
+      "sha256": "80ba95b873e151074244f7655f9e29ce8967aab1bd57ff4c06a329b723a3d46c",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000001.gdbtable",
+      "bytes": 435,
+      "sha256": "63067b3639873f8a5404ac4c51b984d6b2df7f2aa5e446ca383102e578345a76",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000001.gdbtablx",
+      "bytes": 5152,
+      "sha256": "61ee2b311eaca0d94ea8569bcca0827d5a5e58507c631519569cbaec1b0f7b49",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000002.gdbtable",
+      "bytes": 2055,
+      "sha256": "9efa50dc62a40e109a546054943ae5ad4b3d41aa81ece0dfa026b7b23cb09da8",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000002.gdbtablx",
+      "bytes": 5152,
+      "sha256": "f3ac9865dec6ab40e73d91dd1f5c2eef0248e66e359d4abb1d97edba92b5df88",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000003.gdbindexes",
+      "bytes": 42,
+      "sha256": "de0911d18e2f304380c04ae123ea18057d262d788301f7cc3148298231c7c618",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000003.gdbtable",
+      "bytes": 650,
+      "sha256": "eeff0d5df77385fa81ecbd8897194374fc40c65d9fa4dd514f042acb33fcdba7",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000003.gdbtablx",
+      "bytes": 5152,
+      "sha256": "d63fd5f8a490aa6aeffde1336e80ce35b5399af5752a72b316570a670b09d167",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.CatItemsByPhysicalName.atx",
+      "bytes": 4118,
+      "sha256": "57006256c62665cd9754c6502acc9c15d0b432eddf3b2019fc74eb33b4d53887",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.CatItemsByType.atx",
+      "bytes": 4118,
+      "sha256": "2e5cd111fb6ab8610cad1c94eb9ab65e4652866c7e6ec38e958eadb2a8fb3939",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "a73ef6cd64a978599a6a44a586dead29e963deb1acc2dfa71d9fb4e338709289",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.freelist",
+      "bytes": 4440,
+      "sha256": "fa34af3586543fdd428fe3ba69e93659ec46829762de9e4ac0efd8b4466941c1",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.gdbindexes",
+      "bytes": 310,
+      "sha256": "f29887c93b126a3feb0e20958cd73cc774f76ab79284b9c7286dc12eb05db858",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.gdbtable",
+      "bytes": 53024,
+      "sha256": "8303bcfd7f69d3bc3443574558b8dd2cb15336dc2a19e1aaab752f56c25b3c3e",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.gdbtablx",
+      "bytes": 5152,
+      "sha256": "4c76a63ec4305f2dc9e623ecd309952284c50e5d63d4d5035526b9d1a80da0df",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000004.spx",
+      "bytes": 32790,
+      "sha256": "aac7fe4d7a3f886c8db8251c666234b14612a14579fe4ff8e41c0a8d7c62b5c7",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.CatItemTypesByName.atx",
+      "bytes": 12310,
+      "sha256": "9037596baec2c9aefec9ab09adb6bc0ee126e6de50308bafedecf8381cac79ac",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.CatItemTypesByParentTypeID.atx",
+      "bytes": 4118,
+      "sha256": "8085b98b49e145697ebfcd80b781070e14b91f35651840513354e8d258158dfa",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.CatItemTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "cc03cd2f9b1f591e1813c67ccc99dbbe7e66d029b0b1b0e7695449921b0fb6e2",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.gdbindexes",
+      "bytes": 296,
+      "sha256": "c21e650994b48cc72d174b3caf2ac1bd19e2d7305c8087aaae97e24caecf98a5",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.gdbtable",
+      "bytes": 1803,
+      "sha256": "fd9a26f659cfd3d01bbf49d24616d82dfa0352422a678951a5ec98027461c913",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000005.gdbtablx",
+      "bytes": 5152,
+      "sha256": "b9bd45db38da77d63c42d6afafd4f2e557e23e2276f51f2698a6ace32e01b51f",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.CatRelsByDestinationID.atx",
+      "bytes": 4118,
+      "sha256": "9c06277327b0e876b57a0ea117dd387a240ee67c5fbaf8b33ae798772f7aed8c",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.CatRelsByOriginID.atx",
+      "bytes": 4118,
+      "sha256": "3f6d9820a80d83f671df35705011dd9bf37078c965d83c91f5c62f82033e162c",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.CatRelsByType.atx",
+      "bytes": 4118,
+      "sha256": "2f56515715bf8f47a6c5ed465af7afd19ccece5f3f4176219340f7bcd95a2d94",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.FDO_UUID.atx",
+      "bytes": 4118,
+      "sha256": "dfe96b041e46455cda42d867e8b830f326096145bce68d82ca5e4da61bf90b1f",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.gdbindexes",
+      "bytes": 318,
+      "sha256": "1919a00326f198a90dc97545ec448c10b2b90d367020222212f7b00433fe09b5",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.gdbtable",
+      "bytes": 555,
+      "sha256": "10e064abfa047e466bff0a9278accc563a3fb177b06611876db7bc361feca70d",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000006.gdbtablx",
+      "bytes": 5152,
+      "sha256": "f2eb9d6bf2f24e153692cffc94e05dd060dd0c9c2b5647ca9a5fc3b793a62c7c",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByBackwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "c6c9cf6bd610f28f0059063f18bc61a15601d8ee8360e18b74d46c279171e3af",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByDestItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "66ea977c4f008d36b3a65d535801304c9ceefe5e9b5b19a8cba4cc8778102ace",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByForwardLabel.atx",
+      "bytes": 4118,
+      "sha256": "8a0d62cd5008bcef6c75c1de927fe496ad5470de86293b73803a1824f04f6d4a",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByName.atx",
+      "bytes": 4118,
+      "sha256": "78ee575c24947131568b92e97d9ad55d3d1c273a9a34dc0d8aa0f327842164ae",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx",
+      "bytes": 4118,
+      "sha256": "9000a4f44ff72aea8b5b758e19071ca73e119cc990d39e2f3cb79f21fb52029f",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.CatRelTypesByUUID.atx",
+      "bytes": 4118,
+      "sha256": "17da7e8b89f29fb2deb0358cff9ecdbf2aae655c750e42a3a032db706a83fefc",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.gdbindexes",
+      "bytes": 602,
+      "sha256": "dc98e24d04eddd7f38905d176c1ea43c547a3a2daa0c80091a20d3443c726621",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.gdbtable",
+      "bytes": 2504,
+      "sha256": "90d72872f9ca48ad0b1f599d9f628bc90cd6713ceb7f20822f84e46723200f1d",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000007.gdbtablx",
+      "bytes": 5152,
+      "sha256": "5e4767d8912b836126d55ca9f2d947b61b51348821c5b062021e4763366d94c9",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000009.gdbindexes",
+      "bytes": 124,
+      "sha256": "d165e7ca7ec96fef0c72d736cfedcbbd15e594f21fd8b5900e7f303c6b68597a",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000009.gdbtable",
+      "bytes": 2380132,
+      "sha256": "6afa375439689d76b053a383426d01621f98b46d8fd067e9fae958869495976e",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000009.gdbtablx",
+      "bytes": 5152,
+      "sha256": "4632b6d3b0a0d1f56cab91b26efcf0091d023d8018339d60da8100b7ad744e33",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a00000009.spx",
+      "bytes": 4118,
+      "sha256": "a9cb57b0bed4ceb2ef8c7e8c3dd178b75fe19d9feb9352e8cd89559a982948d1",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000a.gdbindexes",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000a.gdbtable",
+      "bytes": 2209708,
+      "sha256": "2a4418f0de869f55ca4194e1530f2e99c617279ebe627b36043617e70a0906e7",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000a.gdbtablx",
+      "bytes": 5152,
+      "sha256": "23edc73fa74b322a794c144ec3937bb87d39c4e9c5a67e55b4dedc0c2dac723c",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000a.spx",
+      "bytes": 4118,
+      "sha256": "f5b4d06dcabc914275ed141689c9abbabb5dd05e7948f05bc12ce93a719f94ac",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000b.gdbindexes",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000b.gdbtable",
+      "bytes": 2115368,
+      "sha256": "84e74c8ba89de14e7973b430d009aa842f446c0615aca77eedcebd306a37d6b5",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000b.gdbtablx",
+      "bytes": 5152,
+      "sha256": "954ece45c1d6c44d31bca53e1b29b4ca9dafccd8f566266644efaca0721c5152",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000b.spx",
+      "bytes": 4118,
+      "sha256": "c7ec3703ffdc820ba0f24ada0b762d4d1acf5ba5767dcda3b1045be3bffe52a9",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000c.gdbindexes",
+      "bytes": 116,
+      "sha256": "760bd4864717c60d5e7c0c6461a622062680e6f79f51250f49456aa609b43774",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000c.gdbtable",
+      "bytes": 2087528,
+      "sha256": "6f91994e865cc25a7dd8297f43023552ab6d47b5389ea02496552964138ca7e9",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000c.gdbtablx",
+      "bytes": 5152,
+      "sha256": "4327ebee36b47e24b01e10e805087f6f4ff8e6f80f670a301d7c62aaacbad186",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/a0000000c.spx",
+      "bytes": 4118,
+      "sha256": "de7c8d91d29d90f38ea1ca596d84ccd24a0eaa94a1794d6d6cbd35204f78e8a7",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/gdb",
+      "bytes": 4,
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm.gdb/fji_polbnda_adm.gdb/timestamps",
+      "bytes": 400,
+      "sha256": "4b65404431bd4c8acf7973e427c69155d79c00e5148b9d0fe14f6eaacc862d63",
+      "from_archive": "fji_polbnda_adm.gdb.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.dbf",
+      "bytes": 607,
+      "sha256": "37e7ea543f7a30197fca3f2404ae18a3a49c795658f633ec2b3f3c82a69ac5d5",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.sbn",
+      "bytes": 132,
+      "sha256": "38d06af83ea28c5c2f601e141528d648a5836a30511c4ead5f0ba36b32dacbd5",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.sbx",
+      "bytes": 116,
+      "sha256": "bddef8ace76717275123c89f815540ae64b3369d9ecd307b3344c7db01618908",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.shp",
+      "bytes": 9747632,
+      "sha256": "b6194bdd2f015debaa8755a6953d250593f07397ba2d8b86719523e12553dbc4",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.shp.xml",
+      "bytes": 6944,
+      "sha256": "00c76c460a605602e9a1ace153ee397b910e7108375948e1364ffdc8b3516626",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm0_country/fji_polbnda_adm0_country.shx",
+      "bytes": 108,
+      "sha256": "2b6eb0491694911a64156434103f65806edcde7e4bc39a761461bf4797a0c6c2",
+      "from_archive": "fji_polbnda_adm0_country.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.dbf",
+      "bytes": 4302,
+      "sha256": "6bf78df7cf9ff2a5c827aaa02cfe2b02fa20e1db701457c825669d75e9b3ba90",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.sbn",
+      "bytes": 180,
+      "sha256": "19bd7541c74e8721c66cdc062cf90f01ab57d526109f00b7689a3d29757ff521",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.sbx",
+      "bytes": 124,
+      "sha256": "189879cc7b76482a4513040e6540eb909df1888c28e3c0b780ecc1909f7291a0",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.shp",
+      "bytes": 9862160,
+      "sha256": "423e85baf77c21c46e0ade6cd3e0f13d450c0b7fcef72f7c124d234e1dbb268f",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.shp.xml",
+      "bytes": 7325,
+      "sha256": "4fb5aca5b252c4f9973f6fa4c6bd4994329ad6c9759b85b01f9107f17b0e61b3",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm1_district/fji_polbnda_adm1_district.shx",
+      "bytes": 132,
+      "sha256": "57b1caf135eed83fab13265453cda537b9edc45dd7cb01ffbbc96dda9f593348",
+      "from_archive": "fji_polbnda_adm1_district.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.dbf",
+      "bytes": 23465,
+      "sha256": "53d90aad3ade18cfab4bf885b596a22b7d71cdab53d2366c99717fc2e7b1f95b",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.sbn",
+      "bytes": 276,
+      "sha256": "e1315ccc3de6561648bb3def016d9b775bb1322c65d8e73a721cdd903e11a6db",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.sbx",
+      "bytes": 132,
+      "sha256": "30590126af100d823376282fd4974b6be918f457d9d9553849f837be89591837",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.shp",
+      "bytes": 10256864,
+      "sha256": "f9ec04d20edcc55bee1074ef515b0c93a1201e2abd03d73f24cf2cd55f73c448",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.shp.xml",
+      "bytes": 7667,
+      "sha256": "4abdea641b3c6b313c438dea856f118baa50e87bfaa64b62e5de37c9176e5e50",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm2_province/fji_polbnda_adm2_province.shx",
+      "bytes": 220,
+      "sha256": "937df53b8ed54f4ce68f927599252e0464c1deaa25734b0dd67edc319cec4c2d",
+      "from_archive": "fji_polbnda_adm2_province.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.dbf",
+      "bytes": 182028,
+      "sha256": "678797f07961c9f900509e5ca1dcb9cb797bda760c775b81f788cb4363cf14aa",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.prj",
+      "bytes": 351,
+      "sha256": "4f646477168365fd49ac17783dd91157a6a107dcbea974a025eaf07b57cf0d06",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.sbn",
+      "bytes": 1004,
+      "sha256": "aedfae789e1a5ba9eee8b5eaef0c81d11a9977a90a881aabf6365f0e417a308c",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.sbx",
+      "bytes": 196,
+      "sha256": "7acc696d90ec863e0983367cf6de961dbdfcb5e076d9196a88fad5368df31a07",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.shp",
+      "bytes": 10930388,
+      "sha256": "2f6996cbfcd3cac44f4b6f8f6f2225e9e1ff97fd25592729f1cd00b5db871b50",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.shp.xml",
+      "bytes": 564,
+      "sha256": "8a6429c8cb3b8cd753dc561caeafc5710b1341e2114d8ebb02d829f73b2b4871",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_polbnda_adm3_tikina/fji_polbnda_adm3_tikina.shx",
+      "bytes": 788,
+      "sha256": "786ab4aefaafdc94e51c1017ba67745a3802d9c4042e02216056f9fe4eb063cf",
+      "from_archive": "fji_polbnda_adm3_tikina.zip"
+    },
+    {
+      "path": "extracted/fji_adm_gz/[Content_Types].xml",
+      "bytes": 1828,
+      "sha256": "eee820db93cc53f8f11289ab6b4b7cc73f6da350a7267f9817e10d23167c4136",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/_rels/.rels",
+      "bytes": 588,
+      "sha256": "73e5a29f48d5ab979eeda062493bc7e679265c1344ef936978b8becec5549497",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/docProps/app.xml",
+      "bytes": 944,
+      "sha256": "c1c4ebb9909f9940c9db1e9598b95f3857e203f2004f4af02eebbb14b76edcba",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/docProps/core.xml",
+      "bytes": 606,
+      "sha256": "421264d859849d542bd05d0ac204a803d91b459da31446d29149d1e3a319523c",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/_rels/workbook.xml.rels",
+      "bytes": 1262,
+      "sha256": "682af5d159d02241e4fb022f7a794da26590aa8abfb19db16541c6997f9e0f86",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/printerSettings/printerSettings1.bin",
+      "bytes": 4840,
+      "sha256": "6787f9a8cd2bc4e178e4b945538e11a5e94093e62f71d1b847ceb08a1e291436",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/sharedStrings.xml",
+      "bytes": 5971,
+      "sha256": "077c994bcfac2677f0b9be0bb2c6dbd9dccb923d87cdfe593bafa38fe366e693",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/styles.xml",
+      "bytes": 2680,
+      "sha256": "ba04316a6b978953259e3d71cec0ed036340c43ea57980908efbfd66c2668bc4",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/theme/theme1.xml",
+      "bytes": 8390,
+      "sha256": "b16106f4229f6ece6d74426b3e73ff6a677df2908d2a06f76ef0329fa27c0282",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/workbook.xml",
+      "bytes": 2732,
+      "sha256": "be3524a7942272369b6f3aa8c5b37824117edbb8c2cf80e7eed90d379e92e48e",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/_rels/sheet5.xml.rels",
+      "bytes": 491,
+      "sha256": "1b7e3917e1957617d7afbf68c6d26837ebb24910a2e91de9772da15eb5049c5d",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/sheet1.xml",
+      "bytes": 29360,
+      "sha256": "995bcda36ec57d2de75f31a576994e653005bccd775a8b8791d9e57235e5e55f",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/sheet2.xml",
+      "bytes": 5562,
+      "sha256": "eb41c307afb8a225b6467eddf32223353dc3531a4e7a224d16e0db240c991e85",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/sheet3.xml",
+      "bytes": 2096,
+      "sha256": "1f075f36a39df7f3a26550c53a3e449128f79fa5fe5ff8797c5a193e86e51717",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/sheet4.xml",
+      "bytes": 1304,
+      "sha256": "91659b26de749269f12d1eef67fe67abd3be32496dbdddd114afbcf591c882f9",
+      "from_archive": "fji_adm_gz.xlsx"
+    },
+    {
+      "path": "extracted/fji_adm_gz/xl/worksheets/sheet5.xml",
+      "bytes": 2941,
+      "sha256": "d33faf8974108d3a6fd80143eeae75c829f92e4a2c4facb38bcf619a2cb74c18",
+      "from_archive": "fji_adm_gz.xlsx"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "fji_polbnda_adm.gdb.zip",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/c3dc129d-6434-48c8-bb2b-d14b1c05e9b5/download/fji_polbnda_adm.gdb.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/c3dc129d-6434-48c8-bb2b-d14b1c05e9b5/fji_polbnda_adm.gdb.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:56:46Z"
+    },
+    {
+      "path": "fji_polbnda_adm0_country.zip",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/90d68ce7-aa45-470a-b0b0-a7bd1c4a5d24/download/fji_polbnda_adm0_country.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/90d68ce7-aa45-470a-b0b0-a7bd1c4a5d24/fji_polbnda_adm0_country.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:56:51Z"
+    },
+    {
+      "path": "fji_polbnda_adm1_district.zip",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/fe4e5724-3133-4d2f-9a49-4d67beebf63e/download/fji_polbnda_adm1_district.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/fe4e5724-3133-4d2f-9a49-4d67beebf63e/fji_polbnda_adm1_district.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:56:55Z"
+    },
+    {
+      "path": "fji_polbnda_adm2_province.zip",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/8ec2ca4b-973b-409c-8c2f-53e26b816852/download/fji_polbnda_adm2_province.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/8ec2ca4b-973b-409c-8c2f-53e26b816852/fji_polbnda_adm2_province.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:56:59Z"
+    },
+    {
+      "path": "fji_polbnda_adm3_tikina.zip",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/d949f7a8-7ac3-41eb-8aec-0e29af5042f6/download/fji_polbnda_adm3_tikina.zip",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/d949f7a8-7ac3-41eb-8aec-0e29af5042f6/fji_polbnda_adm3_tikina.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:57:05Z"
+    },
+    {
+      "path": "fji_adm_gz.xlsx",
+      "url": "https://data.humdata.org/dataset/ae36d1fd-1698-4f53-a4c0-2146a6b5aa29/resource/898dd96d-9eae-4532-bd17-d4f795a371b2/download/fji_adm_gz.xlsx",
+      "url_effective": "https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/898dd96d-9eae-4532-bd17-d4f795a371b2/fji_adm_gz.xlsx",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "retrieved_at": "2026-11-19T21:57:07Z"
+    },
+    {
+      "path": "hdx_package_metadata.json",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-fji",
+      "url_effective": "https://data.humdata.org/api/3/action/package_show?id=cod-ab-fji",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T21:57:08Z"
+    }
+  ],
+  "notes": "HDX COD-AB Fiji adm0-3 (established 2017; reviewed Oct 2024). Source: POPGIS, Fiji Islands Bureau of Statistics, PCRAFI; vetted by ITOS. Derived from FBoS/POPGIS (do not double count)."
+}

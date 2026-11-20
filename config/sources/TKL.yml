@@ -1,0 +1,226 @@
+iso3: TKL
+country_name: Tokelau
+# Hierarchy (D-020, nz_realm_update 2026-11-20):
+#   admin0 = union of admin1 atolls (LINZ Tokelau Island Polygons, Topo50 1:25k, CC-BY-4.0; 8.97 km2 land, lagoons excluded)
+#   admin1 = Atoll (3: Atafu, Nukunonu, Fakaofo). Each atoll is one village community governed by its Taupulega
+#            (village council), so atoll = village; there is no separate village level (Fakaofo's two settlements,
+#            Fale and Fenua Fala, have no published boundaries). Geometry: LINZ islet polygons split by atoll
+#            (atolls 60-90 km apart). No SPC/PCRAFI/census boundary layer exists for Tokelau (searched PDH CKAN and
+#            SPC GeoNode 2026-11-20: only maritime layers).
+sources:
+  - source_id: tkl-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen Tokelau ADM0"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/TKL/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TKL/ADM0/geoBoundaries-TKL-ADM0-all.zip
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: ""}
+    publication_date: 2023-12-12   # buildDate; data year 2022
+    version: "gbOpen 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Territory
+        layer: geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.geojson
+        name_field: shapeName
+        code_field: shapeID
+        parent_field: null
+        nests: true
+      - level_code: admin1
+        level_type: island
+        level_name_local: Atoll (Village / Taupulega)
+        layer: null
+        name_field: null
+        code_field: null
+        parent_field: null
+        code_scheme: name-slug
+        nests: true
+        derive:   # [processing] ruling E-006: split admin0 land parts by nearest atoll point
+          method: islands_from_parts
+          max_km: 25
+          sources:
+            - {source_id: tkl-geoboundaries-gbopen, layer: geoBoundaries-TKL-ADM0-all/geoBoundaries-TKL-ADM0.geojson, method_token: split_from_admin0_by_atoll}
+          islands:   # approximate atoll centres (WGS84) used only to label parts
+            - {code: atafu, name: Atafu, lon: -172.50, lat: -8.56}
+            - {code: nukunonu, name: Nukunonu, lon: -171.83, lat: -9.17}
+            - {code: fakaofo, name: Fakaofo, lon: -171.22, lat: -9.38}
+        notes: "[processing] derive block added (E-006): geoBoundaries ADM0 parts assigned to the nearest of three atoll centre points; names are the official atoll names (no OSM/GADM attributes used)." 
+    status: alternative
+    raw_path: data/raw/TKL/tkl-geoboundaries-gbopen/
+    notes: >-
+      Sentinel-2 2022 land cover raster-to-polygon, 9.81 km2 land (lagoons excluded). E-006 atoll split superseded
+      by the LINZ 1:25k islets (D-020). vs LINZ per atoll: Atafu 3.10 vs 2.82 km2 (IoU 0.70), Nukunonu 3.60 vs
+      3.19 (0.66), Fakaofo 3.11 vs 2.96 (0.74).
+
+  - source_id: tkl-osm-admin-relations
+    title: "OpenStreetMap atoll relations, Tokelau (3)"
+    publisher: "OpenStreetMap contributors"
+    publisher_type: osm
+    landing_url: https://www.openstreetmap.org/relation/2186600
+    download_urls:
+      - https://polygons.openstreetmap.fr/get_geojson.py?id=13703334&params=0
+      - https://polygons.openstreetmap.fr/get_geojson.py?id=13703333&params=0
+      - https://polygons.openstreetmap.fr/get_geojson.py?id=13703332&params=0
+      - https://api.openstreetmap.org/api/0.6/relation/13703334.json
+      - https://api.openstreetmap.org/api/0.6/relation/13703333.json
+      - https://api.openstreetmap.org/api/0.6/relation/13703332.json
+    retrieval_method: api
+    license: {name: ODbL-1.0, url: https://www.openstreetmap.org/copyright, redistribution_ok: true, notes: "share-alike; attribution required"}
+    publication_date: 2026-11-20   # snapshot
+    version: null
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin1
+        level_type: island
+        level_name_local: Atoll
+        layer: "r13703334.geojson (Atafu), r13703333.geojson (Fakaofo), r13703332.geojson (Nukunonu)"
+        name_field: "name (in r<id>_tags.json)"
+        code_field: "relation id"
+        parent_field: null
+        nests: false
+    status: alternative
+    raw_path: data/raw/TKL/tkl-osm-admin-relations/
+    notes: >-
+      admin_level=8 subareas of the Tokelau relation. Polygons are MARITIME (2,039-2,655 km2 each,
+      ~12 nm territorial-sea style), not land: use only to label/assign land parts to atolls, or clip to
+      a land layer (ODbL share-alike then applies to the clipped product).
+
+  - source_id: tkl-linz-island-polygons-topo
+    title: "Tokelau Island Polygons (Topo, 1:25k)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52149-tokelau-island-polygons-topo-125k/
+    download_urls:   # LDS WFS; API key sent as header 'Authorization: key <LINZ_API_KEY>' (path form services;key=<LINZ_API_KEY>;/wfs returned 400 for GetFeature)
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52149&outputFormat=json&count=1000&startIndex=0"
+    auth: {type: header, name: Authorization, value_env: LINZ_API_KEY, prefix: "key "}   # LDS API key from env/.env, never recorded
+    retrieval_method: api
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      redistribution_ok: true
+      notes: "Attribution: sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0."
+    publication_date: 2022-06-28   # LDS published_at (first published 2014-12-01; LINZ updated Tokelau topo 2013-14 from 2010 imagery)
+    version: "LDS version 336486"
+    format: geojson
+    crs: EPSG:32702
+    levels:
+      - level_code: admin1
+        level_type: island
+        level_name_local: Atoll (Village / Taupulega)
+        layer: null
+        name_field: null
+        code_field: null
+        parent_field: null
+        code_scheme: name-slug
+        nests: true
+        derive:
+          method: islands_from_parts
+          max_km: 25
+          sources:
+            - {source_id: tkl-linz-island-polygons-topo, layer: layer-52149.geojson, method_token: split_from_land_by_atoll}
+          islands:   # label points = LINZ Geographic Names ISLD points (tkl-linz-geographic-names-topo)
+            - {code: atafu, name: Atafu, lon: -172.495, lat: -8.557}
+            - {code: nukunonu, name: Nukunonu, lon: -171.823, lat: -9.164}
+            - {code: fakaofo, name: Fakaofo, lon: -171.223, lat: -9.365}
+        notes: "177 islet polygons (no grp_name) split by nearest atoll point: Atafu 68 parts 2.82 km2, Nukunonu 44 parts 3.19 km2, Fakaofo 65 parts 2.96 km2."
+    status: selected
+    raw_path: data/raw/TKL/tkl-linz-island-polygons-topo/
+    notes: >-
+      Official NZ (sovereign) Topo50 1:25k islet outlines, 8.97 km2 total, 129 of 177 islets named (name field).
+      Lagoons excluded (LINZ lagoon layer 52150 not downloaded). admin0 = dissolve of the three atolls.
+
+  - source_id: tkl-linz-geographic-names-topo
+    title: "Tokelau Geographic Names (Topo, 1:25k)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52148-tokelau-geographic-names-topo-125k/
+    download_urls:
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52148&outputFormat=json&count=1000&startIndex=0"
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: "LINZ Data Service"}
+    publication_date: 2022-06-28
+    version: "LDS version 336565"
+    format: geojson
+    crs: EPSG:32702
+    levels: []
+    status: reference
+    raw_path: data/raw/TKL/tkl-linz-geographic-names-topo/
+    notes: "377 name points: 3 ISLD atoll points (used as atoll label points), POPL Atafu Village / Nukunonu Village, islet LOC names."
+
+  - source_id: tkl-linz-residential-area-polygons-topo
+    title: "Tokelau Residential Area Polygons (Topo, 1:25k)"
+    publisher: "Toitu Te Whenua Land Information New Zealand (LINZ)"
+    publisher_type: national
+    landing_url: https://data.linz.govt.nz/layer/52156-tokelau-residential-area-polygons-topo-125k/
+    download_urls:
+      - "https://data.linz.govt.nz/services/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=layer-52156&outputFormat=json&count=1000&startIndex=0"
+    retrieval_method: api
+    license: {name: CC-BY-4.0, url: https://creativecommons.org/licenses/by/4.0/, redistribution_ok: true, notes: "LINZ Data Service"}
+    publication_date: 2022-06-29
+    version: "LDS version 338862"
+    format: geojson
+    crs: EPSG:32702
+    levels: []
+    status: rejected
+    raw_path: data/raw/TKL/tkl-linz-residential-area-polygons-topo/
+    notes: >-
+      3 built-up footprints (Atafu Village 0.034 km2, Nukunonu Village 0.056 km2, unnamed Fakaofo settlement
+      0.046 km2). Settlement extents, not administrative village boundaries; not a village level.
+
+  - source_id: tkl-gadm-41
+    title: "GADM 4.1 Tokelau"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_TKL.gpkg
+    retrieval_method: http
+    license: {name: "GADM licence (non-commercial; redistribution not allowed)", url: https://gadm.org/license.html, redistribution_ok: false, notes: "Reference only"}
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Territory, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: island, level_name_local: Atoll, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+    status: reference
+    raw_path: data/raw/TKL/tkl-gadm-41/
+    notes: "Only land-based atoll polygons found (3; 15.7 km2), but restricted. Atafu misspelt 'Anafu'."
+
+  - source_id: tkl-kontur-boundaries
+    title: "Tokelau: Administrative Division with Aggregated Population (Kontur, HDX)"
+    publisher: "Kontur"
+    publisher_type: commercial
+    landing_url: https://data.humdata.org/dataset/kontur-boundaries-tokelau
+    download_urls: []
+    retrieval_method: http
+    license: {name: ODbL, url: https://opendatacommons.org/licenses/odbl/, redistribution_ok: true, notes: ""}
+    publication_date: 2022-04-07
+    version: null
+    format: gpkg
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "OSM-derived duplicate; not downloaded. HDX cod-ps-tkl (UNFPA) is population statistics only (no geometry)."
+
+decisions:
+  - level_code: admin0
+    chosen: tkl-linz-island-polygons-topo
+    alternatives: [tkl-geoboundaries-gbopen, tkl-gadm-41]
+    reason: "D-020: dissolve of the LINZ 1:25k islet outlines (official NZ topographic data, CC-BY-4.0, 8.97 km2); geoBoundaries (Sentinel-2, 9.81 km2) and GADM (15.7 km2, restricted) are coarser."
+    escalated: false
+  - level_code: admin1
+    chosen: tkl-linz-island-polygons-topo
+    alternatives: [tkl-geoboundaries-gbopen, tkl-osm-admin-relations, tkl-gadm-41]
+    reason: >-
+      D-020: LINZ islets split by atoll (unambiguous: atolls 60-90 km apart). No SPC/PCRAFI/census atoll or
+      village polygons exist; OSM atolls are maritime; GADM restricted and coarse (IoU 0.51-0.60 with LINZ).
+      Atoll = village (Taupulega); no lower village level published.
+    escalated: false

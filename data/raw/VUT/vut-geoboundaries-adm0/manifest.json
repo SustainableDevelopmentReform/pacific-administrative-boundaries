@@ -1,0 +1,145 @@
+{
+  "source_id": "vut-geoboundaries-adm0",
+  "iso3": "VUT",
+  "retrieved_at": "2026-11-19T21:54:28Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "api",
+  "landing_url": "https://www.geoboundaries.org/countryDownloads.html",
+  "download_urls": [
+    "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM0/geoBoundaries-VUT-ADM0-all.zip",
+    "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM0/"
+  ],
+  "license": {
+    "name": "Open Data Commons Open Database License 1.0",
+    "url": ""
+  },
+  "files": [
+    {
+      "path": "geoBoundaries-VUT-ADM0-all.zip",
+      "bytes": 1028484,
+      "sha256": "0aae58d41c2f5705075f2256531424d5d0283935513699d5cd9dd7f4a51c7ef1"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "bytes": 1762,
+      "sha256": "18658f45841569f4a975123fc944f1a7e190d4b15c80e307032540add8784a48"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/CITATION-AND-USE-geoBoundaries.txt",
+      "bytes": 4316,
+      "sha256": "f6ea7572bea6036c4cdcacf8c0ca7bf09098d4e600d19546d7432533e9a290d5",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0-PREVIEW.png",
+      "bytes": 31208,
+      "sha256": "e31dabd20f7779db3a0073aa1f3dbdc930a1bbf2d6e06977eca148a0dc54b241",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0-metaData.json",
+      "bytes": 856,
+      "sha256": "93b41da718fd072c962a0ab6cefe2ff9737e09070297b4331f4a20a2a55d5f44",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0-metaData.txt",
+      "bytes": 1011,
+      "sha256": "3fd8dc7b167b88981545563847567ee0e65fcc541e51a43fda965bced49979c6",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.dbf",
+      "bytes": 235,
+      "sha256": "85a9b3a8ed6cf72bacc131467a01cc628ac1052154bef1f139321fd3596ff2e9",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.geojson",
+      "bytes": 1397463,
+      "sha256": "a219d3616d7084e80fb04dc6c9d84d3090ae9db2b962b308a8f42e5fdae58d4e",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.shp",
+      "bytes": 548508,
+      "sha256": "62bb721a111ff11e6ce10a5c63fb812633570a25fe7b62f1d8eebd56ef3bfebe",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.shx",
+      "bytes": 108,
+      "sha256": "575e3e32e86f5bf6798805bf0c345f449be4035e642198cd24a5514a669f6122",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0.topojson",
+      "bytes": 305334,
+      "sha256": "5a3d91bed02ed40b08f54b54449c82caddb5235ccd451f5a28d5d6c221b62e0b",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.dbf",
+      "bytes": 235,
+      "sha256": "85a9b3a8ed6cf72bacc131467a01cc628ac1052154bef1f139321fd3596ff2e9",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.geojson",
+      "bytes": 167455,
+      "sha256": "c8fa208d2ce998a5b374d2e3d76d38e02fac03fdd7890496898968fb7a3f2e06",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.prj",
+      "bytes": 132,
+      "sha256": "a145cd62425c84e8a0d67e3d953401feee62dcd613845406b251049cefc42f9a",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.shp",
+      "bytes": 66028,
+      "sha256": "3fd692fdfdbb0dc3942fc75ab5660ddccca117debb832f5ad6be4239f296b20e",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.shx",
+      "bytes": 108,
+      "sha256": "206eb9c1447548d01f49af43fac2e351cea7ccbdb43f240a40911eb8b7726fab",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    },
+    {
+      "path": "extracted/geoBoundaries-VUT-ADM0-all/geoBoundaries-VUT-ADM0_simplified.topojson",
+      "bytes": 38057,
+      "sha256": "adb09785004f5524a06665efa2ee94a49c70ded40119f8a30a1c9d78d8526f73",
+      "from_archive": "geoBoundaries-VUT-ADM0-all.zip"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "geoBoundaries-VUT-ADM0-all.zip",
+      "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM0/geoBoundaries-VUT-ADM0-all.zip",
+      "url_effective": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/VUT/ADM0/geoBoundaries-VUT-ADM0-all.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T21:54:27Z"
+    },
+    {
+      "path": "geoboundaries_api_metadata.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM0/",
+      "url_effective": "https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM0/",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T21:54:28Z"
+    }
+  ],
+  "notes": "geoBoundaries gbOpen ADM0 (Unknown); boundarySource: OpenStreetMap, Wambacher; sourceURL: wambachers-osm.website/boundaries/; year represented 2017; buildDate Dec 12, 2023; units 1; API https://www.geoboundaries.org/api/current/gbOpen/VUT/ADM0/"
+}

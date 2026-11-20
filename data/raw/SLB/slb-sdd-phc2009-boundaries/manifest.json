@@ -1,0 +1,90 @@
+{
+  "source_id": "slb-sdd-phc2009-boundaries",
+  "iso3": "SLB",
+  "retrieved_at": "2026-11-19T22:00:52Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2009_slb_phc_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/8b6bc4e2-17da-4ace-9a6c-7ea186e1dd42/download/2009_phc_slb_pid_4326.geojson",
+    "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/00bdccf0-7384-42b1-b9b2-a3f77eff2d20/download/2009_phc_slb_coid2_4326.geojson",
+    "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/5af441a0-aafa-4876-93d3-4fb397542249/download/2009_phc_slb_wid_4326.geojson",
+    "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/7b19ab32-2a3b-4afb-84d2-f4deef9050d8/download/2009_phc_slb_eaid_4326.geojson",
+    "https://pacificdata.org/data/api/3/action/package_show?id=2009_slb_phc_admin_boundaries"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by"
+  },
+  "files": [
+    {
+      "path": "2009_phc_slb_pid_4326.geojson",
+      "bytes": 8120509,
+      "sha256": "2dd8c56d67ef06b429dbb9651724be7683d386a6cdee8173a4fc6493cf450992"
+    },
+    {
+      "path": "2009_phc_slb_coid2_4326.geojson",
+      "bytes": 8260954,
+      "sha256": "d5cd5bca2e000d998e5511e10f56b7449a3361fa2aa45bda90f826a42768dc7c"
+    },
+    {
+      "path": "2009_phc_slb_wid_4326.geojson",
+      "bytes": 8482543,
+      "sha256": "fa8c4763c4817ed30858938ae48d427815a00c3807edce1ebe46cbbcd43b62dc"
+    },
+    {
+      "path": "2009_phc_slb_eaid_4326.geojson",
+      "bytes": 10095277,
+      "sha256": "61219c6682c8ac6350eee0a6df1684732c478b7fe20798f7aedb7734b246b89c"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "bytes": 15949,
+      "sha256": "eebe16e6321dac6554db46d5d5b712a782ad71dd8c4899926a2cd059bd6ef194"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "2009_phc_slb_pid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/8b6bc4e2-17da-4ace-9a6c-7ea186e1dd42/download/2009_phc_slb_pid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/8b6bc4e2-17da-4ace-9a6c-7ea186e1dd42/download/2009_phc_slb_pid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "retrieved_at": "2026-11-19T22:00:50Z"
+    },
+    {
+      "path": "2009_phc_slb_coid2_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/00bdccf0-7384-42b1-b9b2-a3f77eff2d20/download/2009_phc_slb_coid2_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/00bdccf0-7384-42b1-b9b2-a3f77eff2d20/download/2009_phc_slb_coid2_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/geo+json",
+      "retrieved_at": "2026-11-19T22:00:51Z"
+    },
+    {
+      "path": "2009_phc_slb_wid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/5af441a0-aafa-4876-93d3-4fb397542249/download/2009_phc_slb_wid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/5af441a0-aafa-4876-93d3-4fb397542249/download/2009_phc_slb_wid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/geo+json",
+      "retrieved_at": "2026-11-19T22:00:51Z"
+    },
+    {
+      "path": "2009_phc_slb_eaid_4326.geojson",
+      "url": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/7b19ab32-2a3b-4afb-84d2-f4deef9050d8/download/2009_phc_slb_eaid_4326.geojson",
+      "url_effective": "https://pacificdata.org/data/dataset/e8be9308-8edc-4bfb-b6a9-0dd5588efc98/resource/7b19ab32-2a3b-4afb-84d2-f4deef9050d8/download/2009_phc_slb_eaid_4326.geojson",
+      "http_status": 200,
+      "content_type": "application/geo+json",
+      "retrieved_at": "2026-11-19T22:00:52Z"
+    },
+    {
+      "path": "pdh_package_metadata.json",
+      "url": "https://pacificdata.org/data/api/3/action/package_show?id=2009_slb_phc_admin_boundaries",
+      "url_effective": "https://pacificdata.org/data/api/3/action/package_show?id=2009_slb_phc_admin_boundaries",
+      "http_status": 200,
+      "content_type": "application/json;charset=utf-8",
+      "retrieved_at": "2026-11-19T22:00:52Z"
+    }
+  ],
+  "notes": "SPC SDD on Pacific Data Hub: boundaries used for Solomon Islands 2009 PHC (SINSO), used in Solomon Islands PopGIS3: province, constituency, ward, EA."
+}

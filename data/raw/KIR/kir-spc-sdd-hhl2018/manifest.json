@@ -1,0 +1,46 @@
+{
+  "source_id": "kir-spc-sdd-hhl2018",
+  "iso3": "KIR",
+  "retrieved_at": "2026-11-19T21:56:29Z",
+  "retrieved_by": "retrieval agent (micronesia), curl",
+  "retrieval_method": "http",
+  "landing_url": "https://pacificdata.org/data/dataset/2018_kir_hhl_admin_boundaries",
+  "download_urls": [
+    "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/cfb956da-2bb5-4984-ae58-679612a6d39b/download/2018_hhl_kir_eaid_3832.geojson",
+    "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/9b8b6df7-3c89-41ae-84a9-bff823b125b4/download/2018_hhl_kir_vid_3832.geojson",
+    "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/baac4740-cc6a-4a62-a5d0-b498fe12935a/download/2018_hhl_kir_iid_3832.geojson"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "http://www.opendefinition.org/licenses/cc-by",
+    "notes": "PDH page states 'Creative Commons Attribution'"
+  },
+  "files": [
+    {
+      "path": "2018_hhl_kir_eaid_3832.geojson",
+      "url": "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/cfb956da-2bb5-4984-ae58-679612a6d39b/download/2018_hhl_kir_eaid_3832.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1257471,
+      "sha256": "08b330834bba2f7041b6707a57e5a3bb62fa5ca4f8bab80ebcb3b06868c44493"
+    },
+    {
+      "path": "2018_hhl_kir_vid_3832.geojson",
+      "url": "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/9b8b6df7-3c89-41ae-84a9-bff823b125b4/download/2018_hhl_kir_vid_3832.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 1008229,
+      "sha256": "bfcb51b9513772f52379f303689eacf7a853e319df6de667b00d895d2bded466"
+    },
+    {
+      "path": "2018_hhl_kir_iid_3832.geojson",
+      "url": "https://pacificdata.org/data/dataset/3d442365-5ee9-4dc2-bb50-a6780cc554cb/resource/baac4740-cc6a-4a62-a5d0-b498fe12935a/download/2018_hhl_kir_iid_3832.geojson",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 186865,
+      "sha256": "849ea31e662c84ff87268fa9f6643584e7e822251c24804f36f1a892b90f947a"
+    }
+  ],
+  "extracted_files": [],
+  "notes": "Pacific Data Hub, SPC Statistics for Development Division (SDD). metadata_created 2020-07-10, modified 2022-05-08."
+}

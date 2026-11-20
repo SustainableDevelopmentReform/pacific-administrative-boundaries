@@ -1,0 +1,34 @@
+{
+  "source_id": "fji-gadm-4-1",
+  "iso3": "FJI",
+  "retrieved_at": "2026-11-19T21:55:24Z",
+  "retrieved_by": "agent (curl)",
+  "retrieval_method": "http",
+  "landing_url": "https://gadm.org/download_country.html",
+  "download_urls": [
+    "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_FJI.gpkg"
+  ],
+  "license": {
+    "name": "GADM licence (non-commercial; redistribution prohibited)",
+    "url": "https://gadm.org/license.html"
+  },
+  "files": [
+    {
+      "path": "gadm41_FJI.gpkg",
+      "bytes": 5795840,
+      "sha256": "fd6239ae25abd25273dac2418f7c55b7810d71f40e4f86a8da8cff35144709a7"
+    }
+  ],
+  "extracted_files": [],
+  "downloads": [
+    {
+      "path": "gadm41_FJI.gpkg",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_FJI.gpkg",
+      "url_effective": "https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_FJI.gpkg",
+      "http_status": 200,
+      "content_type": "application/geopackage+sqlite3",
+      "retrieved_at": "2026-11-19T21:55:24Z"
+    }
+  ],
+  "notes": "GADM 4.1 (2022). Reference only: licence permits academic/non-commercial use and forbids redistribution or commercial use without permission. license_restricted=true."
+}

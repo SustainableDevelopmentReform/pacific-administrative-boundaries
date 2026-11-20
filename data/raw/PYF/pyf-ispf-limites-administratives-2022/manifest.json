@@ -1,0 +1,230 @@
+{
+  "source_id": "pyf-ispf-limites-administratives-2022",
+  "iso3": "PYF",
+  "retrieved_at": "2026-11-19T22:04:25Z",
+  "retrieved_by": "manual",
+  "retrieval_method": "http",
+  "landing_url": "https://www.data.gouv.fr/datasets/limites-geographiques-administratives",
+  "download_urls": [
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20220610-202135/shapefiles.zip",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communesassociees.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communes.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/subdivisions.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/quartiers2000.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/iles.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/districts2017.csv",
+    "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/geo.csv"
+  ],
+  "license": {
+    "name": "ODbL-1.0",
+    "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "notes": "data.gouv.fr licence field 'odc-odbl' (share-alike)"
+  },
+  "files": [
+    {
+      "path": "shapefiles.zip",
+      "bytes": 47923150,
+      "sha256": "8da21b8912a9df8db95036ce24f782a3172bf89698c11049e954a69a45dedc7e"
+    },
+    {
+      "path": "communesassociees.csv",
+      "bytes": 4796,
+      "sha256": "c47413f13c805fe0ac4833ade31fff197585cbc7aad50c438139d87032fc5b2b"
+    },
+    {
+      "path": "communes.csv",
+      "bytes": 1387,
+      "sha256": "4dca5fe55d905ff87b71938db89d65587febb5fd92ea620675cf4d8482a526e1"
+    },
+    {
+      "path": "subdivisions.csv",
+      "bytes": 120,
+      "sha256": "e05ee07b9af6ede17cd54a02ecbcc1b6373853722285a544880b6a311e0e6726"
+    },
+    {
+      "path": "quartiers2000.csv",
+      "bytes": 9364,
+      "sha256": "5ef6147cb76c5710205ceec3c3aff64bdd8b19718256ae6e3612a30e70333d3c"
+    },
+    {
+      "path": "iles.csv",
+      "bytes": 4412,
+      "sha256": "786af2edcd2f1b0f3554a896838bc20e008ef0a7bb6a54f62dff42bb042299b2"
+    },
+    {
+      "path": "districts2017.csv",
+      "bytes": 245669,
+      "sha256": "0dcb19d2055a019f18c550cb8f1384bf6fae9aa7b05d5514e0da3f62821dc860"
+    },
+    {
+      "path": "geo.csv",
+      "bytes": 19568,
+      "sha256": "7f1228e5af2e436b71909c22b5f82ae56bfa023143c1cc24eb908786daa0ebb7"
+    }
+  ],
+  "extracted_files": [
+    {
+      "path": "shapefiles/Com.dbf",
+      "from": "shapefiles.zip",
+      "bytes": 5825,
+      "sha256": "e9437b9f8ce9d8a008adc1ba4ada13b6ed234f01f8edd6edfc52ec122b52f347"
+    },
+    {
+      "path": "shapefiles/Com.prj",
+      "from": "shapefiles.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "shapefiles/Com.shp",
+      "from": "shapefiles.zip",
+      "bytes": 15812172,
+      "sha256": "55b179579b82fd3c6f7df7490414b2a7962092e1fa2effab581f5e7290555d9b"
+    },
+    {
+      "path": "shapefiles/Com.shx",
+      "from": "shapefiles.zip",
+      "bytes": 484,
+      "sha256": "e31f3b8eb89ecd8e901d7525d36ebc22b443dd1d0f832640988ec24dbbf055c1"
+    },
+    {
+      "path": "shapefiles/Comas.dbf",
+      "from": "shapefiles.zip",
+      "bytes": 16637,
+      "sha256": "450ff696e82716a2b5b342382898cd8d99adbc4a0a35ac06cf946ed77a149063"
+    },
+    {
+      "path": "shapefiles/Comas.prj",
+      "from": "shapefiles.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "shapefiles/Comas.shp",
+      "from": "shapefiles.zip",
+      "bytes": 20318060,
+      "sha256": "eff3827e8f5112b4dcc4ab773f5fc4bd7528b50ec40aab17f369bbd25e6e08e8"
+    },
+    {
+      "path": "shapefiles/Comas.shx",
+      "from": "shapefiles.zip",
+      "bytes": 1028,
+      "sha256": "c7ab4574fe9caf1d4cd3350b53ffce1962f5ad1d7b78f2addab7af5929071b39"
+    },
+    {
+      "path": "shapefiles/Ile.dbf",
+      "from": "shapefiles.zip",
+      "bytes": 16546,
+      "sha256": "58833befa1397b797a14a03853b7e4a3513d123e4a40aae27749918c1e849800"
+    },
+    {
+      "path": "shapefiles/Ile.prj",
+      "from": "shapefiles.zip",
+      "bytes": 176,
+      "sha256": "55803b5f85ca4b970f33ea4a84198cfa395451fd24fd2748578018f74068a7e1"
+    },
+    {
+      "path": "shapefiles/Ile.shp",
+      "from": "shapefiles.zip",
+      "bytes": 15540468,
+      "sha256": "848ec7503609ecc8fb1faeaf12e8e77abc2e3ff521b64e631762d763f6a43163"
+    },
+    {
+      "path": "shapefiles/Ile.shx",
+      "from": "shapefiles.zip",
+      "bytes": 1052,
+      "sha256": "9f6fe47044aac1eac3f15c5903eb0dd9c1f71b59532d23d0b2f29e00e077b9c4"
+    },
+    {
+      "path": "shapefiles/Quartiers2000.dbf",
+      "from": "shapefiles.zip",
+      "bytes": 83452,
+      "sha256": "63aeb6fa86e3179168c5e59a4745a7a79b9556f6b58a6f283688a30e9bd30dd5"
+    },
+    {
+      "path": "shapefiles/Quartiers2000.prj",
+      "from": "shapefiles.zip",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "shapefiles/Quartiers2000.shp",
+      "from": "shapefiles.zip",
+      "bytes": 17974100,
+      "sha256": "2e1f5eb5683f8a447512ab41413d593bf6eff3d423a531ffb4604d560886f904"
+    },
+    {
+      "path": "shapefiles/Quartiers2000.shx",
+      "from": "shapefiles.zip",
+      "bytes": 1460,
+      "sha256": "f68574e4c91e6e8da4d11956e321b82dd63d513be7d93087af916d01d98bbb83"
+    }
+  ],
+  "downloads": [
+    {
+      "path": "shapefiles.zip",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20220610-202135/shapefiles.zip",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20220610-202135/shapefiles.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "retrieved_at": "2026-11-19T22:04:25Z"
+    },
+    {
+      "path": "communesassociees.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communesassociees.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communesassociees.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:34Z"
+    },
+    {
+      "path": "communes.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communes.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/communes.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:35Z"
+    },
+    {
+      "path": "subdivisions.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/subdivisions.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/subdivisions.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:36Z"
+    },
+    {
+      "path": "quartiers2000.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/quartiers2000.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/quartiers2000.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:37Z"
+    },
+    {
+      "path": "iles.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/iles.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043028/iles.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:38Z"
+    },
+    {
+      "path": "districts2017.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/districts2017.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/districts2017.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:39Z"
+    },
+    {
+      "path": "geo.csv",
+      "url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/geo.csv",
+      "effective_url": "https://static.data.gouv.fr/resources/limites-geographiques-administratives/20210226-043027/geo.csv",
+      "http_status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-11-19T22:05:42Z"
+    }
+  ],
+  "notes": "Publisher: Institut de la statistique de la Polynesie francaise (ISPF). Shapefiles uploaded 2022-06-10; RP2017 indicators attached. geojson.zip (2021-04-22, 49 MB) not downloaded: same content in an older upload."
+}

@@ -1,0 +1,247 @@
+iso3: FSM
+country_name: Micronesia (Federated States of)
+# Stack: State (4) > Municipality (75) > 2010 census Enumeration District (394).
+# All open sub-national geometry traces back to the 2010 census GIS of the FSM Division of
+# Statistics / SPC SDD (PopGIS). COD-AB and geoBoundaries are derived copies of it.
+sources:
+  - source_id: fsm-spc-sdd-phc2010
+    title: "2010 FSM Population and Housing Census administrative boundaries (State, Municipality, Enumeration District)"
+    publisher: "SPC Statistics for Development Division (SDD) for FSM Division of Statistics"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/2010_fsm_phc_admin_boundaries
+    download_urls:
+      - https://pacificdata.org/data/dataset/13a38fd1-79d6-442e-86a9-838f31e8b8de/resource/b61f4952-ec9a-446f-88d8-b30669c515b5/download/2010_phc_fsm_sid_4326.geojson
+      - https://pacificdata.org/data/dataset/13a38fd1-79d6-442e-86a9-838f31e8b8de/resource/f5af4ad3-990d-497f-9230-b5821cd9647b/download/2010_phc_fsm_mid_4326.geojson
+      - https://pacificdata.org/data/dataset/13a38fd1-79d6-442e-86a9-838f31e8b8de/resource/10a07fe3-0431-4b51-b594-abf2e51214bd/download/2010_phc_fsm_edid_4326.geojson
+    retrieval_method: http
+    license:
+      name: CC-BY-4.0
+      url: http://www.opendefinition.org/licenses/cc-by
+      redistribution_ok: true
+      notes: "PDH page states 'Creative Commons Attribution' (no version given)."
+    publication_date: 2020-06-26   # PDH record created; data = 2010 census frame
+    version: "2010 PHC"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Federated States of Micronesia
+        layer: 2010_phc_fsm_sid_4326.geojson
+        name_field: null
+        code_field: null
+        parent_field: null
+        nests: true
+        use: false
+        notes: "Derive by dissolving the state layer. [processing] use: false -> admin0 dissolved from admin1 by the pipeline."
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: State
+        layer: 2010_phc_fsm_sid_4326.geojson
+        name_field: s_name
+        code_field: sid
+        code_scheme: sdd-census
+        parent_field: null
+        nests: true
+      - level_code: admin2
+        level_type: local_government
+        level_name_local: Municipality
+        layer: 2010_phc_fsm_mid_4326.geojson
+        name_field: m_name
+        code_field: mid
+        code_scheme: sdd-census
+        parent_field: {field: mid, slice: [0, 1]}   # [processing] first digit of mid = sid (e.g. 304 -> state 3)
+        nests: true
+      - level_code: admin3
+        level_type: statistical
+        level_name_local: Enumeration District (2010 census)
+        layer: 2010_phc_fsm_edid_4326.geojson
+        name_field: ed_name
+        code_field: edid
+        code_scheme: sdd-census
+        parent_field: mid
+        nests: true
+    status: selected
+    raw_path: data/raw/FSM/fsm-spc-sdd-phc2010/
+    notes: "Official census geography (national statistics office via SPC). Total area 688 km2 identical across state/municipality/ED layers, so layers nest exactly. Same geometry as COD-AB 2019."
+
+  - source_id: fsm-ocha-codab-2019
+    title: "Micronesia (Federated States of) - Subnational Administrative Boundaries (COD-AB)"
+    publisher: "OCHA Office of the Pacific Islands (HDX)"
+    publisher_type: un_ocha
+    landing_url: https://data.humdata.org/dataset/cod-ab-fsm
+    download_urls:
+      - https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/7348d022-6726-438c-9b1c-0b5524b7dbfd/download/fsm_admbnda_shp.zip
+      - https://data.humdata.org/dataset/dc71c13f-e848-4ddc-9074-17e608464b63/resource/cb470018-7524-4487-9596-3807a83ac9cb/download/fsm_adm_gazeteer.xls
+    retrieval_method: http
+    license:
+      name: CC-BY-3.0-IGO
+      url: http://creativecommons.org/licenses/by/3.0/igo/legalcode
+      redistribution_ok: true
+      notes: ""
+    publication_date: 2019-06-17
+    version: "2019-06-17 (reviewed Oct 2024, no update required)"
+    format: shapefile
+    crs: "EPSG:4326 (adm0, adm1); EPSG:3857 (adm2); World Mercator 150 (adm0_EEZ)"
+    levels:
+      - level_code: admin0
+        level_type: country
+        level_name_local: Federated States of Micronesia
+        layer: fsm_admbnda_shp/fsm_admbnda_adm0.shp
+        name_field: ADM0_NAME
+        code_field: ADM0_PCODE
+        parent_field: null
+        nests: true
+      - level_code: admin1
+        level_type: state_province
+        level_name_local: State
+        layer: fsm_admbnda_shp/fsm_admbnda_adm1.shp
+        name_field: ADM1NAME
+        code_field: ADM1_PCODE
+        parent_field: ADM0_PCODE
+        nests: true
+      - level_code: admin2
+        level_type: local_government
+        level_name_local: Municipality
+        layer: fsm_admbnda_shp/fsm_admbnda_adm2.shp
+        name_field: ADM2_NAME
+        code_field: ADM2_PCODE
+        parent_field: ADM1_PCODE
+        nests: true
+        notes: "Also carries MAIN_OUTER, GROUP and SUB_GROUP (e.g. Chuuk Faichuk/Namoneas/Northwest regions) usable to build a non-nesting 'region' layer; STATS_MCOD = SDD mid."
+    status: alternative
+    raw_path: data/raw/FSM/fsm-ocha-codab-2019/
+    notes: "DERIVED from fsm-spc-sdd-phc2010 (HDX: 'Sourced from FSM Division of Statistics 2010 PHC and SPC SDD'). Same 75 municipalities and area. Kept for P-codes and the GROUP/SUB_GROUP attributes. adm0_EEZ layer not used (EEZ handled by EEZ agent)."
+
+  - source_id: fsm-geoboundaries-gbopen
+    title: "geoBoundaries gbOpen FSM ADM0-ADM2"
+    publisher: "geoBoundaries (William & Mary geoLab)"
+    publisher_type: academic
+    landing_url: https://www.geoboundaries.org/countryDownloads.html#FSM
+    download_urls:
+      - https://www.geoboundaries.org/api/current/gbOpen/FSM/ALL/
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FSM/ADM0/geoBoundaries-FSM-ADM0-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FSM/ADM1/geoBoundaries-FSM-ADM1-all.zip
+      - https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FSM/ADM2/geoBoundaries-FSM-ADM2-all.zip
+    retrieval_method: api
+    license:
+      name: CC-BY-3.0-IGO
+      url: https://www.geoboundaries.org/
+      redistribution_ok: true
+      notes: "All three levels: 'Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)', inherited from COD-AB."
+    publication_date: 2023-12-12
+    version: "gbOpen build 9469f09"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Federated States of Micronesia, layer: geoBoundaries-FSM-ADM0-all/geoBoundaries-FSM-ADM0.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: State, layer: geoBoundaries-FSM-ADM1-all/geoBoundaries-FSM-ADM1.geojson, name_field: shapeName, code_field: shapeISO, parent_field: null, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Municipality, layer: geoBoundaries-FSM-ADM2-all/geoBoundaries-FSM-ADM2.geojson, name_field: shapeName, code_field: shapeID, parent_field: null, nests: true}
+    status: alternative
+    raw_path: data/raw/FSM/fsm-geoboundaries-gbopen/
+    notes: "DERIVED from OCHA COD-AB (itself from SDD 2010). Useful only for ISO 3166-2 codes on ADM1."
+
+  - source_id: fsm-spc-gem-municipality-aal
+    title: "Annual Average Loss for Federated States of Micronesia (municipality)"
+    publisher: "SPC Geoscience, Energy and Maritime Division (GEM)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/fm-municipality-aal-44
+    download_urls:
+      - https://geonode.pacificdata.org/geoserver/geonode/fm_municipality_aal/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=geonode:fm_municipality_aal&outputFormat=json&content-disposition=attachment
+    retrieval_method: api
+    license:
+      name: CC-BY-NC-SA-4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+      redistribution_ok: false
+      notes: "Non-commercial, share-alike."
+    publication_date: 2025-10-14
+    version: "PCRAFI AAL layer"
+    format: geojson
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin2, level_type: local_government, level_name_local: Municipality, layer: fm_municipality_aal.geojson, name_field: municipali, code_field: mid, parent_field: sid, nests: true}
+    status: rejected
+    raw_path: data/raw/FSM/fsm-spc-gem-municipality-aal/
+    notes: "Hazard-loss product (PCRAFI) on regional-source municipality geometry (421 features, 76 names, 731 km2, mid codes not unique per municipality). NC-SA licence and thematic purpose; kept for comparison only."
+
+  - source_id: fsm-pacioos-states-created
+    title: "State Boundaries - Federated States of Micronesia (PacIOOS, lines)"
+    publisher: "Pacific Islands Ocean Observing System (PacIOOS)"
+    publisher_type: academic
+    landing_url: https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html
+    download_urls:
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=application/json
+      - https://geo.pacioos.hawaii.edu/geoserver/PACIOOS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=PACIOOS:fm_pac_statebdry_created&outputFormat=SHAPE-ZIP
+    retrieval_method: api
+    license:
+      name: "PacIOOS data use (free use and redistribution, not for legal use)"
+      url: https://www.pacioos.hawaii.edu/metadata/fm_pac_statebdry_created.html
+      redistribution_ok: true
+      notes: "'The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies.'"
+    publication_date: 2016-01-25
+    version: ""
+    format: geojson
+    crs: EPSG:4326
+    levels: []
+    status: rejected
+    raw_path: data/raw/FSM/fsm-pacioos-states-created/
+    notes: "3 maritime dividing lines between states 'approximated from the map image on Wikipedia'. Not polygons, not authoritative."
+
+  - source_id: fsm-gadm-41
+    title: "GADM 4.1 Micronesia"
+    publisher: "GADM"
+    publisher_type: academic
+    landing_url: https://gadm.org/download_country.html
+    download_urls:
+      - https://geodata.ucdavis.edu/gadm/gadm4.1/gpkg/gadm41_FSM.gpkg
+    retrieval_method: http
+    license:
+      name: "GADM licence (non-commercial, no redistribution)"
+      url: https://gadm.org/license.html
+      redistribution_ok: false
+      notes: "Reference only. license_restricted = true."
+    publication_date: 2022-07-16
+    version: "4.1"
+    format: gpkg
+    crs: EPSG:4326
+    levels:
+      - {level_code: admin0, level_type: country, level_name_local: Micronesia, layer: ADM_ADM_0, name_field: COUNTRY, code_field: GID_0, parent_field: null, nests: true}
+      - {level_code: admin1, level_type: state_province, level_name_local: State, layer: ADM_ADM_1, name_field: NAME_1, code_field: GID_1, parent_field: GID_0, nests: true}
+      - {level_code: admin2, level_type: local_government, level_name_local: Municipality, layer: ADM_ADM_2, name_field: NAME_2, code_field: GID_2, parent_field: GID_1, nests: true}
+    status: reference
+    raw_path: data/raw/FSM/fsm-gadm-41/
+    notes: "74 admin2 units (types Municipality/Atol/Reef) vs 75 in SDD."
+
+  - source_id: fsm-sprep-municipalities-csv
+    title: "FSM Municipalities (population table)"
+    publisher: "Federated States of Micronesia Environment Data Portal (SPREP)"
+    publisher_type: regional_body
+    landing_url: https://pacificdata.org/data/dataset/fsm-municipalities856d8141-a0f6-4a5d-820b-f807cf92fcf0
+    download_urls: []
+    retrieval_method: http
+    license: {name: "SPREP Public License", url: "https://pacific-data.sprep.org/dataset/data-portal-license-agreements", redistribution_ok: false, notes: "Not downloaded."}
+    publication_date: 2022-03-07
+    version: ""
+    format: other
+    crs: null
+    levels: []
+    status: rejected
+    raw_path: null
+    notes: "CSV only (no geometry). Not downloaded."
+
+decisions:
+  - level_code: admin1
+    chosen: fsm-spc-sdd-phc2010
+    alternatives: [fsm-ocha-codab-2019, fsm-geoboundaries-gbopen, fsm-gadm-41]
+    reason: "Official national census geography; COD-AB and geoBoundaries are derived copies of it."
+    escalated: false
+  - level_code: admin2
+    chosen: fsm-spc-sdd-phc2010
+    alternatives: [fsm-ocha-codab-2019, fsm-geoboundaries-gbopen, fsm-spc-gem-municipality-aal, fsm-gadm-41]
+    reason: "Official national census geography; identical geometry to COD-AB (derived). COD-AB retained for P-codes and region groupings."
+    escalated: false
+  - level_code: admin3
+    chosen: fsm-spc-sdd-phc2010
+    alternatives: []
+    reason: "Only open source for enumeration districts."
+    escalated: false
