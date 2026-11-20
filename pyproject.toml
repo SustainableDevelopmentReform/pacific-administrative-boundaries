@@ -25,6 +25,7 @@ dependencies = [
     "duckdb",
     "rich",
     "jsonschema",
+    "boto3>=1.44.7",
 ]
 
 [dependency-groups]

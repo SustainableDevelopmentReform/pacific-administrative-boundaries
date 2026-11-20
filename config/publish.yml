@@ -3,6 +3,7 @@
 repo_url: https://github.com/SustainableDevelopmentReform/pacific-administrative-boundaries
 s3_bucket: csdr-public-datasets
 s3_prefix: pacific-administrative-boundaries
+s3_region: ap-southeast-2
 # Public HTTPS root for the same prefix (virtual-hosted style; use <bucket>.s3.<region>.amazonaws.com if the bucket is outside us-east-1)
 https_base: https://csdr-public-datasets.s3.ap-southeast-2.amazonaws.com/pacific-administrative-boundaries
 version: v0.1.0
